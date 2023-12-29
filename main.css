@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'simpsonts-font';
+	src: local('simpsonts-font'),
+		url('./src/fonts/Simpsonfont.otf') format('opentype');
+}
+
+:root {
+	--color-background: #42c7f2;
+	--color-primary: #fee622;
+	--color-secondary: #e33e97;
+	--font-color-primary: #ffffff;
+	--font-color-secondary: #7b7b7b;
+	--font-principal: 'simpsonts-font', sans-serif;
+	--font-secundaria: 'Fira Sans', sans-serif;
+	--font-size-title: 2rem;
+	--font-size-title-tablet: 2.5rem;
+	--font-size-title-desktop: 3rem;
+	--font-size-subtitle: 1.5rem;
+	--font-size-subtitle-tablet: 2rem;
+	--font-size-subtitle-desktop: 2.5rem;
+	--font-size-parrafo: 1rem;
+	--font-size-parrafo-tablet: 1.15rem;
+	--font-size-parrafo-desktop: 1.25rem;
+	--font-size-bottom: 1.2rem;
+}
+
+body {
+	background-color: var(--color-background);
+}
