@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'simpsonts-font';
 	src: local('simpsonts-font'),
-		url('./src/fonts/Simpsonfont.otf') format('opentype');
+		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
 }
 
 :root {
