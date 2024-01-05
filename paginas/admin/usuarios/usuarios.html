@@ -27,6 +27,74 @@
 	</head>
 	<body>
 		<!-- comienzo body -->
+		<section class="container-md">
+			<h2 class="titulo text-center pb-5">
+				Administrar Usuarios <i class="bi bi-people-fill"></i>
+			</h2>
+
+			<img
+				class="usuarios-img-header"
+				src="../../../recursos/media/img/homero-pc.png"
+				alt="" />
+
+			<div class="row pb-2">
+				<form class="col-12">
+					<label for="filtrarUsuariosInput" class="fs-5 fw-bold"
+						>Filtar Usuarios</label
+					>
+					<input
+						type="text"
+						name="filtrarUsuariosInput"
+						id="filtrarUsuariosInput"
+						class="form-control"
+						placeholder="🔎" />
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<table class="table table-light table-striped align-middle">
+						<thead>
+							<tr>
+								<th scope="col" class="fs-5 usuarios-tabla-titulo">Id</th>
+								<th scope="col" class="fs-5 usuarios-tabla-titulo">
+									Email
+									<button
+										data-sort="A"
+										id="sortByName"
+										class="btn btn-dark fw-bold fs-5 py-0"
+										title="sort"></button>
+								</th>
+								<th scope="col" class="fs-5 usuarios-tabla-titulo">Rol</th>
+								<th scope="col" class="fs-5 usuarios-tabla-titulo">Estado</th>
+								<th scope="col" class="fs-5 usuarios-tabla-titulo">Acciones</th>
+							</tr>
+						</thead>
+						<tbody id="tablaUsuarios">
+							<tr data-id="${usuario.id}" class="table-light">
+								<th scope="row">jklj-3443-jklj-3333</th>
+								<td>usuario@usuario.com</td>
+								<td>user</td>
+								<td>
+									<select
+										class="form-select form-select-sm"
+										aria-label="Seleccionar estado">
+										<option value="1" selected>Pendiente</option>
+										<option value="2">Aprobado</option>
+										<option value="3">Suspendido</option>
+									</select>
+								</td>
+								<td class="p-0">
+									<i
+										data-btn="borrar"
+										title="borrar usuario"
+										class="bi bi-x-circle-fill btn text-danger fs-4"></i>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
 		<footer></footer>
 		<!-- fin body -->
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
