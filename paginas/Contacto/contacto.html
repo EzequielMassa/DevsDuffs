@@ -22,46 +22,46 @@
 		<script type="module" src="./main.js"></script>
 </head>
 <body>
-    <header>
-    
-        <nav class="navbar navbar-expand-lg fixed-top bg-dark-subtle">
-           
-          <div class="container-fluid me-3">
-            <a class="navbar-brand" href="/index.html"><img class="logo-nav" src="/recursos/media/img/Devs-Duff-Logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
-              <li class="nav-item ">
-                <a class="nav-link" aria-current="page" href="#"><label>Categoria</label></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"><label>Nosotros</label></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../Contacto/contacto.html"><label>Contacto</label></a>
-              </li>
-            </ul>
-            <form class="d-flex col-lg-8 me-5 justify-content-center align-content-center " role="search">
-              <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-              <div class="col-6">
-                <button class=" btn btn-info btn-log  " type="submit">login</button>
-                <button class="btn btn-success " type="submit">Registro</button>
-                <label class="icon-login ms-4"></label>
-                <button class="btn btn-warning align-items-md-center"><a class="setting-Adm " href=""><i class="bi bi-gear"></i></a></button>
-            </div>
-              
-            </form>
+    <header class="container-fluid fixed-top ">
+      <nav class="navbar navbar-expand-lg fixed-top bg-dark-subtle">
+       
+        <div class="container-fluid me-3">
+          <a class="navbar-brand" href="/index.html"><img class="logo-nav" src="/recursos/media/img/Devs-Duff-Logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+            <li class="nav-item ">
+              <a class="nav-link" aria-current="page" href="#"><label>Categoria</label></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><label>Nosotros</label></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../Contacto/contacto.html"><label>Contacto</label></a>
+            </li>
+          </ul>
+          <form class="d-flex col-lg-8 me-5 justify-content-center align-content-center " role="search">
+            <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+            <div class="col-6">
+              <button class=" btn btn-info btn-log  " type="submit">login</button>
+              <button class="btn btn-success " type="submit">Registro</button>
+              <img class="img-login" src="../../recursos/media/img/homero-apuntando.png" alt="Homero de login">
+              <button class="btn btn-warning align-items-md-center"><a class="setting-Adm " href=""><i class="bi bi-gear"></i></a></button>
           </div>
+            
+          </form>
         </div>
-    
-      </nav>  
-    
+      </div>
+  
+    </nav>  
 </header>
-<main class="d-flex mt-5">
-    <div class="row">
-        <div class="col mt-5">
+<main class="">  
+  
+    <div class="container-fluid mt-5">
+     <div class="row align-content-stretch">
+        <div class="col bg-body-secondary">
             <section>
                 <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
@@ -69,22 +69,32 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <input type="text">
+                <label for="comentario">comentario</label>
+                <input type="text" id="comentario" >
                 <input type="submit" value="Enviar">
                 </form>
             </section>
-           
+        </div>
+        <div class="col d-block bg-warning ">
+          <h1 class="text-center" id="titulo"> Contacto </h1>
+          <br>
+          <h3> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iusto, quo aperiam consequatur veniam modi recusandae eligendi nam assumenda excepturi ipsum nesciunt deserunt magni, expedita voluptatum, quos ab ut aspernatur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis mollitia repellendus ipsam nihil soluta repellat adipisci debitis. Commodi voluptate excepturi laborum eaque asperiores deleniti blanditiis repudiandae numquam! Maxime, sapiente deleniti?
+          </h3>
+          <h2 class="text-center" id="subtitulo">Redes sociales</h2>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
         
-        
-    
+      </div>
     </div>
     
 </main>
-<footer>
-    <p>&copy; 2024 Tu Empresa</p>
-</footer>  
+
 </body>
 </html>
 
