@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'simpsonts-font';
 	src: local('simpsonts-font'),
-		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
+	url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
 }
 
 :root {
@@ -22,10 +22,12 @@
 	--fuente-tamanio-parrafo-tablet: 1.15rem;
 	--fuente-tamanio-parrafo-desktop: 1.25rem;
 }
+
 html {
 	scroll-behavior: smooth;
 	font-family: 'Fira Sans', sans-serif;
 }
+
 body {
 	background-color: var(--color-fondo);
 }
@@ -42,6 +44,7 @@ body {
 	font-size: var(--fuente-tamanio-titulo);
 	color: var(--color-primario);
 }
+
 .subtitulo {
 	color: var(--fuente-color-primario);
 	font-family: var(--fuente-secundaria);
@@ -61,9 +64,11 @@ body {
 	.titulo {
 		font-size: var(--fuente-tamanio-titulo-tablet);
 	}
+
 	.subtitulo {
 		font-size: var(--fuente-tamanio-subtitulo-tablet);
 	}
+
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-tablet);
 	}
@@ -73,36 +78,51 @@ body {
 	.titulo {
 		font-size: var(--fuente-tamanio-titulo-desktop);
 	}
+
 	.subtitulo {
 		font-size: var(--fuente-tamanio-subtitulo-desktop);
 	}
+
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-desktop);
 	}
 }
 
+/* EStilos de la página principal inferior */
 
 .centrarCard {
 	margin: auto;
 	float: none;
 	text-align: center;
 	background-color: var(--color-fondo);
-	border: none; 
+	border: none;
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.colorBoton{
+.colorBoton {
 	border: none;
 	background-color: var(--color-primario);
 	width: 80px;
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-.colorBoton:hover{
+.colorBoton:hover {
 	background-color: var(--color-secundario);
 }
 
-.bi-play-fill{
+.bi-play-fill {
 	color: black;
 	font-size: 25px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+	background-color: var(--color-secundario);
+	width: 40px;
+	height: 40px;
+} 
+
+.carousel-control-prev, .carousel-control-next{
+	width: auto;
+	margin-left: -10px;
+	margin-right: -10px;
 }
