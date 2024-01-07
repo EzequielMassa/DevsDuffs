@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'simpsonts-font';
 	src: local('simpsonts-font'),
-	url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
+		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
 }
 
 :root {
@@ -115,13 +115,15 @@ body {
 	font-size: 25px;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon{
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
 	background-color: var(--color-secundario);
 	width: 40px;
 	height: 40px;
-} 
+}
 
-.carousel-control-prev, .carousel-control-next{
+.carousel-control-prev,
+.carousel-control-next {
 	width: auto;
 	margin-left: -10px;
 	margin-right: -10px;
