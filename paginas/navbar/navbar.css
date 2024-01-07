@@ -17,3 +17,16 @@ body {
 .nav-link :hover{
     color: var(--color-fondo)
 }
+
+.setting-Adm{
+    height: 40px;
+    width: 40px;
+    color: black;
+    font-style: bold;
+    
+}
+.icon-login{
+    height: 10px;
+    width: 3rem;
+}
+
