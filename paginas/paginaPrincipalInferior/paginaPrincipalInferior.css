@@ -80,3 +80,22 @@ body {
 		font-size: var(--fuente-tamanio-parrafo-desktop);
 	}
 }
+
+
+.centrarCard {
+	margin: auto;
+	float: none;
+	text-align: center;
+	background-color: var(--color-fondo);
+	border: none; 
+}
+
+.colorBoton{
+	border: none;
+	background-color: var(--color-primario)
+}
+
+.bi-play-fill{
+	color: black;
+	font-size: 20px;
+}
