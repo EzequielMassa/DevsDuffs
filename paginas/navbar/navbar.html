@@ -22,15 +22,15 @@
 		<script type="module" src="./main.js"></script>
 </head>
 <body>
-  <header>
+  <header class="d-flex sticky-top">
     <nav class="navbar navbar-expand-lg fixed-top bg-dark-subtle">
        
-      <div class="container-fluid me-3">
+      <div class="container-fluid ">
         <a class="navbar-brand" href="/index.html"><img class="logo-nav" src="/recursos/media/img/Devs-Duff-Logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse col-md-2" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
           <li class="nav-item ">
             <a class="nav-link" aria-current="page" href="#"><label>Categoria</label></a>
@@ -42,19 +42,18 @@
             <a class="nav-link" aria-current="page" href="../Contacto/contacto.html"><label>Contacto</label></a>
           </li>
         </ul>
-        <form class="d-flex col-lg-8 me-5 justify-content-center align-content-center " role="search">
+        <form class="d-flex col-md-5 ms-2 me-4 justify-content-center align-content-center " role="search">
           <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-          <div class="col-6">
-            <button class=" btn btn-info btn-log  " type="submit">login</button>
-            <button class="btn btn-success " type="submit">Registro</button>
+          <button class="btn btn-warning" type="submit"><i class="bi bi-search"></i></button> 
+        </form>
+          <div class="col-md-3 d-flex justify-content-end">
+            <button class=" btn btn-info btn-log align-items-md-center " type="submit">login</button>
+            <button class="btn btn-success align-items-md-center " type="submit">Registro</button>
             <img class="img-login" src="../../recursos/media/img/homero-apuntando.png" alt="Homero de login">
             <button class="btn btn-warning align-items-md-center"><a class="setting-Adm " href=""><i class="bi bi-gear"></i></a></button>
         </div>
-          
-        </form>
       </div>
     </div>
-
   </nav>  
 </header>
 
