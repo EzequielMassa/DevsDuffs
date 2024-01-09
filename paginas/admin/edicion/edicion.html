@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="../../../main.css"/>
+    <link rel="stylesheet" href="../../admin/edicion/edicion.css"/>
+
+    <title>Administrador Edicion</title>
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <section class="mb-5 pb-5">
+            <div class="container mt-5 p-4 rounded text-center text-light">
+                <h2 class="titulo">Administración de Capitulos</h2>
+                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#nuevoCapituloModal">+ Nuevo
+                    Capitulo</button>
+                <table class="table table-light table-bordered mt-3 table-hover">
+                    <thead>
+                        <tr class="table-secondary">
+                            <th class="tablaEdicion-titulo">Código</th>
+                            <th class="tablaEdicion-titulo">Nombre</th>
+                            <th class="tablaEdicion-titulo">Categoría</th>
+                            <th class="tablaEdicion-titulo">Descripción</th>
+                            <th class="tablaEdicion-titulo">Publicado</th>
+                            <th class="tablaEdicion-titulo">Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaCapitulosBody">
+                        <!-- Contenido de la tabla -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Modal para Capítulo Nuevo -->
+        <div class="modal fade" id="nuevoCapituloModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-warning text-light">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nuevo Capítulo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formNuevoCapitulo">
+                            <div class="mb-3">
+                                <label for="nombreCapitulo" class="form-label">Nombre del Capítulo</label>
+                                <input type="text" class="form-control border-dark text-dark" id="nombreCapitulo"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoriaCapitulo" class="form-label">Categoría</label>
+                                <input type="text" class="form-control border-dark text-dark" id="categoriaCapitulo"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcionCapitulo" class="form-label">Descripción</label>
+                                <textarea class="form-control border-dark text-dark" id="descripcionCapitulo" rows="3"
+                                    required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="publicadoCapitulo">
+                                <label class="form-check-label" for="publicadoCapitulo">Publicado</label>
+                            </div>
+                            <button type="button" class="btn btn-info" onclick="guardarNuevoCapitulo()">Guardar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Editar Capítulo -->
+        <div class="modal fade" id="editarCapituloModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-warning text-light">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Editar Capítulo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formEditarCapitulo">
+                            <div class="mb-3">
+                                <label for="nombreCapituloEditado" class="form-label">Nombre del Capítulo</label>
+                                <input type="text" class="form-control form-control border-dark text-dark"
+                                    id="nombreCapituloEditado" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoriaCapituloEditado" class="form-label">Categoría</label>
+                                <input type="text" class="form-control form-control border-dark text-dark"
+                                    id="categoriaCapituloEditado" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcionCapituloEditado" class="form-label">Descripción</label>
+                                <textarea class="form-control form-control border-dark text-dark"
+                                    id="descripcionCapituloEditado" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="publicadoCapituloEditado">
+                                <label class="form-check-label" for="publicadoCapituloEditado">Publicado</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" onclick="guardarEdicionCapitulo()">Guardar
+                            Cambios</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../admin/edicion/edicion.js"></script>
+</body>
+
+</html>
