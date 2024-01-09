@@ -7,8 +7,8 @@ export function navOnline()
 
     navbarH.innerHTML = "";
     navbarH.innerHTML += `
-    <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg sticky-top ">
+    <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg sticky-top  ">
     
         <a class="navbar-brand" href="/index.html"><img class="logo-nav" src="/recursos/media/img/Devs-Duff-Logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@ export function navOnline()
         </ul>
         </div>
         <form class="d-flex col-md-4   justify-content-center align-content-center " role="search">
-          <input class="form-control  " type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control  " type="search" placeholder="Buscar" aria-label="Buscar">
           <button class="btn btn-warning" type="submit"><i class="bi bi-search"></i></button> 
         </form>
           <div class="col-md-3 d-flex flex-column flex-lg-row justify-content-evenly align-items-center">
