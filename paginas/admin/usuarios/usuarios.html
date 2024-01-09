@@ -31,7 +31,7 @@
 			<h2 class="titulo text-center py-5">
 				Administrar Usuarios <i class="bi bi-people-fill"></i>
 			</h2>
-			<div class="usuarios-img-contenedor">
+			<div class="usuarios-img-contenedor d-none d-md-flex">
 				<img
 					src="../../../recursos/media/img/escoba.png"
 					alt=""
@@ -43,8 +43,10 @@
 			</div>
 			<div class="row pb-2">
 				<form class="col-12">
-					<label for="filtrarUsuariosInput" class="fs-5 fw-bold"
-						>Filtar Usuarios</label
+					<label
+						for="filtrarUsuariosInput"
+						class="fs-4 fw-bold px-2 rounded-2 mb-1 usuarios-filtrar-label"
+						>Filtrar Usuarios</label
 					>
 					<input
 						type="text"
@@ -55,36 +57,33 @@
 				</form>
 			</div>
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 table-responsive">
 					<table class="table table-light table-striped align-middle">
 						<thead>
 							<tr>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Id</th>
-								<th scope="col" class="fs-5 usuarios-tabla-titulo">
-									Email
-									<button
-										data-sort="A"
-										id="sortByName"
-										class="btn btn-dark fw-bold fs-5 py-0"
-										title="sort"></button>
-								</th>
+								<th scope="col" class="fs-5 usuarios-tabla-titulo">Email</th>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Rol</th>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Estado</th>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Acciones</th>
 							</tr>
 						</thead>
 						<tbody id="tablaUsuarios">
-							<tr data-id="${usuario.id}" class="table-light">
-								<th scope="row">jklj-3443-jklj-3333</th>
+							<tr class="table-light">
+								<th scope="row">dfkl2-244aa-kkle5-jkl3a</th>
 								<td>usuario@usuario.com</td>
 								<td>user</td>
 								<td>
 									<select
+										data-id="${usuario.id}"
 										class="form-select form-select-sm"
 										aria-label="Seleccionar estado">
-										<option value="1" selected>Pendiente</option>
-										<option value="2">Aprobado</option>
-										<option value="3">Suspendido</option>
+										<option selected disabled class="bg-dark-subtle">
+											user
+										</option>
+										<option value="1">pendiente</option>
+										<option value="2">aprobado</option>
+										<option value="3">suspendido</option>
 									</select>
 								</td>
 								<td class="p-0">
