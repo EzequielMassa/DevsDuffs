@@ -2,9 +2,8 @@
 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
-.disenoLetrasCap{
+.disenoLetrasCap {
 	font-family: var(--fuente-principal);
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
 	font-size: var(--fuente-tamanio-subtitulo);
 }
 
@@ -72,6 +71,15 @@
 	font-size: 25px;
 }
 
-.colorCapitulos{
+.colorCapitulos {
 	background-color: var(--color-fondo);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 5px;
 }
