@@ -106,7 +106,9 @@ body{
     filter: drop-shadow(5px -4px 10px #000);
 }
 
-
 .btn{
-    background-color: var(--color-primario);
+    background-color:var(--color-primario);
+}
+.btn:hover{
+    background-color: var(--color-fondo);
 }
