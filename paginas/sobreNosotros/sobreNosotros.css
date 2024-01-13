@@ -10,6 +10,12 @@ body{
     align-items: center;
     background-color: var(--color-fondo);
 }
+.card-text1{
+    margin-bottom: 40px;
+}
+.card-text21{
+    margin-bottom: 40px;
+}
 
 .container{
     height: 100vh;
@@ -21,8 +27,8 @@ body{
     margin-right: 140px;
 }
 .card{
-    height: 500px;
-    width: 450px;
+    height: 550px;
+    width: 500px;
     margin: 30px;
     transition: 300ms;
     background-color: var(--color-secundario);
@@ -55,14 +61,15 @@ body{
     filter: drop-shadow(5px -4px 10px #000);
 }
 .card-img-top{
-    height: 300px;
+    height: 250px;
     width: 250px;
     background-size: cover;
     margin-left: 15px;
     margin-bottom: -15px;
-    margin-top: 10px;
+    margin-top: 25px;
     transition: 300ms;
     filter: drop-shadow(5px -4px 10px #000);
+    
 }
 .card-img-top1{
     height: 230px;
@@ -70,10 +77,11 @@ body{
     background-size: cover;
     margin-left: 20px;
     margin-bottom: -20px;
-    margin-top: 40px;
+    margin-top: 45px;
     transition: 300ms;
     filter: drop-shadow(5px -4px 10px #000);
 }
+
 .card-img-top2{
     height: 230px;
     width: 230px;
@@ -104,6 +112,16 @@ body{
     transition: 300ms;
     filter: drop-shadow(5px -4px 10px #000);
 }
+.card-img-top5{
+    height: 300px;
+    width: 230px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    margin-top: -32px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
 h1, h2, h4{
     text-decoration: underline;
 }
@@ -120,8 +138,13 @@ h1, h2, h4{
 .card-text1{
     margin-top: 30px;
 }
-.card-text2{
+.card-text21{
     margin-top: 30px;
+    
+}
+
+.titulo1{
+    text-shadow: 2px 2px 4px black;
 }
 .modal-footer{
     display: flex;
@@ -154,7 +177,17 @@ h1, h2, h4{
     filter: none;
     filter: drop-shadow(5px -4px 10px #000);
 }
+.parrafo{
+    margin-top: 15px;
+}
 .card:hover .card-img-top4
+{
+    transform: translateY(-40px);
+    transition: 300ms;
+    filter: none;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card:hover .card-img-top5
 {
     transform: translateY(-40px);
     transition: 300ms;
@@ -167,3 +200,35 @@ h1, h2, h4{
 .btn:hover{
     background-color: var(--color-fondo);
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px; 
+    }
+  
+    .titulo {
+      font-size: 24px;
+    }
+  
+   
+    .card {
+      width: 100%; 
+    }
+  }
+  
+  
+  @media only screen and (max-width: 576px) {
+    body {
+      font-size: 12px; 
+    }
+  
+    .titulo {
+      font-size: 20px;
+    }
+  
+   
+  }
+  
+  
+  
+  
