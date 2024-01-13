@@ -15,12 +15,9 @@
    width: 10px;
    height: 10px;
  }
- nav{
-   background-color: transparent;
-  }
-  nav a p{
-    color: black;
-  }
+ .titulo1{
+  text-shadow: 2px 2px 4px black;
+ }
   main{
     display: flex;
     justify-content: center;
