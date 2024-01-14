@@ -4,7 +4,7 @@ const capitulos = [
     { codigo: 2, nombre: 'Navidad', categoria: 'Especial', descripcion: 'Breve sinopsis del Capitulo', publicado: true, destacado: false},
 ];
 
-// Variable que indica el indice de cada capitulo (Nos sirve para rastrear el episodio vamos a editar, crear o borrar)
+// Variable que indica el indice de cada capitulo (Nos sirve para rastrear el episodio que vamos a editar, crear o borrar)
 let capituloEditadoIndex;
 
 // Utiliza forEach la cual recorre el array y nos muestra en la tabla cada capitulo proveniente del mismo
@@ -41,7 +41,7 @@ function guardarNuevoCapitulo() {
         
     // Crear un nuevo objeto de capitulo
     const nuevoCapitulo = {
-        codigo: capitulos.length + 1, // Puedes ajustar la lógica para generar códigos únicos
+        codigo: capitulos.length + 1,
         nombre: nombreCapitulo,
         categoria: categoriaCapitulo,
         descripcion: descripcionCapitulo,
@@ -77,7 +77,7 @@ function guardarEdicionCapitulo() {
     const descripcionCapituloEditado = document.getElementById('descripcionCapituloEditado').value;
     const publicadoCapituloEditado = document.getElementById('publicadoCapituloEditado').checked;
 
-    // Validaciones (puedes agregar más según tus necesidades)
+    // Validaciones
 
     // Actualizar los datos del capitulo editado
     const index = capituloEditadoIndex;
