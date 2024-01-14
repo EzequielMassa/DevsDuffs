@@ -22,6 +22,12 @@
  }
  .titulo{
   text-shadow: 2px 2px 4px #141313;
+  display: flex;
+  justify-content: center;
+
+ }
+ .otc{
+  font-weight: bolder;
  }
  nav{
    background-color: transparent;
@@ -68,7 +74,7 @@ input:invalid > button {
   }
 @media screen and (max-width: 800px){
   body {
-    background-image: url('/recursos/media/img/homerResponsive.jpeg');
+    background-image: url('/recursos/media/img/imagenREsponsive.jpg');
     background-size: cover;
     background-position: center;
   }
