@@ -57,16 +57,21 @@ body {
 }
 
 #btn-registro{
-    background-color: rgb(255, 18, 104);
+    background-color: rgb(157, 80, 112);
     border-color: var(--color-primario);
     border: 2px solid var(--color-primario);
 }
 #btn-donut{
-    
+    border: 3px solid var(--color-primario);
 }
 #img-donut{
     height: 2.5rem;
     width: 2.5rem;
+}
+#btn-Enviar{
+    background-color: rgb(157, 80, 112);
+    border-color: var(--color-primario);
+    border: 2px solid var(--color-primario);
 }
 
 .titulo
@@ -77,7 +82,7 @@ body {
 .parrafo{
     color: var(--color-primario);
     font-family: var(--fuente-secundaria);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color:black;
   
@@ -85,12 +90,13 @@ body {
 .bi-search{
     color: black;
   
-}  
+} 
+
 #parte-col1{
    background-color: var(--color-fondo);
-   border: 4px solid rgb(14, 15, 15);
+   border: 4px solid rgb(134, 229, 142);
 }
 #parte-col2{
-    background-color: var(--fuente-secundaria);
-    border: 4px solid rgb(14, 15, 15);
+    background-color: rgb(157, 80, 112);
+    border: 4px solid rgb(134, 229, 142);
  }
