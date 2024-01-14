@@ -1,4 +1,96 @@
 .nav-alink{
     font-family: var(--fuente-secundaria);
     font-size: 1.5rem;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
+body {
+	background-color: var(--color-fondo);
+}
+
+.logo-nav{
+    height: 60px;
+    width: 60px;
+}
+.container-fluid{
+    background-color: #FFFF;
+    border: 4px solid rgb(117, 6, 24);
+   
+    
+}
+
+.nav-link{
+    color: var(--color-primario);
+    font-weight: bold;
+}
+.nav-link :hover{
+    color: var(--color-fondo)
+}
+
+.setting-Adm{
+    height: 1px;
+    width: 1px;
+    color: black;
+    font-style: bold;
+    
+}
+.img-login{
+    height: 50px;
+    width: 50px;
+}
+
+
+#input-buscar
+{
+    border: 1px solid rgb(255, 25, 26);
+}
+#btn-buscar{
+    background-color: rgb(218, 22, 36) ;
+    border: 2px solid var(--color-primario);
+    
+}
+#btn-InicioS{
+    background-color:rgb(41, 108, 194) ;
+    border-color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    
+}
+
+#btn-registro{
+    background-color: rgb(255, 18, 104);
+    border-color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+}
+#btn-donut{
+    
+}
+#img-donut{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.titulo
+{
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+.parrafo{
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+    font-size: 1.3rem;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:black;
+  
+}
+.bi-search{
+    color: black;
+  
+}  
+#parte-col1{
+   background-color: var(--color-fondo);
+   border: 4px solid rgb(14, 15, 15);
+}
+#parte-col2{
+    background-color: var(--fuente-secundaria);
+    border: 4px solid rgb(14, 15, 15);
+ }

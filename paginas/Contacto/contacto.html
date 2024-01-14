@@ -14,7 +14,7 @@
 			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
 			rel="stylesheet" />
             <link rel="stylesheet" href="../../main.css" />
-             <link rel="stylesheet" href="../navbar/navbar.css">
+         
              <link rel="stylesheet" href="../Contacto/contacto.css">
              
     <link
@@ -25,12 +25,48 @@
     <script type="module" src="../Contacto/contacto.js"></script>
 </head>
 <body>
-  <header id="navbarH">
+  <header>
+    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg  sticky-top  ">
     
+        <a class="navbar-brand" href="/index.html"><img class="logo-nav" src="/recursos/media/img/Devs-Duff-Logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+       
+      <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex col-12 align-items-center  flex-column  flex-lg-row  ">
+        <div class="col-md-5 ">
+        <ul class="navbar-nav text-center mb-2 mb-lg-0 ">
+          <li class="nav-item ">
+            <a class="nav-link nav-alink" aria-current="page" href="#"><label>Categoria</label></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-alink" aria-current="page" href="#"><label>Nosotros</label></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-alink " aria-current="page" href="../Contacto/contacto.html"><label>Contacto</label></a>
+          </li>
+        </ul>
+        </div>
+        <form class="d-flex col-md-4   justify-content-center align-content-center " role="search">
+          <input class="form-control  me-2" id="input-buscar" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-dark border border-warning rounded-pill " id="btn-buscar" type="submit"><i class="bi bi-search"></i></button> 
+        </form>
+          <div class="col-md-3 d-flex flex-column flex-lg-row align-items-center">
+            <button class=" btn btn-info btn-log align-items-md-center ms-2 rounded-pill " id="btn-InicioS" type="submit"><label class="parrafo" for="">Iniciar Sesión</label></button>
+            <button class="btn btn-success align-items-md-center rounded-pill " id="btn-registro" type="submit"> <label class="parrafo" for="">Registro</label></button>
+            <img class="img-login" src="../../recursos/media/img/homero-apuntando.png" alt="Homero de login">
+            <button id="btn-donut" class="btn  align-items-md-center "><img id="img-donut" src="../../recursos/media/img/donuts-set.png" alt="donuts de ADM"></button>
+        </div>
+      </div>
+   </div>
+  </div>
+  </nav>  
   </header>
   <main> 
     <div class="row">
-    <section class="col">
+    <section class="col" id="parte-col1">
       <h1 class=" titulo text-center">Hacenos saber en que podemos mejorar</h1>
       <br>
       <div class="d-flex justify-content-around">
@@ -71,7 +107,7 @@
       <button class=" " type="submit">Enviar</button>
     </div>
     </section>
-    <aside class="col  bg-warning-subtle">
+    <aside class="col  bg-warning-subtle" id="parte-col2">
       <h1 class="titulo  text-center ">Contactanos</h1>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolore, quas iure delectus quos, ex quibusdam corrupti numquam ullam, adipisci voluptates sint odit quasi. Nam animi iusto hic consequuntur nisi.
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque dolorem id natus nam iure, commodi neque debitis adipisci error! Maxime minima ratione quos necessitatibus culpa accusantium? Quisquam ipsa asperiores quibusdam!

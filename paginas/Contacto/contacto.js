@@ -7,8 +7,8 @@ export function navOnline()
 
     navbarH.innerHTML = "";
     navbarH.innerHTML += `
-    <div class="container-fluid ">
-    <nav class="navbar navbar-expand-lg sticky-top  ">
+    <div class="container-fluid rounded ">
+    <nav class="navbar navbar-expand-lg  sticky-top  ">
     
         <a class="navbar-brand" href="/index.html"><img class="logo-nav" src="/recursos/media/img/Devs-Duff-Logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
