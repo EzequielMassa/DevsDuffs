@@ -1,0 +1,61 @@
+body{
+  overflow-x: hidden;
+}
+
+.img-media {
+  max-height: 992px;
+  min-height: 300px;
+  min-width: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.bg-carousel {
+  background-image: url(../../recursos/media/img/backgroundCarrousel.jpeg);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 0 10px #fee622;
+  /*BORDE CONTENEDOR DE CARDS*/
+  max-width: 100%;
+}
+
+
+.custom-bg-color {
+  background-color: #ffffff;    /*Color de fondo CARDS*/
+}
+
+.card-index {
+  transition: transform 0.3s;
+}
+
+.card-index:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.932);
+}
+
+.header-index {
+  margin-top: 75px;
+}
+
+.tituloTarjetaSuperior {
+  font-family: var(--fuente-principal);
+  font-size: var(--fuente-tamanio-titulo);
+  color: var(--color-primario); 
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.botonPlay:hover{
+  color: #ffffff;
+  transition: color 0.1s ease;
+}
+
+.botonPlay:hover path {
+  fill:#ffffff;
+  transition: fill 0.1s ease;
+}
+
+.parrafoCard {
+	font-family: var(--fuente-principal);
+}
+
