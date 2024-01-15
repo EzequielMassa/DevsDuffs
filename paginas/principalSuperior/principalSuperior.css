@@ -1,3 +1,7 @@
+body{
+  overflow-x: hidden;
+}
+
 .img-media {
   max-height: 992px;
   min-height: 300px;
