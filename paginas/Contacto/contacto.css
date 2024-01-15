@@ -6,7 +6,7 @@
 }
 body {
 	background-color: var(--color-fondo);
-    overflow:auto;
+    overflow:hidden;
 }
 
 .logo-nav{
@@ -16,7 +16,7 @@ body {
 .container-fluid{
     background-color: #FFFF;
     border: 4px solid rgb(117, 6, 24);
-    box-shadow: 10px 5px 5px black;
+    
     
 }
 
@@ -81,11 +81,12 @@ body {
   -webkit-text-stroke-color: black;
 }
 .parrafo{
-    color: var(--color-primario);
-    font-family: var(--fuente-secundaria);
+    color: black;
+    font-family: #FFF;
     font-size: 1.5rem;
-    -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color:black;
+   /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color:rgb(8, 228, 235);   text-shadow: 2px 2px  rgba(0, 0, 0, 0.4);
+*/
   
 }
 .bi-search{
@@ -98,6 +99,6 @@ body {
    border: 4px solid rgb(134, 229, 142);
 }
 #parte-col2{
-    background-color: rgb(157, 80, 112);
+    background-color: rgb(255, 173, 200);
     border: 4px solid rgb(134, 229, 142);
  }
