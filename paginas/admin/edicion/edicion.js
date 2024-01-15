@@ -32,12 +32,30 @@ function mostrarCapitulos() {
     });
 }
 
+
 // Guardamos a traves de constantes las propiedades de cada capitulo nuevo
 function guardarNuevoCapitulo() {
     const nombreCapitulo = document.getElementById('nombreCapitulo').value;
     const categoriaCapitulo = document.getElementById('categoriaCapitulo').value;
     const descripcionCapitulo = document.getElementById('descripcionCapitulo').value;
     const publicadoCapitulo = document.getElementById('publicadoCapitulo').checked;
+        
+    // Swal.fire({
+    //     title: "¿Estas seguro que desea agregar el siguiente capitulo?",
+    //     icon: "warning",
+    //     showCancelButton: true,
+    //     confirmButtonColor: "#3085d6",
+    //     cancelButtonColor: "#d33",
+    //     confirmButtonText: "Si, estoy seguro!"
+    //   }).then((result) => {
+    //     if (result.isConfirmed) {
+    //       Swal.fire({
+    //         title: "Deleted!",
+    //         text: "Your file has been deleted.",
+    //         icon: "success"
+    //       });
+    //     }
+    //   });
         
     // Crear un nuevo objeto de capitulo
     const nuevoCapitulo = {

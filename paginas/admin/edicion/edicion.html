@@ -51,22 +51,32 @@
                         <h5 class="modal-title subtitulo" id="exampleModalLabel">Nuevo Capítulo</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                     <div class="modal-body">
-                        <form id="formNuevoCapitulo">
+                        <form id="formNuevoCapitulo needs-validation" novalidate>
                             <div class="mb-3">
                                 <label for="nombreCapitulo" class="form-label parrafo">Nombre del Capítulo</label>
                                 <input type="text" class="form-control border-dark text-dark" minlength="4" maxlength="20" id="nombreCapitulo"
                                     required>
+                                    <div class="invalid-feedback">
+                                        Ingresa un nombre válido (mínimo 4 caracteres, solo letras y números).
+                                    </div>
                             </div>
                             <div class="mb-3">
                                 <label for="categoriaCapitulo" class="form-label parrafo">Categoría</label>
-                                <input type="text" class="form-control border-dark text-dark" id="categoriaCapitulo"
+                                <input type="text" class="form-control border-dark text-dark" minlength="4" maxlength="20" id="categoriaCapitulo"
                                     required>
+                                    <div class="invalid-feedback">
+                                        Ingresa una categoría válida (mínimo 4 caracteres, solo letras y números).
+                                    </div>
                             </div>
                             <div class="mb-3">
                                 <label for="descripcionCapitulo" class="form-label parrafo">Descripción</label>
-                                <textarea class="form-control border-dark text-dark" id="descripcionCapitulo" rows="3"
+                                <textarea class="form-control border-dark text-dark" minlength="4" maxlength="150" id="descripcionCapitulo" rows="3"
                                     required></textarea>
+                                    <div class="invalid-feedback">
+                                        Ingresa una descripción válida (mínimo 4 caracteres).
+                                    </div>
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="publicadoCapitulo">
@@ -78,6 +88,7 @@
                             </div>
                         </form>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -92,20 +103,20 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="formEditarCapitulo">
+                        <form id="formEditarCapitulo needs-validation">
                             <div class="mb-3">
                                 <label for="nombreCapituloEditado" class="form-label parrafo">Nombre del Capítulo</label>
-                                <input type="text" class="form-control form-control border-dark text-dark"
+                                <input type="text" class="form-control form-control border-dark text-dark" minlength="4" maxlength="20"
                                     id="nombreCapituloEditado" required>
                             </div>
                             <div class="mb-3">
                                 <label for="categoriaCapituloEditado" class="form-label parrafo">Categoría</label>
-                                <input type="text" class="form-control form-control border-dark text-dark"
+                                <input type="text" class="form-control form-control border-dark text-dark" minlength="4" maxlength="20"
                                     id="categoriaCapituloEditado" required>
                             </div>
                             <div class="mb-3">
                                 <label for="descripcionCapituloEditado" class="form-label parrafo">Descripción</label>
-                                <textarea class="form-control form-control border-dark text-dark"
+                                <textarea class="form-control form-control border-dark text-dark" minlength="4" maxlength="150"
                                     id="descripcionCapituloEditado" rows="3" required></textarea>
                             </div>
                             <div class="mb-3 form-check">
