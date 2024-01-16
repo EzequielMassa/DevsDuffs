@@ -22,11 +22,18 @@
 			rel="shortcut icon"
 			href="../../../recursos/media/iconos/favicon.png"
 			type="image/x-icon" />
+
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			emailjs.init('a0nK2KBffZoMri_Vy')
+		</script>
 		<script type="module" src="./usuarios.js"></script>
 		<title>Administrar usuarios</title>
 	</head>
+
 	<body>
-		<!-- comienzo body -->
 		<section class="container-md">
 			<h2 class="titulo text-center py-5">
 				Administrar Usuarios <i class="bi bi-people-fill"></i>
@@ -62,44 +69,25 @@
 						<thead>
 							<tr>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Id</th>
-								<th scope="col" class="fs-5 usuarios-tabla-titulo">Email</th>
+								<th scope="col" class="fs-5 usuarios-tabla-titulo">
+									Email
+									<button
+										data-sort="A"
+										id="sortByName"
+										class="btn btn-dark fw-bold fs-5 py-0"
+										title="sort"></button>
+								</th>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Rol</th>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Estado</th>
 								<th scope="col" class="fs-5 usuarios-tabla-titulo">Acciones</th>
 							</tr>
 						</thead>
-						<tbody id="tablaUsuarios">
-							<tr class="table-light">
-								<th scope="row">dfkl2-244aa-kkle5-jkl3a</th>
-								<td>usuario@usuario.com</td>
-								<td>user</td>
-								<td>
-									<select
-										data-id="${usuario.id}"
-										class="form-select form-select-sm"
-										aria-label="Seleccionar estado">
-										<option selected disabled class="bg-dark-subtle">
-											user
-										</option>
-										<option value="1">pendiente</option>
-										<option value="2">aprobado</option>
-										<option value="3">suspendido</option>
-									</select>
-								</td>
-								<td class="p-0">
-									<i
-										data-btn="borrar"
-										title="borrar usuario"
-										class="bi bi-x-circle-fill btn text-danger fs-4"></i>
-								</td>
-							</tr>
-						</tbody>
+						<tbody id="tablaUsuarios"></tbody>
 					</table>
 				</div>
 			</div>
 		</section>
 		<footer></footer>
-		<!-- fin body -->
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
