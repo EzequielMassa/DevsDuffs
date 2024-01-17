@@ -3,7 +3,7 @@ body {
     overflow: auto;
 }
 
-.fondoNavColor{
+.fondoNavColor {
     background-color: var(--fuente-color-primario);
     border: 2px solid var(--color-primario);
 }
@@ -22,7 +22,7 @@ body {
 .nav-link {
     font-family: var(--fuente-secundaria);
     font-size: var(--fuente-tamanio-subtitulo);
-    color: rgb(255, 25, 26);
+    color: rgb(240, 25, 26);
     font-weight: bold;
     text-shadow: 2px 2px var(--color-primario);
     /* -webkit-text-stroke-width: 2px;
@@ -34,10 +34,47 @@ body {
     text-shadow: 2px 2px black;
 }
 
+#input-buscar {
+    border: 1px solid rgb(255, 25, 26);
+}
+
+#btn-buscar {
+    background-color:rgb(255, 25, 26);
+    /* border: 2px solid var(--color-primario); */
+}
+
+#btn-Inicio {
+    /* background-color: rgb(41, 108, 194); 
+    border-color: var(--color-primario);
+    font-size: var(--fuente-tamanio-subtitulo);*/
+    border: 2px solid var(--color-primario);
+    font-family: var(--fuente-secundaria);
+    font-weight: bold;
+}
+
+#btn-registro {
+    background-color: var(--color-secundario);
+    /* border-color: var(--color-primario); */
+    border: 2px solid var(--color-primario);
+    font-family: var(--fuente-secundaria);
+    font-weight: bold;
+}
+
+.img-login {
+    height: 50px;
+    width: 50px;
+}
+
+/* #btn-donut {
+    border: 3px solid var(--color-primario);
+} */
+
+#img-donut {
+    height: 40px;
+    width: 40px;
+}
+
 /* clases del nav */
-
-
-
 
 .setting-Adm {
     height: 1px;
@@ -47,44 +84,6 @@ body {
 
 }
 
-.img-login {
-    height: 50px;
-    width: 50px;
-}
-
-
-#input-buscar {
-    border: 1px solid rgb(255, 25, 26);
-}
-
-#btn-buscar {
-    background-color: rgb(218, 22, 36);
-    border: 2px solid var(--color-primario);
-
-}
-
-#btn-InicioS {
-    background-color: rgb(41, 108, 194);
-    border-color: var(--color-primario);
-    border: 2px solid var(--color-primario);
-
-}
-
-#btn-registro {
-    background-color: rgb(157, 80, 112);
-    border-color: var(--color-primario);
-    border: 2px solid var(--color-primario);
-}
-
-#btn-donut {
-    border: 3px solid var(--color-primario);
-}
-
-#img-donut {
-    height: 2.5rem;
-    width: 2.5rem;
-}
-
 #btn-Enviar {
     background-color: rgb(157, 80, 112);
     border-color: var(--color-primario);
@@ -92,17 +91,18 @@ body {
 }
 
 .titulo {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black; */
+    text-shadow: 2px 2px black;
 }
 
 .parrafo {
     color: var(--color-primario);
     font-family: var(--fuente-secundaria);
-    font-size: 1.5rem;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-
+    font-size: 1.4rem;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    text-shadow: 2px 2px black;
 }
 
 .bi-search {
@@ -119,3 +119,5 @@ body {
     background-color: rgb(157, 80, 112);
     border: 4px solid rgb(134, 229, 142);
 }
+
+/* clases de la sección contacto */
