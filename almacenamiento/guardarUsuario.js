@@ -1,3 +1,6 @@
+import { actualizarUsuarios } from './actualizarUsuarios.js'
+import { obtenerUsuarios } from './obtenerUsuarios.js'
+
 /**
  * Guarda un usuario en el local storage.
  *
