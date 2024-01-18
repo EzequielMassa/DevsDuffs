@@ -7,6 +7,13 @@ import { notificarUsuarioCambioEstado } from '../email/notificarUsuarioCambioEst
 import { notificacionConTimerGenerica } from '../notificaciones/notificacionConTimerGenerica.js'
 import { obtenerEstadoUsuario } from './obtenerEstadoUsuario.js'
 
+/**
+ * Cambia el estado de un usuario.
+ *
+ * @param {string} nuevoEstado - El nuevo estado a ser asignado al usuario.
+ * @param {string} usuarioId - El ID del usuario.
+ */
+
 export const cambiarEstadoUsuario = (nuevoEstado, usuarioId) => {
 	const usuario = obtenerUsuarioPorId(usuarioId)
 	let estadoActual = obtenerEstadoUsuario(usuario)
