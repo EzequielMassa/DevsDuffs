@@ -54,7 +54,7 @@ export const renderizarFilasUsuarios = (listaUsuarios) => {
 	botonesEliminar.forEach((btn) =>
 		btn.addEventListener('click', (e) => {
 			const userId = e.target.dataset.btnId
-			eliminarUsuarioStorage(userId)
+			eliminarUsuario(userId)
 		})
 	)
 }
