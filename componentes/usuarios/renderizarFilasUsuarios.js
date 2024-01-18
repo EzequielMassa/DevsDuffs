@@ -4,6 +4,13 @@ import { obtenerEstadoUsuario } from '../../servicios/usuarios/obtenerEstadoUsua
 
 const tablaUsuarios = document.querySelector('#tablaUsuarios')
 
+/**
+ * Renderiza la informacion de los usuarios en la tabla en forma de fila.
+ *
+ * @param {Array} listaUsuarios - La lista de usuarios a ser mostrada.
+ * @return {void} No retorna nada.
+ */
+
 export const renderizarFilasUsuarios = (listaUsuarios) => {
 	tablaUsuarios.innerHTML = ''
 	listaUsuarios.forEach((usuario) => {
