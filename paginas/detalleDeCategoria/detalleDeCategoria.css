@@ -83,3 +83,10 @@ ul {
 li {
 	margin-bottom: 5px;
 }
+
+@media (max-width: 770px) {
+	.video {
+	  width: 90%;
+	  height: 200px;
+	}
+}
