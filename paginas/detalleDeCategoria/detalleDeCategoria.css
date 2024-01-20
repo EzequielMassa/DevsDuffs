@@ -86,7 +86,7 @@ li {
 
 @media (max-width: 770px) {
 	.video {
-	  width: 90%;
-	  height: 200px;
+		width: 90%;
+		height: 200px;
 	}
 }
