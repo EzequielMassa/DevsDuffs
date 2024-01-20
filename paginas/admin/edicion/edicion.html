@@ -2,13 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="../../../main.css"/>
-    <link rel="stylesheet" href="../../admin/edicion/edicion.css"/>
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../../../main.css" />
+    <link rel="stylesheet" href="../../admin/edicion/edicion.css" />
 
     <title>Administrador Edicion</title>
 </head>
@@ -22,25 +22,26 @@
         <section class="mb-5 pb-5">
             <div class="table table-responsive container mt-5 p-4 rounded text-center text-light">
                 <h2 class="titulo p-3 m-3">Administración de Capitulos</h2>
-                <button class="p-3 m-3 btn btn-warning parrafo" data-bs-toggle="modal" data-bs-target="#nuevoCapituloModal"> + Nuevo
-                    Capitulo</button>
-                 
-<div class="table-responsive">
-    <table class="table table-light table-bordered mt-3 table-hover">
-        <thead>
-            <tr class="table-warning">
-                <th class="tablaEdicion-titulo">Código</th>
-                <th class="tablaEdicion-titulo">Nombre</th>
-                <th class="tablaEdicion-titulo">Categoría</th>
-                <th class="tablaEdicion-titulo">Descripción</th>
-                <th class="tablaEdicion-titulo">Publicado</th>
-                <th class="tablaEdicion-titulo">Opciones</th>
-            </tr>
-        </thead>
-        <tbody id="tablaCapitulosBody">
-        </tbody>
-    </table>
-</div>
+                <button class="p-3 m-3 btn btn-warning parrafo" data-bs-toggle="modal"
+                    data-bs-target="#nuevoCapituloModal">
+                    + Nuevo Capitulo
+                </button>
+
+                <div class="table-responsive">
+                    <table class="table table-light table-bordered mt-3 table-hover">
+                        <thead>
+                            <tr class="table-warning">
+                                <th class="tablaEdicion-titulo">Código</th>
+                                <th class="tablaEdicion-titulo">Nombre</th>
+                                <th class="tablaEdicion-titulo">Categoría</th>
+                                <th class="tablaEdicion-titulo">Descripción</th>
+                                <th class="tablaEdicion-titulo">Publicado</th>
+                                <th class="tablaEdicion-titulo">Opciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaCapitulosBody"></tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
@@ -50,47 +51,54 @@
             <div class="modal-dialog">
                 <div class="modal-content bg-warning text-light">
                     <div class="modal-header">
-                        <h5 class="modal-title subtitulo" id="exampleModalLabel">Nuevo Capítulo</h5>
+                        <h5 class="modal-title subtitulo" id="exampleModalLabel">
+                            Nuevo Capítulo
+                        </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body">
-                        <form id="formNuevoCapitulo needs-validation" novalidate>
+                        <form id="formNuevoCapitulo" class="needs-validation" novalidate>
                             <div class="mb-3">
                                 <label for="nombreCapitulo" class="form-label parrafo">Nombre del Capítulo</label>
-                                <input type="text" class="form-control border-dark text-dark" minlength="4" maxlength="20" id="nombreCapitulo"
-                                    required>
-                                    <div class="invalid-feedback">
-                                        Ingresa un nombre válido (mínimo 4 caracteres, solo letras y números).
-                                    </div>
+                                <input type="text" class="form-control border-dark text-dark" id="nombreCapitulo"
+                                    placeholder="Nombre del Capitulo" onkeydown="validacionInputNuevoCapitulo()"
+                                    required />
+                                <div class="invalid-feedback">
+                                    Ingresá un nombre válido (Entre 4 y 25 Caracteres).
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="categoriaCapitulo" class="form-label parrafo">Categoría</label>
-                                <input type="text" class="form-control border-dark text-dark" minlength="4" maxlength="20" id="categoriaCapitulo"
-                                    required>
-                                    <div class="invalid-feedback">
-                                        Ingresa una categoría válida (mínimo 4 caracteres, solo letras y números).
-                                    </div>
+                                <input type="text" class="form-control border-dark text-dark" id="categoriaCapitulo"
+                                    placeholder="Categoria del Capitulo" onkeydown="validacionInputNuevoCapitulo()"
+                                    required />
+                                <div class="invalid-feedback">
+                                    Ingresá un nombre válido (Entre 4 y 25 Caracteres).
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="descripcionCapitulo" class="form-label parrafo">Descripción</label>
-                                <textarea class="form-control border-dark text-dark" minlength="4" maxlength="150" id="descripcionCapitulo" rows="3"
-                                    required></textarea>
-                                    <div class="invalid-feedback">
-                                        Ingresa una descripción válida (mínimo 4 caracteres).
-                                    </div>
+                                <textarea class="form-control border-dark text-dark" id="descripcionCapitulo"
+                                    rows="3" placeholder="Breve sinopsis del Capitulo" onkeydown="validacionInputNuevoCapitulo()"></textarea>
+                                <div class="invalid-feedback">
+                                    Ingresa una descripción válida (Entre 10 y 155 Caracteres).
+                                </div>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="publicadoCapitulo">
+                                <input type="checkbox" class="form-check-input" id="publicadoCapitulo" />
                                 <label class="form-check-label parrafo" for="publicadoCapitulo">Publicado</label>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-info" onclick="guardarNuevoCapitulo()">Guardar</button>
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-info" onclick="guardarNuevoCapitulo()">
+                                    Guardar
+                                </button>
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -101,42 +109,47 @@
             <div class="modal-dialog">
                 <div class="modal-content bg-warning text-light">
                     <div class="modal-header">
-                        <h5 class="modal-title subtitulo" id="exampleModalLabel">Editar Capítulo</h5>
+                        <h5 class="modal-title subtitulo" id="exampleModalLabel">
+                            Editar Capítulo
+                        </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form id="formEditarCapitulo needs-validation">
                             <div class="mb-3">
-                                <label for="nombreCapituloEditado" class="form-label parrafo">Nombre del Capítulo</label>
-                                <input type="text" class="form-control form-control border-dark text-dark" minlength="4" maxlength="20"
-                                    id="nombreCapituloEditado" required>
+                                <label for="nombreCapituloEditado" class="form-label parrafo">Nombre del
+                                    Capítulo</label>
+                                <input type="text" class="form-control form-control border-dark text-dark"
+                                    id="nombreCapituloEditado" />
                             </div>
                             <div class="mb-3">
                                 <label for="categoriaCapituloEditado" class="form-label parrafo">Categoría</label>
-                                <input type="text" class="form-control form-control border-dark text-dark" minlength="4" maxlength="20"
-                                    id="categoriaCapituloEditado" required>
+                                <input type="text" class="form-control form-control border-dark text-dark"
+                                    id="categoriaCapituloEditado" />
                             </div>
                             <div class="mb-3">
                                 <label for="descripcionCapituloEditado" class="form-label parrafo">Descripción</label>
-                                <textarea class="form-control form-control border-dark text-dark" minlength="4" maxlength="150"
-                                    id="descripcionCapituloEditado" rows="3" required></textarea>
+                                <textarea class="form-control form-control border-dark text-dark" minlength="4"
+                                    maxlength="150" id="descripcionCapituloEditado" rows="3"></textarea>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="publicadoCapituloEditado">
+                                <input type="checkbox" class="form-check-input" id="publicadoCapituloEditado" />
                                 <label class="form-check-label parrafo" for="publicadoCapituloEditado">Publicado</label>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-info" onclick="guardarEdicionCapitulo()">Guardar
-                            Cambios</button>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-info" onclick="guardarEdicionCapitulo()">
+                            Guardar Cambios
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                            Cerrar
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
 
     <footer></footer>
 
