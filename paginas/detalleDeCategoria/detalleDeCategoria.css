@@ -3,12 +3,12 @@
 }
 
 .disenoLetrasCap {
-	font-family: var(--fuente-principal);
-	font-size: var(--fuente-tamanio-subtitulo);
+	font-family: var(--fuente-secundaria);
+	font-size: 1.10rem;
 }
 
 .subtitulo {
-	text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .letraNegrita {
@@ -83,3 +83,11 @@ ul {
 li {
 	margin-bottom: 5px;
 }
+
+@media (max-width: 770px) {
+	.video {
+	  width: 90%;
+	  height: 200px;
+	}
+}
+  
