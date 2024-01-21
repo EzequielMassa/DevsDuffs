@@ -51,49 +51,50 @@
             <div class="modal-dialog">
                 <div class="modal-content bg-warning text-light">
                     <div class="modal-header">
-                        <h5 class="modal-title subtitulo" id="exampleModalLabel">
+                        <h5 class="modal-title subtitulo text-dark" id="exampleModalLabel">
                             Nuevo Capítulo
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body">
-                        <form id="formNuevoCapitulo" class="needs-validation" novalidate>
+                        <form id="formNuevoCapitulo" class="row g-3 needs-validation" novalidate>
                             <div class="mb-3">
-                                <label for="nombreCapitulo" class="form-label parrafo">Nombre del Capítulo</label>
+                                <label for="nombreCapitulo" class="form-label parrafoModal">Nombre del Capítulo</label>
                                 <input type="text" class="form-control border-dark text-dark" id="nombreCapitulo"
-                                    placeholder="Nombre del Capitulo" onkeydown="validacionInputNuevoCapitulo()"
+                                    placeholder="Nombre del Capitulo" onkeyup="validacionInputNuevoCapitulo()"
                                     required />
                                 <div class="invalid-feedback">
                                     Ingresá un nombre válido (Entre 4 y 25 Caracteres).
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="categoriaCapitulo" class="form-label parrafo">Categoría</label>
+                                <label for="categoriaCapitulo" class="form-label parrafoModal">Categoría</label>
                                 <input type="text" class="form-control border-dark text-dark" id="categoriaCapitulo"
-                                    placeholder="Categoria del Capitulo" onkeydown="validacionInputNuevoCapitulo()"
+                                    placeholder="Categoria del Capitulo" onkeyup="validacionInputNuevoCapitulo()"
                                     required />
                                 <div class="invalid-feedback">
                                     Ingresá un nombre válido (Entre 4 y 25 Caracteres).
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="descripcionCapitulo" class="form-label parrafo">Descripción</label>
-                                <textarea class="form-control border-dark text-dark" id="descripcionCapitulo"
-                                    rows="3" placeholder="Breve sinopsis del Capitulo" onkeydown="validacionInputNuevoCapitulo()"></textarea>
+                                <label for="descripcionCapitulo" class="form-label parrafoModal">Descripción</label>
+                                <textarea class="form-control border-dark text-dark" id="descripcionCapitulo" rows="3"
+                                    placeholder="Breve sinopsis del Capitulo"
+                                    onkeyup="validacionInputNuevoCapitulo()"></textarea>
                                 <div class="invalid-feedback">
                                     Ingresa una descripción válida (Entre 10 y 155 Caracteres).
                                 </div>
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="publicadoCapitulo" />
-                                <label class="form-check-label parrafo" for="publicadoCapitulo">Publicado</label>
+                                <label class="form-check-label parrafoModal" for="publicadoCapitulo">Publicado</label>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-info" onclick="guardarNuevoCapitulo()">
+                                <button type="submit" class="btn btn-info" onclick="guardarNuevoCapitulo()">
                                     Guardar
                                 </button>
-                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">
                                     Cerrar
                                 </button>
                             </div>
@@ -109,7 +110,7 @@
             <div class="modal-dialog">
                 <div class="modal-content bg-warning text-light">
                     <div class="modal-header">
-                        <h5 class="modal-title subtitulo" id="exampleModalLabel">
+                        <h5 class="modal-title subtitulo text-dark " id="exampleModalLabel">
                             Editar Capítulo
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -117,24 +118,24 @@
                     <div class="modal-body">
                         <form id="formEditarCapitulo needs-validation">
                             <div class="mb-3">
-                                <label for="nombreCapituloEditado" class="form-label parrafo">Nombre del
+                                <label for="nombreCapituloEditado" class="form-label parrafoModal">Nombre del
                                     Capítulo</label>
                                 <input type="text" class="form-control form-control border-dark text-dark"
                                     id="nombreCapituloEditado" />
                             </div>
                             <div class="mb-3">
-                                <label for="categoriaCapituloEditado" class="form-label parrafo">Categoría</label>
+                                <label for="categoriaCapituloEditado" class="form-label parrafoModal">Categoría</label>
                                 <input type="text" class="form-control form-control border-dark text-dark"
                                     id="categoriaCapituloEditado" />
                             </div>
                             <div class="mb-3">
-                                <label for="descripcionCapituloEditado" class="form-label parrafo">Descripción</label>
+                                <label for="descripcionCapituloEditado" class="form-label parrafoModal">Descripción</label>
                                 <textarea class="form-control form-control border-dark text-dark" minlength="4"
                                     maxlength="150" id="descripcionCapituloEditado" rows="3"></textarea>
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="publicadoCapituloEditado" />
-                                <label class="form-check-label parrafo" for="publicadoCapituloEditado">Publicado</label>
+                                <label class="form-check-label parrafoModal" for="publicadoCapituloEditado">Publicado</label>
                             </div>
                         </form>
                     </div>

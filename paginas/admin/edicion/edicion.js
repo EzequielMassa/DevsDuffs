@@ -47,9 +47,8 @@ function mostrarCapitulos() {
             <td>
                 <button class="btn btn-danger" onclick="borrarCapitulo(${index})">🗑</button>
                 <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editarCapituloModal" onclick="editarCapitulo(${index})">✎</button>
-                <button class="btn ${
-                  capitulo.destacado ? "btn-warning" : "btn-secondary"
-                }" onclick="alternarDestacado(${index})">
+                <button class="btn ${capitulo.destacado ? "btn-warning" : "btn-secondary"
+      }" onclick="alternarDestacado(${index})">
                 ★
                 </button>
             </td>
@@ -84,31 +83,31 @@ function guardarNuevoCapitulo() {
 function validacionInputNuevoCapitulo() {
 
 
-  if ( (nombreCapitulo.value != "") && (nombreCapitulo.value.length >= 4) && (nombreCapitulo.value.length <= 20) ) {
+  if ((nombreCapitulo.value != "") && (nombreCapitulo.value.length >= 4) && (nombreCapitulo.value.length <= 20)) {
     nombreCapitulo.className = "form-control is-valid";
   } else {
     nombreCapitulo.className = "form-control is-invalid";
   }
 
 
-  if ((categoriaCapitulo.value != "") && (categoriaCapitulo.value.length >= 4) && (categoriaCapitulo.value.length <= 20) ){
+  if ((categoriaCapitulo.value != "") && (categoriaCapitulo.value.length >= 4) && (categoriaCapitulo.value.length <= 20)) {
     categoriaCapitulo.className = "form-control is-valid";
-  }else{
+  } else {
     categoriaCapitulo.className = "form-control is-invalid";
   }
 
-  if ( (descripcionCapitulo.value != "") && (descripcionCapitulo.value.length >= 4) && (descripcionCapitulo.value.length <= 155) ){
+  if ((descripcionCapitulo.value != "") && (descripcionCapitulo.value.length >= 4) && (descripcionCapitulo.value.length <= 155)) {
     descripcionCapitulo.className = "form-control is-valid";
-  }else{
+  } else {
     descripcionCapitulo.className = "form-control is-invalid";
   }
 
-  document.addEventListener('DOMContentLoaded', function(){
-    let formulario = document.getElementById("formNuevoCapitulo");
-    formulario.addEventListener("submit", function() {
-      formulario.reset();
-    });
-  });
+  // document.addEventListener('DOMContentLoaded', function(){
+  //   let formulario = document.getElementById("formNuevoCapitulo");
+  //   formulario.addEventListener("submit", function() {
+  //     formulario.reset();
+  //   });
+  // });
 
 }
 
