@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo);
+}
+
+.container{
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+.card{
+    height: 500px;
+    width: 450px;
+    margin: 30px;
+    transition: 300ms;
+    background-color: var(--color-secundario);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba (0, 0, 0, 3);  
+}
+.persona{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: var(--color-secundario);
+    transition: 200ms;
+    position: absolute;
+
+}
+.link {
+    text-decoration: none;
+}
+
+.imagenPersona{
+    height: 350px;
+    width: 200px;
+   
+    background-size: cover;
+    margin-top: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card-img-top{
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+    margin-left: 15px;
+    margin-bottom: -15px;
+    margin-top: 10px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card-img-top1{
+    height: 230px;
+    width: 230px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: -20px;
+    margin-top: 40px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card-img-top2{
+    height: 230px;
+    width: 230px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    margin-top: 35px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card-img-top3{
+    height: 240px;
+    width: 240px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    margin-top: 30px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card-img-top4{
+    height: 230px;
+    width: 230px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    margin-top: 35px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+h1, h2, h4{
+    text-decoration: underline;
+}
+.atributos{
+    margin-top: -40px;
+    margin-bottom: 35px;
+}
+.atributos1{
+    margin-top: 24px;
+}
+.boton1{
+    margin-top: 32px;
+}
+.card-text1{
+    margin-top: 30px;
+}
+.card-text2{
+    margin-top: 30px;
+}
+.modal-footer{
+    display: flex;
+    justify-content: center;
+}
+.card:hover .card-img-top{
+    transform: translateY(-40px);
+    transition: 300ms;
+    filter: none;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card:hover .card-img-top1
+{
+    transform: translateY(-40px);
+    transition: 300ms;
+    filter: none;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card:hover .card-img-top2
+{
+    transform: translateY(-40px);
+    transition: 300ms;
+    filter: none;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card:hover .card-img-top3
+{
+    transform: translateY(-40px);
+    transition: 300ms;
+    filter: none;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.card:hover .card-img-top4
+{
+    transform: translateY(-40px);
+    transition: 300ms;
+    filter: none;
+    filter: drop-shadow(5px -4px 10px #000);
+}
+.btn{
+    background-color:var(--color-primario);
+}
+.btn:hover{
+    background-color: var(--color-fondo);
+}

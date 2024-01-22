@@ -1,0 +1,92 @@
+.titulo {
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.disenoLetrasCap {
+	font-family: var(--fuente-secundaria);
+	font-size: 1.10rem;
+}
+
+.subtitulo {
+	text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.letraNegrita {
+	font-weight: bold;
+}
+
+.estiloImg {
+	display: flex;
+	text-align: center;
+	margin: auto;
+}
+
+.fondoCard {
+	background-color: var(--color-fondo);
+}
+
+.imgComentarios {
+	width: 120px;
+	height: 120px;
+}
+
+.estiloBotonEnviar {
+	border: none;
+	background-color: var(--color-primario);
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+	color: black;
+	cursor: crosshair
+}
+
+.estiloBotonEnviar:hover {
+	background-color: var(--fuente-color-primario);
+	color: black;
+}
+
+.estiloBotonCancelar {
+	border: none;
+	background-color: var(--color-secundario);
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+	cursor: crosshair
+}
+
+.estiloBotonCancelar:hover {
+	background-color: var(--fuente-color-secundario);
+}
+
+.disenoBoton {
+	border: none;
+	background-color: var(--color-primario);
+	width: 80px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+	cursor: crosshair
+}
+
+.disenoBoton:hover {
+	background-color: var(--color-secundario);
+}
+
+.bi-play-fill {
+	color: black;
+	font-size: 25px;
+}
+
+.colorCapitulos {
+	background-color: var(--color-fondo);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 5px;
+}
+
+@media (max-width: 770px) {
+	.video {
+	  width: 90%;
+	  height: 200px;
+	}
+}

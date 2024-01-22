@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+      <link rel="icon" href="/recursos/media/iconos/favicon.png">
+      <link rel="stylesheet" href="../../main.css">
+    <title>LOGIN DEVS-DUFF</title>
+  </head>
+  <body >
+    <header class="pb-5">
+      <!-- Desde aquí el navbar -->
+      <nav class="navbar fixed-top navbar-expand-md ">
+        
+      </nav>
+      <!-- Hasta aquí el navbar -->
+    </header>
+    <main >
+      <div
+        class="card11  px-sm-4 shadow"
+        style="width: 30rem">
+        <div>
+          <div class="iconoLogin">
+            <img
+             
+              style="height: 7rem" />
+          </div>
+          <div class="titulo  ">
+            Inicia sesión
+          </div>
+          <form >
+            <div class="input-group mt-3">
+              <div class="input-group-text bg-light">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/17/17004.png"
+                  alt="iconoUsuario"
+                  style="height: 1rem" />
+              </div>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                pattern=" [a-zA-Z0-9._+-%]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                placeholder="escribe tu email"
+                maxlength="40"
+                minlength="5"
+                required />
+            </div>
+            <div class="input-group mt-2">
+              <div class="input-group-text ">
+                <img
+                  src="https://w7.pngwing.com/pngs/778/12/png-transparent-computer-icons-skype-icon-design-change-password-logo-internet-share-icon.png"
+                  alt="iconoContraseña"
+                  style="height: 1rem" />
+              </div>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                pattern="[a-zA-Z0-9.-$%]"
+                minlength="5"
+                maxlength="14"
+                placeholder="escribe tu contraseña"
+                required />
+            </div>
+            <a href="../pages/404.html" class="text-decoration-none text-white">
+              <button
+                type="submit"
+                class="btn btn-dark  mt-4 fw-semibold shadow-sm">
+                Iniciar sesión
+              </button>
+            </a>
+          </form>
+        </div>
+        <div class="d-flex justify-content-around mt-2">
+          <div class="d-flex align-items-center gap-1">
+            <input class="form-check-input" type="checkbox" />
+            <div class="pt-1 text-black" >
+              Recuerdame
+            </div>
+          </div>
+          <div class="pt-1">
+            <a
+              href=""
+              class="text-decoration-none text-dark fw-semibold fst-italic"
+              >
+              <i>¿Olvidaste tu contraseña?</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="d-flex gap-1 justify-content-center mt-2">
+          <div> <a><p class="text-black">¿No posees cuenta?</p></a>
+            
+          </div>
+          <a
+            href=""
+            class="text-decoration-none text-dark fw-bold text__shadow">
+            Registrate
+          </a>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <div
+            class="btn gap-2 justify-content-center m-3 bg-white opacity-75 w-50 shadow-sm">
+            <img
+            src="https://e7.pngegg.com/pngimages/704/688/png-clipart-google-google.png"
+            alt="iconoGoogle" style="height: 1.6rem;" class=>
+            <a class="text-decoration-none text-black" href="">
+              Continua con Google
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Desde aquí el footer -->
+    <footer>
+    
+    </footer>
+    <!-- Hasta aquí el footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

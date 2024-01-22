@@ -1,8 +1,7 @@
 body {
-	display: grid;
-	min-height: 100vh;
-	place-items: center;
+	background: var(--color-fondo);
 }
+
 .titulo {
 	text-shadow: 2px 2px 2px #000000;
 }
@@ -55,4 +54,16 @@ body {
 }
 tr .usuarios-tabla-titulo {
 	color: var(--color-secundario);
+}
+
+.usuarios-filtrar-label {
+	background-color: #fff;
+	color: var(--color-secundario);
+}
+
+.usuarios-filtro-error-text {
+	text-shadow: 2px 2px 2px #000000;
+}
+.usuarios-filtro-error-img {
+	max-width: 200px;
 }
