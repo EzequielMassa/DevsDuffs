@@ -1,6 +1,6 @@
 let contenidoTemporada = document.getElementById(`contenidoTemporada`)
 
-contenidoTemporada.innerText= `La primera temporada de "Los Simpson" presenta a la familia Simpson y la vida en la ciudad de Springfield. A través de episodios cómicos, se exploran las dinámicas familiares y se
+contenidoTemporada.innerText = `La primera temporada de "Los Simpson" presenta a la familia Simpson y la vida en la ciudad de Springfield. A través de episodios cómicos, se exploran las dinámicas familiares y se
 establece el tono satírico de la serie. Aunque la animación es más básica, la temporada sienta las bases para el éxito duradero de "Los Simpson".`
 
 let listaDetalleDeTemp = document.getElementById('listaDetalleDeTemp');
