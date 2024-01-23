@@ -62,7 +62,7 @@
                             <div class="mb-3">
                                 <label for="nombreCapitulo" class="form-label parrafoModal">Nombre del Capítulo</label>
                                 <input type="text" class="form-control border-dark text-dark" id="nombreCapitulo"
-                                    placeholder="Nombre del Capitulo" onkeyup="validacionInputNuevoCapitulo()"
+                                    placeholder="Nombre del Capitulo" onkeyup="validarInput('nombreCapitulo', 4, 20)"
                                     required />
                                 <div class="invalid-feedback">
                                     Ingresá un nombre válido (Entre 4 y 25 Caracteres).
@@ -71,7 +71,7 @@
                             <div class="mb-3">
                                 <label for="categoriaCapitulo" class="form-label parrafoModal">Categoría</label>
                                 <input type="text" class="form-control border-dark text-dark" id="categoriaCapitulo"
-                                    placeholder="Categoria del Capitulo" onkeyup="validacionInputNuevoCapitulo()"
+                                    placeholder="Categoria del Capitulo" onkeyup="validarInput('categoriaCapitulo', 4, 20)"
                                     required />
                                 <div class="invalid-feedback">
                                     Ingresá un nombre válido (Entre 4 y 25 Caracteres).
@@ -81,7 +81,7 @@
                                 <label for="descripcionCapitulo" class="form-label parrafoModal">Descripción</label>
                                 <textarea class="form-control border-dark text-dark" id="descripcionCapitulo" rows="3"
                                     placeholder="Breve sinopsis del Capitulo"
-                                    onkeyup="validacionInputNuevoCapitulo()"></textarea>
+                                    onkeyup="validarInput('descripcionCapitulo', 4, 155)"></textarea>
                                 <div class="invalid-feedback">
                                     Ingresa una descripción válida (Entre 10 y 155 Caracteres).
                                 </div>
@@ -91,10 +91,10 @@
                                 <label class="form-check-label parrafoModal" for="publicadoCapitulo">Publicado</label>
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-info" onclick="guardarNuevoCapitulo()">
+                                <button type="submit" class="btn btn-info" onclick="guardarNuevoCapitulo(event)">
                                     Guardar
                                 </button>
-                                <button type="submit" class="btn btn-danger" data-bs-dismiss="modal">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
                                     Cerrar
                                 </button>
                             </div>
