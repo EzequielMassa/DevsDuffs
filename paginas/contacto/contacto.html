@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="../Contacto/contacto.css">
+    <link rel="shortcut icon" href="../../recursos/media/iconos/favicon.png" type="image/x-icon" />
+    <script type="module" src="../../main.js"></script>
+    <script type="module" src="../Contacto/contacto.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid fondoNavColor">
+            <nav class="navbar navbar-expand-lg sticky-top mt-3 mb-3">
+
+                <a class="navbar-brand" href="/index.html"><img class="logo-nav"
+                        src="../../recursos/media/iconos/favicon.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex col-12 align-items-center flex-column flex-lg-row">
+
+                        <div class="col-md-5 ">
+                            <ul class="navbar-nav text-center mb-2 mb-lg-0 ">
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-alink" aria-current="page"
+                                        href="#"><label>Temporadas</label></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-alink" aria-current="page"
+                                        href="#"><label>Nosotros</label></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-alink " aria-current="page"
+                                        href="../Contacto/contacto.html"><label>Contacto</label></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form class="d-flex col-md-4 m-md-auto align-content-center mb-3" role="search">
+                            <input class="form-control  me-2" id="input-buscar" type="search" placeholder="Buscar"
+                                aria-label="Buscar">
+                            <button class="btn btn-dark border border-warning rounded-pill me-2" id="btn-buscar"
+                                type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+
+                        <div class="col-md-3 d-flex flex-column flex-lg-row align-items-center">
+                            <button class="btn btn-info btn-log mb-2 mt-2 m-md-auto rounded-pill" id="btn-Inicio"
+                                type="submit"><label class="parrafo" for="">Iniciar</label></button>
+                            <button class="btn btn-success mb-2 mt-2 m-md-auto rounded-pill ms-md-2 me-md-2"
+                                id="btn-registro" type="submit"> <label class="parrafo" for="">Registro</label></button>
+                            <img class="img-login ms-1 me-md-2 mb-2 mb-md-0 d-none d-md-block"
+                                src="../../recursos/media/img/homero-apuntando.png" alt="Homero de login">
+                            <button id="btn-donut" class="btn align-items-md-center rounded-circle border-0"><img
+                                    id="img-donut" src="../../recursos/media/img/donut.png"
+                                    alt="donuts de ADM"></button>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- aqui termina el nav -->
+
+    <main>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <section class="container col rounded" id="parte-col1">
+                    <h1 class="subtitulo mt-4 text-center mt-5 mb-4">Contáctanos:</h1>
+                    <form class="d-flex flex-column" action="#" method="post">
+                        <label class="parrafo text-center colorItems mb-lg-2 " for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <label class="parrafo text-center colorItems mt-2 mb-2" for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label class="parrafo text-center colorItems mt-2 mb-2" for="email">telefono:</label>
+                        <input type="tel" id="tel" name="telefono" required>
+                        <label class="parrafo text-center colorItems mt-2 mb-2" for="nombre">Edad:</label>
+                        <input type="number" id="edad" name="edad" required>
+
+
+                        <h3 class="subtitulo text-center mt-5 mb-4">Califica nuestro servicio:</h3>
+                        <div class="d-flex flex-column text-center mb-4">
+                            <label class="parrafo mt-1 mb-3 colorItems">
+                                <input type="radio" name="opinion" value="positivo"> Pesimo
+                            </label>
+                            <label class="parrafo mt-2 mb-3 colorItems">
+                                <input type="radio" name="opinion" value="neutral"> Regular
+                            </label>
+                            <label class="parrafo mt-2 mb-3 colorItems">
+                                <input type="radio" name="opinion" value="negativo"> Bueno
+                            </label>
+                            <label class="parrafo mt-2 mb-3 colorItems">
+                                <input type="radio" name="opinion" value="negativo"> Muy bueno
+                            </label>
+                            <label class="parrafo mt-2 mb-3 colorItems">
+                                <input type="radio" name="opinion" value="negativo"> Excelente
+                            </label>
+                        </div>
+
+                        <div class="d-flex justify-content-center mb-5">
+                            <button class="btn" id="btn-Enviar" type="submit"><label for="">Enviar</label></button>
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="col rounded" id="parte-col2">
+                    <h1 class="subtitulo text-center mt-5 mb-5">¡Bienvenidos a nuestro sitio web!</h1>
+                    <p class="parrafo mb-4 me-3 ms-3">Nos llena de alegría que estén aquí,
+                        explorando y
+                        utilizando nuestros servicios a través de este espacio de comunicación directa. En este rincón
+                        virtual,
+                        queremos construir puentes que nos conecten de manera más cercana con ustedes, nuestros valiosos
+                        usuarios. Tu
+                        opinión nos importa para poder seguir mejorando y actualizando nuestro servicio.
+                    </p>
+
+                    <h2 class="subtitulo text-center mt-4 mb-4">Encuentranos🔍</h2>
+                    <div class="d-flex justify-content-center align-items-center me-5 ms-5">
+                        <img class="border border-3 border-warning imagen" src="../../recursos/media/img/mapa.jpg"
+                            alt="Mapa de los simpson">
+                    </div>
+                    <p class="parrafo text-center mt-5">*Estamos a tu disposición para los comentarios y/o opiniones que
+                        nos envies*</p>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/000ea8895d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
