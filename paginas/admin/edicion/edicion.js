@@ -1,3 +1,7 @@
+import { mostrarInputError } from "../../../utilidades/mostrarInputError.js";
+import { limpiarInputError } from "../../../utilidades/limpiarInputError.js";
+
+
 const nombreCapitulo = document.getElementById("nombreCapitulo");
 const categoriaCapitulo = document.getElementById("categoriaCapitulo");
 const descripcionCapitulo = document.getElementById("descripcionCapitulo");
@@ -8,7 +12,9 @@ const categoriaCapituloEditado = document.getElementById("categoriaCapituloEdita
 const descripcionCapituloEditado = document.getElementById("descripcionCapituloEditado");
 const publicadoCapituloEditado = document.getElementById("publicadoCapituloEditado");
 
-const form = document.getElementById('formNuevoCapitulo');
+const form = document.getElementById("formNuevoCapitulo");
+const modalNuevoCapitulo = new bootstrap.Modal(document.getElementById('nuevoCapituloModal'));
+
 
 // Array de Capitulos (Ejemplos)
 const capitulos = [
@@ -59,76 +65,65 @@ function mostrarCapitulos() {
   });
 }
 
-// Guardamos a traves de constantes las propiedades de cada capitulo nuevo
-function guardarNuevoCapitulo(event) {
-  event.preventDefault();
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const {
+    nombreCapitulo, categoriaCapitulo, descripcionCapitulo
+  } = e.target
 
-  const isValidNombre = validarInput('nombreCapitulo', 4, 20);
-  const isValidCategoria = validarInput('categoriaCapitulo', 4, 20);
-  const isValidDescripcion = validarInput('descripcionCapitulo', 4, 155);
+  const nombreValido = validarInput(nombreCapitulo, 4, 25);
+  const categoriaValido = validarInput(categoriaCapitulo, 4, 25);
+  const descripcionValido = validarInput(descripcionCapitulo, 4, 155);
 
-  // Crear un nuevo objeto de capitulo
+  if (nombreValido && categoriaValido && descripcionValido) {
+    guardarNuevoCapitulo(nombreCapitulo.value, categoriaCapitulo.value, descripcionCapitulo.value);
+    form.reset();
+  } else {
+  }
+})
+
+//Crear un nuevo objeto de capitulo
+function guardarNuevoCapitulo(nombre, categoria, descripcion) {
+
   const nuevoCapitulo = {
     codigo: capitulos.length + 1,
-    nombre: nombreCapitulo.value,
-    categoria: categoriaCapitulo.value,
-    descripcion: descripcionCapitulo.value,
+    nombre: nombre,
+    categoria: categoria,
+    descripcion: descripcion,
     publicado: publicadoCapitulo.checked,
     destacado: false, // Por defecto, el nuevo capitulo no está destacado
   };
-  
-  if(isValidNombre && isValidCategoria && isValidDescripcion) {
-    // Agregar el nuevo capitulo al array de capitulos
-    capitulos.push(nuevoCapitulo);
-    Swal.fire({
-      position: "top-end",
-      icon: "success",
-      title: "Your work has been saved",
-      showConfirmButton: false,
-      timer: 1500
-    });
-  } else {
-    //
-  }
+  // (nuevoCapitulo);
+  // Agregar el nuevo capitulo al array de capitulos
+  capitulos.push(nuevoCapitulo);
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Se ha agregado un nuevo Capitulo",
+    showConfirmButton: false,
+    timer: 1500
+  });
+  // (capitulos);
 
-  // Mostrar la tabla actualizada y cerrar el modal
+//Mostrar la tabla actualizada
+(modalNuevoCapitulo);
   mostrarCapitulos();
-  limpiarFormularioNuevoCapitulo();
-  $("#nuevoCapituloModal").modal("hide"); // Cerrar el modal usando jQuery
+  modalNuevoCapitulo.hide();    //Verificar el evento hide (Corregir que queda el checked)
 }
 
 // Funcion que me permite validar los imputs de los modales
 
 function validarInput(input, minLength, maxLength) {
-
-  const inputElement = document.getElementById(input);
-  const inputValue = inputElement.value;
-
-  if ((inputValue != "") && (inputValue.length >= minLength) && (inputValue.length <= maxLength)) {
-    inputElement.className = "form-control is-valid";
-    return true;
-  } else {
-    inputElement.className = "form-control is-invalid";
+  (input);
+  const inputValor = input.value
+  if (!inputValor || inputValor.length < minLength || inputValor.length > maxLength) {
+    mostrarInputError(input);
     return false;
+  } else {
+    limpiarInputError(input);
+    return true;
   }
 }
-
-// function validacionInputNuevoCapitulo(input) {
-//   switch (input) {
-//     case 'nombreCapitulo':
-//       validarInput(input, 4, 20);
-//       break;
-//     case 'categoriaCapitulo':
-//       validarInput(input, 4, 20);
-//     break;
-//     case 'descripcionCapitulo':
-//       validarInput(input, 4, 155);
-//       break;
-//     default:
-//       validarInput(input, 4, 20);
-//       break;
-//   }
-// }
 
 // Función para abrir el modal con los datos del capitulo seleccionado para editar
 function editarCapitulo(index) {
@@ -174,16 +169,6 @@ function borrarCapitulo(index) {
 function alternarDestacado(index) {
   capitulos[index].destacado = !capitulos[index].destacado; // Invertir el estado de destacado
   mostrarCapitulos();
-}
-
-// Limpiamos el formulario de nuevo capitulo cuando terminamos de crear el anterior
-function limpiarFormularioNuevoCapitulo() {
-  form.reset();
-  let classNameReset = form.querySelectorAll('.form-control');
-  classNameReset.forEach((element) => {
-    element.className = 'form-control';
-  })
-
 }
 
 // Limpiamos el formulario de nuevo capitulo cuando terminamos de editar el anterior

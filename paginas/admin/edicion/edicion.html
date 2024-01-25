@@ -8,7 +8,8 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../../../main.css" />
-    <link rel="stylesheet" href="../../admin/edicion/edicion.css" />
+    <link rel="stylesheet" href="../../../paginas/admin/edicion/edicion.css" />
+
 
     <title>Administrador Edicion</title>
 </head>
@@ -31,12 +32,12 @@
                     <table class="table table-light table-bordered mt-3 table-hover">
                         <thead>
                             <tr class="table-warning">
-                                <th class="tablaEdicion-titulo">Código</th>
+                                <th class="tablaEdicion-titulo">ID</th>
                                 <th class="tablaEdicion-titulo">Nombre</th>
                                 <th class="tablaEdicion-titulo">Categoría</th>
                                 <th class="tablaEdicion-titulo">Descripción</th>
                                 <th class="tablaEdicion-titulo">Publicado</th>
-                                <th class="tablaEdicion-titulo">Opciones</th>
+                                <th class="tablaEdicion-titulo">Herramientas</th>
                             </tr>
                         </thead>
                         <tbody id="tablaCapitulosBody"></tbody>
@@ -62,8 +63,7 @@
                             <div class="mb-3">
                                 <label for="nombreCapitulo" class="form-label parrafoModal">Nombre del Capítulo</label>
                                 <input type="text" class="form-control border-dark text-dark" id="nombreCapitulo"
-                                    placeholder="Nombre del Capitulo" onkeyup="validarInput('nombreCapitulo', 4, 20)"
-                                    required />
+                                    placeholder="Nombre del Capitulo" required />
                                 <div class="invalid-feedback">
                                     Ingresá un nombre válido (Entre 4 y 25 Caracteres).
                                 </div>
@@ -71,8 +71,7 @@
                             <div class="mb-3">
                                 <label for="categoriaCapitulo" class="form-label parrafoModal">Categoría</label>
                                 <input type="text" class="form-control border-dark text-dark" id="categoriaCapitulo"
-                                    placeholder="Categoria del Capitulo" onkeyup="validarInput('categoriaCapitulo', 4, 20)"
-                                    required />
+                                    placeholder="Categoria del Capitulo" required />
                                 <div class="invalid-feedback">
                                     Ingresá un nombre válido (Entre 4 y 25 Caracteres).
                                 </div>
@@ -80,8 +79,7 @@
                             <div class="mb-3">
                                 <label for="descripcionCapitulo" class="form-label parrafoModal">Descripción</label>
                                 <textarea class="form-control border-dark text-dark" id="descripcionCapitulo" rows="3"
-                                    placeholder="Breve sinopsis del Capitulo"
-                                    onkeyup="validarInput('descripcionCapitulo', 4, 155)"></textarea>
+                                    placeholder="Breve sinopsis del Capitulo"></textarea>
                                 <div class="invalid-feedback">
                                     Ingresa una descripción válida (Entre 10 y 155 Caracteres).
                                 </div>
@@ -91,7 +89,7 @@
                                 <label class="form-check-label parrafoModal" for="publicadoCapitulo">Publicado</label>
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-info" onclick="guardarNuevoCapitulo(event)">
+                                <button type="submit" id="btnGuardarCapitulo" class="btn btn-info" >
                                     Guardar
                                 </button>
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
@@ -155,9 +153,9 @@
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="../../admin/edicion/edicion.js"></script>
+    <script type="module" src="../../../paginas/admin/edicion/edicion.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
