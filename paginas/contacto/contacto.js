@@ -19,10 +19,10 @@ formContacto.addEventListener("submit", (e) =>{
         formContacto.reset()
         Swal.fire({
             position: "top-end",
-            icon: "success",
-            title: "formulario enviado con exito.",
+            iconHtml: '<img src="../../recursos/media/img/dona-animada.gif" width="50" height="50">',
+            title: "Formulario enviado con exito.",
             showConfirmButton: false,
-            timer: 1500
+            timer: 3500
           });
     }     
 } ) 
