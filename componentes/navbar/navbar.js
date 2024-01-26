@@ -2,12 +2,17 @@ const header = document.querySelector('header')
 
 export const renderizarNavbar = () => {
 	// const usuarioLogeado = obtenerUsuarioLogeado()
+	const registroUrl = window.location.href.includes('registro')
 
 	const usuarioLogeado = true
 	const usuarioRol = 'admin'
 
 	header.innerHTML = `
-			<nav class="navbar navbar-principal navbar-expand-md rounded-1">
+	    ${
+				!registroUrl
+					? '<nav class="navbar navbar-principal navbar-expand-md rounded-1" >'
+					: '<nav class="navbar navbar-principal--registro navbar-expand-md rounded-1" >'
+			}
 				<div class="container-fluid">
 					<a class="navbar-brand" href="/index.html"
 						><img
