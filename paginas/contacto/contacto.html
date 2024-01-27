@@ -81,7 +81,7 @@
 
     <main>
         <div class="container-fluid">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center" id="containerGeneral">
                 <section class="container col rounded" id="parte-col1">
                     <h1 class="subtitulo mt-4 text-center mt-5 mb-4">Contáctanos:</h1>
                     <form id="formContacto" class="d-flex flex-column needs-validation" action="#" method="post" novalidate>
@@ -90,7 +90,7 @@
                             <div>
                             <input type="text" class="nombreContacto estiloInput" id="nombreContacto" name="nombre" required>
                             <div class="invalid-feedback mt-2">
-                                <span class="alertForm fw-bold text-dark rounded-1 py-1  px-2">El nombre ingresado no es válido. Recuerda que debe contener 10 caracteres o menos.</span>
+                                <span class="alertForm text-dark "> El nombre ingresado no es válido. Recuerda que debe contener 10 caracteres o menos.</span>
                             </div>
                             </div>
                         
@@ -100,21 +100,21 @@
                         <label class="parrafo text-center colorItems mt-4" for="email">Email:</label>
                         <input type="email" id="emailContacto" class="estiloInput" name="email" required>
                         <div class="invalid-feedback mt-2">
-                            <span class="alertForm fw-bold text-dark rounded-1 py-1  px-2">El email no es válido. Por favor, asegúrate de introducir un email válido en el formato correcto.</span>
+                            <span class="alertForm text-dark">El email no es válido. Por favor, asegúrate de introducir un email válido en el formato correcto.</span>
                         </div>
                     </div>
                     <div>
                         <label class="parrafo text-center colorItems mt-4" for="email">Telefono:</label>
                         <input type="tel" id="telContacto" class="estiloInput" name="telefono" required>
                         <div class="invalid-feedback mt-2">
-                            <span class="alertForm fw-bold text-dark rounded-1 py-1  px-2">El formato del número de teléfono no es válido. Por favor, ingresa un número de teléfono con 10 dígitos </span>
+                            <span class="alertForm  text-dark">El formato del número de teléfono no es válido. Por favor, ingresa un número de teléfono con 10 dígitos. </span>
                         </div>
                     </div>
                     <div>
                         <label class="parrafo text-center colorItems mt-4" for="nombre">Edad:</label>
                         <input type="number" id="edadContacto" class="estiloInput" name="edad" required>
                         <div class="invalid-feedback mt-2">
-                            <span class="alertForm fw-bold text-dark rounded-1 py-1  px-2">La edad ingresada no es válida. Recuerda que debes ser mayor de 6 años para continuar. Por favor, verificá.</span>
+                            <span class="alertForm text-dark">La edad ingresada no es válida. Recuerda que debes ser mayor de 6 años para continuar. Por favor, verificá.</span>
                         </div>
                     </div>
 
@@ -147,7 +147,7 @@
                 </section>
 
                 <aside class="col rounded" id="parte-col2">
-                    <h1 class="subtitulo text-center mt-5 mb-5">¡Bienvenidos a nuestro sitio web!</h1>
+                    <h1 class="subtitulo text-center mt-5 mb-5">Encuentranos🔍</h1>
                     <p class="parrafo mb-4 me-3 ms-3">Nos llena de alegría que estén aquí,
                         explorando y
                         utilizando nuestros servicios a través de este espacio de comunicación directa. En este rincón
@@ -157,10 +157,9 @@
                         opinión nos importa para poder seguir mejorando y actualizando nuestro servicio.
                     </p>
 
-                    <h2 class="subtitulo text-center mt-4 mb-4">Encuentranos🔍</h2>
+                    
                     <div class="d-flex justify-content-center align-items-center me-5 ms-5">
-                        <img class="border border-3 border-warning imagen" src="../../recursos/media/img/mapa.jpg"
-                            alt="Mapa de los simpson">
+                        <a class="nav-link nav-alink" href="https://maps.app.goo.gl/BBTzPGhbwdMCMvmU9" target="_blank"><img class="border border-3 border-warning imagen" id="imagenMapa" src="../../recursos/media/img/mapa.jpg" alt="Mapa de los simpson"></a>
                     </div>
                     <p class="parrafo text-center mt-5">*Estamos a tu disposición para los comentarios y/o opiniones que
                         nos envies*</p>
