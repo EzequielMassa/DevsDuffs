@@ -4,7 +4,7 @@
  */
 
 export const getCapitulos = () =>{
-    const capitulosJson = localStorage.getItem("Capitulos");
-    const capitulos = JSON.parse(capitulosJson)
+    const capitulosJSON = localStorage.getItem("capitulos");
+    const capitulos = JSON.parse(capitulosJSON)
     return capitulos
 }
