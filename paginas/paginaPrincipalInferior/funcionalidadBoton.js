@@ -1,5 +1,5 @@
 let miBoton = document.getElementById('miBoton');
-let boton404 = document.getElementById('boton404');
+let boton404 = document.getElementsByClassName('boton404');
 
 
 miBoton.addEventListener('click', function() {
