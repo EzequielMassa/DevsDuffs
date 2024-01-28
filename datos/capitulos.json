@@ -5,7 +5,8 @@
         "nombre": "Sin blanca Navidad",
         "descripcion": "Cuando Homer no recibe ningún bono de vacaciones, espera ganar dinero extra convirtiéndose en un Papá Noel del centro comercial, en un intento de brindar a la familia unas felices vacaciones.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGZjNzZhNzAtYTZjNi00YjU4LWI0NTYtNjZmYWNkYTA2YzY3XkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_UX200_CR0,0,200,112_AL_.jpg",
-        "id": 1
+        "id": 1,
+        "publicado": false
     },
     {
         "temporada": 1,
@@ -13,7 +14,8 @@
         "nombre": "Bart, el genio",
         "descripcion": "Bart termina en una escuela para niños superdotados después de hacer trampa en una prueba de coeficiente intelectual.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4OTI5MDM0OV5BMl5BanBnXkFtZTgwNTE1NjQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
-        "id": 2
+        "id": 2,
+        "publicado": false
     },
     {
         "temporada": 1,
@@ -22,6 +24,7 @@
         "descripcion": "Mientras la clase de Bart está recorriendo la planta de energía en una excursión, Homer choca un carro contra una tubería radiactiva. Como consecuencia, la planta se ve obligada a cerrar y Homer pierde su trabajo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM1MjQ0Njg1MF5BMl5BanBnXkFtZTgwMzg2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 3
+ 
     },
     {
         "temporada": 1,
@@ -30,6 +33,7 @@
         "descripcion": "Después de ser avergonzado por el resto de la familia en un picnic de la empresa, Homer se obsesiona con mejorar su comportamiento mutuo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzMwODQzMTQ4N15BMl5BanBnXkFtZTgwODU1NjQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 4
+ 
     },
     {
         "temporada": 1,
@@ -38,6 +42,7 @@
         "descripcion": "Después de haber sido golpeado por Nelson Muntz demasiadas veces, Bart recurre al abuelo en busca de ayuda y pronto lidera una rebelión contra el matón de la escuela.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjkzMjAzMzc4NF5BMl5BanBnXkFtZTgwNDY2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 5
+ 
     },
     {
         "temporada": 1,
@@ -46,6 +51,7 @@
         "descripcion": "El espíritu de una Lisa deprimida se levanta cuando conoce a un músico de jazz, Bleeding Gums Murphy.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjg5MjA2NzcwM15BMl5BanBnXkFtZTgwMjY2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 6
+ 
     },
     {
         "temporada": 1,
@@ -54,6 +60,7 @@
         "descripcion": "Celoso de la nueva casa rodante de Ned Flanders, Homer compra una propia, pero el viaje de la familia al desierto pronto sale mal.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODAwNzM5OTk1OV5BMl5BanBnXkFtZTgwMDY1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 7
+ 
     },
     {
         "temporada": 1,
@@ -62,6 +69,7 @@
         "descripcion": "Bart obtiene más de lo que esperaba cuando corta la cabeza de una estatua del fundador del pueblo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzMzY0MTA2Nl5BMl5BanBnXkFtZTgwNjU1NjQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 8
+ 
     },
     {
         "temporada": 1,
@@ -70,6 +78,7 @@
         "descripcion": "Marge contempla una aventura con un apuesto instructor de bolos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0NDM4Njk0MF5BMl5BanBnXkFtZTgwOTExNDE1NTE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 9
+ 
     },
     {
         "temporada": 1,
@@ -78,6 +87,7 @@
         "descripcion": "Después de que una fotografía de Homero besuqueándose con una bailarina exótica se distribuye por todo Springfield, Marge lo echa de la casa.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4NzU0MjY1OF5BMl5BanBnXkFtZTgwNTE4NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 10
+
     },
     {
         "temporada": 1,
@@ -86,6 +96,7 @@
         "descripcion": "Después de otra de las bromas de Bart en la escuela, el director Skinner le sugiere participar en un programa de intercambio de estudiantes. Sin embargo, lo envían a Francia y lo obligan a trabajar todas las horas en un viñedo, con pocas posibilidades de escapar.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIzMDIwMTM4NF5BMl5BanBnXkFtZTgwMzU1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 11
+
     },
     {
         "temporada": 1,
@@ -94,6 +105,7 @@
         "descripcion": "Homero es testigo de un robo en el Kwik-E-Mart, donde el culpable es un hombre vestido como el héroe de Bart, Krusty el Payaso. ¿Pero hay más de lo que parece?",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIzMTA0MjY5NV5BMl5BanBnXkFtZTgwOTk2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 12
+
     },
     {
         "temporada": 1,
@@ -102,6 +114,7 @@
         "descripcion": "Homero y Marge disfrutan de una noche de fiesta en la ciudad, mientras los niños lidian con una niñera diabólica, que guarda un secreto sorprendente.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ1MjU5NjQzNF5BMl5BanBnXkFtZTgwMjA2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 13
+
     },
     {
         "temporada": 2,
@@ -110,6 +123,7 @@
         "descripcion": "La Sra. Krabappel se harta del enfoque indiferente de Bart en sus estudios. Después de que él se abre camino con un farol en un informe de un libro y reproba un examen de historia, ella le da un ultimátum: ponerse en forma o repetir el cuarto grado.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MjA1ODUyNV5BMl5BanBnXkFtZTgwNjk5ODQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 14
+
     },
     {
         "temporada": 2,
@@ -118,6 +132,7 @@
         "descripcion": "Homero se encuentra en un formulario de seguro médico para obtener un medicamento milagroso para restaurar el cabello.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjE1MDY0MDc0NV5BMl5BanBnXkFtZTgwODQ1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 15
+
     },
     {
         "temporada": 2,
@@ -126,6 +141,7 @@
         "descripcion": "Los Simpson se mudan a una casa maldita, luego son secuestrados por extraterrestres, antes de que Homero se instale en un cuento de Edgar Allen Poe.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgwODcyOTUwMl5BMl5BanBnXkFtZTgwMjIxNDE1NTE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 16
+
     },
     {
         "temporada": 2,
@@ -134,6 +150,7 @@
         "descripcion": "Después de que la planta de energía recibe mala publicidad y es amenazada con cerrar, el Sr. Burns decide postularse para Gobernador para tener poder sobre la ley.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM4MzkwNzY3MF5BMl5BanBnXkFtZTgwMDcyNjQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 17
+
     },
     {
         "temporada": 2,
@@ -142,6 +159,7 @@
         "descripcion": "Los abucheos de Homero al equipo de béisbol Springfield Isotopes durante uno de sus juegos conducen inadvertidamente a su nombramiento como la nueva mascota del equipo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg3NzczMzU4N15BMl5BanBnXkFtZTgwNDI3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 18
+
     },
     {
         "temporada": 2,
@@ -150,6 +168,7 @@
         "descripcion": "En un intento de mostrar a Ned Flanders, Homer enfrenta a Bart contra el hijo de Ned, Todd, en una competencia de minigolf.",
         "imgUrl": "https://images-na.ssl-imimgon.com/images/M/MV5BMTU1MTkzMDA1NV5BMl5BanBnXkFtZTgwNjUzMzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 19
+
     },
     {
         "temporada": 2,
@@ -158,6 +177,7 @@
         "descripcion": "El Día de Acción de Gracias, Bart se pelea con la familia y se escapa de casa, antes de compartir una cena de pavo con un grupo de personas sin hogar en un comedor de beneficencia, y aprender el verdadero significado de la festividad en el proceso. ",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDY2ODU2MTA1NV5BMl5BanBnXkFtZTgwNjM3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 20
+
     },
     {
         "temporada": 2,
@@ -166,6 +186,7 @@
         "descripcion": "Después de ver a un temerario motociclista en una exhibición de camiones monstruo, Bart se convierte en un temerario patinador que desafía a la muerte.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxNTIyNjI5MV5BMl5BanBnXkFtZTgwNDUzMzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 21
+
     },
     {
         "temporada": 2,
@@ -174,6 +195,7 @@
         "descripcion": "Marge se convierte en una cruzada contra la violencia en los dibujos animados después de ver The Itchy and Scratchy Show.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5MTc0MTM1NV5BMl5BanBnXkFtZTgwOTI3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 22
+
     },
     {
         "temporada": 2,
@@ -182,6 +204,7 @@
         "descripcion": "Mientras anda en patineta por la calle, Bart es atropellado por un auto conducido por el Sr. Burns. Homer rechaza la oferta simbólica del Sr. Burns de $100 y en su lugar contrata al cazador de ambulancias Lionel Hutz para presentar una demanda escandalosa contra el millonario.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM4NTM4OTUxM15BMl5BanBnXkFtZTgwMzcyNjQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 23
+
     },
     {
         "temporada": 2,
@@ -190,6 +213,7 @@
         "descripcion": "Después de aparentemente consumir un pez globo venenoso, a Homero le dicen que solo le quedan 24 horas de vida.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3MjMzODUwNV5BMl5BanBnXkFtZTcwOTI2NjM0OA@@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 24
+
     },
     {
         "temporada": 2,
@@ -198,6 +222,7 @@
         "descripcion": "Homero y Marge cuentan la historia de cómo se conocieron y enamoraron en la escuela secundaria.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg4NzQ1MzQyNl5BMl5BanBnXkFtZTgwMDk0NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 25
+
     },
     {
         "temporada": 2,
@@ -206,6 +231,7 @@
         "descripcion": "Homero consigue que un tipo corrupto instale cable gratis en la casa de los Simpson y, como resultado, Lisa enfrenta una crisis ética por los robos de su familia. ",
         "imgUrl": "https://images-na.ssl-images-amazon.com/imimg5BMTY1MzQ1OTQ2OF5BMl5BanBnXkFtZTgwMDczNDE1NTE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 26
+
     },
     {
         "temporada": 2,
@@ -214,6 +240,7 @@
         "descripcion": "Después de asistir a la boda de un compañero de trabajo, Selma comienza a temer morir sola. Sin embargo, cuando Homer intenta ponerla en contacto con el director Skinner, se enamora de Patty.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4NzA1MzExMV5BMl5BanBnXkFtZTgwNTUzMzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 27
+
     },
     {
         "temporada": 2,
@@ -222,6 +249,7 @@
         "descripcion": "Después de que el abuelo es hospitalizado, revela que Homer tiene un medio hermano, y la familia pronto descubre que el hermano, llamado Herb, es dueño de una compañía de automóviles. Sin embargo, la contratación de Homer por parte de Herb para diseñar un auto nuevo puede ser su perdición. .",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0MzcyNTM4Nl5BMl5BanBnXkFtZTgwNjc1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 28
+
     },
     {
         "temporada": 2,
@@ -230,6 +258,7 @@
         "descripcion": "Después de que un pequeño ayudante de Santa incontrolable destruye varias posesiones importantes de los Simpson, Homer anuncia que lo echarán de la casa a menos que complete el entrenamiento de obediencia.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5NDcwMDY0NF5BMl5BanBnXkFtZTgwMjY3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 29
+
     },
     {
         "temporada": 2,
@@ -238,6 +267,7 @@
         "descripcion": "Después de que la nueva novia del abuelo muere y le deja $106,000 en su testamento, él intenta decidir qué hacer con ellos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODExMDU0OTU0MV5BMl5BanBnXkFtZTgwNDQ1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 30
+
     },
     {
         "temporada": 2,
@@ -246,6 +276,7 @@
         "descripcion": "Después de quedar atrapado en un tobogán de agua, Homer decide ponerse a dieta, mientras Marge se inscribe en una clase de arte y pronto recibe el encargo de pintar un retrato del Sr. Burns. .",
         "imgUrl": "https://images-na.ssl-imimgon.com/images/M/MV5BMjQ0MjI5NDQ2Ml5BMl5BanBnXkFtZTgwMzc3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 31
+
     },
     {
         "temporada": 2,
@@ -254,6 +285,7 @@
         "descripcion": "Lisa está enamorada de su profesor sustituto, quien aparentemente representa todo lo que Homero no es. Mientras tanto, Bart decide postularse para presidente de la clase y se convierte en el gran favorito.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1NTk0OTY4OV5BMl5BanBnXkFtZTgwMzY2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 32
+
     },
     {
         "temporada": 2,
@@ -262,6 +294,7 @@
         "descripcion": "Homero debe decidir qué es más importante: completar terapia para salvar su matrimonio o escaparse para pescar un bagre legendario. Mientras tanto, en casa, Bart y Lisa se aprovechan de la ignorancia del abuelo sobre las reglas de la casa.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkwNjc4MzQyMl5BMl5BanBnXkFtZTgwNzE4MzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 33
+
     },
     {
         "temporada": 2,
@@ -270,6 +303,7 @@
         "descripcion": "Bart, Milhouse y Martin colaboran cada uno para comprar un costoso cómic, lo que pronto tiene un efecto desastroso en su amistad.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk5NzQ2MzU2Nl5BMl5BanBnXkFtZTgwNTA1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 34
+
     },
     {
         "temporada": 2,
@@ -278,6 +312,7 @@
         "descripcion": "Bart salva la vida del Sr. Burns. Pero Homero se enfurece cuando el Sr. Burns no les devuelve el favor enviando a los Simpson lo que considera un apropiado regalo de \"agradecimiento\".",
         "imgUrl": "https://imagesimgmages-amazon.com/images/M/MV5BMjE5Mjc0MDIyN15BMl5BanBnXkFtZTgwMTUzMzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 35
+
     },
     {
         "temporada": 3,
@@ -286,6 +321,7 @@
         "descripcion": "Homero aterriza accidentalmente en un hospital psiquiátrico y termina compartiendo habitación con un hombre blanco que se cree Michael Jackson.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk3MTE2OTE4NV5BMl5BanBnXkFtZTgwMzQ1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 36
+
     },
     {
         "temporada": 3,
@@ -294,6 +330,7 @@
         "descripcion": "Lisa participa en un concurso y gana un viaje a Washington D.C. para toda la familia. Mientras está allí, descubre la corrupción y decide exponer al funcionario corrupto.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjQwOTAwNzA5NV5BMl5BanBnXkFtZTgwNzA2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 37
+
     },
     {
         "temporada": 3,
@@ -302,6 +339,7 @@
         "descripcion": "Ned Flanders abre una tienda en un centro comercial para zurdos. Sin embargo, Homer desea que Flanders fracase.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5MDI4MjE4N15BMl5BanBnXkFtZTgwMDQwOTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 38
+
     },
     {
         "temporada": 3,
@@ -310,6 +348,7 @@
         "descripcion": "Bart se topa con el jefe de la mafia local y comienza a trabajar para él. Cuando el director Skinner desaparece después de castigar a Bart, él y la pandilla de Fat Tony son sospechosos de matarlo, pero intentan que Bart se lleve el rap.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI4NDAwMzY2Ml5BMl5BanBnXkFtZTgwODE3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 39
+
     },
     {
         "temporada": 3,
@@ -318,6 +357,7 @@
         "descripcion": "Homero es un héroe después de evitar una fusión nuclear que casi provocó, pero no quiere decirle a nadie que la detuvo completamente por accidente.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MDc3NjY1N15BMl5BanBnXkFtZTgwMTY3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 40
+
     },
     {
         "temporada": 3,
@@ -326,6 +366,7 @@
         "descripcion": "Cuando los Simpson invitan a cenar a Krusty el Payaso, él da las gracias en hebreo y recuerda su difícil relación con su padre, un rabino. Bart y Lisa intentan reunirlos a los dos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4OTc3MTk1Ml5BMl5BanBnXkFtZTgwMjU3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 41
+
     },
     {
         "temporada": 3,
@@ -334,6 +375,7 @@
         "descripcion": "La familia Simpson recibe una pata de mono cortada que puede conceder deseos, Bart obtiene poderes mágicos que usa para convertir a Homero en una caja sorpresa y el Sr. Burns usa el cerebro de Homero para crear un robot. ",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzkwNjQyMTM3NV5BMl5BanBnXkFtZTgwOTMzNDE1NTE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 42
+
     },
     {
         "temporada": 3,
@@ -342,6 +384,7 @@
         "descripcion": "Después de arruinar la actuación de Lisa en el concurso de talentos de la escuela, Homero intenta compensarla comprándole un pony.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk3MTYxMDM0NV5BMl5BanBnXkFtZTgwOTg2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 43
+
     },
     {
         "temporada": 3,
@@ -350,6 +393,7 @@
         "descripcion": "Después de que Homer falla una prueba de paternidad, decide ayudar a Bart a construir su auto de carreras Soap Box Derby. Pero Bart abandona a Homer y su auto de carreras después de que el vehículo muy superior de Martin de repente esté disponible.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0MTI3MTc4NV5BMl5BanBnXkFtZTgwOTE5NDQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 44
+
     },
     {
         "temporada": 3,
@@ -358,6 +402,7 @@
         "descripcion": "Moe afirma que una bebida que inventó Homer es suya. Después de que la bebida convierte el bar en un lugar de moda local, Moe hace varios amigos cuando hace buen tiempo, pero pierde la amistad de Homer.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTIzNTI1NDI1MV5BMl5BanBnXkFtZTgwMTc3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 45
+
     },
     {
         "temporada": 3,
@@ -366,6 +411,7 @@
         "descripcion": "Burns decide jubilarse y vende la central eléctrica a un consorcio alemán por un precio exorbitante. La pereza e ineficiencia de Homer son rápidamente expuestas por sus nuevos jefes y lo despiden.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTQwODc0Mjc0Ml5BMl5BanBnXkFtZTgwNDI0NDQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 46
+
     },
     {
         "temporada": 3,
@@ -374,6 +420,7 @@
         "descripcion": "Mientras Marge va al médico para hacerse una prueba de embarazo, Homero les cuenta a los niños los acontecimientos previos a su matrimonio y al nacimiento de Bart.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3NDI1ODUzOF5BMl5BanBnXkFtZTgwOTk4NDQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 47
+
     },
     {
         "temporada": 3,
@@ -382,6 +429,7 @@
         "descripcion": "Después de que Bart recibe un micrófono que puede transmitir a través de radios, decide hacer una serie de bromas y finalmente convence al pueblo de que un niño se ha caído a un pozo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzMjAwMzAwNV5BMl5BanBnXkFtZTgwMDIxNDE1NTE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 48
+
     },
     {
         "temporada": 3,
@@ -390,6 +438,7 @@
         "descripcion": "Homero usa a Lisa (y sus habilidades de pronóstico) para ayudarlo a apostar en partidos de fútbol.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQyMzMwMzk2OF5BMl5BanBnXkFtZTgwMjA5NDQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 49
+
     },
     {
         "temporada": 3,
@@ -398,6 +447,7 @@
         "descripcion": "Mientras Marge pasa un par de días en Rancho Relaxo después de sufrir una crisis nerviosa, Bart y Lisa se quedan con Patty y Selma, y Homer se queda en casa para cuidar a Maggie. ",
         "imgUrl": "https://images-imgages-amazon.com/images/M/MV5BMTkwNzc1MTQ0Ml5BMl5BanBnXkFtZTgwNTA5NDQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 50
+
     },
     {
         "temporada": 3,
@@ -406,6 +456,7 @@
         "descripcion": "Después de que la Sra. Krabappel le da a Bart un mes de detención, él se venga respondiendo a su anuncio de solteros en el periódico. Mientras tanto, Marge le sugiere a Homer que inicie un frasco de malas palabras para que deje de maldecir.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTIwODIyMjAzOV5BMl5BanBnXkFtZTgwNTk4NDQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 51
+
     },
     {
         "temporada": 3,
@@ -414,6 +465,7 @@
         "descripcion": "Homero y sus compañeros de trabajo califican para la final de la liga del equipo de softbol de la planta, pero el Sr. Burns contrata a nueve jugadores profesionales de la MLB para ganar una apuesta de $1 millón.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUyMTY2MjE3N15BMl5BanBnXkFtZTgwMDU4NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 52
+
     },
     {
         "temporada": 3,
@@ -422,6 +474,7 @@
         "descripcion": "Los resultados de una prueba estandarizada guían a Bart en la dirección de la ley y el orden en la Escuela Primaria de Springfield. Sin embargo, Lisa se deprime tanto por sus resultados que recurre a la delincuencia juvenil.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5MDg4NDg4Ml5BMl5BanBnXkFtZTgwMjU1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 53
+
     },
     {
         "temporada": 3,
@@ -430,6 +483,7 @@
         "descripcion": "Los Simpson terminan arrepintiéndose de haber pagado una costosa cirugía para el pequeño ayudante de Santa. Luego se escapa de casa, termina en el refugio de animales y es adoptado por el Sr. Burns para convertirse en un perro de ataque.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5NTg5MzMyN15BMl5BanBnXkFtZTgwNDA5NDQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 54
+
     },
     {
         "temporada": 3,
@@ -438,6 +492,7 @@
         "descripcion": "Homero se convierte en el manager de una hermosa joven cantante de country y casi se siente atraído por ella, lo que provoca los celos de Marge.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjc1MzY2MjgyNF5BMl5BanBnXkFtZTgwODM3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 55
+
     },
     {
         "temporada": 3,
@@ -446,6 +501,7 @@
         "descripcion": "El actor secundario Bob sale de la cárcel y planea vengarse de Bart casándose con su tía Selma y matándola.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg2Mjc0NTQ3OF5BMl5BanBnXkFtZTgwMjI3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 56
+
     },
     {
         "temporada": 3,
@@ -454,6 +510,7 @@
         "descripcion": "Después de que Otto pierde su trabajo como conductor de autobús escolar porque no tiene licencia, Bart convence a Homer y Marge para que dejen que Otto se quede con ellos hasta que se recupere.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjkyMDE5NzQ1Ml5BMl5BanBnXkFtZTgwOTg0NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 57
+
     },
     {
         "temporada": 3,
@@ -462,6 +519,7 @@
         "descripcion": "Milhouse se enamora de Samantha, una nueva estudiante transferida, y Bart se pone celoso por todo el tiempo que pasan juntos. Mientras tanto, Homer pide una cinta subliminal para perder peso, pero por error le dan un complemento para aprender vocabulario.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTEwNTkxMTY0MjheQTJeQWpwZ15BbWU4MDY0NzU0NjIx._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 58
+
     },
     {
         "temporada": 3,
@@ -470,6 +528,7 @@
         "descripcion": "Después de que Homer \"gana\" un acuerdo de $2000 con la planta por la radiación que afecta su recuento de espermatozoides, su hermano Herb llega a Springfield con una idea que podría ayudarlo a recuperar su fortuna.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3OTgwNjUzM15BMl5BanBnXkFtZTgwOTE3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 59
+
     },
     {
         "temporada": 4,
@@ -478,6 +537,7 @@
         "descripcion": "Bart y Lisa se van de verano al campamento para niños de Krusty, pero en lugar de conocer a Krusty, conocen a su sustituto contador de frijoles, el Sr. Black. Sin sus hijos, Homer y Marge disfrutan de un verano romántico, pero Bart y Lisa se ponen a trabajar haciendo productos de mala calidad, hasta que Krusty regresa y arregla las cosas llevando a los niños a Tijuana.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQyN2NjOTItZjc2MC00YzE4LTllZjEtZmQzNDYzMWExNGY4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 60
+
     },
     {
         "temporada": 4,
@@ -486,6 +546,7 @@
         "descripcion": "Marge gana el papel principal en una producción musical de \"Un tranvía llamado deseo\", en la que Ned Flanders interpreta a Stanley Kowalski. Marge se enfurece por la brutalidad e insensibilidad de Homer durante la preproducción, hasta que ve la obra y le revela Marge dice que ha comprendido su significado. Mientras ensaya, Marge mete a Maggie en la guardería Ayn Rand, donde inmediatamente le quitan el chupete y, al estilo \"The Great Escape\", debe luchar para recuperarlo. ",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjQ3YWEzODEtNmE2Ny00NWU0LTkzNWQtZjM2ZjI5YTFhZDhlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200, 112_AL_.jpg",
         "id": 61
+
     },
     {
         "temporada": 4,
@@ -494,6 +555,7 @@
         "descripcion": "Después de faltar a la iglesia una semana, Homero decide que nunca volverá. Sin embargo, cuando ocurre una calamidad, se necesitan los esfuerzos combinados de varias personas de diferentes religiones. para salvarlo.",
         "imgUrl": "https://images-na.sslimgmazon.com/images/M/MV5BMTQxNDc2ODg0NF5BMl5BanBnXkFtZTgwMzk5NjA1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 62
+
     },
     {
         "temporada": 4,
@@ -502,6 +564,7 @@
         "descripcion": "Lisa entra al concurso Little Miss Springfield.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2NmY2YzYWQtYWIwOC00MzY4LThjMTctMzJkYzVmZmRiZDE3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 63
+
     },
     {
         "temporada": 4,
@@ -510,6 +573,7 @@
         "descripcion": "Un malvado muñeco del Payaso Krusty hace la vida un infierno para los Simpson, Marge es capturada por un simio gigante que se enamora de ella, y Bart sin darse cuenta resucita a los muertos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2MTE3NzAwMl5BMl5BanBnXkFtZTgwNzc1NzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 64
+
     },
     {
         "temporada": 4,
@@ -518,6 +582,7 @@
         "descripcion": "Hacer una broma de más le cuesta a Bart la oportunidad de ver la película Itchy and Scratchy.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2I1Nzk0Y2MtYTE2Yy00ZWFjLWFlNzQtNDllMjQ0OWY2NzI4XkEyXkFqcGdeQVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 65
+
     },
     {
         "temporada": 4,
@@ -526,6 +591,7 @@
         "descripcion": "Marge acepta un trabajo en la planta nuclear para ayudar a pagar la reparación de los cimientos de la casa, y el Sr. Burns está enamorado de ella.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2IwM2FmZWEtYzdkMi00MTI3LWE1M2YtY2QzODIxMjlkNzRjXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 66
+
     },
     {
         "temporada": 4,
@@ -534,6 +600,7 @@
         "descripcion": "Bart se siente atraído por su nueva vecina de 15 años, Laura. Mientras tanto, Homero demanda a un buffet libre.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BOWI0MjIzYmUtNzlmYi00ODUxLTkxMTktNDExMzBkNzQ0OTk1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 67
+
     },
     {
         "temporada": 4,
@@ -542,6 +609,7 @@
         "descripcion": "Homero compra un camión con un quitanieves adjunto después de destruir su auto y, para pagarlo, comienza un negocio de palear nieve, llamándose a sí mismo Sr. Plow. Todo va sin problemas, hasta que encuentra él mismo en competencia con The Plough King, también conocido como Barney Gumbel. Ahora comienza el invierno del descontento.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5MDQwNzM2MV5BMl5BanBnXkFtZTgwMzk1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 68
+
     },
     {
         "temporada": 4,
@@ -550,6 +618,7 @@
         "descripcion": "Mientras intentan convencer a Maggie para que diga su primera palabra, Homer y Marge hablan sobre cómo Lisa pronunció la suya.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjc4ZGFjMzAtYzE2Ni00ZDFkLWE2YjktMWYyZGFkZGJiMjExXkEyXkFqcGdeQXVyNjQwMTkxMDU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 69
+
     },
     {
         "temporada": 4,
@@ -558,6 +627,7 @@
         "descripcion": "Años de malos hábitos alimenticios alcanzan a Homer cuando sufre un ataque cardíaco masivo. La familia no puede permitirse la operación de triple bypass que necesita del Dr. Hibbert, por lo que acuden a un curandero de descuento llamado Nick Riviera. ",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTEzMTAwYzAtZWQ3Ny00NmRhLWIwNjctNDc1OWIzYTA2OWI4XkEyXkFqcGdeQXVyNjYyODY4NDU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 70
+
     },
     {
         "temporada": 4,
@@ -566,6 +636,7 @@
         "descripcion": "Después de recibir una donación considerable de dinero, la gente de Springfield decide en qué gastarlo. Ingresa Lyle Langley, un vendedor jocoso que engancha a Springfield a un sistema de monorriel. Después de que el monorriel esté en funcionamiento, y con Homero como conductor, ha llegado el momento del viaje inaugural. La gente no sabe que acaban de subir a un tren de ida al infierno.",
         "imgUrl": "https://images-na.ssl-imagimg.com/images/M/MV5BZmMyNzgwNDYtN2YzMS00MmViLTgwYWEtOTllYzU0Mzk3OGNjXkEyXkFqcGdeQXVyNjQwMTkxMDU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 71
+
     },
     {
         "temporada": 4,
@@ -574,6 +645,7 @@
         "descripcion": "Selma comienza a sentirse melancólica, pero después de llevar a Bart y Lisa a Duff Gardens, cambia de opinión.",
         "imgUrl": "https://images-na.imgs-amazon.com/images/M/MV5BMGIyZTIyOTctYjY0MS00OWY1LTkxMjAtYWZlYjAxNGU3NzIxXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_.jpg ",
         "id": 72
+
     },
     {
         "temporada": 4,
@@ -582,6 +654,7 @@
         "descripcion": "Después de que Homer se olvida de recoger a Bart de la práctica de fútbol, Bart se une a un programa de mentores llamado Big Brothers presentándose como huérfano, y se le asigna un hermano mayor llamado Tom. Cuando Homer se entera, también se une al programa como un hermano mayor.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjlkZDk0YTEtODVkNy00MjE1LTg1MWUtZWZhNzg2OTZhMTA4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 73
+
     },
     {
         "temporada": 4,
@@ -590,6 +663,7 @@
         "descripcion": "Sintiendo lástima por Ralph, Lisa le envía una tarjeta de San Valentín. Habiéndose enamorado de ella, Ralph invita a Lisa a ir a ver el espectáculo de Krusty el Payaso. Ella acepta, pero después de que Krusty les pregunta si son novios, Lisa le hace saber a Ralph que sólo quiere que sean amigos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYzNDA4NDM4NF5BMl5BanBnXkFtZTgwMTk5NjA1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 74
+
     },
     {
         "temporada": 4,
@@ -598,6 +672,7 @@
         "descripcion": "Después de que Homer es arrestado por DUI y pierde su licencia de conducir, se ve sometido a la prueba definitiva cuando Marge lo presiona para que deje la cerveza durante un mes.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGI2NmYwYTctMDNkZi00MjM1LTgwZmYtYjMyMzI2MTQyYzRlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 75
+
     },
     {
         "temporada": 4,
@@ -606,6 +681,7 @@
         "descripcion": "Homer se convierte en líder sindical y lidera una huelga en la empresa cuando el Sr. Burns le quita el plan dental a la empresa.",
         "imgUrl": "https://images-na.ssl-imagesimgom/images/M/MV5BNWRiNjI0OTMtZTk0MS00NmIyLThjOGQtOGZjYTk1OTkyYTZkXkEyXkFqcGdeQXVyNjYyODY4NDU@._V1_UX200_CR0,0,200,112_AL_.jpg ",
         "id": 76
+
     },
     {
         "temporada": 4,
@@ -614,6 +690,7 @@
         "descripcion": "Homero le gasta una serie de bromas (infantiles) a Bart. Para vengarse, Bart usa una mezcladora de pintura en una ferretería local para agitar una lata de cerveza de Homero. Homero abre la lata, lo que resulta en una enorme explosión que hiere gravemente al patriarca de los Simpson.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmVlZjM1N2QtNjZhZC00OTcwLWFiOWMtOTdhZTg0Njk5YmZmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 77
+
     },
     {
         "temporada": 4,
@@ -622,6 +699,7 @@
         "descripcion": "Homero regresa a la escuela después de que se revela que nunca se graduó. Mientras tanto, Bart y Lisa escriben para Itchy & Scratchy usando el nombre de Abe.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2U3ZjE5ODktNzBhNS00OTQ5LTllMDYtYmMxYjdjZTkxOWNhXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 78
+
     },
     {
         "temporada": 4,
@@ -630,6 +708,7 @@
         "descripcion": "Marge intenta educar a Bart en casa después de que lo expulsan de la escuela primaria de Springfield. Mientras tanto, Lisa protesta contra un feriado local bárbaro centrado en matar serpientes a garrotazos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjRhMTJhOTctNTUzNC00Mjk2LTg4NzAtMTgzNTlhMmRmMDM5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 79
+
     },
     {
         "temporada": 4,
@@ -638,6 +717,7 @@
         "descripcion": "Un malentendido lleva a Marge a ser encarcelada por robar en una tienda. En su ausencia, la familia y, eventualmente, el pueblo mismo, se hunden en el caos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGVlOTQyZDctMDE0Zi00ZGYwLTgwOWMtODYyYTg5NjM0MDY5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 80
+
     },
     {
         "temporada": 4,
@@ -646,6 +726,7 @@
         "descripcion": "Un bombardeo publicitario masivo anuncia la llegada de algo llamado \"Gabbo\". Finalmente, se revela que Gabbo es un muñeco al estilo Howdy Doody, cuyo sensacional éxito hace que el espectáculo de Krusty el Payaso sea cancelado.",
         "imgurl": "https://images-na.ssl-images-amazon.com/images/m/mv5bnjczzdfhotititztc2os00mtyxltlodktnzi0odfhntzhntezxkfqcgdeqxvynjcwmzzmtu@._v1_ux_uxt1200. g ",
         "id": 81
+
     },
     {
         "temporada": 5,
@@ -654,6 +735,7 @@
         "descripcion": "Después de que los niños encuentran un disco con la foto de Homero, él recuerda la historia de cómo alcanzó la fama en la década de 1980 con su cuarteto de barberos, The Be Sharps.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjFiYjliNGYtMjk5Mi00OGI4LWIyZmItODQ2YjhmOGE2ZjljXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 82
+
     },
     {
         "temporada": 5,
@@ -662,6 +744,7 @@
         "descripcion": "Después de ser liberado de prisión bajo libertad condicional, Sideshow Bob planea asesinar a Bart.",
         "imgUrl": "https://imagesimgmages-amazon.com/images/M/MV5BOGQ4ZjYxOTgtYTM1MS00MzczLWE1YjAtYzIwNjIyMzg5MzJmXkEyXkFqcGdeQXVyNjYyODY4NDU@._V1_UX200_CR0,0,200,112_AL_.jpg ",
         "id": 83
+
     },
     {
         "temporada": 5,
@@ -670,6 +753,7 @@
         "descripcion": "Cuando una inspección sorpresa de la planta de energía nuclear revela que Homero no está calificado para hacer su trabajo, se ve obligado a ir a la universidad.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjU4ZmM4YzYtOWFlMC00ZDYxLWFhZTYtOGU0MDVmYzNlZmM0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 84
+
     },
     {
         "temporada": 5,
@@ -678,6 +762,7 @@
         "descripcion": "El Sr. Burns emprende una búsqueda desesperada para recuperar su preciado juguete de la infancia, Bobo, un oso que ahora está en posesión de Maggie.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2U1ZTY4NjctZWQ3NC00MWNhLWFlODgtOWFkNTkxMGQwNDZhXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 85
+
     },
     {
         "temporada": 5,
@@ -686,6 +771,7 @@
         "descripcion": "Homero vende su alma al diablo por una dona, Bart se enfrenta a un duende en el costado del autobús escolar que solo él puede ver, y la familia descubre que el Sr. Burns es un vampiro.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0MzIxMjc2NF5BMl5BanBnXkFtZTgwNzU1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 86
+
     },
     {
         "temporada": 5,
@@ -694,6 +780,7 @@
         "descripcion": "Una noche de chicas se convierte en una persecución a alta velocidad cuando Marge descubre que su amiga conduce un auto robado.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGEyOWMxMGItY2I4MC00MTVmLWFjZjctOTUzY2ZlYWRlZDRhXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 87
+
     },
     {
         "temporada": 5,
@@ -702,6 +789,7 @@
         "descripcion": "Brad Goodman, un gurú de la autoayuda, llega a Springfield e identifica a Bart como un modelo a seguir de felicidad personal porque está en contacto con su niño interior. Pronto, todo el pueblo comienza a comportarse como él.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmEzYjkyZDktZDQ0Yy00OTNkLTgxNDgtOWJkYWVhZWVmNWMyXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 88
+
     },
     {
         "temporada": 5,
@@ -710,6 +798,7 @@
         "descripcion": "Después de unirse a los Junior Campers mientras estaba en un nivel alto de azúcar, Bart, de mala gana, invita a Homer a acompañarlo en el viaje anual de rafting entre padre e hijo del grupo, que pronto sale mal.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjRiNTdlNjYtMWJlOS00OTVhLWE0NTAtYzI0NTY3OThiNmRiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 89
+
     },
     {
         "temporada": 5,
@@ -718,6 +807,7 @@
         "descripcion": "El matrimonio de Homer está en problemas cuando él desarrolla una atracción por una nueva compañera de trabajo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgyYjBmMDMtOWY1Zi00NmEwLWFkNjAtODVmYTM1ZDNjOThmXkEyXkFqcGdeQXVyMTY2MzYyNzA@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 90
+
     },
     {
         "temporada": 5,
@@ -726,6 +816,7 @@
         "descripcion": "Para revitalizar su economía, Springfield decide legalizar el juego. Como consecuencia, Marge se vuelve adicta al uso de máquinas tragamonedas, mientras que el Sr. Burns desarrolla un complejo de Howard Hughes.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWZjMjFiMzItZGY2NS00MmNhLTgxZTYtYmJjMWNiMjI4YmFkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 91
+
     },
     {
         "temporada": 5,
@@ -734,6 +825,7 @@
         "descripcion": "Un brote de robos inspira a Homer a liderar un grupo de vigilantes.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjZlMzRkMDMtNjY5OS00NjY4LWEwOTQtNDZhNWY5MTFhOWYxXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 92
+
     },
     {
         "temporada": 5,
@@ -742,6 +834,7 @@
         "descripcion": "Bart se convierte de la noche a la mañana en una sensación como el chico \"Yo no lo hice\" en el programa de Krusty el Payaso.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmI5MDQwOTItYjhmYi00MzUxLThmNGItMDM0ODAyNjc1MzZiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 93
+
     },
     {
         "temporada": 5,
@@ -750,6 +843,7 @@
         "descripcion": "Cuando Homer enferma después de comer comida contaminada comprada en el Kwik-E-Mart, Apu es despedido de su trabajo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ4OTc5NDUxOF5BMl5BanBnXkFtZTgwNjI3NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 94
+
     },
     {
         "temporada": 5,
@@ -758,6 +852,7 @@
         "descripcion": "Lisa lidera una protesta contra un muñeco parlante que ella cree que es sexista.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGJkOTJlMjgtZmFlZi00YzE1LWE3YWMtMjBjZWU0ZmE3MGZmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200 ,112_AL_.jpg",
         "id": 95
+
     },
     {
         "temporada": 5,
@@ -766,6 +861,7 @@
         "descripcion": "En un esfuerzo por aumentar los pésimos ratings televisivos de sus lanzamientos espaciales, la NASA decide enviar a un hombre común y corriente al espacio, y Homero es elegido para la tarea.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BOGQzOTkzOTQtZjJmYi00NWQxLWFjZDctZGUyNzkwNGFkOGNmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 96
+
     },
     {
         "temporada": 5,
@@ -774,6 +870,7 @@
         "descripcion": "Después de que Ned Flanders invita a Homer a un importante partido de fútbol, los dos se hacen amigos. Sin embargo, la posesividad y el comportamiento grosero de Homer poco a poco vuelven a Ned en su contra.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmExMmU2ZGYtM2IwMS00MDUwLTkxZDktOTdjYjIwOTNiOWI2XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 97
+
     },
     {
         "temporada": 5,
@@ -782,6 +879,7 @@
         "descripcion": "Bart gana un elefante en un concurso de radio.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTY1YTc4NmMtZDNhNS00MTE5LThmZWQtMjBkNzdiYTVhMWE5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 98
+
     },
     {
         "temporada": 5,
@@ -790,6 +888,7 @@
         "descripcion": "Después de una experiencia cercana a la muerte, el Sr. Burns se da cuenta de que no tiene un heredero legal y realiza audiciones para encontrar uno. Bart finalmente es elegido y el Sr. Burns planea ponerlo en contra del resto de la familia Simpson.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ5OThkMGItMjgyNy00NzhiLTlkODgtYmYwZDgxZDA4NWExXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 99
+
     },
     {
         "temporada": 5,
@@ -798,6 +897,7 @@
         "descripcion": "Bart lleva al pequeño ayudante de Santa a la escuela con él el día de la inspección y hace que despidan a Skinner, Bart está contento hasta que Ned Flanders es su reemplazo. Bart se propone encontrar a Skinner y reintegrarlo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTJmNzA2YmQtNWY4Yy00ZTYxLWEzN2ItYTkwOTBlODU1MjMxXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 100
+        
     },
     {
         "temporada": 5,
@@ -806,6 +906,7 @@
         "descripcion": "Después de faltar a la escuela, Bart es testigo del presunto asalto a un camarero por parte del sobrino del alcalde Quimby, Freddy. Sin embargo, si se presenta, tendrá que admitir que faltó a clases y enfrentar las consecuencias.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmQ1Y2M4ZDAtNjFmOC00NTU2LTgxMzctMmMzOTk4OTI4ZTU4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 101
+        
     },
     {
         "temporada": 5,
@@ -814,6 +915,7 @@
         "descripcion": "El abuelo se enamora de la madre de Marge, pero debe competir con el Sr. Burns por su corazón.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzQ3ZGFiNTMtODQ1OC00YjFmLTgxYzgtZWNjYTUzNjI4ODIwXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 102
+        
     },
     {
         "temporada": 5,
@@ -822,6 +924,7 @@
         "descripcion": "Homero comienza a dar una clase sobre cómo tener un matrimonio exitoso, pero pone en peligro su propio matrimonio al revelar secretos sobre él y Marge.",
         "imgUrl": "https://images-na.ssl-images-amazon.imgs/M/MV5BOGVjZmYwZjktOGNiOS00N2QyLWI3MDItOWI0MzJhMDE0YmM5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 103
+        
     },
     {
         "temporada": 6,
@@ -830,6 +933,7 @@
         "descripcion": "Después de romperse una pierna y quedar confinado en su habitación, Bart comienza a espiar a los residentes de Springfield con un telescopio. Pronto sospecha que Ned Flanders ha asesinado a su esposa y le pide a Lisa que le ayude a demostrarlo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzBiM2JmYzYtYzQ5Ni00NWY4LTg0ZjctZDE5ZTQ4MTFkZDY3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 104
+        
     },
     {
         "temporada": 6,
@@ -838,6 +942,7 @@
         "descripcion": "Lisa se pone celosa cuando una chica nueva en la clase es más inteligente que ella. Mientras tanto, Homero obtiene una enorme cantidad de azúcar.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjU3ZDVmZjAtOWQ2ZS00OWE0LWIyMzAtZjBlNzlmYTFiMGU0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 105
+        
     },
     {
         "temporada": 6,
@@ -846,6 +951,7 @@
         "descripcion": "La familia recuerda historias pasadas de amor perdido.",
         "imgUrl": "https://images-na.ssl-images-imgm/images/M/MV5BNjBkMDkwODUtOTFiNS00Nzg1LWJkZjItNGFmNjcwMTU5MDc1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 106
+        
     },
     {
         "temporada": 6,
@@ -854,6 +960,7 @@
         "descripcion": "Unas vacaciones familiares en Itchy & Scratchy Land se vuelven desastrosas cuando los robots funcionan mal y vuelven contra los turistas.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWRkY2VlZjAtNGI2My00ODBjLWJkODMtMTkwZGNkNmIzZDhmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 107
+        
     },
     {
         "temporada": 6,
@@ -862,6 +969,7 @@
         "descripcion": "El actor secundario Bob sale de prisión y se postula para alcalde de Springfield. Cuando gana las elecciones, Bart y Lisa sospechan de un crimen y están decididos a exponer la corrupción de Bob.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTZhY2IwNzYtMTFhYy00NjliLTlkNGYtYzk1YjhmNWEwZTlmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 108
+        
     },
     {
         "temporada": 6,
@@ -870,6 +978,7 @@
         "descripcion": "El trabajo de la familia en la finca del Sr. Burns sale mal cuando Homer se vuelve loco. Mientras tanto, el intento de Homer de reparar una tostadora resulta en un viaje involuntario en el tiempo, y Bart y Lisa se se enfrenta a convertirse en la cena cuando el personal de la escuela se vuelve caníbal. ",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjE0OTc5OTg1Ml5BMl5BanBnXkFtZTgwNTM1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 109
+        
     },
     {
         "temporada": 6,
@@ -878,6 +987,7 @@
         "descripcion": "Bart se enamora de la hija del Reverendo Lovejoy y se sorprende cuando ella se convierte en una mala influencia para él.",
         "imgUrl": "https://images-na.sslimgmazon.com/images/M/MV5BNDg5NzdhYjAtYzllOS00M2ViLWE1MmUtNzZjYWJkNDJkNGVmXkEyXkFqcGdeQXVyNDIzNDExOQ@@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 110
+        
     },
     {
         "temporada": 6,
@@ -886,6 +996,7 @@
         "descripcion": "Homero le da toda su atención a Bart porque es la estrella de su equipo de hockey, lo que pone celosa a Lisa. Pero cuando un equipo rival descubre que ella es una excelente portera, Bart de repente tiene un rival para llamar la atencion de Homero.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTlhOWM0MmQtYjZmMy00ZTNkLTg1NDctMzBhYjA2ZTFkYTAzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 111
+        
     },
     {
         "temporada": 6,
@@ -894,6 +1005,7 @@
         "descripcion": "Después de una serie de malentendidos, Homero es etiquetado como un pervertido. Pronto se ve excluido por todos en la ciudad y debe tratar de limpiar su nombre.",
         "imgUrl": "https://images-nimgges-amazon.com/images/M/MV5BYzE2OWUwMDYtZTNkZC00NmIwLTkyOWMtYjcyZGVkMDFhYzI0XkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 112
+        
     },
     {
         "temporada": 6,
@@ -902,6 +1014,7 @@
         "descripcion": "Homero y Abe salen a la carretera para vender el milagroso afrodisíaco de Abe.",
         "imgUrl": "https://images-na.ssl-images-amazimgages/M/MV5BZDliYTE2MjEtYTY3ZC00MzIxLWIzYWQtZDZlZTdkNzE1MzFlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 113
+        
     },
     {
         "temporada": 6,
@@ -910,6 +1023,7 @@
         "descripcion": "Marge va a terapia para curarla de su traumatizante miedo a volar.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWE1ZTQ3NDMtZjBiNC00ZjdhLTg3OTQtYzVkMmM1NWNjOTI3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 114
+        
     },
     {
         "temporada": 6,
@@ -918,6 +1032,7 @@
         "descripcion": "Homero se convierte en miembro de una misteriosa organización llamada Los Canteros y es anunciado como \"el elegido\".",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWY4ZmNhYzEtYmU2OC00NDM2LWEzODItOGE2YTA3ODg1Y2M1XkEyXkFqcGdeQXVyNjYyODY4NDU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 115
+        
     },
     {
         "temporada": 6,
@@ -926,6 +1041,7 @@
         "descripcion": "Homero cuenta la historia del nacimiento de Maggie cuando los niños preguntan por qué no hay fotos de ella en el álbum familiar.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTcwMjViNDItOGNkNC00Y2U1LWFkZWYtOWY3ODRkY2JmYjVhXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 116
+        
     },
     {
         "temporada": 6,
@@ -934,6 +1050,7 @@
         "descripcion": "Bart descubre un cometa que está en curso de colisión con Springfield.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODRlZDZiZTAtMzQxMS00MGNhLThlOTgtZWQyMGRiZTVmYzI4XkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 117
+        
     },
     {
         "temporada": 6,
@@ -942,6 +1059,7 @@
         "descripcion": "Homero se convierte en un sustituto de Krusty el Payaso, pero la mafia de Springfield lo confunde con el verdadero Krusty.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjkyNzljMzItN2JiZi00MTAwLWFiYzAtMTFkNjE2ZWM0NGJkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 118
+        
     },
     {
         "temporada": 6,
@@ -950,6 +1068,7 @@
         "descripcion": "Después de hacer una llamada por cobrar a Australia y negarse a pagarla, Bart provoca un incidente internacional, con los Simpson obligados a viajar al país para reparar las relaciones políticas.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDM4MjE0MzQtZWViMS00YWFkLWI2OTgtMTQxYTlkNmYyYTM0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 119
+        
     },
     {
         "temporada": 6,
@@ -958,6 +1077,7 @@
         "descripcion": "Desesperado por dinero, Homero pide un préstamo a Patty y Selma. Mientras tanto, Bart descubre un talento natural para el ballet.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjk1MzAzN2UtNGE1Ny00ZjJiLTk2YmUtYTlmNGY5NWY2NGM5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200, 112_AL_.jpg",
         "id": 120
+        
     },
     {
         "temporada": 6,
@@ -966,6 +1086,7 @@
         "descripcion": "El Sr. Burns organiza un festival de cine en Springfield para mejorar su imagen. El crítico de cine Jay Sherman, de \"The Critic\" está invitado y se queda con los Simpson.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmFlNmY0NjYtNTg5NC00ZWYzLWEwYWMtNzEyNjJiMTY1N2UwXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200 ,112_AL_.jpg",
         "id": 121
+        
     },
     {
         "temporada": 6,
@@ -974,6 +1095,7 @@
         "descripcion": "Una adivina le da a Lisa un vistazo a su boda en el año 2010.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQxNjQyNTcxOV5BMl5BanBnXkFtZTgwNTc2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 122
+        
     },
     {
         "temporada": 6,
@@ -982,6 +1104,7 @@
         "descripcion": "El nuevo compañero del pequeño ayudante de Santa tiene cachorros, y el Sr. Burns planea robárselos y convertirlos en un abrigo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODEyOTJjZjctMDE1Mi00ZjQ0LTg1NmYtODc0ZDU3Mzk0ZjRlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 123
+        
     },
     {
         "temporada": 6,
@@ -990,6 +1113,7 @@
         "descripcion": "Marge reemplaza a la Sra. Krabappel durante una huelga de maestros.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2FjOWNlM2QtN2FmOC00YWE5LWJkNDctMTA4YWI3MTk5YzdiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 124
+        
     },
     {
         "temporada": 6,
@@ -998,6 +1122,7 @@
         "descripcion": "Cuando Bart es hospitalizado, Lisa se encuentra con su héroe, Bleeding Gums Murphy, quien también es un paciente. Sin embargo, cuando él muere poco después, ella queda devastada.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYzQwZTRmMzUtNzY0ZS00OGYxLWFiYWMtNTE5OThhMzEzMTUzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 125
+        
     },
     {
         "temporada": 6,
@@ -1006,6 +1131,7 @@
         "descripcion": "Marge lidia con la corrupción y el crimen cuando se une a la policía de Springfield.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTAwMzYyZWUtNmRkYS00ZDE0LWE1YWYtNGM5Y2E1NmU0ODgzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 126
+        
     },
     {
         "temporada": 6,
@@ -1014,6 +1140,7 @@
         "descripcion": "Cuando un grupo de niños de Shelbyville roban el limonero sagrado de Springfield, Bart y sus amigos se aventuran allí para recuperar el árbol.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BM2QyNzEwZGEtYWU1MS00YjJiLWFjYTAtOGQxZWI1ZjZmMmE4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 127
+        
     },
     {
         "temporada": 6,
@@ -1022,6 +1149,7 @@
         "descripcion": "Después de que el Sr. Burns roba petróleo de la escuela primaria Springfield, una persona desconocida, aparentemente en represalia, le dispara.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYzc3MzE2OGYtMjVmYS00MzcxLWJmZDMtZTk0OTg2NTg1YjNjXkEyXkFqcGdeQXVyNjQwMTkxMDU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 128
+        
     },
     {
         "temporada": 7,
@@ -1030,6 +1158,7 @@
         "descripcion": "Mientras el Sr. Burns yace en cuidados intensivos, el Jefe Wiggum, con la ayuda de Lisa, intenta descubrir quién le disparó.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjYwOTAxNTcyOV5BMl5BanBnXkFtZTgwMTc0NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 129
+        
     },
     {
         "temporada": 7,
@@ -1038,6 +1167,7 @@
         "descripcion": "Milhouse es elegido como el compañero de Radioactive Man en una producción de Hollywood del cómic.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc2OTQxMTY2M15BMl5BanBnXkFtZTgwMjUxNDc5NzE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 130
+        
     },
     {
         "temporada": 7,
@@ -1046,6 +1176,7 @@
         "descripcion": "Marge y Homer pierden la custodia de los niños, quienes son enviados a vivir a la casa de los Flanders.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmQ1MjE1YzctNDIwYy00ODk4LTgyNTctN2E1MmNjOWYzMzEzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 131
+        
     },
     {
         "temporada": 7,
@@ -1054,6 +1185,7 @@
         "descripcion": "Cuando el reverendo Lovejoy disciplina a Bart por una broma que hizo en la iglesia - engañó al organista para que tocara \"\"In-A-Gadda-Da-Vida\" de Iron Butterfly - él y el co-conspirador Milhouse comienzan discutiendo sobre si el hombre realmente tiene alma. Bart se burla de la idea y acepta vender su alma (un trozo de papel con las palabras El alma de Bart Simpson) a Milhouse por 5 dólares. Una serie de situaciones hacen que Bart se dé cuenta de que tal vez realmente vendió su alma, lo que lo llevó a hacer todo lo posible para recuperarla de Milhouse, quien no está dispuesto a venderla. Mientras tanto, Moe intenta abrir un negocio de estilo familiar...",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDJkNjZlZmUtZmQ2NS00ZmYyLWI3ZWMtODNmOGE3NTk2MmE4XkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200, 112_AL_.jpg",
         "id": 132
+        
     },
     {
         "temporada": 7,
@@ -1062,6 +1194,7 @@
         "descripcion": "Un viaje a un zoológico local convence a Lisa de dejar la carne, a pesar de la presión excesiva para convencerla de que no lo haga.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BOGY4NjZhOGYtY2FjYi00Y2VmLWIyZWUtMDQxOTA5Yzk0ODQ0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 133
+        
     },
     {
         "temporada": 7,
@@ -1070,6 +1203,7 @@
         "descripcion": "Una extraña tormenta eléctrica hace que gigantescas mascotas publicitarias cobren vida, el jardinero Willie muere y jura vengarse de los niños en sus sueños, y Homer accidentalmente se encuentra atrapado en otra dimensión.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMjU0OTU2NF5BMl5BanBnXkFtZTgwMzczMzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 134
+        
     },
     {
         "temporada": 7,
@@ -1078,6 +1212,7 @@
         "descripcion": "Decidido a evitar un programa de ejercicio laboral, Homer intencionalmente aumenta de peso para calificar para la discapacidad y trabajar desde casa. Sin embargo, pronto se da cuenta de que la obesidad mórbida conlleva sus propios problemas.",
         "imgUrl": "https://images-na.simg-amazon.com/images/M/MV5BMjIyODQ4MjM3NF5BMl5BanBnXkFtZTgwNTk5NjA1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 135
+        
     },
     {
         "temporada": 7,
@@ -1086,6 +1221,7 @@
         "descripcion": "Después de fingir su propia muerte, Homero conoce a una mujer en el cementerio que resulta ser su madre. Si bien está impactado por su reaparición, ya que siempre le dijeron que estaba muerta, ella guarda un profundo secreto.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWExNjE0NTEtNGUwMS00OTYzLWJjMDktYmIyOTQxZmU0NTU3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 136
+        
     },
     {
         "temporada": 7,
@@ -1094,6 +1230,7 @@
         "descripcion": "Sideshow Bob nuevamente escapa de prisión y toma el control de una pantalla de televisión en un espectáculo aéreo, exigiendo que todas las estaciones de televisión salgan del aire inmediatamente.",
         "imgUrl": "https://images-na.ssl-images-amaimgmages/M/MV5BZDgyN2RhNWMtODBkYi00OGI3LWI0NGMtNDQxMDA5NzFmM2I0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 137
+        
     },
     {
         "temporada": 7,
@@ -1102,6 +1239,7 @@
         "descripcion": "Troy McClure presenta una retrospectiva de los primeros 137 episodios de Los Simpson.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODgyZjFlNjMtYWQ2My00ZjFhLTg1ZjAtNzg4ODEyZjdmNjMyXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 138
+        
     },
     {
         "temporada": 7,
@@ -1110,6 +1248,7 @@
         "descripcion": "La relación de Marge con Bart se tensa cuando lo sorprenden robando en una tienda antes de Navidad.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmZkZDFjMGMtNjZiNC00ZDNkLTg5OTQtM2E3ODEwOWMwZDhkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 139
+        
     },
     {
         "temporada": 7,
@@ -1118,6 +1257,7 @@
         "descripcion": "Homero forma un equipo de bolos con Moe, Apu y Otto, pero cuando el Sr. Burns descubre que el equipo fue financiado con su dinero, insiste en unirse. Mientras tanto, la Primaria Springfield introduce los uniformes.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMmY4NDY5MDUtOGVkNS00OWE1LTg3MDktNTQwYWY2OGNiYTFkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_.jpg ",
         "id": 140
+        
     },
     {
         "temporada": 7,
@@ -1126,6 +1266,7 @@
         "descripcion": "El ex presidente George Bush y su esposa, Barbara, se mudan al vecindario de los Simpson y pronto chocan con Bart y Homer.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTM3MzUxYmItNWI4ZC00YWE4LTgyYjgtOTQwYzczYTJkNjYyXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 141
+        
     },
     {
         "temporada": 7,
@@ -1134,6 +1275,7 @@
         "descripcion": "Después de comprar un traje Chanel a precio de ganga, Marge se ve invitada a un club de campo por un antiguo compañero de escuela. Atraída por la opulencia del lugar, pronto se ve abrumada por la desesperación por encajar.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzY4NzM0MTctYzdkNS00NGQ3LTljM2MtYjA5YjcwYTBlOGE5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 142
+        
     },
     {
         "temporada": 7,
@@ -1142,6 +1284,7 @@
         "descripcion": "Bart recibe un cheque que quería firmado por Krusty y le sellan la espalda. Como se suponía que Krusty debía autografiarlo, Bart quiere que se lo lleven de nuevo para firmarlo, pero sin darse cuenta revela que Krusty es un fraude fiscal. El estilo de vida de Krusty se reduce al de Un ciudadano promedio, con su espectáculo arruinado y la mayoría de sus posesiones vendidas en una subasta. Bart está enojado consigo mismo, particularmente después de que Krusty, sollozando, se suicida pilotando su avión, el Soy-Onna-Rolla-Gay, hacia la ladera de una montaña. Bart ve visiones de Krusty por todas partes, pero ¿son ilusiones o la vida real?",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzU4YTYxNzktMWFmMS00ZTkwLWI5NjgtOTU4NzVlYzFjODZmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 143
+        
     },
     {
         "temporada": 7,
@@ -1150,6 +1293,7 @@
         "descripcion": "Lisa descubre que el querido fundador de su ciudad, Jebediah Springfield, era en realidad un pirata despiadado.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNGRlZTZkYWItY2VhZi00MzNhLThlOGYtYzQwY2M0NDI5NTdiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 144
+        
     },
     {
         "temporada": 7,
@@ -1158,6 +1302,7 @@
         "descripcion": "Cuando Smithers se ve obligado a tomarse unas vacaciones, nombra a Homero como su reemplazo temporal.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk1NzMzNjE2MF5BMl5BanBnXkFtZTgwNzk5NjA1MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 145
+        
     },
     {
         "temporada": 7,
@@ -1166,6 +1311,7 @@
         "descripcion": "Bart y Lisa conocen a una persona sin hogar que afirma haber creado a Itchy, la mitad del equipo del gato y el ratón de su serie de dibujos animados favorita, \"Itchy & Scratchy\"",
         "imgUrl": "https://images-na.ssl-images-imgm/images/M/MV5BOTg1ODFjMGItNGRkMy00MDhhLWFkNWMtZjE0MjljMjEwNjA1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 146
+        
     },
     {
         "temporada": 7,
@@ -1174,6 +1320,7 @@
         "descripcion": "La estrella de cine decadente Troy McClure comienza a salir con Selma en un intento de silenciar rumores extraños sobre su vida personal y resucitar su carrera.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODU3YmI2NDktOThjYS00OGU3LTkxMzctNTczNGE0YWY4YzQ1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 147
+        
     },
     {
         "temporada": 7,
@@ -1182,6 +1329,7 @@
         "descripcion": "Incapaz de salir de unas vacaciones de primavera mal programadas, el director Skinner inventa el feriado \"Día de ir a trabajar con tus padres\", dándole a Lisa la oportunidad de pasar tiempo con Homer y a Bart la oportunidad de Trabajar con Patty y Selma en el DMV. Cuando Bart hace su propia licencia de conducir falsa y Martin gana un montón en el mercado de valores, Bart alquila un coche y lleva a Milhouse, Martin y Nelson Muntz a un gran viaje por carretera.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzZmNzFkNjAtNzUxOS00OTM5LWJlZWUtNzQxMThjYWVhNDk1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 148
+        
     },
     {
         "temporada": 7,
@@ -1190,6 +1338,7 @@
         "descripcion": "Una serie de viñetas resaltan un día en la vida de varios residentes de Springfield.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmIyMzMwNTMtY2U1MS00NWQ4LWE4MmMtZGU3NGViMzAwY2VkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 149
+        
     },
     {
         "temporada": 7,
@@ -1198,6 +1347,7 @@
         "descripcion": "Otro miembro del pelotón de la Segunda Guerra Mundial del abuelo Simpson muere, dejando solo a él y al Sr. Burns. Años antes, los hombres robaron una serie de obras maestras de valor incalculable de la Alemania nazi, y ahora el Sr. Burns pretende asegurarse de que sea él quien heredarlos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzMzYmYxNDEtZDcxYy00YWUwLWI1YTEtNWExODhjMTkxZDVkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 150
+        
     },
     {
         "temporada": 7,
@@ -1206,6 +1356,7 @@
         "descripcion": "La fiebre antiinmigración arrasa Springfield, lo que amenaza con llevar a la deportación de Apu, hasta que Homer decide rechazar la mentalidad mafiosa y ayudarlo a convertirse en un ciudadano legal.",
         "imgUrl": "https://images-na.ssl-imagimg.com/images/M/MV5BYjdmZmViZGYtMzdhOS00M2RhLTkyYjQtOTc2MjdmNGI2YWI1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 151
+        
     },
     {
         "temporada": 7,
@@ -1214,6 +1365,7 @@
         "descripcion": "Decidido a demostrar que todavía es genial, Homer lleva a Bart y Lisa al festival de música Hullabalooza, donde descubre que tiene talento para recibir disparos en el estómago y se une al espectáculo de fenómenos del festival.",
         "imgUrl": "https://images-nimgges-amazon.com/images/M/MV5BMzhkMzA0OWUtMGZmMS00ZWNhLTllZGYtYWViZGRmNzhmNjg1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 152
+        
     },
     {
         "temporada": 7,
@@ -1222,6 +1374,7 @@
         "descripcion": "Después de darse cuenta de lo impopular que es en la escuela, Lisa, desilusionada, ve las vacaciones en la casa de playa de Ned Flanders que la familia ha planeado como una oportunidad para reinventarse y hacer algunos amigos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTY2MDhlODEtYmEwNi00YjE5LWJhOWUtZWRjZGViYmY4ZjEzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 153
+        
     },
     {
         "temporada": 8,
@@ -1230,6 +1383,7 @@
         "descripcion": "Bart descubre a su gemelo siamés Hugo en el ático. Luego, Lisa se convierte en un dios después de que accidentalmente crea vida en un proyecto de feria de ciencias. Finalmente, Kang y Kodos planean conquistar el planeta disfrazados de Bill Clinton y Bob Dole. ",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxNTY1OTI4MV5BMl5BanBnXkFtZTgwOTcyMzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 154
+        
     },
     {
         "temporada": 8,
@@ -1238,6 +1392,7 @@
         "descripcion": "Homero acepta un nuevo trabajo en una nueva ciudad. Sin embargo, su nuevo y amigable jefe podría ser un súper villano empeñado en dominar el mundo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGRlMTYwYTAtNDM5Ni00YmFmLWExYjAtNjA1NTA0NTY4YjgzXkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 155
+        
     },
     {
         "temporada": 8,
@@ -1246,6 +1401,7 @@
         "descripcion": "Homero se convierte en boxeador después de que Moe descubre su asombrosa habilidad para recibir golpes.",
         "imgUrl": "https://images-na.ssl-iimgzon.com/images/M/MV5BZmQzNmZlODEtZjcwNC00ZDYyLWEzN2UtYWNkNmU5YzQ5NzMxXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 156
+        
     },
     {
         "temporada": 8,
@@ -1254,6 +1410,7 @@
         "descripcion": "Los Simpson intentan reunir al jefe de Homero, el Sr. Burns, con Larry, el hijo perdido de Burns.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzkwN2ViNmMtZWM0Ni00ZDg4LTkzM2YtNTU2MjMwYmUxZDcwXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 157
+        
     },
     {
         "temporada": 8,
@@ -1262,6 +1419,7 @@
         "descripcion": "Marge lidera una cruzada contra una casa de burlesque local después de descubrir que Bart trabaja allí.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI3NzhlNGQtNWEwYS00ZGUwLTljYTgtY2M0ZjE2NTI4ZTM4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 158
+        
     },
     {
         "temporada": 8,
@@ -1270,6 +1428,7 @@
         "descripcion": "Los padres de Milhouse se divorcian, lo que lleva a Homero a cuestionar la solidez de su propio matrimonio.",
         "imgUrl": "https://images-na.ssl-imgazon.com/images/M/MV5BZjRiYWI5OTgtODMyMy00MjRiLTkyNDMtNzE3NTRjYzQ4M2Q4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 159
+        
     },
     {
         "temporada": 8,
@@ -1278,6 +1437,7 @@
         "descripcion": "En la escuela, Nelson es atrapado con un alijo de artículos robados en su casillero (incluido el emblema \"H\" del capó del auto del Superintendente Chalmers) y se le asigna hacer tareas domésticas con el jardinero Willie. Lisa es atrapada observa lo que sucede y se le asigna detención, donde se enamora de Nelson. Lisa intenta reformar a Nelson, y funciona por un tiempo. Sin embargo, como dice el viejo refrán, no se pueden enseñar nuevos trucos a un delincuente juvenil y eso No pasa mucho tiempo antes de que Nelson vuelva a las andadas; él y sus amigos habían sido sorprendidos tirando comida en mal estado en la casa de Skinner y trata de mentir...",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjU1YTdlYTAtNTg2NC00NGRjLTk3NDEtMDYxNTA3NTI2Yzg4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 160
+        
     },
     {
         "temporada": 8,
@@ -1286,6 +1446,7 @@
         "descripcion": "Después de que un huracán azota Springfield y destruye la casa de Ned Flanders, este sufre una crisis nerviosa y se ve obligado a enfrentar problemas de su infancia.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWE1M2RjM2UtZWJiNS00ZDc5LWFiOGEtNDY4OGM0ZTQ3NDJhXkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 161
+        
     },
     {
         "temporada": 8,
@@ -1294,6 +1455,7 @@
         "descripcion": "En el concurso anual de cocina de chile de Springfield, Homer come un brebaje picante que contiene pimientos alucinógenos de Guatemala y posteriormente tiene una visión que le hace dudar de que Marge sea su alma gemela.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWQ4ZDgwOTEtYjU1ZS00MDU0LWFjOWYtMjZhNjQ2M2Y3MjA4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200, 112_AL_.jpg",
         "id": 162
+        
     },
     {
         "temporada": 8,
@@ -1302,6 +1464,7 @@
         "descripcion": "En otro crossover enloquecido, Leonard Nimoy narra otra historia de lo sobrenatural, que recuerda sus días con \"In Search Of\". Al darse cuenta de que incluso él está demasiado borracho para conducir después de una noche en Moe's Tavern, Homer tropieza A través del bosque se encuentra con un alienígena verde brillante. No hace falta decir que nadie lo toma en serio, excepto el agente del FBI de Expediente X, Fox Mulder, quien una vez más arrastra a su compañera Dana Scully en otra búsqueda para demostrar que el gobierno es ocultar la presencia de OVNIs al público. Sin embargo, incluso esta misión puede convertir a Mulder en un escéptico.",
         "imgUrl": "https://images-na.ssl-imaimgn.com/images/M/MV5BMmQzYzViMTYtMDNmNy00OWYyLWFmZTEtMGU2YzZlMmYyOGQzXkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 163
+        
     },
     {
         "temporada": 8,
@@ -1310,6 +1473,7 @@
         "descripcion": "Marge ingresa al negocio de venta de pretzels, pero cuando fracasa, Homer busca ayuda de la mafia.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzM0N2ZmZjctMzJmYS00ZTIxLTg4N2ItZTM2NTBkN2IzNTE0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 164
+        
     },
     {
         "temporada": 8,
@@ -1318,6 +1482,7 @@
         "descripcion": "Homero y el Sr. Burns quedan atrapados en una cabaña cubierta de nieve durante un retiro de la empresa.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYTdmOGZkMTgtMmY4OC00MWYzLThkMWMtYWE1MjJiMmZkMzYyXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 165
+        
     },
     {
         "temporada": 8,
@@ -1326,6 +1491,7 @@
         "descripcion": "Después de un poco de pérdida de cabello causada por el estrés, la familia Simpson decide que una niñera para ayudar en la casa puede ser una buena idea, lo que hace que entren en contacto con un personaje muy extraño llamado Shary Bobbins.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmVmZDhiM2ItMDA1Ni00MDUyLTk4MWItMzJkOGJlNjM3MWM5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UY112_CR13,0,200,11 2_AL_.jpg",
         "id": 166
+        
     },
     {
         "temporada": 8,
@@ -1334,6 +1500,7 @@
         "descripcion": "Krusty se alarma por los índices de audiencia decrecientes de \"The Itchy & Scratchy Show\" y exige que se corrija. Los productores razonan que se necesitan algunos trucos nuevos para inyectar aire fresco y, después de que un grupo focal no lo logra del todo. va tan bien como lo planeó: decide presentar un nuevo personaje llamado Poochie, un perro de dibujos animados rapero que se supone que se hará amigo de Itchy y Scratchy. Homer hace una audición para hacer la voz de Poochie y gana el papel. El primer dibujo animado de Poochie, \"The Beagle Has Landed\", se estrena con gran fanfarria, pero tiene una mala acogida, por decir lo mínimo. Los productores deciden...",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYzQxMDE5MTEtYjZmOS00M2IyLWJhNjItMDJiZDZjNDA5NjIyXkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 167
+        
     },
     {
         "temporada": 8,
@@ -1342,6 +1509,7 @@
         "descripcion": "Después de que Marge se hace amiga de John, el dueño de una tienda gay, a Homer le preocupa que su presencia tenga un efecto negativo en la sexualidad de Bart.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDE3OTMzMzg5MF5BMl5BanBnXkFtZTgwOTE2NDE4MTE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 168
+        
     },
     {
         "temporada": 8,
@@ -1350,6 +1518,7 @@
         "descripcion": "Rencor contra su primo Side Show Bob, Cecil intenta matar Springfield con la explosión de una presa hidroeléctrica que fue alimentada por una estructura hueca. Side Show Bob también tiene un buen Side.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmZkMDFmY2UtNjEzZC00OTk5LTkzOGQtOGMwMTY0NWEwZDcwXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 169
+        
     },
     {
         "temporada": 8,
@@ -1358,6 +1527,7 @@
         "descripcion": "Bart se indigna cuando Lisa se convierte en su niñera.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYzA2NWMyMDgtYzcwYS00ZTliLThiMDEtMGI3YTU1MWY2NDE3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 170
+        
     },
     {
         "temporada": 8,
@@ -1366,6 +1536,7 @@
         "descripcion": "Después de que Bart se emborracha sin darse cuenta en una celebración del Día de San Patricio, se redescubre y aplica una antigua ley que prohibía beber en Springfield. Desesperado por mantener el alcohol en la ciudad, Homer toma el asunto en sus propias manos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjg2ZTYzODgtOTYzMS00NzA0LTk4YmYtNzNlNTljNGQ2YzZiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 171
+        
     },
     {
         "temporada": 8,
@@ -1374,6 +1545,7 @@
         "descripcion": "La fiesta de cumpleaños de Martin es, como era de esperar, aburrida hasta que casi todos los invitados se enferman con una intoxicación alimentaria. Los únicos que no se enferman son Bart (que no quería comerse las ostras en mal estado), y el director Skinner y la Sra. Krabappel, que se enamoran. Bart pilla a su director y a su profesor besándose apasionadamente, pero inmediatamente se enteran y quieren jurarle que guardará el secreto. Lo convierten en su recadero, le hacen la vida imposible en el colegio y lo llaman a todas horas. de la noche (todo por la recompensa de que Milhouse herede el pobre historial escolar de Bart). Bart...",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZThkOGUzMGQtZDYxYi00ODg0LThlZWItOTg4NDdkZTMyYmUwXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 172
+        
     },
     {
         "temporada": 8,
@@ -1382,6 +1554,7 @@
         "descripcion": "Después de obtener una tarjeta de crédito de manera fraudulenta, Bart compra un perro nuevo llamado Laddie. Cuando los artículos que compró son embargados, miente diciendo que el pequeño ayudante de Santa es el perro que compró, y pronto extraña a su mascota.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzRmOTI2MzgtMDdjMy00NDY1LWJhY2UtZDc1MGExYWE1MWNlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 173
+        
     },
     {
         "temporada": 8,
@@ -1390,6 +1563,7 @@
         "descripcion": "Burns pierde su fortuna y recluta a Lisa para que le ayude a recuperarla.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjE2ZWM5MTAtODgwMC00ZmUxLWExZDYtZDNmZWM0MDIyYjFlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 174
+        
     },
     {
         "temporada": 8,
@@ -1398,6 +1572,7 @@
         "descripcion": "Marge se convierte en consejera de la iglesia para compensar la falta de interés del Reverendo Lovejoy. Mientras tanto, Homero descubre que un detergente japonés está usando su rostro para su logo.",
         "imgUrl": "https://images-na.sslimgmazon.com/images/M/MV5BZDNlZThhZDgtYTYyMy00MDk4LTg1NmEtODI5NGY3N2M4MDU4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 175
+        
     },
     {
         "temporada": 8,
@@ -1406,6 +1581,7 @@
         "descripcion": "El trabajador Frank Grimes comienza a trabajar en la planta junto a Homer. Se queja con los demás empleados de lo inútil que es Homer, lo que hace que se pregunten por qué Frank está siendo tan problemático.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTdkNzE4NDItZjU5NC00MjM4LTlkOGMtOGUzOTE5MzE4MjNhXkEyXkFqcGdeQXVyNjQwNzY3OTQ@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 176
+        
     },
     {
         "temporada": 8,
@@ -1414,6 +1590,7 @@
         "descripcion": "Troy McClure presenta tres \"potenciales derivados\" de Los Simpson. Los pilotos ficticios incluyen: \"Jefe Wiggum, P.I. (Wiggum y el director Skinner son detectives en Nueva Orleans y deben enfrentarse al malvado Big Daddy, que secuestra a Ralph); \"The Love-Matic Grandpa\" (una parodia de la fallida comedia de situación de la década de 1960 \"My Mother the Car\", donde el fantasma del abuelo habita una máquina Love Tester en Moe's Tavern); y \"The Simpson Family Smile-Time Variety Hour\" (los Simpson, junto con una adolescente \"Lisa\", protagonizan un programa de comedia y variedades, muy parecido a lo que hicieron los Brady en 1977).",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjg5YmE2OTMtMDg1Ni00ODg1LWEyYzctMjA3MjUwY2RiN2I2XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 177
+        
     },
     {
         "temporada": 8,
@@ -1422,6 +1599,7 @@
         "descripcion": "Después de que una broma destruye la mitad de la ciudad, Bart es enviado a una escuela militar. Lisa, buscando un desafío, decide inscribirse con él, pero se enfrenta a la discriminación como la única chica cadete de la escuela.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTU0NTY5MzQtMTZlNC00MDc5LWIzM2UtNWY5OWFmMDVlMTJiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 178
+        
     },
     {
         "temporada": 9,
@@ -1430,6 +1608,7 @@
         "descripcion": "Homero debe viajar a Nueva York para recuperar su auto, el cual está estacionado ilegalmente en la Plaza del World Trade Center.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI3OTczMTExM15BMl5BanBnXkFtZTgwOTM1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 179
+        
     },
     {
         "temporada": 9,
@@ -1438,6 +1617,7 @@
         "descripcion": "Después de realizar un homenaje sorpresa al director Skinner, el pueblo de Springfield se sorprende al descubrir que Seymour Skinner es en realidad un impostor.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjRjZTNhNWItNjEyMS00MmVmLWE5NWQtMDU0YmRhNzZjMDVjXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 180
+        
     },
     {
         "temporada": 9,
@@ -1446,6 +1626,7 @@
         "descripcion": "Homero cuenta la historia del primer día de clases de Bart, que corresponde con la historia de cómo Lisa consiguió su saxofón.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDIzZDA0NmEtNGFkNi00OWVlLTgxYjYtNzA0ODY1NTI4NTZkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 181
+        
     },
     {
         "temporada": 9,
@@ -1454,6 +1635,7 @@
         "descripcion": "En \"The Homega Man\", Homero lucha contra mutantes después de que Springfield es aniquilada por una bomba de neutrones. Luego, Bart mezcla su ADN con una mosca en \"Fly vs. Fly\". Finalmente, Marge es Se revela que es una bruja en la Springfield colonial en \"Easy Bake Coven.\"",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDU5MjIyNzE1Ml5BMl5BanBnXkFtZTgwODcyMzQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 182
+        
     },
     {
         "temporada": 9,
@@ -1462,6 +1644,7 @@
         "descripcion": "Después de un disturbio masivo en el fútbol, Homer decide invertir en un sistema de seguridad para el hogar, pero no puede pagar el alto precio. Hace lo mejor que puede hacer: compra un arma. Esto a pesar de la firme oposición de Marge a tener un arma. Homer juega con la pistola como si fuera un juguete y casi causa un accidente en la mesa. Marge le advierte a Homer que se deshaga del arma ahora; Homer está de acuerdo, pero Bart encuentra la pistola más tarde en el refrigerador. Marge ve esto, toma la dispara y le dice a Homer que se llevará a los niños y se mudará. Homer finalmente es expulsado del capitulo local de la NRA (por su...",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDAyMDBiNWYtZGE4YS00YjI5LWI4MzAtYzlmNGE1Y2ViYmU5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 183
+        
     },
     {
         "temporada": 9,
@@ -1470,6 +1653,7 @@
         "descripcion": "Un informe condenatorio sobre la obesidad infantil en Springfield conduce a la formación de un equipo de fútbol americano. Después de menospreciar a Ned Flanders, Homer termina entrenando al equipo, pero su preferencia por Bart lo hace impopular.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzIzN2Q3ZmEtZjQ1Yi00YTdhLTkxOWQtZmYyZjE4YmFhNjgxXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200 ,112_AL_.jpg",
         "id": 184
+        
     },
     {
         "temporada": 9,
@@ -1478,6 +1662,7 @@
         "descripcion": "Marge debe hacerse pasar por la esposa de Apu para evitar su próximo matrimonio arreglado.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2ViMzBiNGUtNGZkYy00OTA3LTgyZDctMTViNmVhNTdhOGI5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 185
+        
     },
     {
         "temporada": 9,
@@ -1486,6 +1671,7 @@
         "descripcion": "Otro día en la Escuela Primaria de Springfield, otra excursión, esta vez a una excavación arqueológica. Durante la excavación, Lisa desentierra lo que parece ser un esqueleto humano fosilizado con alas.",
         "imgUrl": "https://images-na.ssimgamazon.com/images/M/MV5BZjk5YzhkM2MtY2I1ZS00N2FjLWE0ZmItM2RkYzU0NTRkYjRkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 186
+        
     },
     {
         "temporada": 9,
@@ -1494,6 +1680,7 @@
         "descripcion": "Marge se convierte en agente de bienes raíces.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjZkMzEyMzctYTc5NC00MTIzLTk1NjMtZjM0MzMwNjQ3MTcxXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 187
+        
     },
     {
         "temporada": 9,
@@ -1502,6 +1689,7 @@
         "descripcion": "En Nochebuena, Marge advierte a la familia que no abran los regalos hasta las 7 a. m. del día siguiente. Bart encuentra una manera de eludir la directiva y abre sus regalos a las 5 a. m. Sin embargo, su preciado regalo: un camión de bomberos a control remoto - se sobrecalienta y provoca un incendio que envuelve el árbol y los regalos. La familia investiga y Bart les dice que ha atacado un ladrón. Como resultado de la historia de interés humano de Kent Brockman, toda la ciudad dona regalos y dinero en efectivo a los Simpson para su \" desgracia.\" Finalmente, Bart admite la verdad, enojando a su despistada familia pero enojando a...",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwMzc2MDI4Nl5BMl5BanBnXkFtZTgwODc2NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 188
+        
     },
     {
         "temporada": 9,
@@ -1510,6 +1698,7 @@
         "descripcion": "Homero se decepciona cuando el western que alquiló resulta ser un musical, por lo que la familia le recuerda los momentos musicales de la historia del programa.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmQ4Nzk0NzgtZjM3My00MmRhLTk0NmUtZTY2MzEwYjMyMmJmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200, 112_AL_.jpg",
         "id": 189
+        
     },
     {
         "temporada": 9,
@@ -1518,6 +1707,7 @@
         "descripcion": "Bart y Homer se hacen amigos de dos feriantes y los invitan a quedarse con ellos, pero los feriantes pronto estafan a los Simpson y los sacan de su casa.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDY4YzA0ODQtYzg3MC00ZGU2LTk2ZmYtMjgyZjhkODA2ZjRmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 190
+        
     },
     {
         "temporada": 9,
@@ -1526,6 +1716,7 @@
         "descripcion": "Una secta malvada llamada los Movimentarios lava el cerebro a los ciudadanos de Springfield y depende de Marge recuperarlos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmI2MzdlZTktNTZiNy00ZmYyLTg1MmItNTNiN2Y3OTA2MWUyXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 191
+        
     },
     {
         "temporada": 9,
@@ -1534,6 +1725,7 @@
         "descripcion": "Mientras los niños quedan varados en una isla desierta, Homero intenta sacar provecho de Internet.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDA0NzUwMDAtOWI3MS00OTljLWI0NDEtM2UwNjlkZThjYTNlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 192
+        
     },
     {
         "temporada": 9,
@@ -1542,6 +1734,7 @@
         "descripcion": "Después de una actuación desastrosa, Krusty cambia su imagen y se convierte en un stand-up vanguardista.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODk4NTE3YTQtM2MwNy00ZGM0LWE0YTYtNTEwZTgyMTY1Y2Y1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 193
+        
     },
     {
         "temporada": 9,
@@ -1550,6 +1743,7 @@
         "descripcion": "Homero y Moe intentan fraude al seguro para que Moe pueda mantener a su nueva novia. Cuando Homero termina en la cárcel, Moe tiene que decidir si se presenta o no.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzk4YWQyMzktNDE1Ny00NjRjLWE3MWUtMjA4ZjU5OTMzZTViXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 194
+        
     },
     {
         "temporada": 9,
@@ -1558,6 +1752,7 @@
         "descripcion": "Lisa teme estar perdiendo su inteligencia cuando se entera del legendario gen Simpson. Mientras tanto, Jasper se congela en el congelador del Kwik-E-Mart.",
         "imgUrl": "https://images-na.ssimgamazon.com/images/M/MV5BZDdkMmUyNTctMzE2Ni00N2UxLTg1ZjYtNWViYzZjMzdkMTBiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 195
+        
     },
     {
         "temporada": 9,
@@ -1566,6 +1761,7 @@
         "descripcion": "Bart se muestra reacio a salir con Ralph Wiggum, hasta que obtiene acceso a la llave maestra de la ciudad del Jefe Wiggum.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2I1N2JkM2UtOGUwYy00MWYyLWI5YjctYjUyMzkwY2I1OTdhXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 196
+        
     },
     {
         "temporada": 9,
@@ -1574,6 +1770,7 @@
         "descripcion": "Homero provoca un incidente internacional luego de unirse a las reservas navales.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzg2NTkxMGQtOGMxMy00OWU0LWI0ZTgtZDhmMDM1ZjY2N2Y2XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 197
+        
     },
     {
         "temporada": 9,
@@ -1582,6 +1779,7 @@
         "descripcion": "Homer se ve obligado a espiar para el IRS después de una auditoría. Pero cuando le piden que recupere un billete de un billón de dólares del Sr. Burns, cambia de bando y los dos huyen a Cuba en busca de refugio.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTg1N2EzZTgtMDY3ZC00OTBhLTlkNTAtZDUwYWZmNDRlMzI4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 198
+        
     },
     {
         "temporada": 9,
@@ -1590,6 +1788,7 @@
         "descripcion": "Bart y Lisa quedan atrapados en una competencia cuando presentan un programa de noticias para niños. Mientras tanto, Homero adopta un mono ayudante.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTAwOTYyMTEtN2ZiYi00NDVkLWJjMWQtNTM2OWRlOTg3ZWYzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 199
+        
     },
     {
         "temporada": 9,
@@ -1598,6 +1797,7 @@
         "descripcion": "Homero se convierte en el comisionado de saneamiento de Springfield. Su ineptitud contamina la ciudad y conduce a una solución drástica.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmY5ODcxZWEtYTRhMS00YWY0LTk4NDktMWEwYzhmZjY0YmUyXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 200
+        
     },
     {
         "temporada": 9,
@@ -1606,6 +1806,7 @@
         "descripcion": "Después de humillar a Bart en un picnic en la iglesia, Homer decide ponerse en forma. Pronto, es contactado por una compañía de barras energéticas que quiere que escale una montaña como ascenso.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGM1YzczNjMtYWNhYi00M2NhLTkwMTEtZjBlMWI2ZjBhNWQ4XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 201
+        
     },
     {
         "temporada": 9,
@@ -1614,6 +1815,7 @@
         "descripcion": "Lisa se pierde después de intentar tomar un autobús a un museo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDAzYTAyMDktZjAzMS00ZDlmLWE1MjItZDQ2Zjk5MTg2ODUyXkEyXkFqcGdeQXVyMTYzMzI5MzY@._V1_UX200_CR0,0,200,112_AL_ .jpg",
         "id": 202
+        
     },
     {
         "temporada": 9,
@@ -1622,6 +1824,7 @@
         "descripcion": "El intento de Homero y Marge de darle vida a su matrimonio lleva a que la pareja sea perseguida desnuda por Springfield.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmRiMTdiOTctMWEyZC00ZTBlLTk2NzktYjRmYmI0OGEyMWM5XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 203
+        
     },
     {
         "temporada": 10,
@@ -1630,6 +1833,7 @@
         "descripcion": "Una chica nueva llega a la escuela primaria de Springfield y se vuelve popular instantáneamente, y Lisa se ve obligada a organizar un baile en su escuela, mientras Homero y Bart intentan iniciar su propio negocio de grasa.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjFiMzA2MGMtNjQwMC00YmVkLWFiODgtZWVkMmU4Yzg2YTQ3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 204
+        
     },
     {
         "temporada": 10,
@@ -1638,6 +1842,7 @@
         "descripcion": "La crisis de la mediana edad de Homero lo lleva a un desastroso intento de convertirse en inventor.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDI3YTU4Y2UtMDg0ZC00YWNjLTk3MDItNzg1YzNlNTczMGE2XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 205
+        
     },
     {
         "temporada": 10,
@@ -1646,6 +1851,7 @@
         "descripcion": "Cuando Bart mata accidentalmente a una madre pájaro, intenta enmendarlo criando los huevos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmMwZmE1YTctNTM5Mi00MThkLWFlYmMtZDMxMWYyYThkZWRhXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 206
+        
     },
     {
         "temporada": 10,
@@ -1654,6 +1860,7 @@
         "descripcion": "Homero recibe un malvado trasplante de cabello; Bart y Lisa quedan atrapados en una caricatura de Itchy and Scratchy; Maggie se revela como un extraterrestre.",
         "imgUrl": "https://images-na.ssl-imagimg.com/images/M/MV5BMTYzMDU4NTMyNV5BMl5BanBnXkFtZTgwMDM1NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 207
+        
     },
     {
         "temporada": 10,
@@ -1662,6 +1869,7 @@
         "descripcion": "Homero se convierte en un conocedor de Hollywood cuando se hace amigo de Alec Baldwin y Kim Basinger.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BODc2N2U0YWYtYTUwYy00ZjhkLWFjN2EtMjNlNmI5Y2YxZTNiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200 ,112_AL_.jpg",
         "id": 208
+        
     },
     {
         "temporada": 10,
@@ -1670,6 +1878,7 @@
         "descripcion": "Homero se vuelve hippie después de una revelación sobre su segundo nombre.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTk3OTQyYWYtZmI0My00Zjk0LTlkN2UtNmY2MGFhYTcwMjRkXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 209
+        
     },
     {
         "temporada": 10,
@@ -1678,6 +1887,7 @@
         "descripcion": "Lisa hace trampa en un examen y tiene una crisis moral cuando su puntaje perfecto califica a la escuela para recibir una subvención. Mientras tanto, Homer no se atreve a cocinar una langosta, por lo que la adopta como mascota.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BY2NhZjY0NTItMjc4MC00ZWYyLWEwNDMtMDU1NDU5MTU4NjJlXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_ AL_.jpg",
         "id": 210
+        
     },
     {
         "temporada": 10,
@@ -1686,6 +1896,7 @@
         "descripcion": "Homero se resiste ante una operación de trasplante que podría salvar la vida del abuelo.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZDE4MWI1NTQtMTk4NS00YjM3LWFmZTgtYTE5M2E4YjU1ZjAwXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 211
+        
     },
     {
         "temporada": 10,
@@ -1694,6 +1905,7 @@
         "descripcion": "Homero lidia con la corrupción cuando se convierte en guardaespaldas del alcalde Quimby.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGM4ODQxZTAtNWY3Ni00ZDQ4LThjM2EtNDE4MWFiNmJhNzBmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112 _AL_.jpg",
         "id": 212
+        
     },
     {
         "temporada": 10,
@@ -1702,6 +1914,7 @@
         "descripcion": "Cuando Homero lleva a Ned a Las Vegas en un intento de que se relaje, los dos terminan casándose borrachos con un par de meseras.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk0NjQyMDg2M15BMl5BanBnXkFtZTgwNDU0NTQ2MjE@._V1_UX200_CR0,0,200,112_AL_.jpg",
         "id": 213
+        
     },
     {
         "temporada": 10,
@@ -1710,6 +1923,7 @@
         "descripcion": "Los niños de Springfield se rebelan después de que se impone el toque de queda.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWI3NDUyNTYtNjM3ZC00YTQxLTk3YTctZjRmYWQzZTRkN2Y3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 214
+        
     },
     {
         "temporada": 10,
@@ -1718,6 +1932,7 @@
         "descripcion": "Homero y sus amigos se dirigen a la Superbowl, pero se ven obligados a colarse cuando descubren que sus boletos son falsos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDQ5ZTE1NDYtYTgwMC00OWNhLWI1ZGUtYTNhZWNjNWYwNDNmXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 215
+        
     },
     {
         "temporada": 10,
@@ -1726,6 +1941,7 @@
         "descripcion": "Después de que un personaje tonto de la televisión se llama casualmente Homer Simpson, Homer cambia su nombre a Max Power.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGU5MDc1ODgtNTkxMC00MDRiLWI1ZGMtMmEzMTc1MDJiODFiXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_.jpg ",
         "id": 216
+        
     },
     {
         "temporada": 10,
@@ -1734,6 +1950,7 @@
         "descripcion": "Los maridos de Springfield planean venganza después de que Apu los eclipsa en el día de San Valentín.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTY0NWFmMTItYTljZi00NmJlLWJiNGItYjIyZTk2YjQ4ZjU3XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 217
+        
     },
     {
         "temporada": 10,
@@ -1742,6 +1959,7 @@
         "descripcion": "El nuevo SUV de Marge le provoca un potente caso de furia al volante.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWI2YjE3NWYtYTE1Yy00OGIyLWJkYTItNzMwNDJkOTA1NDYzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 218
+        
     },
     {
         "temporada": 10,
@@ -1750,6 +1968,7 @@
         "descripcion": "Lisa siente que su relación con su padre nunca será estrecha y desarrolla dolores de estómago inducidos por el estrés; Marge sin darse cuenta noquea a Milhouse.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjEwNDc5NGItYmMwNi00MGU2LWEzYjYtNTZjN2Y2NDIwOTJhXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 219
+        
     },
     {
         "temporada": 10,
@@ -1758,6 +1977,7 @@
         "descripcion": "Homero completa una entrega a campo traviesa para un camionero que muere antes de completarla, y lleva a Bart a dar un paseo. Mientras tanto, Marge y Lisa tienen problemas con un timbre novedoso que compraron.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzE5Mjg0NjQtNzRmOS00NTI4LWIyY2QtZmQzNzEzODM5N2Y0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200, 112_AL_.jpg",
         "id": 220
+        
     },
     {
         "temporada": 10,
@@ -1766,6 +1986,7 @@
         "descripcion": "Tres historias religiosas famosas se cuentan al estilo Simpson mientras la familia se queda dormida en la iglesia.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BNmFhYzZkMzctZmU0OC00Y2NiLTg1MDQtYmEyNjg2OTJjM2M2XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,11 2_AL_.jpg",
         "id": 221
+        
     },
     {
         "temporada": 10,
@@ -1774,6 +1995,7 @@
         "descripcion": "Homero se convierte en la comidilla de la comunidad artística de Springfield cuando una barbacoa fallida en la que trabajó se confunde con un proyecto de arte.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc4OGI2MmItMWEwMC00OThjLTg2MjItYzhiZGI1OGIwZjg1XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL_. jpg",
         "id": 222
+        
     },
     {
         "temporada": 10,
@@ -1782,6 +2004,7 @@
         "descripcion": "Bart es castigado con servicio comunitario en el Castillo de Retiro después de arruinar las posibilidades de Springfield de albergar los Juegos Olímpicos.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZjNjZDQ0NzMtODk2Mi00NDc0LWIxOTUtNzE3YzAxYjc0ZmU0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200, 112_AL_.jpg",
         "id": 223
+        
     },
     {
         "temporada": 10,
@@ -1790,6 +2013,7 @@
         "descripcion": "Cuando un hombre rico se muda a Springfield, el Sr. Burns comienza a sentir que está perdiendo el control de los ciudadanos y decide solicitar la ayuda de Homer.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZWFiYmFiMjQtMzc4OS00ZDNiLWE0MjktNzM5ZWQyY2Y4Yjk0XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,1 12_AL_.jpg",
         "id": 224
+        
     },
     {
         "temporada": 10,
@@ -1798,6 +2022,7 @@
         "descripcion": "Lisa es invitada a unirse al capítulo de Springfield de MENSA y después de que el alcalde Quimby huye, el grupo termina dirigiendo la ciudad. Mientras tanto, Homer posa para una serie de fotos eróticas.",
         "imgUrl": "https://images-na.ssl-images-amazon.com/images/M/MV5BZGY2YzA5ZjAtODljMS00OGE0LWFjODAtNDdlOTNkYjI3YzMzXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 225
+        
     },
     {
         "temporada": 10,
@@ -1806,5 +2031,6 @@
         "descripcion": "Los Simpson deben actuar en un programa de juegos japonés después de que Homero pierde su dinero en unas vacaciones.",
         "imgUrl": "https://images-na.ssl-images-imgm/images/M/MV5BZmFiZjdiMGEtODc4YS00MWRhLTg4ZWUtNDE5NmE3ZGE0MzcwXkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_UX200_CR0,0,200,112_AL _.jpg",
         "id": 226
+        
     }
 ]

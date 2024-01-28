@@ -29,13 +29,14 @@
                 </button>
 
                 <div class="table-responsive">
-                    <table class="table table-light table-bordered mt-3 table-hover">
+                    <table class="table table-striped table-light table-bordered mt-3 table-hover">
                         <thead>
                             <tr class="table-warning">
                                 <th class="tablaEdicion-titulo">ID</th>
+                                <th class="tablaEdicion-titulo">Temporada</th>
+                                <th class="tablaEdicion-titulo">Capitulo</th>
                                 <th class="tablaEdicion-titulo">Nombre</th>
-                                <th class="tablaEdicion-titulo">Categoría</th>
-                                <th class="tablaEdicion-titulo">Descripción</th>
+                                <th class="tablaEdicion-titulo">Descripcion</th>
                                 <th class="tablaEdicion-titulo">Publicado</th>
                                 <th class="tablaEdicion-titulo">Herramientas</th>
                             </tr>
@@ -69,11 +70,31 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="categoriaCapitulo" class="form-label parrafoModal">Categoría</label>
-                                <input type="text" class="form-control border-dark text-dark" id="categoriaCapitulo"
-                                    placeholder="Categoria del Capitulo" required />
+                                <label for="temporadaCapitulo" class="form-label parrafoModal">Temporada</label>
+                                <select  id="temporadaCapitulo" class="form-control">
+                                    <option selected value="">Selecciona una Temporada</option>
+                                    <option value="Temporada 1">Temporada 1</option>
+                                    <option value="Temporada 2">Temporada 2</option>
+                                    <option value="Temporada 3">Temporada 3</option>
+                                    <option value="Temporada 4">Temporada 4</option>
+                                    <option value="Temporada 5">Temporada 5</option>
+                                    <option value="Temporada 6">Temporada 6</option>
+                                    <option value="Temporada 7">Temporada 7</option>
+                                    <option value="Temporada 8">Temporada 8</option>
+                                    <option value="Temporada 9">Temporada 9</option>
+                                    <option value="Temporada 10">Temporada 10</option>
+                                </select>
                                 <div class="invalid-feedback">
-                                    Ingresá un nombre válido (Entre 4 y 25 Caracteres).
+                                    Ingresá Temporada Válida.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="numeroCapitulo" class="form-label parrafoModal">Numero de Capitulo</label>
+                                <input type="number" class="form-control border-dark text-dark" id="numeroCapitulo"
+                                    placeholder="Numero de Capitulo" required />
+                                <div class="invalid-feedback">
+                                    Ingresá un numero válido (Mayor a 0 y Menor a 100).
                                 </div>
                             </div>
                             <div class="mb-3">
@@ -84,16 +105,24 @@
                                     Ingresa una descripción válida (Entre 10 y 155 Caracteres).
                                 </div>
                             </div>
+                            <div class="mb-3">
+                                <label for="imgUrlCapitulo" class="form-label parrafoModal">Imagen del Capitulo (URL) </label>
+                                <input type="text" class="form-control border-dark text-dark" id="imgUrlCapitulo"
+                                    placeholder="URL de la imagen" required />
+                                <div class="invalid-feedback">
+                                    Ingresá un URL de img válido.
+                                </div>
+                            </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="publicadoCapitulo" />
                                 <label class="form-check-label parrafoModal" for="publicadoCapitulo">Publicado</label>
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" id="btnGuardarCapitulo" class="btn btn-info" >
-                                    Guardar
-                                </button>
                                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
                                     Cerrar
+                                </button>
+                                <button type="submit" id="btnGuardarCapitulo" class="btn btn-info" >
+                                    Guardar
                                 </button>
                             </div>
                         </form>
@@ -114,40 +143,75 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form id="formEditarCapitulo needs-validation">
+                        <form id="formEditarCapitulo" class="needs-validation" novalidate>
                             <div class="mb-3">
                                 <label for="nombreCapituloEditado" class="form-label parrafoModal">Nombre del
                                     Capítulo</label>
-                                <input type="text" class="form-control form-control border-dark text-dark"
-                                    id="nombreCapituloEditado" />
+                                <input type="text" class="form-control border-dark text-dark"
+                                    id="nombreCapituloEditado" required />
+                                    <div class="invalid-feedback">
+                                        Ingresá un nombre válido (Entre 4 y 25 Caracteres).
+                                    </div>
                             </div>
+
                             <div class="mb-3">
-                                <label for="categoriaCapituloEditado" class="form-label parrafoModal">Categoría</label>
-                                <input type="text" class="form-control form-control border-dark text-dark"
-                                    id="categoriaCapituloEditado" />
+                                <label for="temporadaCapituloEditado" class="form-label parrafoModal">Temporada</label>
+                                <select  id="temporadaCapituloEditado" class="form-control">
+                                    <option value="Temporada 1">Temporada 1</option>
+                                    <option value="Temporada 2">Temporada 2</option>
+                                    <option value="Temporada 3">Temporada 3</option>
+                                    <option value="Temporada 4">Temporada 4</option>
+                                    <option value="Temporada 5">Temporada 5</option>
+                                    <option value="Temporada 6">Temporada 6</option>
+                                    <option value="Temporada 7">Temporada 7</option>
+                                    <option value="Temporada 8">Temporada 8</option>
+                                    <option value="Temporada 9">Temporada 9</option>
+                                    <option value="Temporada 10">Temporada 10</option>
+                                </select>
                             </div>
+
+                            <div class="mb-3">
+                                <label for="numeroCapituloEditado" class="form-label parrafoModal">Numero de Capitulo</label>
+                                <input type="number" class="form-control border-dark text-dark" id="numeroCapituloEditado" required />
+                                <div class="invalid-feedback">
+                                    Ingresá un numero válido.
+                                </div>
+                            </div>
+
                             <div class="mb-3">
                                 <label for="descripcionCapituloEditado" class="form-label parrafoModal">Descripción</label>
-                                <textarea class="form-control form-control border-dark text-dark" minlength="4"
-                                    maxlength="150" id="descripcionCapituloEditado" rows="3"></textarea>
+                                <textarea class="form-control border-dark text-dark" id="descripcionCapituloEditado" rows="3"
+                                    placeholder="Breve sinopsis del Capitulo"></textarea>
+                                <div class="invalid-feedback">
+                                    Ingresa una descripción válida (Entre 10 y 155 Caracteres).
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="imgUrlCapituloEditado" class="form-label parrafoModal">Imagen del Capitulo (URL) </label>
+                                <input type="text" class="form-control border-dark text-dark" id="imgUrlCapituloEditado"
+                                    placeholder="URL de la imagen" required />
+                                <div class="invalid-feedback">
+                                    Ingresá un URL de img válido.
+                                </div>
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="publicadoCapituloEditado" />
                                 <label class="form-check-label parrafoModal" for="publicadoCapituloEditado">Publicado</label>
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                                <button type="submit" class="btn btn-info">
+                                    Guardar y Aplicar Cambios
+                                </button>
+                            </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info" onclick="guardarEdicionCapitulo()">
-                            Guardar Cambios
-                        </button>
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                            Cerrar
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
+
     </main>
 
     <footer></footer>
