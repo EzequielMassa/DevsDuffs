@@ -2,6 +2,7 @@ import { mostrarInputError } from "../../../utilidades/mostrarInputError.js";
 import { limpiarInputError } from "../../../utilidades/limpiarInputError.js";
 import capitulos from "../../../datos/capitulos.json" assert {type: "json"};
 import { Capitulo } from "../../../paginas/admin/edicion/clases.js";
+import { obtenerFavoritos } from "../../../almacenamiento/obtenerFavoritos.js";
 
 
 const cuerpoTabla = document.querySelector('#tablaCapitulosBody');
@@ -44,10 +45,6 @@ const capituloUpdate = (event) => {
   modalEditarCapitulo.hide();
 };
 
-
-
-
-
 const cargarTabla = () => {
 
   tablaCapitulosBody.innerHTML = '';
@@ -69,7 +66,7 @@ const cargarTabla = () => {
       <button class="btn btn-danger" onclick="eliminarCapitulo(${item.id})">
       🗑
       </button>
-      <button class="btn btn-warning">
+      <button class="btn btn-warning" onclick="agregarFavorito(${item.id})">
       ★
       </button>
       </div>
@@ -81,6 +78,23 @@ const cargarTabla = () => {
   })
 };
 
+window.agregarFavorito = (idFavorito) => {
+  const favoritos = obtenerFavoritos();
+  console.log(favoritos)
+  const existeFavorito = favoritos.some(fav => fav.id == idFavorito);
+
+  if(existeFavorito){
+    const updateFavoritos = favoritos.filter (fav => fav.id != idFavorito)
+      console.log(updateFavoritos);
+      localStorage.setItem("favoritos",JSON.stringify(updateFavoritos));
+      //Ya se encuentra en favoritos, guardar el array updateFavorito en localStorage.
+  }else{
+    const nuevoFavorito = capitulos.find(capitulo => capitulo.id == idFavorito)
+    console.log(nuevoFavorito);
+    favoritos.push(nuevoFavorito);
+    localStorage.setItem("favoritos",JSON.stringify(favoritos));
+  }
+}
 
 const agregarCapitulo = (event) => {
   event.preventDefault();
