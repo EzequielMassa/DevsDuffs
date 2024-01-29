@@ -58,19 +58,77 @@ body {
 	line-height: 2rem;
 }
 
+.navbar-principal {
+	font-family: var(--fuente-secundaria);
+	background: rgb(227, 62, 151);
+	background: linear-gradient(
+		180deg,
+		rgba(227, 62, 151, 1) 0%,
+		rgba(227, 62, 151, 0.7765231092436975) 100%
+	);
+}
+
+.navbar-principal--registro {
+	background: rgb(66, 199, 242);
+	background: linear-gradient(
+		180deg,
+		rgba(66, 199, 242) 0%,
+		rgba(66, 199, 242, 0.7765231092436975) 100%
+	);
+}
+
+.nav-link {
+	color: var(--color-primario);
+	text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.63);
+}
+
+.btn-buscar,
+.btn-buscar:active {
+	background-color: #fee622;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.63);
+}
+.btn-buscar:hover {
+	background-color: #000;
+	transition: all 0.5s;
+}
+
+.btn-buscar:hover .bi-search {
+	color: #fee622;
+	transition: all 0.5s;
+}
+
+.navbar-toggler-icon {
+	width: 4rem;
+	height: 4rem;
+	background-image: url('./recursos/media/img/hamburguesa-imagen.png');
+	background-size: contain;
+}
+
+.navbar-principal-imagen {
+	width: 4rem;
+}
+
+.navbar-principal-formulario {
+	width: 75%;
+}
+.navbar-principal-usuario-imagen {
+	width: 2rem;
+	filter: drop-shadow(1px 1px 2px #fee622);
+}
 /* Responsive */
 
 @media screen and (min-width: 768px) {
 	.titulo {
 		font-size: var(--fuente-tamanio-titulo-tablet);
 	}
-
 	.subtitulo {
 		font-size: var(--fuente-tamanio-subtitulo-tablet);
 	}
-
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+	.navbar-principal-formulario {
+		width: 40%;
 	}
 }
 
@@ -78,11 +136,9 @@ body {
 	.titulo {
 		font-size: var(--fuente-tamanio-titulo-desktop);
 	}
-
 	.subtitulo {
 		font-size: var(--fuente-tamanio-subtitulo-desktop);
 	}
-
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-desktop);
 	}
