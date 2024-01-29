@@ -76,6 +76,11 @@ footer{
 .buttonFooter{
 	background-color: rgb(5, 1, 2,0.5);
 	color: rgb(255, 208, 56)
+	
+}
+#letraButtonF{
+	text-decoration: none;
+	color: rgb(255, 208, 56);
 }
 
 .footerLetra:hover{
