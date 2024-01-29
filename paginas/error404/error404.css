@@ -147,6 +147,7 @@ p{
     width: 70%;
 }
 #btn-Inicio{
+    width: 20%;
     background-color: var(--color-primario);
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
     font-size: var(--fuente-tamanio-parrafo-desktop);
@@ -160,29 +161,27 @@ p{
     filter: drop-shadow(0 0 0.3rem var(--color-primario));
     animation: errorAnimation 1s infinite;
 }
-@keyframes errorAnimation {
-	0% {
-		transform: translateY(10px);
-	}
-	50% {
-		transform: translateY(0);
-	}
-	100% {
-		transform: translateY(10px);
-	}
-}
-/*
+
 @media (max-width: 770px) {
     .container {
         width: 100%;
         height: 100%;
     }
-
-@media screen and (max-width: 340px) {
-    .container{
-        width: 100%;
-    }
-    .h1{
+    #textoError{
         text-align: center;
     }
-}*/
+    #btn-Inicio{
+        width: 50%;
+    }
+    #btn-Inicio:hover {
+        transform: scale(1.0);
+    }
+    .gifDesaparecen{
+        width: 0px;
+        height: 0px;
+    }
+    .jesus{
+        align-content: center;
+    }
+   
+}
