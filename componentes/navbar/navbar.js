@@ -4,7 +4,7 @@ export const renderizarNavbar = () => {
 	// const usuarioLogeado = obtenerUsuarioLogeado()
 	const registroUrl = window.location.href.includes('registro')
 
-	const usuarioLogeado = true
+	const usuarioLogeado = false
 	const usuarioRol = 'admin'
 
 	header.innerHTML = `
@@ -42,7 +42,7 @@ export const renderizarNavbar = () => {
 							</li>
 
 							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href=/paginas/sobreNosotros/sobreNosotros.html">Nosotros</a>
+								<a class="nav-link" aria-current="page" href="/paginas/sobreNosotros/sobreNosotros.html">Nosotros</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" aria-current="page" href="/paginas/contacto/contacto.html">Contacto</a>
@@ -103,7 +103,7 @@ export const renderizarNavbar = () => {
 								</li>
 							</ul>
 						</div>`
-								: `<a href='/paginas/iniciarSesion/iniciarSesion.html' class='nav-link btn'>Iniciar Sesion <i class='bi bi-box-arrow-left'></i></a>`
+								: `<a href='/paginas/login/login.html' class='nav-link btn'>Iniciar Sesion <i class='bi bi-box-arrow-left'></i></a>`
 						}
 					</div>
 				</div>

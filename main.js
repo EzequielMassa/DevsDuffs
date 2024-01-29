@@ -1,1 +1,2 @@
-// import { v4 as uuidv4 } from 'https://jspm.dev/uuid'
+import { renderizarNavbar } from './componentes/navbar/navbar.js'
+renderizarNavbar()
