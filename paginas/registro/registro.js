@@ -1,13 +1,14 @@
 import { guardarUsuario } from '../../almacenamiento/guardarUsuario.js'
 import { renderizarNavbar } from '../../componentes/navbar/navbar.js'
 import { Usuario } from '../../modelos/Usuario.js'
-import { enviarEmailAltaUsuarioAAdmin } from '../../servicios/email/enviarEmailAltaUsuarioAAdmin.js'
+import { enviarEmailAAdmin } from '../../servicios/email/enviarEmailAAdmin.js'
 import { notificarUsuarioCambioEstado } from '../../servicios/email/notificarUsuarioCambioEstado.js'
 import { notificarUsuarioRegistroExitoso } from '../../servicios/notificaciones/notificarUsuarioRegistroExitoso.js'
 import { mostrarPassword } from '../../utilidades/mostrarPassword.js'
 import { validarRegistroUsuario } from '../../validadores/validarRegistroUsuario.js'
 
 renderizarNavbar()
+
 
 const formRegister = document.querySelector('#formRegister')
 const btnMostrarPassword = document.getElementById('btnMostrarPassword')
@@ -27,8 +28,19 @@ const registrarUsuario = (e) => {
 			password.value.trim(),
 			'user'
 		)
+		const datosEmail = {
+			asunto: 'Alta usuario',
+			mensaje: `Hola Admins,
+      Tienen un nuevo mensaje de : ${nuevoUsuario.email} :
+      Solicito alta para mi id : ${nuevoUsuario.id}`,
+			email_de: `${nuevoUsuario.email}`,
+		}
 		guardarUsuario(nuevoUsuario)
-		enviarEmailAltaUsuarioAAdmin(nuevoUsuario.email, nuevoUsuario.id)
+		enviarEmailAAdmin(
+			datosEmail.asunto,
+			datosEmail.mensaje,
+			datosEmail.email_de
+		)
 		notificarUsuarioCambioEstado(nuevoUsuario.email, 'pendiente')
 		notificarUsuarioRegistroExitoso(nuevoUsuario.email)
 	}
