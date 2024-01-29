@@ -101,7 +101,7 @@ const agregarCapitulo = (event) => {
   const esImgValida = validarInput(imgUrlInput, 0, 500);      //Hacer expresion regular para url de IMG
 
   if (esNombreValido && esTemporadaValida && esNumeroValido && esDescripcionValida && esImgValida) {
-    capitulos.push(new Capitulo(id, temporadaInput.value, numeroCapituloInput.value, nombreInput.value, descripcionInput.value, imgUrlInput.value));
+    capitulos.push(new Capitulo(id, temporadaInput.value, numeroCapituloInput.value, nombreInput.value, descripcionInput.value, imgUrlInput.value, publicadoInput.checked));
     modalNuevoCapitulo.hide();
     nombreInput.classList.remove('is-valid');
     temporadaInput.classList.remove('is-valid');
