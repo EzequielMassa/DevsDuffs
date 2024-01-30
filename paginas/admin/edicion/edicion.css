@@ -1,0 +1,16 @@
+tr .tablaEdicion-titulo {
+	color: var(--color-secundario);
+}
+
+.titulo {
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.parrafoModal {
+	/* color: var(--fuente-color-secundario); */
+	color: black;
+	font-weight: bold;
+	font-family: var(--fuente-secundaria);
+	font-size: var(--fuente-tamanio-parrafo);
+	line-height: 2rem;
+}
