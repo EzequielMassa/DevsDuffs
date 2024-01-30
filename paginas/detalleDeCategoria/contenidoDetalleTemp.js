@@ -1,4 +1,4 @@
-let contenidoTemporada = document.getElementById(`contenidoTemporada`)
+let contenidoTemporada = document.getElementById(`contenidoTemporada`);
 let listaDetalleDeTemp = document.getElementById('listaDetalleDeTemp');
 let ul = document.createElement('ul');
 
