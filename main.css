@@ -140,8 +140,6 @@ footer{
   background-image: url(../../recursos/media/img/backgroundCarrousel.jpeg);
   background-size: cover;
   background-position: center center;
-  box-shadow: 0 0 10px #fee622;
-  /*BORDE CONTENEDOR DE CARDS*/
   max-width: 100%;
 }
 
@@ -191,3 +189,49 @@ footer{
 
 
 /* Fin CSS CAROUSEL */
+
+#tituloTemporada {
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+	font-family: var(--fuente-principal);
+	color: var(--color-primario);
+	font-size: var(--fuente-tamanio-titulo-desktop);
+}
+
+.centrarCard {
+	margin: auto;
+	float: none;
+	text-align: center;
+	background-color: var(--color-fondo);
+	border: none;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.colorBoton {
+	border: none;
+	background-color: var(--color-primario);
+	width: 80px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.colorBoton:hover {
+	background-color: var(--color-secundario);
+}
+
+.bi-play-fill {
+	color: black;
+	font-size: 25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: var(--color-secundario);
+	width: 40px;
+	height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	width: auto;
+	margin-left: -10px;
+	margin-right: -10px;
+}
