@@ -1,5 +1,5 @@
 body {
-	background-color: var(--color-secundario);
+	background: var(--color-secundario);
 }
 
 .titulo {
@@ -7,7 +7,7 @@ body {
 }
 
 form {
-	background: rgba(255, 255, 255, 0.8);
+	background: rgba(255, 255, 255, 0.7);
 	border-radius: 16px;
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
