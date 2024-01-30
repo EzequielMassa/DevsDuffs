@@ -1,0 +1,187 @@
+
+body{
+    background-color: rgb(120, 187, 203);
+}
+p{
+    margin-top: 2%;
+    letter-spacing: 0.4rem;
+    filter: drop-shadow(0 0 0.3rem var(--color-primario));
+    
+}
+.container {
+    margin: 0 auto;
+    margin-top: 2%;
+    display: grid;
+    height: 450px;
+    max-width: 800px;
+    grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr .75fr 1fr .25fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "relojGusano tostadora1 jesus gusano3 tostadora2"
+        "tostadoraCampana boca jesus campana boca2"
+        "tostadoraCampana reloj jesus tostadora3 reloj2"
+        "gusano1 gusano2 jesus . .";
+}
+
+.relojGusano {
+    grid-area: relojGusano;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tostadora1 {
+    grid-area: tostadora1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.jesus {
+    grid-area: jesus;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tostadoraCampana {
+    grid-area: tostadoraCampana;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.boca {
+    grid-area: boca;
+    display: flex;
+}
+
+.reloj {
+    grid-area: reloj;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.gusano1 {
+    grid-area: gusano1;
+}
+
+.gusano2 {
+    grid-area: gusano2;
+}
+
+.gusano3 {
+    grid-area: gusano3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.tostadora2 {
+    grid-area: tostadora2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.campana {
+    grid-area: campana;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boca2 {
+    grid-area: boca2;
+    display: flex;
+}
+
+.tostadora3 {
+    grid-area: tostadora3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.reloj2 {
+    grid-area: reloj2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.relojGusano_reloj {
+    align-self: center;
+}
+
+.relojGusano_gusano {
+    align-self: flex-start;
+}
+
+.tostadoraCampana_tostadora {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.tostadoraCampana_campana {
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.gusano1>img {
+    width: 100%;
+}
+
+.gusano2>img {
+    width: 50%;
+}
+
+.campana>img {
+    width: 50%;
+}
+
+.tostadora3>img {
+    width: 70%;
+}
+#btn-Inicio{
+    width: 20%;
+    background-color: var(--color-primario);
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    font-size: var(--fuente-tamanio-parrafo-desktop);
+}    
+  
+#btn-Inicio:hover {
+    background-color: var(--fuente-color-primario);
+}
+.texto{
+    letter-spacing: 0.4rem;
+    filter: drop-shadow(0 0 0.3rem var(--color-primario));
+    animation: errorAnimation 1s infinite;
+}
+
+@media (max-width: 770px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    #textoError{
+        text-align: center;
+    }
+    #btn-Inicio{
+        width: 50%;
+    }
+    #btn-Inicio:hover {
+        transform: scale(1.0);
+    }
+    .gifDesaparecen{
+        width: 0px;
+        height: 0px;
+    }
+    .jesus{
+        align-content: center;
+    }
+   
+}
