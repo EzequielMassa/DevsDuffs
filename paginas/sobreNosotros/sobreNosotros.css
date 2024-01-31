@@ -115,17 +115,27 @@ body {
 	
 }
 .descripcion{
+	text-align: justify;
+	font-size: var(--fuente-tamanio-parrafo-desktop);
     font-family: var(--fuente-secundaria);
     color: var(--color-secundario);
-    text-shadow: 0.5px 0.5px 0.5px  black ;
-	text-align: justify;
+	-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    /*text-shadow: 0.5px 0 0.5px  black ;*/
+	
 }
 .modal-title{
 	font-family: var(--fuente-secundaria);
     text-align: center;/*VEREFICAR POR QUE NO ME TOMA EL ALING CENTER*/
-    text-shadow: 0.5px 0 0.5px var(--color-primario) ;
+    text-shadow: 0.5px 0 0.5px var(--color-secundario) ;
 }
 
+.modal-content{
+	background-color: rgb(254, 230, 34, 0.9)
+}
+.modal-header{
+	border-bottom: none;
+}
 
 
 .card:hover .card-img-top, 
