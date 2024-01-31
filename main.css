@@ -25,11 +25,13 @@
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 6rem;
 	font-family: 'Fira Sans', sans-serif;
 }
 
 body {
 	background-color: var(--color-fondo);
+	overflow-x: hidden;
 }
 
 * {
@@ -58,6 +60,139 @@ body {
 	line-height: 2rem;
 }
 
+/* navbar */
+.navbar-principal {
+	font-family: var(--fuente-secundaria);
+	background: rgb(227, 62, 151);
+	background: linear-gradient(
+		180deg,
+		rgba(227, 62, 151, 1) 0%,
+		rgba(227, 62, 151, 0.7765231092436975) 100%
+	);
+}
+
+.navbar-principal--registro {
+	background: rgb(66, 199, 242);
+	background: linear-gradient(
+		180deg,
+		rgba(66, 199, 242) 0%,
+		rgba(66, 199, 242, 0.7765231092436975) 100%
+	);
+}
+
+.nav-link {
+	color: var(--color-primario);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+.navbar-toggler-icon {
+	width: 4rem;
+	height: 4rem;
+	background-image: url('./recursos/media/img/hamburguesa-imagen.png');
+	background-size: contain;
+}
+
+.navbar-principal-imagen {
+	width: 4rem;
+}
+
+.navbar-principal-formulario {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+#inputBusqueda {
+	border: none;
+}
+
+#inputBusqueda:active,
+#inputBusqueda:focus {
+	outline: none;
+}
+
+.navbar-principal-formulario i {
+	font-weight: 900;
+}
+
+.navbar-principal-usuario-imagen {
+	width: 2rem;
+	filter: drop-shadow(1px 1px 2px #fee622);
+}
+
+.busqueda-resultados-contenedor {
+	position: fixed;
+	width: 100%;
+	z-index: 200;
+	top: -800px;
+	max-height: 300px;
+	overflow-y: auto;
+	transition: all 0.5s ease-in-out;
+}
+
+.busqueda-resultados-contenedor--show {
+	transition: all 0.5s ease-in-out;
+	top: 325px;
+}
+
+.busqueda-resultados-contenedor a {
+	font-family: var(--fuente-secundaria);
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.busqueda-resultados-contenedor a:hover {
+	background-color: var(--color-primario);
+	transition: all 0.5s ease;
+}
+
+.busqueda-resultados-contenedor img {
+	max-width: 8rem;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
+
+/*footer*/
+footer {
+	background-image: url(./recursos/media/img/backgroundDonas2.png);
+}
+.footerTitulo {
+	color: rgb(255, 208, 56);
+}
+.footerRedes {
+	color: rgb(255, 208, 56);
+	background-color: rgb(5, 1, 2, 0.5);
+}
+.footerLetra {
+	color: rgb(255, 208, 56);
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+.buttonFooter {
+	background-color: rgb(5, 1, 2, 0.5);
+	color: rgb(255, 208, 56);
+}
+#letraButtonF {
+	text-decoration: none;
+	color: rgb(255, 208, 56);
+}
+
+.footerLetra:hover {
+	transform: scale(1.2);
+}
+.buttonFooter:hover {
+	transform: scale(1.1);
+}
+
 /* Responsive */
 
 @media screen and (min-width: 768px) {
@@ -71,6 +206,12 @@ body {
 
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+	.busqueda-resultados-contenedor--show {
+		top: 85px;
+	}
+	.navbar-principal-formulario {
+		width: 40%;
 	}
 }
 
@@ -86,4 +227,112 @@ body {
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-desktop);
 	}
+}
+
+/* Inicio CSS CAROUSEL */
+
+.img-media {
+	max-height: 992px;
+	min-height: 300px;
+	min-width: 300px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center top;
+}
+
+.bg-carousel {
+	background-image: url(../../recursos/media/img/backgroundCarrousel.jpeg);
+	background-size: cover;
+	background-position: center center;
+	max-width: 100%;
+}
+
+.custom-bg-color {
+	background-color: #ffffff; /*Color de fondo CARDS*/
+}
+
+.card-index {
+	transition: transform 0.3s;
+}
+
+.card-index:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.932);
+}
+
+/* .header-index {
+	margin-top: 75px;
+} */
+
+.tituloTarjetaSuperior {
+	font-family: var(--fuente-principal);
+	font-size: var(--fuente-tamanio-titulo);
+	color: var(--color-primario);
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.botonPlay:hover {
+	color: #ffffff;
+	transition: color 0.1s ease;
+}
+
+.botonPlay:hover path {
+	fill: #ffffff;
+	transition: fill 0.1s ease;
+}
+
+.parrafoCard {
+	font-family: var(--fuente-principal);
+}
+
+.contenedorImgCarousel {
+	width: 100%;
+}
+
+/* Fin CSS CAROUSEL */
+
+#tituloTemporada {
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+	font-family: var(--fuente-principal);
+	color: var(--color-primario);
+	font-size: var(--fuente-tamanio-titulo-desktop);
+}
+
+.centrarCard {
+	margin: auto;
+	float: none;
+	text-align: center;
+	background-color: var(--color-fondo);
+	border: none;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.colorBoton {
+	border: none;
+	background-color: var(--color-primario);
+	width: 80px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.colorBoton:hover {
+	background-color: var(--color-secundario);
+}
+
+.bi-play-fill {
+	color: black;
+	font-size: 25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: var(--color-secundario);
+	width: 40px;
+	height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	width: auto;
+	margin-left: -10px;
+	margin-right: -10px;
 }
