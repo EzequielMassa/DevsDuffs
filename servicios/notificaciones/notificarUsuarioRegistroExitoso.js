@@ -17,5 +17,11 @@ export const notificarUsuarioRegistroExitoso = (emailUsuario) => {
     top center
     no-repeat
   `,
+		allowOutsideClick: false,
+		allowEscapeKey: false,
+	}).then((result) => {
+		if (result.isConfirmed) {
+			window.location.href = '/paginas/login/login.html'
+		}
 	})
 }
