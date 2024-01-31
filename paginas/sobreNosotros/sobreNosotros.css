@@ -30,6 +30,7 @@ body {
 .textoSobreNos{
     background-color: rgb(227, 62, 151,0.8);
 }
+
 .subtitulo-sN {
 	color: var(--color-primario);
 	font-family: var(--fuente-secundaria);
@@ -46,6 +47,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px rgba (0, 0, 0, 3);  
 }
+
 .card-img-top {
 	height: 270px;
 	width: 230px;
@@ -56,6 +58,7 @@ body {
 	transition: 300ms;
 	filter: drop-shadow(5px -4px 10px #000);
 }
+
 .card-img-top1 {
 	height: 250px;
 	width: 210px;
@@ -66,6 +69,7 @@ body {
 	transition: 300ms;
 	filter: drop-shadow(5px -4px 10px #000);
 }
+
 .card-img-top2 {
 	height: 250px;
 	width: 230px;
@@ -76,6 +80,7 @@ body {
 	transition: 300ms;
 	filter: drop-shadow(5px -4px 10px #000);
 }
+
 .card-img-top3 {
 	height: 240px;
 	width: 240px;
@@ -86,6 +91,7 @@ body {
 	transition: 300ms;
 	filter: drop-shadow(5px -4px 10px #000);
 }
+
 .card-img-top4 {
 	height: 250px;
 	width: 230px;
@@ -96,6 +102,7 @@ body {
 	transition: 300ms;
 	filter: drop-shadow(5px -4px 10px #000);
 }
+
 .card-img-top5{
     height: 285px;
     width: 225px;
@@ -106,6 +113,7 @@ body {
     transition: 300ms;
     filter: drop-shadow(5px -4px 10px #000);
 }
+
 .textoCardS{
 	color: var(--color-primario);
 	font-family: var(--fuente-secundaria);
@@ -114,8 +122,9 @@ body {
 	text-align: center;
 	
 }
+
 .descripcion{
-	text-align: justify;
+	text-align: left;
 	font-size: var(--fuente-tamanio-parrafo-desktop);
     font-family: var(--fuente-secundaria);
     color: var(--color-secundario);
@@ -124,6 +133,7 @@ body {
     /*text-shadow: 0.5px 0 0.5px  black ;*/
 	
 }
+
 .modal-title{
 	font-family: var(--fuente-secundaria);
     text-align: center;/*VEREFICAR POR QUE NO ME TOMA EL ALING CENTER*/
@@ -133,10 +143,10 @@ body {
 .modal-content{
 	background-color: rgb(254, 230, 34, 0.9)
 }
+
 .modal-header{
 	border-bottom: none;
 }
-
 
 .card:hover .card-img-top, 
 .card:hover .card-img-top1,
@@ -150,12 +160,12 @@ body {
 	filter: drop-shadow(5px -4px 10px #000);
 }
 
-
 .btn{
     background-color:var(--color-primario);
     text-align: center;
 	font-weight: 600;
 }
+
 .btn--nosotros:hover {
 	background-color: var(--color-fondo);
 }
