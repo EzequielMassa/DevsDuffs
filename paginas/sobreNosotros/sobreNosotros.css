@@ -11,24 +11,24 @@ body {
 }
 
 .tituloSobreNos {
-    text-shadow: 7px 2px 4px #000;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    
+	text-shadow: 7px 2px 4px #000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
 }
 
-.nombresIntegrantes{
-    font-family: 'simpsonts-font';
+.nombresIntegrantes {
+	font-family: 'simpsonts-font';
 	src: local('simpsonts-font'),
 		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
-        text-align: center;   
-    filter: drop-shadow(0 0 0.5rem var(--color-primario));
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: var(--color-primario);
+	text-align: center;
+	filter: drop-shadow(0 0 0.5rem var(--color-primario));
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: var(--color-primario);
 }
 
-.textoSobreNos{
-    background-color: rgb(227, 62, 151,0.8);
+.textoSobreNos {
+	background-color: rgb(227, 62, 151, 0.8);
 }
 
 .subtitulo-sN {
@@ -38,14 +38,14 @@ body {
 	text-align: center;
 }
 
-.card{
-    height: 525px;
-    width: 18rem;
-    margin: 30px;
-    transition: 300ms;
-    background-color: var(--color-secundario);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 2px rgba (0, 0, 0, 3);  
+.card {
+	height: 525px;
+	width: 18rem;
+	margin: 30px;
+	transition: 300ms;
+	background-color: var(--color-secundario);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 2px rgba (0, 0, 0, 3);
 }
 
 .card-img-top {
@@ -103,66 +103,64 @@ body {
 	filter: drop-shadow(5px -4px 10px #000);
 }
 
-.card-img-top5{
-    height: 290px;
-    width: 230px;
-    background-size: cover;
-    margin-left: 20px;
-    margin-bottom: -13px;
-    margin-top: -15px;
-    transition: 300ms;
-    filter: drop-shadow(5px -4px 10px #000);
+.card-img-top5 {
+	height: 290px;
+	width: 230px;
+	background-size: cover;
+	margin-left: 20px;
+	margin-bottom: -13px;
+	margin-top: -15px;
+	transition: 300ms;
+	filter: drop-shadow(5px -4px 10px #000);
 }
 
-.textoCardS{
+.textoCardS {
 	color: var(--color-primario);
 	font-family: var(--fuente-secundaria);
 	font-size: 1.2rem;
 	line-height: 2rem;
 	text-align: center;
-	
+
 }
 
-.descripcion{
+.descripcion {
 	text-align: left;
 	font-size: var(--fuente-tamanio-parrafo-desktop);
-    font-family: var(--fuente-secundaria);
-    color: var(--color-secundario);
-	-webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: black;
-    /*text-shadow: 0.5px 0 0.5px  black ;*/
-	
-}
-
-.modal-title{
 	font-family: var(--fuente-secundaria);
-    text-align: center;/*VEREFICAR POR QUE NO ME TOMA EL ALING CENTER*/
-    text-shadow: 0.5px 0 0.5px var(--color-secundario) ;
+	color: var(--color-secundario);
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
 }
 
-.modal-content{
+.modal-title {
+	font-family: var(--fuente-secundaria);
+	text-align: center;
+	text-shadow: 0.5px 0 0.5px var(--color-secundario);
+}
+
+.modal-content {
 	background-color: rgb(254, 230, 34, 0.9)
 }
 
-.modal-header{
+.modal-header {
 	border-bottom: none;
 }
 
-.card:hover .card-img-top, 
+.card:hover .card-img-top,
 .card:hover .card-img-top1,
 .card:hover .card-img-top2,
 .card:hover .card-img-top3,
 .card:hover .card-img-top4,
-.card:hover .card-img-top5{
+.card:hover .card-img-top5 {
 	transform: translateY(-60px);
 	transition: 300ms;
 	filter: none;
 	filter: drop-shadow(5px -4px 10px #000);
 }
 
-.btn{
-    background-color:var(--color-primario);
-    text-align: center;
+.btn {
+	background-color: var(--color-primario);
+	text-align: center;
 	font-weight: 600;
 }
 
