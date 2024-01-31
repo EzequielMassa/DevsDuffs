@@ -23,8 +23,13 @@ body {
 }
 
 .textoSobreNos{
-    color: rgb(255, 208, 56);
-	background-color: rgb(5, 1, 2,0.5);
+    background-color: rgb(227, 62, 151,0.8);
+}
+.subtitulo-sN {
+	color: var(--color-primario);
+	font-family: var(--fuente-secundaria);
+	font-size: var(--fuente-tamanio-parrafo-desktop);
+	text-align: center;
 }
 
 
