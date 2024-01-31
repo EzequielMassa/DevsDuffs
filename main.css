@@ -72,11 +72,11 @@ body {
 }
 
 .navbar-principal--registro {
-	background: rgb(66, 199, 242);
+	background: rgb(253, 253, 253);
 	background: linear-gradient(
 		180deg,
-		rgba(66, 199, 242) 0%,
-		rgba(66, 199, 242, 0.7765231092436975) 100%
+		rgb(255, 255, 255) 0%,
+		rgba(255, 255, 255, 0.777) 100%
 	);
 }
 
