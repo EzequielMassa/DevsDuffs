@@ -28,9 +28,9 @@ export const renderizarFavoritos = () => {
                           '${favorito.nombre}'
                        </h5>
                        <p class="parrafoCard card-text m-3 m-md-3">
-                         '${
+                         ${
                            favorito.descripcion
-                         }'
+                         }
                        </p>
                        <a class="btn btn-info titulo d-block botonPlay me-2" href="#">
                            <svg xmlns="http://www.w3.org/2000/svg" width="45"
