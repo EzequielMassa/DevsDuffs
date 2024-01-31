@@ -1,4 +1,7 @@
 import { obtenerUsuarios } from '../../almacenamiento/obtenerUsuarios.js'
+import { renderizarNavbar } from '../../componentes/navbar/navbar.js'
+
+renderizarNavbar()
 
 function getUserFromLocalStorage() {
 	const email = localStorage.getItem('email')
