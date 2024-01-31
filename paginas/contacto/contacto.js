@@ -1,3 +1,4 @@
+import { renderizarNavbar } from '../../componentes/navbar/navbar.js'
 import { limpiarInputError } from '../../utilidades/limpiarInputError.js'
 import { mostrarInputError } from '../../utilidades/mostrarInputError.js'
 import { validarEmail } from '../../validadores/validarEmail.js'
@@ -6,6 +7,7 @@ import { validarTelefono } from '../../validadores/validarTelefono.js'
 import { validarEdad } from '../../validadores/validarEdad.js'
 import { enviarEmailAAdmin } from '../../servicios/email/enviarEmailAAdmin.js'
 
+renderizarNavbar()
 const formContacto = document.getElementById('formContacto')
 formContacto.addEventListener('submit', (e) => {
 	e.preventDefault()

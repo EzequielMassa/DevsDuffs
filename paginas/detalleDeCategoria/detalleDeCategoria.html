@@ -1,361 +1,505 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./detalleDeCategoria.css" />
+		<link rel="stylesheet" href="../../main.css" />
+		<script type="module" src="./detalleDeCategoria.js"></script>
+		<link
+			rel="shortcut icon"
+			href="../../recursos/media/iconos/favicon.png"
+			type="image/x-icon" />
+		<title>Detalles de categoría</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./detalleDeCategoria.css" />
-    <link rel="stylesheet" href="../../main.css" />
-    <script type="module" src="./detalleDeCategoria.js"></script>
-    <link rel="shortcut icon" href="../../recursos/media/iconos/favicon.png" type="image/x-icon" />
-    <title>Detalles de categoría</title>
-</head>
+	<body>
+		<header class="sticky-top my-0 py-0"></header>
+		<div class="list-group busqueda-resultados-contenedor"></div>
 
-<body>
-    <nav>
+		<section>
+			<img
+				src="../../recursos/media/img/portadaPrimeraTemp.png"
+				class="estiloImg w-50"
+				alt="imagen de portada" />
+			<div class="container w-75">
+				<div class="card mb-3 border-0">
+					<div class="card-body fondoCard">
+						<h1 class="titulo mb-4">Temporada 1</h1>
+						<h5 class="card-title subtitulo">Sinopsis</h5>
+						<p id="contenidoTemporada" class="card-text parrafo subtitulo"></p>
+						<p id="listaDetalleDeTemp" class="disenoLetrasCap"></p>
+					</div>
+				</div>
+			</div>
 
-    </nav>
+			<div class="container mb-3 mt-3 w-75">
+				<div class="row">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/6O8sKk8cXL8?si=rqkAkrNTn2sc_WM1"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</div>
 
-    <section>
-        <img src="../../recursos/media/img/portadaPrimeraTemp.png" class="estiloImg w-50" alt="imagen de portada">
-        <div class="container w-75">
-            <div class="card mb-3 border-0">
-                <div class="card-body fondoCard">
-                    <h1 class="titulo mb-4">Temporada 1</h1>
-                    <h5 class="card-title subtitulo">Sinopsis</h5>
-                    <p id="contenidoTemporada" class="card-text parrafo subtitulo"></p>
-                    <p id="listaDetalleDeTemp" class="disenoLetrasCap"></p>
-                </div>
-            </div>
-        </div>
+			<div class="container mt-5 w-75 disenoLetrasCap">
+				<h1 class="titulo mb-4">Temporada 1</h1>
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne">
+								Capitulo 1 - Sin blanca Navidad
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/DigctFieJH0?si=hUK7ObsXVgeahmdq"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+								class="video">
+							</iframe>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo">
+								Capitulo 2 - Bart, el genio
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<<<<<<<<< Temporary merge branch 1
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/fNb9nqpUac0?si=Tmtoq3mcy0Z3CYjs"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+								class="video"></iframe>
+							=========
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/fNb9nqpUac0?si=Tmtoq3mcy0Z3CYjs"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+								class="video"></iframe>
+							>>>>>>>>> Temporary merge branch 2
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree">
+								Capitulo 3 - La odisea de Homero
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour"
+								aria-expanded="false"
+								aria-controls="flush-collapseFour">
+								Capitulo 4 - Hogar, agridulce hogar
+							</button>
+						</h2>
+						<div
+							id="flush-collapseFour"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFive"
+								aria-expanded="false"
+								aria-controls="flush-collapseFive">
+								Capitulo 5 - Bart el general
+							</button>
+						</h2>
+						<div
+							id="flush-collapseFive"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseSix"
+								aria-expanded="false"
+								aria-controls="flush-collapseSix">
+								Capitulo 6 - El blues de Mona Lisa
+							</button>
+						</h2>
+						<div
+							id="flush-collapseSix"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseSeven"
+								aria-expanded="false"
+								aria-controls="flush-collapseSeven">
+								Capitulo 7 - El abominable hombre del bosque
+							</button>
+						</h2>
+						<div
+							id="flush-collapseSeven"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseEight"
+								aria-expanded="false"
+								aria-controls="flush-collapseEight">
+								Capitulo 8 - La cabeza chiflada
+							</button>
+						</h2>
+						<div
+							id="flush-collapseEight"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseNine"
+								aria-expanded="false"
+								aria-controls="flush-collapseNine">
+								Capitulo 9 - Jacques, el rompecorazones
+							</button>
+						</h2>
+						<div
+							id="flush-collapseNine"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTen"
+								aria-expanded="false"
+								aria-controls="flush-collapseTen">
+								Capitulo 10 - Homero se va de juerga
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTen"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseEleven"
+								aria-expanded="false"
+								aria-controls="flush-collapseEleven">
+								Capitulo 11 - Viva la vendimia
+							</button>
+						</h2>
+						<div
+							id="flush-collapseEleven"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwelve"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwelve">
+								Capitulo 12 - Krusty entra en chirona
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwelve"
+							class="accordion-collapse collapse text-center mb-3"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton">
+									<i class="bi bi-play-fill"></i></button
+							></a>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed colorCapitulos"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThirteen"
+								aria-expanded="false"
+								aria-controls="flush-collapseThirteen">
+								Capitulo 13 - La babysitter ataca de nuevo
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThirteen"
+							class="accordion-collapse collapse text-center"
+							data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body">Reproducir aqui:</div>
+							<a href="" target="_blank" rel="noopener noreferrer"
+								><button type="button" class="btn disenoBoton mb-3">
+									<i class="bi bi-play-fill"></i>
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <div class="container mb-3 mt-3 w-75">
-            <div class="row">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/6O8sKk8cXL8?si=rqkAkrNTn2sc_WM1"
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture; web-share" allowfullscreen>
-                </iframe>
-            </div>
-        </div>
+		<section class="mt-4 mb-4">
+			<div class="container w-75">
+				<div class="row">
+					<form>
+						<div class="form-group mb-4 titulo text-center">
+							<label for="comentario">
+								<h1 class="mb-4">Comentarios</h1>
+							</label>
+							<textarea
+								class="form-control"
+								id="comentario"
+								rows="4"
+								placeholder="Escribir aqui"></textarea>
+						</div>
+						<div class="d-flex flex-row-reverse bd-highlight mb-4">
+							<button
+								type="submit"
+								class="btn btn-danger p-2 m-1 estiloBotonCancelar">
+								Cancelar
+							</button>
+							<button
+								type="submit"
+								class="btn btn-success p-2 m-1 estiloBotonEnviar">
+								Enviar
+							</button>
+						</div>
+					</form>
+				</div>
 
-        <div class="container mt-5 w-75 disenoLetrasCap">
-            <h1 class="titulo mb-4">Temporada 1</h1>
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                            aria-controls="flush-collapseOne">
-                            Capitulo 1 - Sin blanca Navidad
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:</div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DigctFieJH0?si=hUK7ObsXVgeahmdq"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen class="video">
-                        </iframe>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                            aria-controls="flush-collapseTwo">
-                            Capitulo 2 - Bart, el genio
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-<<<<<<<<< Temporary merge branch 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fNb9nqpUac0?si=Tmtoq3mcy0Z3CYjs" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        allowfullscreen class="video"></iframe>
-=========
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/fNb9nqpUac0?si=Tmtoq3mcy0Z3CYjs"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen class="video"></iframe>
->>>>>>>>> Temporary merge branch 2
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
-                            aria-controls="flush-collapseThree">
-                            Capitulo 3 - La odisea de Homero
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false"
-                            aria-controls="flush-collapseFour">
-                            Capitulo 4 - Hogar, agridulce hogar
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false"
-                            aria-controls="flush-collapseFive">
-                            Capitulo 5 - Bart el general
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false"
-                            aria-controls="flush-collapseSix">
-                            Capitulo 6 - El blues de Mona Lisa
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSix" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
-                            aria-controls="flush-collapseSeven">
-                            Capitulo 7 - El abominable hombre del bosque
-                        </button>
-                    </h2>
-                    <div id="flush-collapseSeven" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false"
-                            aria-controls="flush-collapseEight">
-                            Capitulo 8 - La cabeza chiflada
-                        </button>
-                    </h2>
-                    <div id="flush-collapseEight" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false"
-                            aria-controls="flush-collapseNine">
-                            Capitulo 9 - Jacques, el rompecorazones
-                        </button>
-                    </h2>
-                    <div id="flush-collapseNine" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false"
-                            aria-controls="flush-collapseTen">
-                            Capitulo 10 - Homero se va de juerga
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTen" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false"
-                            aria-controls="flush-collapseEleven">
-                            Capitulo 11 - Viva la vendimia
-                        </button>
-                    </h2>
-                    <div id="flush-collapseEleven" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false"
-                            aria-controls="flush-collapseTwelve">
-                            Capitulo 12 - Krusty entra en chirona
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwelve" class="accordion-collapse collapse text-center mb-3"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton"><i class="bi bi-play-fill"></i></button></a>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed colorCapitulos" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false"
-                            aria-controls="flush-collapseThirteen">
-                            Capitulo 13 - La babysitter ataca de nuevo
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThirteen" class="accordion-collapse collapse text-center"
-                        data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Reproducir aqui:
-                        </div>
-                        <a href="" target="_blank" rel="noopener noreferrer"><button type="button"
-                                class="btn disenoBoton mb-3"><i class="bi bi-play-fill"></i></button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+				<div class="row mt-4">
+					<div class="flex-column parrafo">
+						<div class="card mb-3 fondoCard border-0" style="max-width: 540px">
+							<div class="row g-0">
+								<div class="col-md-3 d-flex justify-content-center">
+									<img
+										src="../../recursos/media/img/perfilBart.png"
+										class="rounded-circle imgComentarios"
+										alt="photo" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<h5 class="letraNegrita">Fer Norry</h5>
+										<p>
+											Muy buena página! me gusto cómo organizan los episodios,
+											fácil de encontrar lo que busco. 📺👍
+										</p>
+										<p><small class="text-muted">Hace 45 minutos</small></p>
+									</div>
+								</div>
+							</div>
+						</div>
 
-    <section class="mt-4 mb-4">
-        <div class="container w-75">
-            <div class="row">
-                <form>
-                    <div class="form-group mb-4 titulo text-center">
-                        <label for="comentario">
-                            <h1 class="mb-4">Comentarios</h1>
-                        </label>
-                        <textarea class="form-control" id="comentario" rows="4" placeholder="Escribir aqui"></textarea>
-                    </div>
-                    <div class="d-flex flex-row-reverse bd-highlight mb-4">
-                        <button type="submit" class="btn btn-danger p-2 m-1 estiloBotonCancelar">Cancelar</button>
-                        <button type="submit" class="btn btn-success p-2 m-1 estiloBotonEnviar">Enviar</button>
-                    </div>
-                </form>
-            </div>
+						<div class="card mb-3 fondoCard border-0" style="max-width: 540px">
+							<div class="row g-0">
+								<div class="col-md-3 d-flex justify-content-center">
+									<img
+										src="../../recursos/media/img/perfilSkinner.png"
+										class="rounded-circle imgComentarios"
+										alt="photo" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<h5 class="letraNegrita">Lulu Barraza</h5>
+										<p>
+											Descubrí esta página y me gusto bastante, la voy a
+											recomendar a mis amigos! Interfaz fácil, info increíble.
+											🤓✨
+										</p>
+										<p><small class="text-muted">Hace 20 minutos</small></p>
+									</div>
+								</div>
+							</div>
+						</div>
 
-            <div class="row mt-4">
-                <div class="flex-column parrafo">
-                    <div class="card mb-3 fondoCard border-0" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-3 d-flex justify-content-center">
-                                <img src="../../recursos/media/img/perfilBart.png" class="rounded-circle imgComentarios"
-                                    alt="photo">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="letraNegrita">Fer Norry</h5>
-                                    <p>Muy buena página! me gusto cómo organizan los episodios, fácil de encontrar lo
-                                        que busco. 📺👍</p>
-                                    <p><small class="text-muted">Hace 45 minutos</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="card mb-3 fondoCard border-0" style="max-width: 540px">
+							<div class="row g-0">
+								<div class="col-md-3 d-flex justify-content-center">
+									<img
+										src="../../recursos/media/img/perfilApu.png"
+										class="rounded-circle imgComentarios"
+										alt="photo" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<h5 class="letraNegrita">Sole Costilla</h5>
+										<p>
+											¡Increíble página para fans de Los Simpson! La disposición
+											de los episodios por temporadas facilita la navegación. Ya
+											la tengo marcada como mi favorita. 🌟📰
+										</p>
+										<p><small class="text-muted">Hace 45 minutos</small></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                    <div class="card mb-3 fondoCard border-0" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-3 d-flex justify-content-center">
-                                <img src="../../recursos/media/img/perfilSkinner.png"
-                                    class="rounded-circle imgComentarios" alt="photo">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="letraNegrita">Lulu Barraza</h5>
-                                    <p>Descubrí esta página y me gusto bastante, la voy a recomendar a mis amigos!
-                                        Interfaz fácil, info increíble. 🤓✨</p>
-                                    <p><small class="text-muted">Hace 20 minutos</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+		<footer></footer>
 
-                    <div class="card mb-3 fondoCard border-0" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-3 d-flex justify-content-center">
-                                <img src="../../recursos/media/img/perfilApu.png" class="rounded-circle imgComentarios"
-                                    alt="photo">
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body">
-                                    <h5 class="letraNegrita">Sole Costilla</h5>
-                                    <p>¡Increíble página para fans de Los Simpson! La disposición de los episodios por
-                                        temporadas facilita la navegación. Ya la tengo marcada como mi favorita. 🌟📰
-                                    </p>
-                                    <p><small class="text-muted">Hace 45 minutos</small></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-
-    </footer>
-
-    <script src="../detalleDeCategoria/contenidoDetalleTemp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
-</body>
+		<script
+			type="module"
+			src="../detalleDeCategoria/contenidoDetalleTemp.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+	</body>
 </html>

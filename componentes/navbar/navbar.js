@@ -1,4 +1,9 @@
+import capitulos from '/datos/capitulos.json' assert { type: 'json' }
+
 const header = document.querySelector('header')
+const resultadosContenedor = document.querySelector(
+	'.busqueda-resultados-contenedor'
+)
 
 export const renderizarNavbar = () => {
 	// const usuarioLogeado = obtenerUsuarioLogeado()
@@ -51,13 +56,14 @@ export const renderizarNavbar = () => {
 						<form
 							class="d-flex mx-auto pe-2 navbar-principal-formulario my-2 mb-md-0">
 							<input
-								class="form-control me-2"
+								class="form-control me-2 focus-ring focus-ring-warning"
 								type="search"
-								placeholder="Buscar"
-								aria-label="Search" />
-							<button class="btn btn-buscar" type="submit" title="buscar">
+								placeholder="Buscar capitulos"
+								aria-label="Search"
+								id='inputBusqueda' />
+			
 								<i class="bi bi-search"></i>
-							</button>
+						
 						</form>
 						${
 							usuarioLogeado
@@ -109,4 +115,57 @@ export const renderizarNavbar = () => {
 				</div>
 			</nav>
  `
+	const inputBusqueda = document.querySelector('#inputBusqueda')
+
+	inputBusqueda.addEventListener('keyup', (e) => {
+		if (e.target.value != '') {
+			buscar(e.target.value)
+		} else {
+			resultadosContenedor.innerHTML = ''
+			resultadosContenedor.classList.remove(
+				'busqueda-resultados-contenedor--show'
+			)
+		}
+	})
+}
+
+function buscar(elemento) {
+	const resultado = capitulos.filter(
+		(capitulo) =>
+			(capitulo.temporada == 1 &&
+				capitulo.nombre.toLowerCase().includes(elemento.toLowerCase())) ||
+			(capitulo.temporada == 1 && capitulo.capitulo == elemento)
+	)
+
+	if (resultado.length < 1) {
+		resultadosContenedor.classList.add('busqueda-resultados-contenedor--show')
+		resultadosContenedor.innerHTML = `
+				<a
+				href="#"
+				class="list-group-item list-group-item-action"
+				aria-current="true">
+			No se encontraron resultados
+			<img src='/recursos/media/img/homero-error.png' alt='imagen no se encontraron resultados' />
+			</a>
+		`
+	} else {
+		renderizarResultadosBusqueda(resultado)
+	}
+}
+
+function renderizarResultadosBusqueda(listaResultados) {
+	resultadosContenedor.classList.add('busqueda-resultados-contenedor--show')
+	resultadosContenedor.innerHTML = ''
+
+	listaResultados.forEach((resultado) => {
+		resultadosContenedor.innerHTML += `
+		<a
+				href="/paginas/detalleDeCategoria/detalleDeCategoria.html"
+				class="list-group-item list-group-item-action"
+				aria-current="true">
+				${resultado.nombre}
+				<img src='${resultado.imgUrl}' alt='imagen resultado busqueda' />
+			</a>
+`
+	})
 }
