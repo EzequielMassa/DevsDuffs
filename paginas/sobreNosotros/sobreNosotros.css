@@ -104,15 +104,15 @@ body {
 	filter: drop-shadow(5px -4px 10px #000);
 }
 
-.card-img-top5 {
-	height: 290px;
-	width: 230px;
-	background-size: cover;
-	margin-left: 20px;
-	margin-bottom: -13px;
-	margin-top: -15px;
-	transition: 300ms;
-	filter: drop-shadow(5px -4px 10px #000);
+.card-img-top5{
+    height: 285px;
+    width: 225px;
+    background-size: cover;
+    margin-left: 20px;
+    margin-bottom: -13px;
+    margin-top: -15px;
+    transition: 300ms;
+    filter: drop-shadow(5px -4px 10px #000);
 }
 
 .textoCardS {
