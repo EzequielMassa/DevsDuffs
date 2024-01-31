@@ -1,128 +1,103 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
-        rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
+			rel="stylesheet" />
     <link rel="stylesheet" href="../../main.css" />
-    <link rel="stylesheet" href="../Contacto/contacto.css">
+    <link rel="stylesheet" href="../contacto/contacto.css">
     <link rel="shortcut icon" href="../../recursos/media/iconos/favicon.png" type="image/x-icon" />
     <script type="module" src="../../main.js"></script>
-    <script type="module" src="../Contacto/contacto.js"></script>
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+     <script type="text/javascript">
+		emailjs.init('a0nK2KBffZoMri_Vy')
+	  </script>
 </head>
-
 <body>
-    <header>
-        <div class="container-fluid fondoNavColor">
-            <nav class="navbar navbar-expand-lg sticky-top mt-3 mb-3">
-
-                <a class="navbar-brand" href="/index.html"><img class="logo-nav"
-                        src="../../recursos/media/iconos/favicon.png"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="d-flex col-12 align-items-center flex-column flex-lg-row">
-
-                        <div class="col-md-5 ">
-                            <ul class="navbar-nav text-center mb-2 mb-lg-0 ">
-                                <li class="nav-item ">
-                                    <a class="nav-link nav-alink" aria-current="page"
-                                        href="#"><label>Temporadas</label></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-alink" aria-current="page"
-                                        href="#"><label>Nosotros</label></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav-alink " aria-current="page"
-                                        href="../Contacto/contacto.html"><label>Contacto</label></a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <form class="d-flex col-md-4 m-md-auto align-content-center mb-3" role="search">
-                            <input class="form-control  me-2" id="input-buscar" type="search" placeholder="Buscar"
-                                aria-label="Buscar">
-                            <button class="btn btn-dark border border-warning rounded-pill me-2" id="btn-buscar"
-                                type="submit"><i class="bi bi-search"></i></button>
-                        </form>
-
-                        <div class="col-md-3 d-flex flex-column flex-lg-row align-items-center">
-                            <button class="btn btn-info btn-log mb-2 mt-2 m-md-auto rounded-pill" id="btn-Inicio"
-                                type="submit"><label class="parrafo" for="">Iniciar</label></button>
-                            <button class="btn btn-success mb-2 mt-2 m-md-auto rounded-pill ms-md-2 me-md-2"
-                                id="btn-registro" type="submit"> <label class="parrafo" for="">Registro</label></button>
-                            <img class="img-login ms-1 me-md-2 mb-2 mb-md-0 d-none d-md-block"
-                                src="../../recursos/media/img/homero-apuntando.png" alt="Homero de login">
-                            <button id="btn-donut" class="btn align-items-md-center rounded-circle border-0"><img
-                                    id="img-donut" src="../../recursos/media/img/donut.png"
-                                    alt="donuts de ADM"></button>
-                        </div>
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+  			<header class="sticky-top my-0 py-0"></header>
+		<div class="list-group busqueda-resultados-contenedor"></div>
 
     <!-- aqui termina el nav -->
 
     <main>
         <div class="container-fluid">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center" id="containerGeneral">
                 <section class="container col rounded" id="parte-col1">
                     <h1 class="subtitulo mt-4 text-center mt-5 mb-4">Contáctanos:</h1>
-                    <form class="d-flex flex-column" action="#" method="post">
-                        <label class="parrafo text-center colorItems mb-lg-2 " for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label class="parrafo text-center colorItems mt-2 mb-2" for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        <label class="parrafo text-center colorItems mt-2 mb-2" for="email">telefono:</label>
-                        <input type="tel" id="tel" name="telefono" required>
-                        <label class="parrafo text-center colorItems mt-2 mb-2" for="nombre">Edad:</label>
-                        <input type="number" id="edad" name="edad" required>
+                    <form id="formContacto" class="d-flex flex-column needs-validation" action="#" method="post" novalidate>
+                            <div>
+                            <label class="parrafo colorItems mb-lg-2 mt-4" for="nombre">Nombre:</label>
+                            <div>
+                            <input type="text" class="nombreContacto estiloInput" id="nombreContacto" name="nombre" required>
+                            <div class="invalid-feedback mt-2">
+                                <span class="alertForm text-dark "> El nombre ingresado no es válido. Recuerda que debe contener 10 caracteres o menos.</span>
+                            </div>
+                            </div>
+                        
+                       
 
+                    <div>
+                        <label class="parrafo text-center colorItems mt-4" for="email">Email:</label>
+                        <input type="email" id="emailContacto" class="estiloInput" name="email" required>
+                        <div class="invalid-feedback mt-2">
+                            <span class="alertForm text-dark">El email no es válido. Por favor, asegúrate de introducir un email válido en el formato correcto.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="parrafo text-center colorItems mt-4" for="email">Telefono:</label>
+                        <input type="tel" id="telContacto" class="estiloInput" name="telefono" required>
+                        <div class="invalid-feedback mt-2">
+                            <span class="alertForm  text-dark">El formato del número de teléfono no es válido. Por favor, ingresa un número de teléfono con 10 dígitos. </span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="parrafo text-center colorItems mt-4" for="nombre">Edad:</label>
+                        <input type="number" id="edadContacto" class="estiloInput" name="edad" required>
+                        <div class="invalid-feedback mt-2">
+                            <span class="alertForm text-dark">La edad ingresada no es válida. Recuerda que debes ser mayor de 6 años para continuar. Por favor, verificá.</span>
+                        </div>
+                    </div>
 
+                     
                         <h3 class="subtitulo text-center mt-5 mb-4">Califica nuestro servicio:</h3>
                         <div class="d-flex flex-column text-center mb-4">
-                            <label class="parrafo mt-1 mb-3 colorItems">
-                                <input type="radio" name="opinion" value="positivo"> Pesimo
+                            <label class="parrafo mt-1 mb-3 colorItems1">
+                                <input type="radio" name="opinion" value="Pesimo"> Pesimo
+                           </label>
+                            <label class="parrafo mt-2 mb-3 colorItems1">
+                                <input type="radio" name="opinion" value="Regular"> Regular
                             </label>
-                            <label class="parrafo mt-2 mb-3 colorItems">
-                                <input type="radio" name="opinion" value="neutral"> Regular
+                            <label class="parrafo mt-2 mb-3 colorItems1">
+                                <input type="radio" name="opinion" value="Bueno"> Bueno
                             </label>
-                            <label class="parrafo mt-2 mb-3 colorItems">
-                                <input type="radio" name="opinion" value="negativo"> Bueno
+                            <label class="parrafo mt-2 mb-3 colorItems1">
+                                <input type="radio" name="opinion" value="Muy Bueno"> Muy bueno
                             </label>
-                            <label class="parrafo mt-2 mb-3 colorItems">
-                                <input type="radio" name="opinion" value="negativo"> Muy bueno
+                            <label class="parrafo mt-2 mb-3 colorItems1">
+                                <input type="radio" name="opinion" value="Excelente"> Excelente
                             </label>
-                            <label class="parrafo mt-2 mb-3 colorItems">
-                                <input type="radio" name="opinion" value="negativo"> Excelente
-                            </label>
+                            
+                            <button class="btn" id="btn-Enviar" type="submit">Enviar</button>
                         </div>
 
-                        <div class="d-flex justify-content-center mb-5">
-                            <button class="btn" id="btn-Enviar" type="submit"><label for="">Enviar</label></button>
-                        </div>
+                       <!--<div class="d-flex justify-content-center mb-5">
+                           
+                        </div>--> 
                     </form>
                 </section>
 
                 <aside class="col rounded" id="parte-col2">
-                    <h1 class="subtitulo text-center mt-5 mb-5">¡Bienvenidos a nuestro sitio web!</h1>
+                    <h1 class="subtitulo text-center mt-5 mb-5">Encuentranos🔍</h1>
                     <p class="parrafo mb-4 me-3 ms-3">Nos llena de alegría que estén aquí,
                         explorando y
                         utilizando nuestros servicios a través de este espacio de comunicación directa. En este rincón
@@ -132,23 +107,74 @@
                         opinión nos importa para poder seguir mejorando y actualizando nuestro servicio.
                     </p>
 
-                    <h2 class="subtitulo text-center mt-4 mb-4">Encuentranos🔍</h2>
+                    
                     <div class="d-flex justify-content-center align-items-center me-5 ms-5">
-                        <img class="border border-3 border-warning imagen" src="../../recursos/media/img/mapa.jpg"
-                            alt="Mapa de los simpson">
+                        <a class="nav-link nav-alink" href="https://maps.app.goo.gl/BBTzPGhbwdMCMvmU9" target="_blank"><img class="border border-3 border-warning imagen" id="imagenMapa" src="../../recursos/media/img/mapa.jpg" alt="Mapa de los simpson"></a>
                     </div>
                     <p class="parrafo text-center mt-5">*Estamos a tu disposición para los comentarios y/o opiniones que
                         nos envies*</p>
                 </aside>
-            </div>
-        </div>
-    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+            </div>
+              
+            </form>
+          </div>
+        </div>
+
+    </main>
+		<!-- Inicio del Footer -->
+		<footer class="text-light py-5 mt-3 container-fluid">
+			<div class="container-fluid">
+				<div class="row justify-content-center">
+
+					<div class="rounded-3 col-md-3 text-center opacity-30 d-flex footerRedes">
+						<h4 class="parrafo text-center footerTitulo">Nuestras redes:</h4>
+
+
+						<ul class="d-flex flex-column justify-content-center align-items-center mt-4">
+							<li class="list-unstyled d-flex mt-3">
+								<a class="parrafo footerLetra" href="https://instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+									<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+								  </svg>Devs.duff_Inst</a>
+							</li>
+
+							<li class="list-unstyled d-flex mt-3">
+								<a class="parrafo footerLetra" href="https://faceboock.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+									<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+								  </svg>Devs Duff</a>
+							</li>							
+							<li class="list-unstyled d-flex mt-3">
+								<a class="parrafo footerLetra" href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+									<path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+								  </svg>Devs.Duff</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 text-center mt-4">
+						<img src="../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190" alt="logo dev duff" />
+					</div>
+					
+					<div class="d-flex flex-column justify-content-end col-md-2">
+							<button type="button" class="parrafo btn btn-info mb-4 buttonFooter"><a href="../sobreNosotros/sobreNosotros.html" target="_blank" id="letraButtonF">Acerca de Nosotros</a></button>
+							<button type="button" class="parrafo btn btn-info buttonFooter"><a href="../contacto/contacto.html" id="letraButtonF">Contacto</a></button>
+					</div>
+
+
+					<div class="container-fluid mt-3 justify-content-center footerRedes">
+						<h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los derechos reservados.</h6>
+
+					</div>
+				
+					
+				</div>
+			</div>
+		</footer>
+<!-- Fin del Footer -->
+    <script type="module" src="../contacto/contacto.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/000ea8895d.js" crossorigin="anonymous"></script>
+   
 </body>
-
 </html>
+

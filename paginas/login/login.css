@@ -1,76 +1,69 @@
-  body {
-    background-image: url(/recursos/media/img/homerLogin.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 20px;
-  }
+main {
+	background-image: url(/recursos/media/img/homerLogin.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.login-form-input-img {
+	height: 1rem;
+}
 
- .img1{
-   display: flex;
-   width: 10px;
-   height: 10px;
- }
- .btn-dark{
-  color: black;
-  width: 100%;
-  
- }
- .titulo{
-  text-shadow: 2px 2px 4px #141313;
- }
- nav{
-   background-color: transparent;
-  }
-  nav a p{
-    color: black;
-  }
-  main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .card11 {
-    border-radius: 5%;
-  }
-  .iconoLogin{
-    display: flex;
-    justify-content: center;
-  }
-  .pLogin{
-     margin-bottom: 50px;
-     margin-top: -30px;
-     color:black
-  }
-  input:required:valid {
-  border: 2px solid lightgreen;
+.login-form-social-img {
+	height: 1.6rem;
 }
-input:invalid {
-  border: 2px solid lightcoral;
+
+.img1 {
+	display: flex;
+	width: 10px;
+	height: 10px;
 }
-input:invalid > button {
-  pointer-events: none;
-  background-color: #ccc;
-  cursor: not-allowed;
+.btn-dark {
+	width: 100%;
 }
-.iconoLogin{
-  background-color: transparent;
+.titulo {
+	text-shadow: 2px 2px 4px #141313;
 }
+
+.card11 {
+	border-radius: 5%;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* background-color: rgba(227, 62, 151, 0.7); */
+	width: 30rem;
+}
+
+.pLogin {
+	margin-bottom: 50px;
+	margin-top: -30px;
+	color: black;
+}
+
+/* .label-texto {
+	color: var(--color-primario);
+} */
+
+.form-control.is-invalid {
+	background: none;
+	border: 2px solid red;
+	border-radius: 0px;
+}
+
 @media screen and (max-width: 600px) {
-  .card11 {
-    width: 90%;
-  }
-
-  }
-@media screen and (max-width: 800px){
-  body {
-    background-image: url('/recursos/media/img/homerResponsive.jpeg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-} 
+	.card11 {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 800px) {
+	main {
+		background-image: url('/recursos/media/img/homerResponsive.jpeg');
+		background-size: cover;
+		background-position: center;
+	}
+}
