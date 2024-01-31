@@ -24,8 +24,22 @@ body{
     text-shadow: 7px 2px 4px #000;
     margin-bottom: 20px;
     margin-top: 20px;
-    text-decoration:underline;
+    
 }
+
+.nombresIntegrantes{
+    filter: drop-shadow(0 0 0.5rem var(--color-primario));
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: var(--color-primario);
+}
+
+.textoSobreNos{
+    color: rgb(255, 208, 56);
+	background-color: rgb(5, 1, 2,0.5);
+}
+
+
+/*
 .parrafo2{
     color: #000;
     font-size: 25px;
@@ -54,9 +68,12 @@ body{
     
   
 }
+
+*/
 .btn3{
     margin-top: 15px;
 }
+/*
 .parrafo5{
     color: #000;
     font-size: 20px;
@@ -67,6 +84,7 @@ body{
     
     
 }
+*/
 .card{
     height: 500px;
     width: 450px;
@@ -160,12 +178,14 @@ body{
     margin-top: -15px;
     transition: 300ms;
     filter: drop-shadow(5px -4px 10px #000);}
+
+
 h2{
     font-family: 'simpsonts-font';
 	src: local('simpsonts-font'),
 		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
         text-align: center;
-        text-decoration: underline;
+        
 
 }
 
@@ -174,10 +194,9 @@ h2{
     text-align: center;
     font-size: 19px;
     margin-bottom: 25px;
-    font-family: 'simpsonts-font';
-	src: local('simpsonts-font'),
-		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
-        text-align: center;
+    font-family: var(--fuente-secundaria);
+    text-align: center;
+    color: var(--color-primario);
 
 }
 .p2{
@@ -224,18 +243,18 @@ h2{
         text-align: center ;
 }
 .descripcion{
-    font-family: 'simpsonts-font';
-	src: local('simpsonts-font'),
-		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
-        text-align: center;
-        font-size: 20px;
+    font-family: var(--fuente-secundaria);
+    color: var(--color-secundario);
+    text-shadow: 0.5px 0.5px 0.5px  black ;
 }
+
+
+
 .modal-title{
-    font-family: 'simpsonts-font';
-	src: local('simpsonts-font'),
-		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
-        text-align: center;
-        margin-left: 155px;
+    font-family: var(--fuente-secundaria);
+    text-align: center;/*VEREFICAR POR QUE NO ME TOMA EL ALING CENTER*/
+    text-shadow: 0.5px 0 0.5px var(--color-primario) ;
+       
 }
 .atributos{
     margin-top: -40px;
@@ -293,9 +312,6 @@ h2{
 }
 .btn{
     background-color:var(--color-primario);
-    font-family: 'simpsonts-font';
-	src: local('simpsonts-font'),
-		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
     text-align: center;
 }
 .btn:hover{
