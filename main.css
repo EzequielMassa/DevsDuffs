@@ -171,13 +171,22 @@ input[type='search']::-webkit-search-results-decoration {
 } */
 
 /*footer*/
+.parrafo{
+	color: var(--fuente-color-primario);
+	font-family: var(--fuente-secundaria);
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
 footer {
-	background-image: url(./recursos/media/img/backgroundDonas2.png);
+	background-image: url(../../recursos/media/img/backgraundDonas.png);
 }
 .footerTitulo {
 	color: rgb(255, 208, 56);
+	font-family: var(--fuente-secundaria);
 }
 .footerRedes {
+	margin-left: 2%;
+	font-family: var(--fuente-secundaria);
 	color: rgb(255, 208, 56);
 	background-color: rgb(5, 1, 2, 0.5);
 }
@@ -191,7 +200,8 @@ footer {
 	background-color: rgb(5, 1, 2, 0.5);
 	color: rgb(255, 208, 56);
 }
-#letraButtonF {
+.letraButtonF{
+	font-family: var(--fuente-secundaria);
 	text-decoration: none;
 	color: rgb(255, 208, 56);
 }
@@ -202,9 +212,16 @@ footer {
 .buttonFooter:hover {
 	transform: scale(1.1);
 }
+.divButtonF{
+	width: 20%;
+}
 
 /* Responsive */
-
+@media (max-width: 770px) {
+	.divButtonF{
+		width: 100%;
+	}
+}
 @media screen and (min-width: 768px) {
 	.titulo {
 		font-size: var(--fuente-tamanio-titulo-tablet);
