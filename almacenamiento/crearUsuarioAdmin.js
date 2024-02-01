@@ -10,10 +10,10 @@ import { guardarUsuario } from './guardarUsuario.js'
 export const crearUsuarioAdmin = () => {
 	const usuarios = obtenerUsuarios()
 	const existeAdmin = usuarios.find(
-		(usuario) => usuario.email === 'admin@devsduff.com'
+		(usuario) => usuario.email === 'duffdevs@gmail.com'
 	)
 	if (!existeAdmin) {
-		const admin = new Usuario('admin@devsduff.com', 'admin', 'admin')
+		const admin = new Usuario('duffdevs@gmail.com', 'duffdevs79i', 'admin')
 		admin.estadoUsuario.pendiente = false
 		admin.estadoUsuario.aprobado = true
 		guardarUsuario(admin)
