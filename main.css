@@ -25,7 +25,7 @@
 
 html {
 	scroll-behavior: smooth;
-	scroll-padding-top: 6rem;
+	scroll-padding-top: 7rem;
 	font-family: 'Fira Sans', sans-serif;
 }
 
@@ -91,8 +91,43 @@ body {
 }
 
 .nav-link {
+	font-family: var(--fuente-secundaria);
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
 	color: var(--color-secundario);
-	text-shadow: 1px 1px 1px rgb(0, 0, 0), 1px 1px 1px rgb(0, 0, 0);
+	font-weight: 600;
+	cursor: pointer;
+	position: relative;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: color;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+	color: var(--color-secundario);
+}
+
+.nav-link:focus:after,
+.nav-link:hover:after {
+	width: 100%;
+	left: 0%;
+}
+
+.nav-link:after {
+	content: '';
+	pointer-events: none;
+	bottom: -2px;
+	left: 50%;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: var(--color-secundario);
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: width, left;
 }
 
 .navbar-toggler-icon {
@@ -143,7 +178,7 @@ body {
 
 .busqueda-resultados-contenedor--show {
 	transition: all 0.5s ease-in-out;
-	top: 355px;
+	top: 365px;
 }
 
 .busqueda-resultados-contenedor a {
@@ -163,15 +198,15 @@ body {
 	max-width: 8rem;
 }
 
-/* input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-decoration,
 input[type='search']::-webkit-search-cancel-button,
 input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
 	display: none;
-} */
+}
 
 /*footer*/
-.parrafo{
+.parrafo {
 	color: var(--fuente-color-primario);
 	font-family: var(--fuente-secundaria);
 	font-size: 1.3rem;
@@ -200,7 +235,7 @@ footer {
 	background-color: rgb(5, 1, 2, 0.5);
 	color: rgb(255, 208, 56);
 }
-.letraButtonF{
+.letraButtonF {
 	font-family: var(--fuente-secundaria);
 	text-decoration: none;
 	color: rgb(255, 208, 56);
@@ -212,13 +247,13 @@ footer {
 .buttonFooter:hover {
 	transform: scale(1.1);
 }
-.divButtonF{
+.divButtonF {
 	width: 20%;
 }
 
 /* Responsive */
 @media (max-width: 770px) {
-	.divButtonF{
+	.divButtonF {
 		width: 100%;
 	}
 }
@@ -234,11 +269,16 @@ footer {
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-tablet);
 	}
+
+	.nav-link {
+		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+
+	.navbar-principal-formulario {
+		width: 30%;
+	}
 	.busqueda-resultados-contenedor--show {
 		top: 120px;
-	}
-	.navbar-principal-formulario {
-		width: 40%;
 	}
 }
 
