@@ -312,6 +312,7 @@ footer {
 	background-size: cover;
 	background-position: center center;
 	max-width: 100%;
+	height: 100vh;
 }
 
 .custom-bg-color {
@@ -323,13 +324,10 @@ footer {
 }
 
 .card-index:hover {
-	transform: scale(1.1);
+	transform: scale(1.02);
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.932);
 }
 
-/* .header-index {
-	margin-top: 75px;
-} */
 
 .tituloTarjetaSuperior {
 	font-family: var(--fuente-principal);
@@ -338,18 +336,24 @@ footer {
 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
-.botonPlay:hover {
-	color: #ffffff;
+.botonCarousel {
+	background-color: var(--color-primario);
+	font-family: var(--fuente-secundaria);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 	transition: color 0.1s ease;
 }
 
-.botonPlay:hover path {
-	fill: #ffffff;
+.botonCarousel:hover {
+	color: #ffffff;
+	background-color: var(--color-secundario);
+	font-family: var(--fuente-secundaria);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 	transition: fill 0.1s ease;
 }
 
 .parrafoCard {
-	font-family: var(--fuente-principal);
+	font-family: var(--fuente-secundaria);
+	min-height: 7.5em;
 }
 
 .contenedorImgCarousel {
@@ -402,4 +406,45 @@ footer {
 	width: auto;
 	margin-left: -10px;
 	margin-right: -10px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+	.titulo {
+		font-size: var(--fuente-tamanio-titulo-tablet);
+	}
+
+	.subtitulo {
+		font-size: var(--fuente-tamanio-subtitulo-tablet);
+	}
+
+	.parrafo {
+		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+	.busqueda-resultados-contenedor--show {
+		top: 120px;
+	}
+	.navbar-principal-formulario {
+		width: 40%;
+	}
+
+	.parrafoCard{
+		min-height: 9em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.titulo {
+		font-size: var(--fuente-tamanio-titulo-desktop);
+	}
+
+	.subtitulo {
+		font-size: var(--fuente-tamanio-subtitulo-desktop);
+	}
+
+	.parrafo {
+		font-size: var(--fuente-tamanio-parrafo-desktop);
+	}
+
 }
