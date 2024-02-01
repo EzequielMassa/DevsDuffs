@@ -14,8 +14,8 @@ export const renderizarFavoritos = () => {
      }
    
        <div class="row justify-content-center">
-           <div class="col-12 col-md-8">
-               <div class="card mb-2 mt-5 mb-5 rounded-5 custom-bg-color card-index">
+           <div class="col-12 col-lg-8 col-md-10 my-5">
+               <div class="card rounded-5 custom-bg-color card-index">
                <div class="contenedorImgCarousel">          
                <img src='${favorito.imgUrl}'
                class="card-img-top rounded-top-5 img-media"

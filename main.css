@@ -203,41 +203,6 @@ footer {
 	transform: scale(1.1);
 }
 
-/* Responsive */
-
-@media screen and (min-width: 768px) {
-	.titulo {
-		font-size: var(--fuente-tamanio-titulo-tablet);
-	}
-
-	.subtitulo {
-		font-size: var(--fuente-tamanio-subtitulo-tablet);
-	}
-
-	.parrafo {
-		font-size: var(--fuente-tamanio-parrafo-tablet);
-	}
-	.busqueda-resultados-contenedor--show {
-		top: 120px;
-	}
-	.navbar-principal-formulario {
-		width: 40%;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.titulo {
-		font-size: var(--fuente-tamanio-titulo-desktop);
-	}
-
-	.subtitulo {
-		font-size: var(--fuente-tamanio-subtitulo-desktop);
-	}
-
-	.parrafo {
-		font-size: var(--fuente-tamanio-parrafo-desktop);
-	}
-}
 
 /* Inicio CSS CAROUSEL */
 
@@ -292,7 +257,8 @@ footer {
 }
 
 .parrafoCard {
-	font-family: var(--fuente-principal);
+	font-family: var(--fuente-secundaria);
+	min-height: 7.5em;
 }
 
 .contenedorImgCarousel {
@@ -345,4 +311,45 @@ footer {
 	width: auto;
 	margin-left: -10px;
 	margin-right: -10px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+	.titulo {
+		font-size: var(--fuente-tamanio-titulo-tablet);
+	}
+
+	.subtitulo {
+		font-size: var(--fuente-tamanio-subtitulo-tablet);
+	}
+
+	.parrafo {
+		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+	.busqueda-resultados-contenedor--show {
+		top: 120px;
+	}
+	.navbar-principal-formulario {
+		width: 40%;
+	}
+
+	.parrafoCard{
+		min-height: 9em;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.titulo {
+		font-size: var(--fuente-tamanio-titulo-desktop);
+	}
+
+	.subtitulo {
+		font-size: var(--fuente-tamanio-subtitulo-desktop);
+	}
+
+	.parrafo {
+		font-size: var(--fuente-tamanio-parrafo-desktop);
+	}
+
 }
