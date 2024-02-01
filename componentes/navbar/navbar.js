@@ -1,3 +1,5 @@
+import { cerrarSesion } from '../../almacenamiento/cerrarSesion.js'
+import { obtenerUsuarioLogueado } from '../../almacenamiento/obtenerUsuarioLogueado.js'
 import capitulos from '/datos/capitulos.json' assert { type: 'json' }
 
 const header = document.querySelector('header')
@@ -5,19 +7,17 @@ const resultadosContenedor = document.querySelector(
 	'.busqueda-resultados-contenedor'
 )
 
+/**
+ * Renderiza el navbar basada en el usuario logeado  y la pagina  actual.
+ * @return {void} - No retorn nada.
+ */
 export const renderizarNavbar = () => {
-	// const usuarioLogeado = obtenerUsuarioLogeado()
+	const usuarioLogeado = obtenerUsuarioLogueado()
 	const registroUrl = window.location.href.includes('registro')
 
-	const usuarioLogeado = false
-	const usuarioRol = 'admin'
-
 	header.innerHTML = `
-	    ${
-				!registroUrl
-					? '<nav class="navbar navbar-principal navbar-expand-md rounded-1" >'
-					: '<nav class="navbar navbar-principal--registro navbar-expand-md rounded-1" >'
-			}
+
+	  <nav class="spikes navbar navbar-principal navbar-expand-md" >
 				<div class="container-fluid">
 					<a class="navbar-brand" href="/index.html"
 						><img
@@ -79,16 +79,16 @@ export const renderizarNavbar = () => {
 									class="navbar-principal-usuario-imagen"
 									src="/recursos/media/img/donut.png"
 									alt="imagen opciones de usuario" />
-								Usuario
+								Opciones
 							</a>
 							<ul
 								class="dropdown-menu dropdown-menu-light dropdown-menu-end"
 								aria-labelledby="navbarDropdown">
 								${
-									usuarioRol === 'admin'
+									usuarioLogeado.rol === 'admin'
 										? `
 												<li>
-									<a class="dropdown-item" href="#"
+									<a class="dropdown-item" href="/paginas/admin/edicion/edicion.html"
 										>Administrar contenido <i class="bi bi-gear-fill"></i
 									></a>
 								</li>
@@ -103,9 +103,10 @@ export const renderizarNavbar = () => {
 								}
 					
 								<li>
-									<a class="dropdown-item" href="#"
-										>Cerrar sesion <i class="bi bi-box-arrow-right"></i
-									></a>
+									<button class="dropdown-item btn btn-warning" id='btnCerrarSesion'>
+									Cerrar sesion
+									<i class="bi bi-box-arrow-right"></i
+									></button>
 								</li>
 							</ul>
 						</div>`
@@ -127,8 +128,19 @@ export const renderizarNavbar = () => {
 			)
 		}
 	})
+
+	const btnCerrarSesion = document.querySelector('#btnCerrarSesion')
+	if (btnCerrarSesion) {
+		btnCerrarSesion.addEventListener('click', () => {
+			cerrarSesion()
+		})
+	}
 }
 
+/**
+ * Filtra los capitulos la temporada 1 y nombre o numero de episodio de la misma y renderiza los resultados.
+ * @param {string} elemento - La palabra a buscar.
+ */
 function buscar(elemento) {
 	const resultado = capitulos.filter(
 		(capitulo) =>
