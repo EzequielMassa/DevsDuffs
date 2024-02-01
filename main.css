@@ -271,6 +271,7 @@ footer {
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.932);
 }
 
+
 .tituloTarjetaSuperior {
 	font-family: var(--fuente-principal);
 	font-size: var(--fuente-tamanio-titulo);
@@ -278,18 +279,20 @@ footer {
 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
-.botonPlay:hover {
+.botonPlay {
 	color: #ffffff;
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 	transition: color 0.1s ease;
 }
 
 .botonPlay:hover path {
 	fill: #ffffff;
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 	transition: fill 0.1s ease;
 }
 
 .parrafoCard {
-	font-family: var(--fuente-secundaria);
+	font-family: var(--fuente-principal);
 }
 
 .contenedorImgCarousel {
