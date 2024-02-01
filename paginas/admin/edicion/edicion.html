@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+		<link rel="stylesheet" href="../../../main.css" />
+		<link rel="stylesheet" href="../../../paginas/admin/edicion/edicion.css" />
+
+		<title>Administrador Edicion</title>
+	</head>
+
+	<body>
+		<header class="sticky-top my-0 py-0"></header>
+		<div class="list-group busqueda-resultados-contenedor"></div>
+
+		<main>
+			<section class="mb-5 pb-5">
+				<div
+					class="table table-responsive container mt-5 p-4 rounded text-center text-light">
+					<h2 class="titulo p-3 m-3">Administración de Capitulos</h2>
+					<button
+						class="p-3 m-3 btn btn-warning parrafo"
+						data-bs-toggle="modal"
+						data-bs-target="#nuevoCapituloModal">
+						+ Nuevo Capitulo
+					</button>
+
+					<div class="table-responsive">
+						<table
+							class="table table-striped table-light table-bordered mt-3 table-hover">
+							<thead>
+								<tr class="table-warning">
+									<th class="tablaEdicion-titulo">ID</th>
+									<th class="tablaEdicion-titulo">Temporada</th>
+									<th class="tablaEdicion-titulo">Capitulo</th>
+									<th class="tablaEdicion-titulo">Nombre</th>
+									<th class="tablaEdicion-titulo">Descripcion</th>
+									<th class="tablaEdicion-titulo">Publicado</th>
+									<th class="tablaEdicion-titulo">Herramientas</th>
+								</tr>
+							</thead>
+							<tbody id="tablaCapitulosBody"></tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<!-- Modal para Capítulo Nuevo -->
+			<div
+				class="modal fade"
+				id="nuevoCapituloModal"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content bg-warning text-light">
+						<div class="modal-header">
+							<h5
+								class="modal-title subtitulo text-dark"
+								id="exampleModalLabel">
+								Nuevo Capítulo
+							</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+
+						<div class="modal-body">
+							<form
+								id="formNuevoCapitulo"
+								class="row g-3 needs-validation"
+								novalidate>
+								<div class="mb-3">
+									<label for="nombreCapitulo" class="form-label parrafoModal"
+										>Nombre del Capítulo</label
+									>
+									<input
+										type="text"
+										class="form-control border-dark text-dark"
+										id="nombreCapitulo"
+										placeholder="Nombre del Capitulo"
+										required />
+									<div class="invalid-feedback">
+										Ingresá un nombre válido (Entre 4 y 25 Caracteres).
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="temporadaCapitulo" class="form-label parrafoModal"
+										>Temporada</label
+									>
+									<select id="temporadaCapitulo" class="form-control">
+										<option selected value="">Selecciona una Temporada</option>
+										<option value="1">Temporada 1</option>
+										<option value="2">Temporada 2</option>
+										<option value="3">Temporada 3</option>
+										<option value="4">Temporada 4</option>
+										<option value="5">Temporada 5</option>
+										<option value="6">Temporada 6</option>
+										<option value="7">Temporada 7</option>
+										<option value="8">Temporada 8</option>
+										<option value="9">Temporada 9</option>
+										<option value="10">Temporada 10</option>
+									</select>
+									<div class="invalid-feedback">Ingresá Temporada Válida.</div>
+								</div>
+
+								<div class="mb-3">
+									<label for="numeroCapitulo" class="form-label parrafoModal"
+										>Numero de Capitulo</label
+									>
+									<input
+										type="number"
+										class="form-control border-dark text-dark"
+										id="numeroCapitulo"
+										placeholder="Numero de Capitulo"
+										required />
+									<div class="invalid-feedback">
+										Ingresá un numero válido (Mayor a 0 y Menor a 100).
+									</div>
+								</div>
+								<div class="mb-3">
+									<label
+										for="descripcionCapitulo"
+										class="form-label parrafoModal"
+										>Descripción</label
+									>
+									<textarea
+										class="form-control border-dark text-dark"
+										id="descripcionCapitulo"
+										rows="3"
+										placeholder="Breve sinopsis del Capitulo"></textarea>
+									<div class="invalid-feedback">
+										Ingresa una descripción válida (Entre 10 y 155 Caracteres).
+									</div>
+								</div>
+								<div class="mb-3">
+									<label for="imgUrlCapitulo" class="form-label parrafoModal"
+										>Imagen del Capitulo (URL)
+									</label>
+									<input
+										type="text"
+										class="form-control border-dark text-dark"
+										id="imgUrlCapitulo"
+										placeholder="URL de la imagen"
+										required />
+									<div class="invalid-feedback">
+										Ingresá un URL de img válido.
+									</div>
+								</div>
+								<div class="mb-3 form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="publicadoCapitulo" />
+									<label
+										class="form-check-label parrafoModal"
+										for="publicadoCapitulo"
+										>Publicado</label
+									>
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-danger"
+										data-bs-dismiss="modal">
+										Cerrar
+									</button>
+									<button
+										type="submit"
+										id="btnGuardarCapitulo"
+										class="btn btn-info">
+										Guardar
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal para Editar Capítulo -->
+			<div
+				class="modal fade"
+				id="editarCapituloModal"
+				tabindex="-1"
+				aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content bg-warning text-light">
+						<div class="modal-header">
+							<h5
+								class="modal-title subtitulo text-dark"
+								id="exampleModalLabel">
+								Editar Capítulo
+							</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form id="formEditarCapitulo" class="needs-validation" novalidate>
+								<div class="mb-3">
+									<label
+										for="nombreCapituloEditado"
+										class="form-label parrafoModal"
+										>Nombre del Capítulo</label
+									>
+									<input
+										type="text"
+										class="form-control border-dark text-dark"
+										id="nombreCapituloEditado"
+										required />
+									<div class="invalid-feedback">
+										Ingresá un nombre válido (Entre 4 y 25 Caracteres).
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<label
+										for="temporadaCapituloEditado"
+										class="form-label parrafoModal"
+										>Temporada</label
+									>
+									<select id="temporadaCapituloEditado" class="form-control">
+										<option selected value="">Selecciona una Temporada</option>
+										<option value="1">Temporada 1</option>
+										<option value="2">Temporada 2</option>
+										<option value="3">Temporada 3</option>
+										<option value="4">Temporada 4</option>
+										<option value="5">Temporada 5</option>
+										<option value="6">Temporada 6</option>
+										<option value="7">Temporada 7</option>
+										<option value="8">Temporada 8</option>
+										<option value="9">Temporada 9</option>
+										<option value="10">Temporada 10</option>
+									</select>
+								</div>
+
+								<div class="mb-3">
+									<label
+										for="numeroCapituloEditado"
+										class="form-label parrafoModal"
+										>Numero de Capitulo</label
+									>
+									<input
+										type="number"
+										class="form-control border-dark text-dark"
+										id="numeroCapituloEditado"
+										required />
+									<div class="invalid-feedback">Ingresá un numero válido.</div>
+								</div>
+
+								<div class="mb-3">
+									<label
+										for="descripcionCapituloEditado"
+										class="form-label parrafoModal"
+										>Descripción</label
+									>
+									<textarea
+										class="form-control border-dark text-dark"
+										id="descripcionCapituloEditado"
+										rows="3"
+										placeholder="Breve sinopsis del Capitulo"></textarea>
+									<div class="invalid-feedback">
+										Ingresa una descripción válida (Entre 10 y 155 Caracteres).
+									</div>
+								</div>
+								<div class="mb-3">
+									<label
+										for="imgUrlCapituloEditado"
+										class="form-label parrafoModal"
+										>Imagen del Capitulo (URL)
+									</label>
+									<input
+										type="text"
+										class="form-control border-dark text-dark"
+										id="imgUrlCapituloEditado"
+										placeholder="URL de la imagen"
+										required />
+									<div class="invalid-feedback">
+										Ingresá un URL de img válido.
+									</div>
+								</div>
+								<div class="mb-3 form-check">
+									<input
+										type="checkbox"
+										class="form-check-input"
+										id="publicadoCapituloEditado" />
+									<label
+										class="form-check-label parrafoModal"
+										for="publicadoCapituloEditado"
+										>Publicado</label
+									>
+								</div>
+								<div class="modal-footer">
+									<button
+										type="button"
+										class="btn btn-danger"
+										data-bs-dismiss="modal">
+										Cerrar
+									</button>
+									<button type="submit" class="btn btn-info">
+										Guardar y Aplicar Cambios
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer></footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script
+			type="module"
+			src="../../../paginas/admin/edicion/edicion.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	</body>
+</html>
