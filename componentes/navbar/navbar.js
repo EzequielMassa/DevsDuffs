@@ -16,11 +16,8 @@ export const renderizarNavbar = () => {
 	const registroUrl = window.location.href.includes('registro')
 
 	header.innerHTML = `
-	    ${
-				!registroUrl
-					? '<nav class="navbar navbar-principal navbar-expand-md rounded-1" >'
-					: '<nav class="navbar navbar-principal--registro navbar-expand-md rounded-1" >'
-			}
+
+	  <nav class="spikes navbar navbar-principal navbar-expand-md" >
 				<div class="container-fluid">
 					<a class="navbar-brand" href="/index.html"
 						><img
