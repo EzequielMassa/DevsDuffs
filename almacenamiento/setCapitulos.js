@@ -1,4 +1,4 @@
-import capitulosDatos from "../../datos/capitulos.json" assert { type: "json" };
+import capitulosDatos from "../datos/capitulos.json" assert { type: "json" };
 
 export const setcapitulos = ()=> {
     const capitulos = JSON.parse(localStorage.getItem("capitulos")) || null

@@ -1,48 +1,37 @@
-import { obtenerFavoritos } from "../../almacenamiento/obtenerFavoritos.js";
+import { getCapitulos } from "../../almacenamiento/getCapitulos.js";
 
 export const renderizarFavoritos = () => {
+  const capitulos = getCapitulos().filter((cap) => cap.favorito == true);
   const carouselTarjetaContenedor = document.querySelector(`#carouselTarjetaContenedor`);
-  const favoritos = obtenerFavoritos();
-  const primerFavorito = favoritos[0];
+  const primerFavorito = capitulos[0];
 
-  favoritos.forEach(favorito => {
+  capitulos.forEach(cap => {
     return carouselTarjetaContenedor.innerHTML += `
     ${
-       primerFavorito.id == favorito.id
+       primerFavorito.id == cap.id
          ? '  <div class="carousel-item active">'
          : '<div class="carousel-item">'
      }
    
        <div class="row justify-content-center">
-           <div class="col-12 col-md-8">
-               <div class="card mb-2 mt-5 mb-5 rounded-5 custom-bg-color card-index">
-               <div class="contenedorImgCarousel">          
-               <img src='${favorito.imgUrl}'
+           <div class="col-12 col-lg-8 col-md-10 my-5">
+               <div class="card rounded-5 custom-bg-color card-index">
+               <div class="contenedorImgCarousel object-fit-cover">          
+               <img src='${cap.imgUrl}'
                class="card-img-top rounded-top-5 img-media"
                alt="capituloEspecial1." />
                </div>
-
-                   <div class="card-body">
+                   <div class="card-body d-flex flex-column align-items-center justify-content-center">
                        <h5
                            class="tituloTarjetaSuperior fw-bold text-center text-md-start mt-1 mt-md-3 ms-md-3">
-                          '${favorito.nombre}'
+                          '${cap.nombre}'
                        </h5>
-                       <p class="parrafoCard card-text m-3 m-md-3">
-                         '${
-                           favorito.descripcion
-                         }'
+                       <p class="parrafoCard card-text m-3 m-md-3 d-none d-md-block">
+                         ${
+                          cap.descripcion
+                         }
                        </p>
-                       <a class="btn btn-info titulo d-block botonPlay me-2" href="#">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="45"
-                               height="45" fill="#fee622" class="bi bi-play-btn"
-                               viewBox="0 0 16 16">
-                               <path
-                                   d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
-                               <path
-                                   d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
-                           </svg>
-                           <span class="">Reproducir Capitulo</span>
-                       </a>
+                       <a href="#" class="btn botonCarousel d-flex align-items-center justify-content-center"><i class="bi bi-play-fill"></i>Reproducir Capitulo</a>
                    </div>
                </div>
            </div>
@@ -50,4 +39,4 @@ export const renderizarFavoritos = () => {
    </div>
     ` 
   });
-};
+}
