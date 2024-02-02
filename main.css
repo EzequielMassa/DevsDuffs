@@ -25,11 +25,13 @@
 
 html {
 	scroll-behavior: smooth;
+	scroll-padding-top: 7rem;
 	font-family: 'Fira Sans', sans-serif;
 }
 
 body {
 	background-color: var(--color-fondo);
+	overflow-x: hidden;
 }
 
 * {
@@ -58,6 +60,377 @@ body {
 	line-height: 2rem;
 }
 
+/* navbar */
+.navbar-principal {
+	font-family: var(--fuente-secundaria);
+	background: rgb(254, 230, 34);
+}
+
+.spikes {
+	position: relative;
+	background: var(--color-primario);
+}
+
+.spikes::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	left: -0%;
+	top: 100%;
+	z-index: 10;
+	display: block;
+	height: 50px;
+	background-size: 50px 100%;
+	background-image: linear-gradient(135deg,
+			var(--color-primario) 25%,
+			transparent 25%),
+		linear-gradient(225deg, var(--color-primario) 25%, transparent 25%);
+	background-position: 0 0;
+}
+
+.nav-link {
+	font-family: var(--fuente-secundaria);
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	color: var(--color-secundario);
+	font-weight: 600;
+	cursor: pointer;
+	position: relative;
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: color;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+	color: var(--color-secundario);
+}
+
+.nav-link:focus:after,
+.nav-link:hover:after {
+	width: 100%;
+	left: 0%;
+}
+
+.nav-link:after {
+	content: '';
+	pointer-events: none;
+	bottom: -2px;
+	left: 50%;
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: var(--color-secundario);
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: width, left;
+}
+
+.navbar-toggler-icon {
+	width: 4rem;
+	height: 4rem;
+	background-image: url('./recursos/media/img/hamburguesa-imagen.png');
+	background-size: contain;
+}
+
+.navbar-principal-imagen {
+	width: 4rem;
+}
+
+.navbar-principal-formulario {
+	display: flex;
+	align-items: center;
+	width: 75%;
+	background-color: #ffffff;
+	border-radius: 10px;
+}
+
+#inputBusqueda {
+	border: none;
+}
+
+#inputBusqueda:active,
+#inputBusqueda:focus {
+	outline: none;
+}
+
+.navbar-principal-formulario i {
+	font-weight: 900;
+}
+
+.navbar-principal-usuario-imagen {
+	width: 2rem;
+	filter: drop-shadow(1px 1px 2px #fee622);
+}
+
+.busqueda-resultados-contenedor {
+	position: fixed;
+	width: 100%;
+	z-index: 200;
+	top: -800px;
+	max-height: 300px;
+	overflow-y: auto;
+	transition: all 0.5s ease-in-out;
+}
+
+.busqueda-resultados-contenedor--show {
+	transition: all 0.5s ease-in-out;
+	top: 365px;
+}
+
+.busqueda-resultados-contenedor a {
+	font-family: var(--fuente-secundaria);
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.busqueda-resultados-contenedor a:hover {
+	background-color: var(--color-primario);
+	transition: all 0.5s ease;
+}
+
+.busqueda-resultados-contenedor img {
+	max-width: 8rem;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+	display: none;
+}
+
+/*footer*/
+.parrafo {
+	color: var(--fuente-color-primario);
+	font-family: var(--fuente-secundaria);
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+
+footer {
+	background-image: url(../../recursos/media/img/backgraundDonas.png);
+}
+
+.footerTitulo {
+	color: rgb(255, 208, 56);
+	font-family: var(--fuente-secundaria);
+}
+
+.footerRedes {
+
+	font-family: var(--fuente-secundaria);
+	color: rgb(255, 208, 56);
+	background-color: rgb(5, 1, 2, 0.5);
+}
+
+.footerLetra {
+	color: rgb(255, 208, 56);
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+.buttonFooter {
+	background-color: rgb(5, 1, 2, 0.5);
+	color: rgb(255, 208, 56);
+}
+
+.letraButtonF {
+	font-family: var(--fuente-secundaria);
+	text-decoration: none;
+	color: rgb(255, 208, 56);
+}
+
+.footerLetra:hover {
+	transform: scale(1.2);
+}
+
+.buttonFooter:hover {
+	transform: scale(1.1);
+}
+
+.divButtonF {
+	width: 20%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.divButtonF {
+		width: 100%;
+	}
+
+
+}
+
+@media screen and (min-width: 768px) {
+	.titulo {
+		font-size: var(--fuente-tamanio-titulo-tablet);
+	}
+
+	.subtitulo {
+		font-size: var(--fuente-tamanio-subtitulo-tablet);
+	}
+
+	.parrafo {
+		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+
+	.nav-link {
+		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+
+	.navbar-principal-formulario {
+		width: 30%;
+	}
+
+	.busqueda-resultados-contenedor--show {
+		top: 120px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.titulo {
+		font-size: var(--fuente-tamanio-titulo-desktop);
+	}
+
+	.subtitulo {
+		font-size: var(--fuente-tamanio-subtitulo-desktop);
+	}
+
+	.parrafo {
+		font-size: var(--fuente-tamanio-parrafo-desktop);
+	}
+}
+
+/* Inicio CSS CAROUSEL */
+
+.img-media {
+	max-height: 992px;
+	width: 100%;
+	object-fit: contain;
+	object-position: center top;
+}
+
+.bg-carousel {
+	background-image: url(../../recursos/media/img/backgroundCarrousel.jpeg);
+	background-size: cover;
+	background-position: center center;
+	max-width: 100%;
+}
+
+.custom-bg-color {
+	background-color: #ffffff;
+	/*Color de fondo CARDS*/
+}
+
+.card-index {
+	transition: transform 0.3s;
+}
+
+.card-index:hover {
+	transform: scale(1.02);
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.932);
+}
+
+
+.tituloTarjetaSuperior {
+	font-family: var(--fuente-principal);
+	font-size: var(--fuente-tamanio-titulo);
+	color: var(--color-primario);
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+.botonCarousel {
+	background-color: var(--color-primario);
+	font-family: var(--fuente-secundaria);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	transition: color 0.1s ease;
+}
+
+.botonCarousel:hover {
+	color: #ffffff;
+	background-color: var(--color-secundario);
+	font-family: var(--fuente-secundaria);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+	transition: fill 0.1s ease;
+}
+
+.parrafoCard {
+	font-family: var(--fuente-secundaria);
+	min-height: 7.5em;
+}
+
+.contenedorImgCarousel {
+	width: 100%;
+	object-fit: cover;
+}
+
+/* Fin CSS CAROUSEL */
+
+#tituloTemporada {
+	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+	font-family: var(--fuente-principal);
+	color: var(--color-primario);
+	font-size: var(--fuente-tamanio-titulo-desktop);
+}
+
+.centrarCard {
+	margin: auto;
+	float: none;
+	text-align: center;
+	background-color: var(--color-fondo);
+	border: none;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.colorBoton {
+	border: none;
+	background-color: var(--color-primario);
+	width: 80px;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.colorBoton:hover {
+	background-color: var(--color-secundario);
+}
+
+.bi-play-fill {
+	color: black;
+	font-size: 25px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	background-color: var(--color-secundario);
+	width: 40px;
+	height: 40px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	width: auto;
+}
+
+.carrouselBotonesContenedor {
+	position: relative;
+	height: 5rem;
+}
+
+.btnAnterior {
+	position: absolute;
+	left: 20vw;
+}
+
+.btnSiguiente {
+	position: absolute;
+	right: 20vw;
+}
+
 /* Responsive */
 
 @media screen and (min-width: 768px) {
@@ -71,6 +444,18 @@ body {
 
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-tablet);
+	}
+
+	.busqueda-resultados-contenedor--show {
+		top: 120px;
+	}
+
+	.navbar-principal-formulario {
+		width: 40%;
+	}
+
+	.parrafoCard {
+		min-height: 9em;
 	}
 }
 

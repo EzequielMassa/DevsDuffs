@@ -1,321 +1,389 @@
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./sobreNosotros.css">
-    <link rel="stylesheet" href="../../main.css">
-    <a href="../../recursos/media/iconos/favicon.png"></a>
-    <title>Sobre Nosotros Devs-Duff</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../main.css">
+  <link rel="stylesheet" href="./sobreNosotros.css">
+  <link rel="shortcut icon" href="../../recursos/media/iconos/favicon.png" type="image/x-icon" />
+  <script type="module" src="../../main.js"></script>
+  <script type="module" src="./sobreNosotros.js"></script>
+  <title>Sobre Nosotros Devs-Duff</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-          
-        </nav>
-     </header>
- 
-     <main class="container d-flex justify-content-evenly">
-      <h1 class="titulo">DEVS-DUFF</h1>
-      <P class="parrafo">Nuestro equipo se distingue por su diversidad de habilidades y una pasión compartida por la excelencia. Cada miembro aporta un conjunto único de destrezas que se entrelazan para dar vida a nuestra visión colectiva. Cada integrante está imbuido con un compromiso inquebrantable hacia la calidad. Nuestra fuerza radica en la colaboración fluida, donde la comunicación abierta y el respeto mutuo alimentan la sinergia que impulsa nuestro progreso. Juntos, estamos determinados a no solo crear una página web funcional, sino también una experiencia cautivadora y memorable para nuestros usuarios
-      </P>
-        <div class="card" style="width: 18rem;"> 
-            <img src="/recursos/media/img/eze.png" class="card-img-top"  alt="ezze_massa">
-            <div class="card-body">
-                <div class="parrafo"><div class="d-flex justify-content-evenly"><h2>Ezzequiel  Massa</h2></div>
-              
-                
-                
-              <div class="d-flex justify-content-evenly">
-                
-                <p>Capacidad para asumir responsabilidades adicionales.</p>
-                
+  <header class="sticky-top my-0 py-0"></header>
+		<div class="list-group busqueda-resultados-contenedor"></div>
+  <main class="container d-flex justify-content-evenly mt-4 mb-4">
+    <h1 class="tituloSobreNos titulo">DEVS-DUFF</h1>
+    <div class="container-fluid justify-content-center rounded-3 opacity-30 textoSobreNos p-4 m-3">
+      <p class="subtitulo-sN">Nuestro equipo se destaca por su diversidad de habilidades y un entusiasmo compartido por
+        crear sistemas eficientes. Cada integrante aporta un conjunto único de destrezas, las cuales se entrelazan para
+        dar vida a este proyecto que dimos por nombre "Devs Duff". Estamos comprometidos con la calidad, persiguiendo
+        continuamente la superación para alcanzar nuestros objetivos en cada tarea que emprendemos.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="/recursos/media/img/eze.png" class="card-img-top" alt="Ezequiel Massa">
+      <div class="card-body">
+        <div>
+          <div class="d-flex justify-content-evenly mb-4 mt-4">
+            <h2 class="nombresIntegrantes">Ezequiel Massa</h2>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <p class="textoCardS">Capacidad para asumir responsabilidades adicionales.</p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <button type="button" class="btn btn--nosotros" data-bs-toggle="modal" data-bs-target="#modalEze">Información personal</button>
+          </div>
+        </div>
+    
+        <div class="modal fade" id="modalEze" tabindex="-1" aria-labelledby="exampleModalLabelEze" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">SOBRE MI</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-                 <div class="d-flex justify-content-evenly">            
-               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                 Información personal
-                 
-                </button></div></div>
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                   <div class="modal-dialog ">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                      <h1 class="modal-title" id="exampleModalLabel">Sobre mi</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                     </div>
-                       <div class="modal-body">
-                         
-                             <p>
-                              Me destaco por mi fuerte ética de trabajo y mi compromiso con cada tarea que emprendo. Siempre estoy listo para asumir responsabilidades adicionales y creo en mantener la calma incluso en situaciones desafiantes. Mi energía positiva es contagiosa, y disfruto contribuir al éxito del equipo.</p>
-                          <br>
-                          <div class=" d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconGitHub.png" alt=""><a href="https://github.com/EzequielMassa ">Git Hub</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconLinkedin.png" alt=""><a href=" https://www.linkedin.com/in/ezequiel-massa-dev/">Linkedin</a></div></div>
-                          <br>
-                          <div class="d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconPortfolio.png" alt=""><a href=" https://portfolio-emdev.firebaseapp.com/emdev">Portfolio</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconGmail.png" alt="iconoGmail"><a href="ezequielmassa.dev@gmail.com">G-mail</a></div></div>
-                        </div>
-                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            
-                         </div>
-                     </div>
+              <div class="modal-body">
+                <p class="descripcion">"Me destaco por mi fuerte ética de trabajo y mi compromiso con cada tarea que
+                  emprendo. Siempre estoy listo para asumir responsabilidades adicionales y creo en mantener la calma
+                  incluso en situaciones desafiantes. Mi energía positiva es contagiosa, y disfruto contribuir al éxito
+                  del equipo."
+                </p>
+                <div class=" d-flex justify-content-evenly mb-4">
+                  <div>
+                    <a href="https://github.com/EzequielMassa " target="_blank"><img src="../../recursos/media/img/iconGitHub.png" alt="iconGitHub"></a>
                   </div>
-               </div>
-            </div>
-          </div>
-
-
-         <div class="card" style="width: 18rem;"> 
-            <img src="/recursos/media/img/matiasPaz.png" class="card-img-top1 "  alt="ezze_massa">
-            <div class="card-body">
-              <div class="parrafo"><div class="d-flex justify-content-evenly mb-4 mt-3"><h2>Matias Paz</h2></div>
-              
-              
-              
-            <div class="d-flex justify-content-evenly"><p class="card-text"> Habilidad para inspirar y motivar al equipo.
-            <br>
-          <br></div>
-                <div class="d-flex justify-content-evenly">            
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Información personal
-                    
-                   </button></div></div>
-   
- 
-                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog ">
-                     <div class="modal-content">
-                       <div class="modal-header">
-                       <h1 class="modal-title" id="exampleModalLabel">Sobre mi</h1>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                        <div class="modal-body">
-                          
-                              <p>Mi creatividad es mi mayor fortaleza, y me encanta encontrar soluciones innovadoras para cualquier problema. Mi mente analítica me permite abordar desafíos desde diferentes perspectivas, y siempre estoy emocionado de aportar ideas frescas y perspicaces al equipo.</p>
-                           <br>
-                           <div class=" d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconGitHub.png" alt=""><a href="https://github.com/MPaz-17P">Git Hub</a></div>
-                           <br>
-                           <div><img src="../../recursos/media/img/iconLinkedin.png" alt=""><a href="https://www.linkedin.com/in/matias-andres-paz-62074a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></div></div>
-                           <br>
-                           <div class="d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconPortfolio.png" alt=""><a href=" https://portfolio-emdev.firebaseapp.com/emdev">Portfolio</a></div>
-                           <br>
-                           <div><img src="../../recursos/media/img/iconGmail.png" alt="iconoGmail"><a href="matias.job19@gmail.com">G-mail</a></div></div>
-                         </div>
-                         </div>
-                          <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                             
-                          </div>
-                      </div>
-                   </div>
+                  <div>
+                    <a href=" https://www.linkedin.com/in/ezequiel-massa-dev/" target="_blank"><img src="../../recursos/media/img/iconLinkedin.png" alt="iconLinkedin"></a>
+                  </div>
                 </div>
-              
-            </div>
-          </div>
-
-
-          <div class="card" style="width: 18rem;"> 
-            <img src="/recursos/media/img/andreaOrlandi.png" class="card-img-top2"  alt="ezze_massa">
-            <div class="card-body">
-                <div class="parrafo"><div class="d-flex justify-content-evenly"><h2>Andrea Orlandi</h2></div>
-                  
-              
-            <div class="d-flex justify-content-evenly mt-4"><p class="card-text">Esfuerzo por la excelencia en todas las tareas.
-             <br>
-            <br></div>
-                <div class="d-flex justify-content-evenly">            
-                  <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Información personal
-                    
-                   </button></div></div>
-   
-                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog ">
-                     <div class="modal-content">
-                       <div class="modal-header">
-                       <h1 class="modal-title" id="exampleModalLabel">Sobre mi</h1>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                        <div class="modal-body">
-                          
-                              <p>Me considero una persona proactiva, creativa, curiosa.
-                                Poseo habilidades analíticas sólidas y resolutivas.
-                                Tengo capacidad para adaptarme rápidamente a diversos equipos de trabajo y una mentalidad innovadora para abordar los desafíos que se presenten.</p>
-                           <br>
-                           <div class=" d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconGitHub.png" alt=""><a href="https://www.linkedin.com/in/andreajosefinaorlandi 
-                            ">Git Hub</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconLinkedin.png" alt=""><a href="https://github.com/AndiOrlandi">Linkedin</a></div></div>
-                          <br>
-                          <div class="d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconPortfolio.png" alt=""><a href=" https://portfolio-emdev.firebaseapp.com/emdev">Portfolio</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconGmail.png" alt="iconoGmail"><a href="andijoorlandi@gmail.com">G-mail</a></div></div>
-                        </div>
-                         </div>
-                          <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                             
-                          </div>
-                      </div>
-                   </div>
+                <div class="d-flex justify-content-evenly">
+                  <div>
+                    <a href=" https://portfolio-emdev.firebaseapp.com/emdev" target="_blank"><img src="../../recursos/media/img/iconPortfolio.png" alt="iconPortfolio"></a>
+                  </div>
+                  <div>
+                    <a href="mailto:ezequielmassa.dev@gmail.com" target="_blank"><img src="../../recursos/media/img/iconGmail.png" alt="iconoGmail"></a>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
-
-         <div class="card" style="width: 18rem;"> 
-            <img src="/recursos/media/img/geroginaCostilla.png" class="card-img-top3"  alt="ezze_massa">
-            <div class="card-body">
-               <div class="parrafo"> <div class="d-flex justify-content-evenly"><h4 class="mb-5">Georgina Costilla</h4></div>
-                
-              
-            <div class="atributos d-flex justify-content-evenly align-content-start">Mente analítica para abordar problemas desde diversas perspectivas.</div>
-                <div class="d-flex justify-content-evenly">            
-               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                 Información personal
-                 
-                </button></div></div>
-
- 
-                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog ">
-                     <div class="modal-content">
-                       <div class="modal-header">
-                       <h1 class="modal-title" id="exampleModalLabel">Sobre mi</h1>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                        <div class="modal-body">
-                          
-                              <p>Me considero una mente intrépida y entusiasta del aprendizaje constante, con especial interés en programación y comunicación. Disfruto explorando nuevas tecnologías y desafíos en el mundo digital. Cuando no estoy inmersa en líneas de código, me encuentras explorando senderos y paisajes en Trekking grupales</p>
-                           <br>
-                           <div class=" d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconGitHub.png" alt=""><a href="https://github.com/georginacostilla">Git Hub</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconLinkedin.png" alt=""><a href="https://www.linkedin.com/in/georgina-costilla/">Linkedin</a></div></div>
-                          <br>
-                          <div class="d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconPortfolio.png" alt=""><a href="https://portafoliogeorginacostilla.netlify.app/ ">Portfolio</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconGmail.png" alt="iconoGmail"><a href="georginacostilla@gmail.com">G-mail</a></div></div>
-                        </div>
-                         </div>
-                          <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                             
-                          </div>
-                      </div>
-                   </div>
+    <div class="card">
+      <img src="/recursos/media/img/matiasPaz (1).png" class="card-img-top1 " alt="MatiaPazFotoPerfil">
+      <div class="card-body">
+        <div>
+          <div class="d-flex justify-content-evenly mt-4 mb-4">
+            <h2 class="nombresIntegrantes">Matias Paz</h2>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <p class="textoCardS">Habilidad para inspirar y motivar al equipo.</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-evenly mt-4">
+          <button type="button" class="btn btn--nosotros" data-bs-toggle="modal" data-bs-target="#modalMatias">Información personal</button>
+        </div>
+    
+        <div class="modal fade" id="modalMatias" tabindex="-1" aria-labelledby="exampleModalLabelMatias" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">SOBRE MI</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="descripcion">"Mi creatividad es mi mayor fortaleza, y me encanta encontrar soluciones
+                  innovadoras para cualquier problema. Mi mente analítica me permite abordar desafíos desde diferentes perspectivas,
+                  y siempre estoy emocionado de aportar ideas frescas y perspicaces al equipo."
+                </p>
+  
+                <div class="d-flex justify-content-evenly mb-4">
+                  <div>
+                    <a href="https://github.com/MPaz-17P" target="_blank"><img src="../../recursos/media/img/iconGitHub.png" alt="iconGitHub"></a>
+                  </div>
+    
+                  <div>
+                    <a href="https://www.linkedin.com/in/matias-andres-paz-62074a25a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="../../recursos/media/img/iconLinkedin.png" alt="iconLinkedin"></a>
+                  </div>
                 </div>
-            </div>
-          </div>
-
-        <div class="card" style="width: 18rem;"> 
-            <img src="/recursos/media/img/julianMartin.png" class="card-img-top4"  alt="ezze_massa">
-            <div class="card-body">
-                <div class="parrafo"><div class="d-flex justify-content-evenly"><h4>Julian Martín</h4></div>
-                
-                
-              
-            <div class="d-flex justify-content-evenly"><p class="card-text1"> Creatividad excepcional y soluciones innovadoras.
-              
-            </p> <br></div>
-                <div class="d-flex justify-content-evenly">            
-                  <button type="button" class="atributos1 btn  " data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Información personal
-                    
-                   </button></div></div>
- 
-                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                     <div class="modal-content">
-                       <div class="modal-header ">
-                       <h1 class="modal-title" id="exampleModalLabel">Sobre mi</h1>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                        <div class="modal-body">
-                          
-                              <p>Soy un comunicador nato y un líder natural. Me apasiona inspirar y motivar a mis compañeros de equipo para alcanzar nuestros objetivos. Mi empatía es fundamental para construir relaciones sólidas, y estoy comprometido con el éxito colectivo.</p>
-                           <br>
-                           <div class=" d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconGitHub.png" alt=""><a href="https://github.com/EzequielMassa ">Git Hub</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconLinkedin.png" alt=""><a href=" https://www.linkedin.com/in/ezequiel-massa-dev/">Linkedin</a></div></div>
-                          <br>
-                          <div class="d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconPortfolio.png" alt=""><a href=" https://portfolio-emdev.firebaseapp.com/emdev">Portfolio</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconGmail.png" alt="iconoGmail"><a href="ezequielmassa.dev@gmail.com">G-mail</a></div></div>
-                        </div>
-                         </div>
-                          <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                             
-                          </div>
-                      </div>
-                   </div>
+                <div class="d-flex justify-content-evenly">
+                  <div>
+                    <a href="../error404/error404.html" target="_blank"><img src="../../recursos/media/img/iconPortfolio.png" alt="iconPortfolio"></a>
+                  </div>
+                  <div>
+                    <a href="mailto:matias.job19@gmail.com" target="_blank"><img src="../../recursos/media/img/iconGmail.png" alt="iconGmail"></a>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
-
-
-         <div class="card" style="width: 18rem;"> 
-            <img src="/recursos/media/img/eze.png" class="card-img-top"  alt="ezze_massa">
-            <div class="card-body">
-                <div class="parrafo"><div class="d-flex justify-content-evenly"><h4>Santiago Romero</h4></div>
-                
-              
-            <div class="d-flex justify-content-evenly"><p class="card-text2"> Confiabilidad y atención a los detalles.
-            </p> <br></div>
-                <div class="d-flex justify-content-evenly">            
-                  <button type="button" class="btn boton1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Información personal
-                    
-                   </button></div></div>
- 
-                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog ">
-                     <div class="modal-content">
-                       <div class="modal-header">
-                       <h1 class="modal-title" id="exampleModalLabel">Sobre mi</h1>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                        <div class="modal-body">
-                          
-                              <p>Mi enfoque se centra en la confiabilidad y la atención a los detalles. Siempre me esfuerzo por lograr la excelencia en cada tarea que emprendo, y tengo una actitud proactiva para abordar cualquier desafío. Mi ética profesional es algo en lo que me enorgullezco y lo reflejo en todo lo que hago.</p>
-                           <br>
-                           <div class="d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconGitHub.png" alt=""><a href="https://github.com/Santiago9813" >Git Hub</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconLinkedin.png" alt=""><a href="www.linkedin.com/in/santi-romero-237085180">Linkedin</a></div></div>
-                          <br>
-                          <div class="d-flex justify-content-evenly"><div><img src="../../recursos/media/img/iconPortfolio.png" alt=""><a href=" https://portfolio-emdev.firebaseapp.com/emdev">Portfolio</a></div>
-                          <br>
-                          <div><img src="../../recursos/media/img/iconGmail.png" alt="iconoGmail"><a href="santiagoromero0205@gmail.com">G-mail</a></div></div>
-                        </div>
-                         </div>
-                          <div class="modal-footer">
-                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                             
-                          </div>
-                      </div>
-                   </div>
-                </div>>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="/recursos/media/img/andreaOrlandi.png" class="card-img-top2" alt="Andrea Orlandi">
+      <div class="card-body">
+        <div>
+          <div class="d-flex justify-content-evenly mb-4 mt-2">
+            <h2 class="nombresIntegrantes">Andrea Orlandi</h2>
+          </div>
+          <div class="d-flex justify-content-evenly mt-4">
+            <p class="textoCardS">Esfuerzo por la excelencia en todas las tareas.</p>
+          </div>
+          <div class="d-flex justify-content-evenly mt-3">
+            <button type="button" class="btn btn--nosotros" data-bs-toggle="modal" data-bs-target="#modalAndrea">Información personal</button>
+          </div>
+        </div>
+        <div class="modal fade" id="modalAndrea" tabindex="-1" aria-labelledby="exampleModalLabelAndrea" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">SOBRE MI</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="descripcion">"Me considero una persona proactiva, creativa, curiosa. Poseo habilidades
+                  analíticas sólidas y resolutivas.
+                  Tengo capacidad para adaptarme rápidamente a diversos equipos de trabajo y una mentalidad innovadora
+                  para abordar los desafíos que se presenten."</p>
+  
+                <div class=" d-flex justify-content-evenly mb-4">
+                  <div>
+                    <a href="https://github.com/AndiOrlandi" target="_blank"><img src="../../recursos/media/img/iconGitHub.png" alt="iconGitHub"></a>
+                  </div>
+                  <div>
+                    <a href="https://www.linkedin.com/in/andreajosefinaorlandi" target="_blank"><img src="../../recursos/media/img/iconLinkedin.png" alt="iconLinkedin"></a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-evenly">
+                  <div>
+                    <a href="../error404/error404.html" target="_blank"><img src="../../recursos/media/img/iconPortfolio.png" alt="iconPortfolio"></a>
+                  </div>
+                  <div>
+                    <a href="mailto:andijoorlandi@gmail.com" target="_blank"><img src="../../recursos/media/img/iconGmail.png" alt="iconGmail"></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="card">
+      <img src="../../recursos/media/img/georCostilla.png" class="card-img-top3" alt="GeorginaCostillaFotoPerfil">
+      <div class="card-body">
+        <div>
+          <div class="d-flex justify-content-evenly mb-2 mt-2">
+            <h2 class="nombresIntegrantes ">Georgina Costilla</h2>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <p class="textoCardS">Habilidad para abordar problemas desde diversas perspectivas.</p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <button type="button" class="btn btn--nosotros" data-bs-toggle="modal" data-bs-target="#georginaCostilla">Información personal</button>
+          </div>
+        </div>
 
-     </main>
- 
-     <aside>
-         
-     </aside>
- 
-     <footer>
-         
+        <div class="modal fade" id="georginaCostilla" tabindex="-1" aria-labelledby="exampleModalLabelGeorgina"
+          aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">SOBRE MI</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="descripcion">"Me considero una mente intrépida y entusiasta del aprendizaje constante, con
+                  especial interés en programación y comunicación. Disfruto explorando nuevas tecnologías y desafíos en
+                  el mundo digital. Cuando no estoy inmersa en líneas de código, me encuentras explorando senderos y
+                  paisajes en Trekking grupales."
+                </p>
+  
+                <div class=" d-flex justify-content-evenly mb-3">
+                  <div>
+                    <a href="https://github.com/georginacostilla" target="_blank"><img src="../../recursos/media/img/iconGitHub.png" alt="iconGitHub"></a>
+                  </div>
+                  <div>
+                    <a href="https://www.linkedin.com/in/georgina-costilla/" target="_blank"><img src="../../recursos/media/img/iconLinkedin.png" alt="iconLinkedin"></a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-evenly">
+                  <div>
+                    <a href="https://portfoliogeorginacostilla.netlify.app/" target="_blank"><img src="../../recursos/media/img/iconPortfolio.png" alt="iconPortfolio"></a>
+                  </div>
+                  <div>
+                    <a href="mailto:georginacostilla@gmail.com" target="_blank"><img src="../../recursos/media/img/iconGmail.png" alt="iconGmail"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="/recursos/media/img/julianMartin.png" class="card-img-top4" alt="JulianMartínFotoPerfil">
+      <div class="card-body">
+        <div>
+          <div class="d-flex justify-content-evenly mb-3 mt-4">
+            <h2 class="nombresIntegrantes">Julian Martin</h2>
+          </div>
+          <div class="d-flex justify-content-evenly mt-3">
+            <p class="textoCardS">Creatividad excepcional y soluciones innovadoras.</p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <button type="button" class="btn btn--nosotros mt-3" data-bs-toggle="modal"
+              data-bs-target="#modalJulian">Información personal</button>
+          </div>
+        </div>
 
+        <div class="modal fade" id="modalJulian" tabindex="-1" aria-labelledby="exampleModalLabelJulian" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header ">
+                <h3 class="modal-title" id="exampleModalLabel">SOBRE MI</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="descripcion">"Soy un comunicador nato y un líder natural. Me apasiona inspirar y motivar a mis
+                  compañeros de equipo para alcanzar nuestros objetivos. Mi empatía es fundamental para construir
+                  relaciones sólidas, y estoy comprometido con el éxito colectivo."
+                </p>
+  
+                <div class="d-flex justify-content-evenly mb-3">
+                  <div>
+                    <a href="https://github.com/JulianMartin98" target="_blank"><img src="../../recursos/media/img/iconGitHub.png" alt="iconGitHub"></a>
+                  </div>
+                  <div>
+                    <a href="https://www.linkedin.com/in/julian-martin-9903aa1ba/" target="_blank"><img src="../../recursos/media/img/iconLinkedin.png" alt="iconLinkedin"></a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-evenly">
+                  <div>
+                    <a href="../error404/error404.html" target="_blank"><img src="../../recursos/media/img/iconPortfolio.png" alt="iconPortfolio"></a>
+                  </div>
+                  <div>
+                    <a href="mailto:julianmartin19@outlook.com" target="_blank"><img src="../../recursos/media/img/iconGmail.png" alt="iconGmail"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <img src="/recursos/media/img/santiagoRomero.png" class="card-img-top5" alt="SantiagoRomeroFotoPerfil">
+      <div class="card-body">
+        <div>
+          <div class="d-flex justify-content-evenly mb-2 mt-3">
+            <h2 class="nombresIntegrantes text-sm">Santiago Romero</h2>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <p class="textoCardS">Confiabilidad y atención a los detalles.</p>
+          </div>
+          <div class="d-flex justify-content-evenly">
+            <button type="button" class="btn btn--nosotros" data-bs-toggle="modal"
+              data-bs-target="#modalSantiago">Información personal</button>
+          </div>
+        </div>
 
+        <div class="modal fade" id="modalSantiago" tabindex="-1" aria-labelledby="exampleModalLabelSantiago"
+          aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">SOBRE MI</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="descripcion">"Mi enfoque se centra en la confiabilidad y la atención a los detalles. Siempre
+                  me esfuerzo por lograr la excelencia en cada tarea que emprendo, y tengo una actitud proactiva para
+                  abordar cualquier desafío. Mi ética profesional es algo en lo que me enorgullezco y lo reflejo en todo
+                  lo que hago."
+                </p>
+  
+                <div class="d-flex justify-content-evenly mb-3">
+                  <div>
+                    <a href="https://github.com/Santiago9813" target="_blank"><img src="../../recursos/media/img/iconGitHub.png" alt="iconGitHub"></a>
+                  </div>
+                  <div>
+                    <a href="https://www.linkedin.com/in/santi-romero-237085180/" target="_blank"><img src="../../recursos/media/img/iconLinkedin.png" alt="iconLinkedin"></a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-evenly">
+                  <div>
+                    <a href="../error404/error404.html" target="_blank"><img src="../../recursos/media/img/iconPortfolio.png" alt="iconPortfolio"></a>
+                  </div>
+                  <div>
+                    <a href="mailto:santiagoromero0205@gmail.com" target="_blank"><img src="../../recursos/media/img/iconGmail.png" alt="iconGmail"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+		<!-- Inicio del Footer -->
+		<footer class="text-light mt-3 container-fluid ">
+			
+				<div class="row">
+          <section class="mb-4 w-100">
+					  <div class="w-100 text-center  ">
+              <div class="row text-center">
+                <div class=" text-center d-flex col-md-4  mt-2 ">
+						      <ul class="d-flex flex-column justify-content-center footerRedes rounded-3 align-items-center mt-4 w-100">
+                    <h4 class="parrafo text-center footerTitulo ">Nuestras redes:</h4>
+							      <li class="list-unstyled d-block  d-md-flex  mt-3">
+								      <a class="parrafo footerLetra" href="https://instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+									    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+								      </svg>Devs.duff_Inst</a>
+							      </li>
 
+							      <li class="list-unstyled d-flex mt-3">
+								      <a class="parrafo footerLetra" href="https://faceboock.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+									    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+								      </svg>Devs Duff</a>
+							      </li>							
+							      <li class="list-unstyled d-flex mt-3">
+								      <a class="parrafo footerLetra" href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+									    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+								      </svg>Devs.Duff</a>
+							      </li>
+						      </ul>
+					      </div>
+					      <div class="text-center mt-5 col-12 col-md-4">
+						      <img src="../../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190" alt="logo dev duff" />
+					      </div>
+					
+					      <div class="d-flex flex-column justify-content-end col-12 col-md-4 divButtonF ">
+							    <button type="button" class="parrafo btn btn-info mb-4 buttonFooter"><a href="../sobreNosotros/sobreNosotros.html" class="parrafo letraButtonF">Acerca de Nosotros</a></button>
+							    <button type="button" class="parrafo btn btn-info buttonFooter"><a href="../contacto/contacto.html" class="letraButtonF">Contacto</a></button>
+					      </div>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
+					      <div class=" mt-3 justify-content-center footerRedes col-12 w-100">
+						      <h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los derechos reservados.</h6>
+					      </div>
+				      </div>
+            </div>
+					</section>
+				</div>
+		</footer>
+<!-- Fin del Footer -->		
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
