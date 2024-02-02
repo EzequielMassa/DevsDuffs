@@ -1,169 +1,220 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-fondo);
+body {
+	background-color: var(--color-fondo);
 }
 
-.container{
-    height: 100vh;
-    max-width: 1200px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 140px;
-    margin-right: 140px;
-}
-.card{
-    height: 500px;
-    width: 450px;
-    margin: 30px;
-    transition: 300ms;
-    background-color: var(--color-secundario);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 2px rgba (0, 0, 0, 3);  
-}
-.persona{
-    height: 350px;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10%;
-    background-color: var(--color-secundario);
-    transition: 200ms;
-    position: absolute;
-
-}
-.link {
-    text-decoration: none;
+.container {
+	max-width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
-.imagenPersona{
-    height: 350px;
-    width: 200px;
-   
-    background-size: cover;
-    margin-top: 200px;
-    transition: 300ms;
-    filter: drop-shadow(5px -4px 10px #000);
+.tituloSobreNos {
+	text-shadow: 7px 2px 4px #000;
+	margin-bottom: 20px;
+	margin-top: 20px;
+
 }
-.card-img-top{
-    height: 300px;
-    width: 250px;
-    background-size: cover;
-    margin-left: 15px;
-    margin-bottom: -15px;
-    margin-top: 10px;
-    transition: 300ms;
-    filter: drop-shadow(5px -4px 10px #000);
+
+.nombresIntegrantes {
+	font-family: 'simpsonts-font';
+	src: local('simpsonts-font'),
+		url('./recursos/fuentes/Simpsonfont.otf') format('opentype');
+	text-align: center;
+	filter: drop-shadow(0 0 0.5rem var(--color-primario));
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: var(--color-primario);
 }
-.card-img-top1{
-    height: 230px;
-    width: 230px;
+
+.textoSobreNos {
+	background-color: rgb(227, 62, 151, 0.8);
+}
+
+.subtitulo-sN {
+	color: var(--color-primario);
+	font-family: var(--fuente-secundaria);
+	font-size: var(--fuente-tamanio-parrafo-desktop);
+	text-align: center;
+}
+
+.card {
+	height: 525px;
+	width: 18rem;
+	margin: 30px;
+	transition: 300ms;
+	background-color: var(--color-secundario);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 2px rgba (0, 0, 0, 3);
+}
+
+.card-img-top {
+	height: 270px;
+	width: 230px;
+	background-size: cover;
+	margin-left: 25px;
+	margin-bottom: -2px;
+	margin-top: 10px;
+	transition: 300ms;
+	filter: drop-shadow(5px -4px 10px #000);
+}
+
+.card-img-top1 {
+	height: 250px;
+	width: 210px;
+	background-size: cover;
+	margin-left: 37px;
+	margin-bottom: -20px;
+	margin-top: 15px;
+	transition: 300ms;
+	filter: drop-shadow(5px -4px 10px #000);
+}
+
+.card-img-top2 {
+	height: 250px;
+	width: 230px;
+	background-size: cover;
+	margin-left: 35px;
+	margin-bottom: -2px;
+	margin-top: 30px;
+	transition: 300ms;
+	filter: drop-shadow(5px -4px 10px #000);
+}
+
+.card-img-top3 {
+	height: 240px;
+	width: 240px;
+	background-size: cover;
+	margin-left: 20px;
+	margin-bottom: -10px;
+	margin-top: 30px;
+	transition: 300ms;
+	filter: drop-shadow(5px -4px 10px #000);
+}
+
+.card-img-top4 {
+	height: 250px;
+	width: 230px;
+	background-size: cover;
+	margin-left: 20px;
+	margin-bottom: -19px;
+	margin-top: 37px;
+	transition: 300ms;
+	filter: drop-shadow(5px -4px 10px #000);
+}
+
+.card-img-top5{
+    height: 285px;
+    width: 225px;
     background-size: cover;
     margin-left: 20px;
-    margin-bottom: -20px;
-    margin-top: 40px;
+    margin-bottom: -13px;
+    margin-top: -15px;
     transition: 300ms;
     filter: drop-shadow(5px -4px 10px #000);
 }
-.card-img-top2{
-    height: 230px;
-    width: 230px;
-    background-size: cover;
-    margin-left: 20px;
-    margin-bottom: -10px;
-    margin-top: 35px;
-    transition: 300ms;
-    filter: drop-shadow(5px -4px 10px #000);
+
+.textoCardS {
+	color: var(--color-primario);
+	font-family: var(--fuente-secundaria);
+	font-size: 1.2rem;
+	line-height: 2rem;
+	text-align: center;
+
 }
-.card-img-top3{
-    height: 240px;
-    width: 240px;
-    background-size: cover;
-    margin-left: 20px;
-    margin-bottom: -10px;
-    margin-top: 30px;
-    transition: 300ms;
-    filter: drop-shadow(5px -4px 10px #000);
+
+.descripcion {
+	text-align: left;
+	font-size: var(--fuente-tamanio-parrafo-desktop);
+	font-family: var(--fuente-secundaria);
+	color: var(--color-secundario);
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: black;
 }
-.card-img-top4{
-    height: 230px;
-    width: 230px;
-    background-size: cover;
-    margin-left: 20px;
-    margin-bottom: -10px;
-    margin-top: 35px;
-    transition: 300ms;
-    filter: drop-shadow(5px -4px 10px #000);
+
+.modal-title {
+	font-family: var(--fuente-secundaria);
+	text-align: center;
+	text-shadow: 0.5px 0 0.5px var(--color-secundario);
 }
-h1, h2, h4{
-    text-decoration: underline;
+
+.modal-content {
+	background-color: rgb(254, 230, 34, 0.9)
 }
-.atributos{
-    margin-top: -40px;
-    margin-bottom: 35px;
+
+.modal-header {
+	border-bottom: none;
 }
-.atributos1{
-    margin-top: 24px;
+
+.card:hover .card-img-top,
+.card:hover .card-img-top1,
+.card:hover .card-img-top2,
+.card:hover .card-img-top3,
+.card:hover .card-img-top4,
+.card:hover .card-img-top5 {
+	transform: translateY(-60px);
+	transition: 300ms;
+	filter: none;
+	filter: drop-shadow(5px -4px 10px #000);
 }
-.boton1{
-    margin-top: 32px;
+
+.btn {
+	background-color: var(--color-primario);
+	text-align: center;
+	font-weight: 600;
 }
-.card-text1{
-    margin-top: 30px;
+
+.btn--nosotros:hover {
+	background-color: var(--color-fondo);
 }
-.card-text2{
-    margin-top: 30px;
+
+/*footer*/
+.parrafo{
+	color: var(--fuente-color-primario);
+	font-family: var(--fuente-secundaria);
+	font-size: 1.3rem;
+	line-height: 2rem;
 }
-.modal-footer{
-    display: flex;
-    justify-content: center;
+footer {
+	background-image: url(../../recursos/media/img/backgraundDonas.png);
 }
-.card:hover .card-img-top{
-    transform: translateY(-40px);
-    transition: 300ms;
-    filter: none;
-    filter: drop-shadow(5px -4px 10px #000);
+.footerTitulo {
+	color: rgb(255, 208, 56);
+	font-family: var(--fuente-secundaria);
 }
-.card:hover .card-img-top1
-{
-    transform: translateY(-40px);
-    transition: 300ms;
-    filter: none;
-    filter: drop-shadow(5px -4px 10px #000);
+.footerRedes {
+	
+	font-family: var(--fuente-secundaria);
+	color: rgb(255, 208, 56);
+	background-color: rgb(5, 1, 2, 0.5);
 }
-.card:hover .card-img-top2
-{
-    transform: translateY(-40px);
-    transition: 300ms;
-    filter: none;
-    filter: drop-shadow(5px -4px 10px #000);
+.footerLetra {
+	color: rgb(255, 208, 56);
+	text-decoration: none;
+	transition: transform 0.3s ease;
 }
-.card:hover .card-img-top3
-{
-    transform: translateY(-40px);
-    transition: 300ms;
-    filter: none;
-    filter: drop-shadow(5px -4px 10px #000);
+
+.buttonFooter {
+	background-color: rgb(5, 1, 2, 0.5);
+	color: rgb(255, 208, 56);
 }
-.card:hover .card-img-top4
-{
-    transform: translateY(-40px);
-    transition: 300ms;
-    filter: none;
-    filter: drop-shadow(5px -4px 10px #000);
+.letraButtonF{
+	font-family: var(--fuente-secundaria);
+	text-decoration: none;
+	font-weight: lighter;
+	color: rgb(255, 208, 56);
 }
-.btn{
-    background-color:var(--color-primario);
+
+.footerLetra:hover {
+	transform: scale(1.2);
 }
-.btn:hover{
-    background-color: var(--color-fondo);
+.buttonFooter:hover {
+	transform: scale(1.1);
 }
+.divButtonF{
+	width: 20%;
+}
+
+@media (max-width: 768px) {
+	.divButtonF {
+		width: 100%;
+	}}

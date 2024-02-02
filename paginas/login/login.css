@@ -1,76 +1,126 @@
-  body {
-    background-image: url(/recursos/media/img/homerLogin.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    overflow: hidden;
-    margin: 0 auto;
-    padding: 20px;
-  }
+main {
+	background-image: url(/recursos/media/img/homerLogin.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.login-form-input-img {
+	height: 1rem;
+}
+
+.login-form-social-img {
+	height: 1.6rem;
+
+}
+.buttonGoogle{
+	border: none;
+}
+.buttonGoogle:hover {
+	background-color: var(--color-fondo);
+}
+.img1 {
+	display: flex;
+	width: 10px;
+	height: 10px;
+}
+.btn-dark {
+	width: 100%;
+}
+.titulo {
+	text-shadow: 2px 2px 4px #141313;
+}
+
+.card11 {
+	border-radius: 5%;
+	background-color: rgba(255, 255, 255, 0.8);
+
+	width: 50%;
+	
+}
+
+.pLogin {
+	margin-bottom: 50px;
+	margin-top: -30px;
+	color: black;
+}
 
 
- .img1{
-   display: flex;
-   width: 10px;
-   height: 10px;
- }
- .btn-dark{
-  color: black;
-  width: 100%;
-  
- }
- .titulo{
-  text-shadow: 2px 2px 4px #141313;
- }
- nav{
-   background-color: transparent;
-  }
-  nav a p{
-    color: black;
-  }
-  main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .card11 {
-    border-radius: 5%;
-  }
-  .iconoLogin{
-    display: flex;
-    justify-content: center;
-  }
-  .pLogin{
-     margin-bottom: 50px;
-     margin-top: -30px;
-     color:black
-  }
-  input:required:valid {
-  border: 2px solid lightgreen;
+
+.form-control.is-invalid {
+	background: none;
+	border: 2px solid red;
+	border-radius: 0px;
 }
-input:invalid {
-  border: 2px solid lightcoral;
-}
-input:invalid > button {
-  pointer-events: none;
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-.iconoLogin{
-  background-color: transparent;
-}
+
 @media screen and (max-width: 600px) {
-  .card11 {
-    width: 90%;
-  }
+	.card11 {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 800px) {
+	main {
+		background-image: url('/recursos/media/img/homerResponsive.jpeg');
+		background-size: cover;
+		background-position: center;
+	}
+}
 
-  }
-@media screen and (max-width: 800px){
-  body {
-    background-image: url('/recursos/media/img/homerResponsive.jpeg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-} 
+/*footer*/
+.parrafo{
+	color: var(--fuente-color-primario);
+	font-family: var(--fuente-secundaria);
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+footer {
+	background-image: url(../../recursos/media/img/backgraundDonas.png);
+}
+.footerTitulo {
+	color: rgb(255, 208, 56);
+	font-family: var(--fuente-secundaria);
+}
+.footerRedes {
+	
+	font-family: var(--fuente-secundaria);
+	color: rgb(255, 208, 56);
+	background-color: rgb(5, 1, 2, 0.5);
+}
+.footerLetra {
+	color: rgb(255, 208, 56);
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+.buttonFooter {
+	background-color: rgb(5, 1, 2, 0.5);
+	color: rgb(255, 208, 56);
+}
+.letraButtonF{
+	font-family: var(--fuente-secundaria);
+	text-decoration: none;
+	color: rgb(255, 208, 56);
+}
+
+.footerLetra:hover {
+	transform: scale(1.2);
+}
+.buttonFooter:hover {
+	transform: scale(1.1);
+}
+.divButtonF{
+	width: 20%;
+}
+@media (max-width: 770px) {
+	.divButtonF{
+		width: 100%;
+	}
+}
