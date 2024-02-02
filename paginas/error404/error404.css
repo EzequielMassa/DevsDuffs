@@ -147,7 +147,7 @@ p{
     width: 70%;
 }
 #btn-Inicio{
-    width: 20%;
+   
     background-color: var(--color-primario);
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
     font-size: var(--fuente-tamanio-parrafo-desktop);
@@ -155,6 +155,7 @@ p{
   
 #btn-Inicio:hover {
     background-color: var(--fuente-color-primario);
+    
 }
 .texto{
     letter-spacing: 0.4rem;
