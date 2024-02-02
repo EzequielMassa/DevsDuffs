@@ -84,33 +84,29 @@ li {
 	margin-bottom: 5px;
 }
 
-@media (max-width: 770px) {
-	.video {
-	  width: 90%;
-	  height: 200px;
-	}
-}
-
-/*footer*/
 .parrafo {
 	color: var(--fuente-color-primario);
 	font-family: var(--fuente-secundaria);
 	font-size: 1.3rem;
 	line-height: 2rem;
 }
+
 footer {
 	background-image: url(../../recursos/media/img/backgraundDonas.png);
 }
+
 .footerTitulo {
 	color: rgb(255, 208, 56);
 	font-family: var(--fuente-secundaria);
 }
+
 .footerRedes {
-	
+
 	font-family: var(--fuente-secundaria);
 	color: rgb(255, 208, 56);
 	background-color: rgb(5, 1, 2, 0.5);
 }
+
 .footerLetra {
 	color: rgb(255, 208, 56);
 	text-decoration: none;
@@ -121,6 +117,7 @@ footer {
 	background-color: rgb(5, 1, 2, 0.5);
 	color: rgb(255, 208, 56);
 }
+
 .letraButtonF {
 	font-family: var(--fuente-secundaria);
 	text-decoration: none;
@@ -130,9 +127,18 @@ footer {
 .footerLetra:hover {
 	transform: scale(1.2);
 }
+
 .buttonFooter:hover {
 	transform: scale(1.1);
 }
+
 .divButtonF {
 	width: 20%;
+}
+
+@media (max-width: 770px) {
+	.video {
+		width: 90%;
+		height: 200px;
+	}
 }
