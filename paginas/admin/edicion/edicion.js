@@ -18,6 +18,7 @@ let idCapituloUpdate = null
 
 window.mostrarModalEditarCapitulo = (id) => {
 	idCapituloUpdate = id
+	const capitulos = getCapitulos();
 	let index = capitulos.findIndex((item) => item.id == idCapituloUpdate)
 
 	document.querySelector('#nombreCapituloEditado').value =
@@ -38,26 +39,24 @@ window.mostrarModalEditarCapitulo = (id) => {
 
 const capituloUpdate = (event) => {
 	event.preventDefault()
+	const capitulos = getCapitulos();
 
 	let index = capitulos.findIndex((item) => item.id == idCapituloUpdate)
 	capitulos[index].nombre = document.querySelector(
-		'#nombreCapituloEditado'
-	).value
-	capitulos[index].temporada = document.querySelector(
-		'#temporadaCapituloEditado'
-	).selectedIndex
-	capitulos[index].capitulo = document.querySelector(
-		'#numeroCapituloEditado'
-	).value
+		'#nombreCapituloEditado').value
+	capitulos[index].temporada = parseInt(document.querySelector(
+		'#temporadaCapituloEditado').selectedIndex)
+	capitulos[index].capitulo = parseInt(document.querySelector(
+		'#numeroCapituloEditado').value)
 	capitulos[index].descripcion = document.querySelector(
-		'#descripcionCapituloEditado'
-	).value
+		'#descripcionCapituloEditado').value
 	capitulos[index].imgUrl = document.querySelector(
-		'#imgUrlCapituloEditado'
-	).value
+		'#imgUrlCapituloEditado').value
 	capitulos[index].publicado = document.querySelector(
-		'#publicadoCapituloEditado'
-	).checked
+		'#publicadoCapituloEditado').checked
+
+	console.log(capitulos);
+	localStorage.setItem("capitulos", JSON.stringify(capitulos));
 
 	cargarTabla()
 	modalEditarCapitulo.hide()
@@ -65,12 +64,10 @@ const capituloUpdate = (event) => {
 
 const cargarTabla = () => {
 	const capitulos = getCapitulos();
-	console.log(capitulos)
 	tablaCapitulosBody.innerHTML = ''
 
 	capitulos.map((item) => {
 		const fila = document.createElement('tr')
-		console.log(item.favorito);
 		const celdas = `<th>${item.id}</th>
       <td>${item.temporada}</td>
       <td>${item.capitulo}</td>
@@ -79,8 +76,7 @@ const cargarTabla = () => {
       <td>${item.publicado ? '✅' : '❌'}</td>
       <td>
       <div class="d-flex gap-2 ">
-      <button class="btn btn-primary" onclick="mostrarModalEditarCapitulo(${
-				item.id
+      <button class="btn btn-primary" onclick="mostrarModalEditarCapitulo(${item.id
 			})">
       ✎
       </button>
@@ -88,7 +84,7 @@ const cargarTabla = () => {
       🗑
       </button>
       <button class="btn btn-warning" onclick="agregarFavorito(${item.id})">
-      ${item.favorito == true ? `<i class="bi bi-star-fill"></i>`:`<i class="bi bi-star"></i>`}
+      ${item.favorito == true ? `<i class="bi bi-star-fill"></i>` : `<i class="bi bi-star"></i>`}
       </button>
       </div>
       </td>
@@ -107,12 +103,12 @@ window.agregarFavorito = (idFavorito) => {
 		const indexCapitulo = capitulos.findIndex((cap) => cap.id == idFavorito);
 		capitulos[indexCapitulo] = capitulo;
 
-		localStorage.setItem("capitulos",JSON.stringify(capitulos));
+		localStorage.setItem("capitulos", JSON.stringify(capitulos));
 	} else {
 		capitulo.favorito = true;
 		const indexCapitulo = capitulos.findIndex((cap) => cap.id == idFavorito);
 		capitulos[indexCapitulo] = capitulo;
-		localStorage.setItem("capitulos",JSON.stringify(capitulos));
+		localStorage.setItem("capitulos", JSON.stringify(capitulos));
 	}
 	cargarTabla();
 }
@@ -189,6 +185,7 @@ function validarInput(input, minLength, maxLength) {
 }
 
 window.eliminarCapitulo = (id) => {
+	const capitulos = getCapitulos();
 	let index = capitulos.findIndex((item) => item.id == id)
 
 	Swal.fire({
@@ -201,6 +198,7 @@ window.eliminarCapitulo = (id) => {
 	}).then((result) => {
 		if (result.isConfirmed) {
 			capitulos.splice(index, 1)
+			localStorage.setItem("capitulos", JSON.stringify(capitulos));
 			cargarTabla()
 			Swal.fire({
 				title: 'Eliminado!',
