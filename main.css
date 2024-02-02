@@ -81,11 +81,9 @@ body {
 	display: block;
 	height: 50px;
 	background-size: 50px 100%;
-	background-image: linear-gradient(
-			135deg,
+	background-image: linear-gradient(135deg,
 			var(--color-primario) 25%,
-			transparent 25%
-		),
+			transparent 25%),
 		linear-gradient(225deg, var(--color-primario) 25%, transparent 25%);
 	background-position: 0 0;
 }
@@ -148,6 +146,7 @@ body {
 	background-color: #ffffff;
 	border-radius: 10px;
 }
+
 #inputBusqueda {
 	border: none;
 }
@@ -189,6 +188,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 }
+
 .busqueda-resultados-contenedor a:hover {
 	background-color: var(--color-primario);
 	transition: all 0.5s ease;
@@ -212,19 +212,23 @@ input[type='search']::-webkit-search-results-decoration {
 	font-size: 1.3rem;
 	line-height: 2rem;
 }
+
 footer {
 	background-image: url(../../recursos/media/img/backgraundDonas.png);
 }
+
 .footerTitulo {
 	color: rgb(255, 208, 56);
 	font-family: var(--fuente-secundaria);
 }
+
 .footerRedes {
-	
+
 	font-family: var(--fuente-secundaria);
 	color: rgb(255, 208, 56);
 	background-color: rgb(5, 1, 2, 0.5);
 }
+
 .footerLetra {
 	color: rgb(255, 208, 56);
 	text-decoration: none;
@@ -235,6 +239,7 @@ footer {
 	background-color: rgb(5, 1, 2, 0.5);
 	color: rgb(255, 208, 56);
 }
+
 .letraButtonF {
 	font-family: var(--fuente-secundaria);
 	text-decoration: none;
@@ -244,9 +249,11 @@ footer {
 .footerLetra:hover {
 	transform: scale(1.2);
 }
+
 .buttonFooter:hover {
 	transform: scale(1.1);
 }
+
 .divButtonF {
 	width: 20%;
 }
@@ -256,7 +263,7 @@ footer {
 	.divButtonF {
 		width: 100%;
 	}
-	
+
 
 }
 
@@ -280,6 +287,7 @@ footer {
 	.navbar-principal-formulario {
 		width: 30%;
 	}
+
 	.busqueda-resultados-contenedor--show {
 		top: 120px;
 	}
@@ -313,10 +321,11 @@ footer {
 	background-size: cover;
 	background-position: center center;
 	max-width: 100%;
-} 
+}
 
 .custom-bg-color {
-	background-color: #ffffff; /*Color de fondo CARDS*/
+	background-color: #ffffff;
+	/*Color de fondo CARDS*/
 }
 
 .card-index {
@@ -405,8 +414,21 @@ footer {
 .carousel-control-prev,
 .carousel-control-next {
 	width: auto;
-	margin-left: -10px;
-	margin-right: -10px;
+}
+
+.carrouselBotonesContenedor {
+	position: relative;
+	height: 5rem;
+}
+
+.btnAnterior {
+	position: absolute;
+	left: 20vw;
+}
+
+.btnSiguiente {
+	position: absolute;
+	right: 20vw;
 }
 
 /* Responsive */
@@ -423,14 +445,16 @@ footer {
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-tablet);
 	}
+
 	.busqueda-resultados-contenedor--show {
 		top: 120px;
 	}
+
 	.navbar-principal-formulario {
 		width: 40%;
 	}
 
-	.parrafoCard{
+	.parrafoCard {
 		min-height: 9em;
 	}
 }
@@ -447,5 +471,4 @@ footer {
 	.parrafo {
 		font-size: var(--fuente-tamanio-parrafo-desktop);
 	}
-
 }
