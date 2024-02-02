@@ -182,7 +182,7 @@ footer {
 	font-family: var(--fuente-secundaria);
 }
 .footerRedes {
-	margin-left: 2%;
+	
 	font-family: var(--fuente-secundaria);
 	color: rgb(255, 208, 56);
 	background-color: rgb(5, 1, 2, 0.5);
@@ -213,3 +213,8 @@ footer {
 .divButtonF{
 	width: 20%;
 }
+
+@media (max-width: 768px) {
+	.divButtonF {
+		width: 100%;
+	}}

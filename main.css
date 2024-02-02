@@ -220,7 +220,7 @@ footer {
 	font-family: var(--fuente-secundaria);
 }
 .footerRedes {
-	margin-left: 2%;
+	
 	font-family: var(--fuente-secundaria);
 	color: rgb(255, 208, 56);
 	background-color: rgb(5, 1, 2, 0.5);
@@ -252,11 +252,14 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 770px) {
+@media (max-width: 768px) {
 	.divButtonF {
 		width: 100%;
 	}
+	
+
 }
+
 @media screen and (min-width: 768px) {
 	.titulo {
 		font-size: var(--fuente-tamanio-titulo-tablet);
