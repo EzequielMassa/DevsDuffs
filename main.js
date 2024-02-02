@@ -12,12 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
 setcapitulos()
 
 let miBoton = document.getElementById('miBoton')
-let boton404 = document.getElementsByClassName('boton404')
+let botones404 = document.querySelectorAll('.botones404')
 
 miBoton.addEventListener('click', function () {
 	window.location.href = '/paginas/detalleDeCategoria/detalleDeCategoria.html'
 })
 
-boton404.addEventListener('click', function () {
+botones404.forEach((boton) => boton.addEventListener('click', function () {
 	window.location.href = '/paginas/error404/error404.html'
-})
+})) 
+
