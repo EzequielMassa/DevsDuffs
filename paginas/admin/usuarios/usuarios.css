@@ -32,7 +32,7 @@ body {
 	top: 115px;
 	left: 20px;
 	transform: rotate(-20deg);
-	animation: moverEscoba 2s alternate infinite;
+	animation: moverEscoba 1s alternate infinite;
 }
 
 @keyframes moverEscoba {
