@@ -27,6 +27,8 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 7rem;
 	font-family: 'Fira Sans', sans-serif;
+	scrollbar-color: var(--color-primario) var(--color-secundario);
+	scrollbar-width: thin;
 }
 
 body {
@@ -81,9 +83,11 @@ body {
 	display: block;
 	height: 50px;
 	background-size: 50px 100%;
-	background-image: linear-gradient(135deg,
+	background-image: linear-gradient(
+			135deg,
 			var(--color-primario) 25%,
-			transparent 25%),
+			transparent 25%
+		),
 		linear-gradient(225deg, var(--color-primario) 25%, transparent 25%);
 	background-position: 0 0;
 }
@@ -170,7 +174,7 @@ body {
 	width: 100%;
 	z-index: 200;
 	top: -800px;
-	max-height: 300px;
+	max-height: 250px;
 	overflow-y: auto;
 	transition: all 0.5s ease-in-out;
 }
@@ -223,7 +227,6 @@ footer {
 }
 
 .footerRedes {
-
 	font-family: var(--fuente-secundaria);
 	color: rgb(255, 208, 56);
 	background-color: rgb(5, 1, 2, 0.5);
@@ -263,8 +266,6 @@ footer {
 	.divButtonF {
 		width: 100%;
 	}
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -336,7 +337,6 @@ footer {
 	transform: scale(1.02);
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.932);
 }
-
 
 .tituloTarjetaSuperior {
 	font-family: var(--fuente-principal);

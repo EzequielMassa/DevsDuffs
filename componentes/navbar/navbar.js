@@ -1,8 +1,7 @@
 import { cerrarSesion } from '../../almacenamiento/cerrarSesion.js'
+import { getCapitulos } from '../../almacenamiento/getCapitulos.js'
 import { obtenerUsuarioLogueado } from '../../almacenamiento/obtenerUsuarioLogueado.js'
 import { obtenerEstadoUsuario } from '../../servicios/usuarios/obtenerEstadoUsuario.js'
-import capitulos from '/datos/capitulos.json' assert { type: 'json' }
-
 const header = document.querySelector('header')
 const resultadosContenedor = document.querySelector(
 	'.busqueda-resultados-contenedor'
@@ -159,6 +158,7 @@ style="fill:#000000;">
  * @param {string} elemento - La palabra a buscar.
  */
 function buscar(elemento) {
+	const capitulos = getCapitulos()
 	const resultado = capitulos.filter(
 		(capitulo) =>
 			(capitulo.temporada == 1 &&
