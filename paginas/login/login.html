@@ -1,135 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./login.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous" />
-      <link rel="icon" href="/recursos/media/iconos/favicon.png">
-      <link rel="stylesheet" href="../../main.css">
-    <title>LOGIN DEVS-DUFF</title>
-  </head>
-  <body >
-    <header class="pb-5">
-      <!-- Desde aquí el navbar -->
-      <nav class="navbar fixed-top navbar-expand-md ">
-        
-      </nav>
-      <!-- Hasta aquí el navbar -->
-    </header>
-    <main >
-      <div
-        class="card11  px-sm-4 shadow"
-        style="width: 30rem">
-        <div>
-          <div class="iconoLogin">
-            <img
-             
-              style="height: 7rem" />
-          </div>
-          <div class="titulo  ">
-            Inicia sesión
-          </div>
-          <form >
-            <div class="input-group mt-3">
-              <div class="input-group-text bg-light">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/17/17004.png"
-                  alt="iconoUsuario"
-                  style="height: 1rem" />
-              </div>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                pattern=" [a-zA-Z0-9._+-%]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                placeholder="escribe tu email"
-                maxlength="40"
-                minlength="5"
-                required />
-            </div>
-            <div class="input-group mt-2">
-              <div class="input-group-text ">
-                <img
-                  src="https://w7.pngwing.com/pngs/778/12/png-transparent-computer-icons-skype-icon-design-change-password-logo-internet-share-icon.png"
-                  alt="iconoContraseña"
-                  style="height: 1rem" />
-              </div>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                pattern="[a-zA-Z0-9.-$%]"
-                minlength="5"
-                maxlength="14"
-                placeholder="escribe tu contraseña"
-                required />
-            </div>
-            <a href="../pages/404.html" class="text-decoration-none text-white">
-              <button
-                type="submit"
-                class="btn btn-dark  mt-4 fw-semibold shadow-sm">
-                Iniciar sesión
-              </button>
-            </a>
-          </form>
-        </div>
-        <div class="d-flex justify-content-around mt-2">
-          <div class="d-flex align-items-center gap-1">
-            <input class="form-check-input" type="checkbox" />
-            <div class="pt-1 text-black" >
-              Recuerdame
-            </div>
-          </div>
-          <div class="pt-1">
-            <a
-              href=""
-              class="text-decoration-none text-dark fw-semibold fst-italic"
-              >
-              <i>¿Olvidaste tu contraseña?</i>
-            </a>
-          </div>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link rel="icon" href="/recursos/media/iconos/favicon.png" />
+		<link rel="stylesheet" href="../../main.css" />
+		<link rel="stylesheet" href="./login.css" />
+		<script type="module" src="./login.js"></script>
+		<title>Login</title>
+	</head>
 
-        <div class="d-flex gap-1 justify-content-center mt-2">
-          <div> <a><p class="text-black">¿No posees cuenta?</p></a>
-            
-          </div>
-          <a
-            href=""
-            class="text-decoration-none text-dark fw-bold text__shadow">
-            Registrate
-          </a>
-        </div>
+	<body>
+		<header class="sticky-top my-0 py-0"></header>
+		<div class="list-group busqueda-resultados-contenedor"></div>
+		<main>
+			<div class="card11 px-4 shadow p-1 p-md-5  ">
+				<div>
+					<div class="titulo">Inicia sesión</div>
+					<form id="loginForm" class="needs-validation">
+						<div class="input-group mt-3">
+							<div class="input-group-text bg-light">
+								<img
+									src="https://cdn-icons-png.flaticon.com/512/17/17004.png"
+									alt="iconoUsuario"
+									class="login-form-input-img" />
+							</div>
+							<input
+								type="email"
+								class="form-control"
+								id="email"
+								placeholder="escribe tu email"
+								maxlength="40"
+								minlength="5"
+								required />
+						</div>
+						<div class="input-group mt-2">
+							<div class="input-group-text">
+								<img
+									src="https://w7.pngwing.com/pngs/778/12/png-transparent-computer-icons-skype-icon-design-change-password-logo-internet-share-icon.png"
+									alt="iconoContraseña"
+									class="login-form-input-img" />
+							</div>
+							<input
+								type="password"
+								class="form-control"
+								id="password"
+								minlength="5"
+								maxlength="14"
+								placeholder="escribe tu contraseña"
+								required />
+							<div class="invalid-feedback w-100">
+								<span
+									class="d-block text-center fw-bold text-bg-warning text-dark rounded-1 py-1 px-5"
+									>Credenciales incorrectas</span
+								>
+							</div>
+						</div>
+						<button
+							type="submit"
+							class="btn btn-dark mt-4 fw-semibold shadow-sm">
+							Iniciar sesión
+						</button>
+					</form>
+				</div>
+				<div class="d-flex justify-content-around my-4 gap-4">
+					<div class="d-flex align-items-center gap-1">
+						<input
+							class="form-check-input bg-dark"
+							type="checkbox"
+							id="recuerdameInput" />
+						<label for="recuerdameInput" class="pt-1 text-dark"
+							>Recuerdame</label
+						>
+					</div>
+					<div class="pt-1">
+						<a
+							href="../error404/error404.html"
+							class="text-decoration-none text-dark fw-semibold fst-italic"
+							id="forgot-password-link">
+							<i>¿Olvidaste tu contraseña?</i>
+						</a>
+					</div>
+				</div>
+				<div class="d-flex gap-1 justify-content-center mt-2">
+					<div>
+						<a><p class="text-black">¿No posees cuenta?</p></a>
+					</div>
+					<a
+						href="../registro/registro.html"
+						class="text-decoration-none text-dark fw-bold text__shadow">
+						Registrate
+					</a>
+				</div>
 
-        <div class="d-flex justify-content-center">
-          <div
-            class="btn gap-2 justify-content-center m-3 bg-white opacity-75 w-50 shadow-sm">
-            <img
-            src="https://e7.pngegg.com/pngimages/704/688/png-clipart-google-google.png"
-            alt="iconoGoogle" style="height: 1.6rem;" class=>
-            <a class="text-decoration-none text-black" href="">
-              Continua con Google
-            </a>
-          </div>
+				<div class="d-flex justify-content-center w-100">
+					<div class=" gap-2 justify-content-center m-3 shadow-sm ">
+						<button class="buttonGoogle  btn custom-btn">
+							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" class="login-form-social-img">
+								<path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
+								</svg>
+							<a class="text-decoration-none text-black" href="../error404/error404.html">Continua con Google</a>	
+						</button>
+					</div>
+				</div>
+			</div>
+		</main>
+	
+	<!-- Inicio del Footer -->
+    <footer class="text-light  container-fluid ">	
+        <div class="row">
+            <section class="mb-4 w-100">
+              <div class="w-100 text-center  ">
+                    <div class="row text-center">
+                        <div class=" text-center d-flex col-md-4  mt-2">
+                            <ul class="d-flex flex-column justify-content-center footerRedes rounded-3 align-items-center mt-4 w-100">
+                                <h4 class="parrafo text-center footerTitulo ">Nuestras redes:</h4>
+                                <li class="list-unstyled d-block  d-md-flex  mt-3">
+                                    <a class="parrafo footerLetra" href="https://instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                    </svg>Devs.duff_Inst</a>
+                                </li>
+                                <li class="list-unstyled d-flex mt-3">
+                                    <a class="parrafo footerLetra" href="https://faceboock.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                    </svg>Devs Duff</a>
+                                </li>							
+                                <li class="list-unstyled d-flex mt-3">
+                                    <a class="parrafo footerLetra" href="https://twitter.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter-x me-3" style="color: rgb(255, 208, 56)" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                    </svg>Devs.Duff</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center mt-5 col-12 col-md-4">
+                            <img src="../../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190" alt="logo dev duff" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-end col-12 col-md-4 divButtonF ">
+                            <button type="button" class="parrafo btn btn-info mb-4 buttonFooter"><a href="../sobreNosotros/sobreNosotros.html" class="parrafo letraButtonF">Acerca de Nosotros</a></button>
+                            <button type="button" class="parrafo btn btn-info buttonFooter"><a href="../contacto/contacto.html" class="letraButtonF">Contacto</a></button>
+                        </div>
+
+                        <div class=" mt-3 justify-content-center footerRedes col-12 w-100">
+                            <h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los derechos reservados.</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>
-    </main>
-    <!-- Desde aquí el footer -->
-    <footer>
-    
     </footer>
-    <!-- Hasta aquí el footer -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
-  </body>
+<!-- Fin del Footer -->				
+		
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+	</body>
 </html>
