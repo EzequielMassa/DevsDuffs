@@ -1,6 +1,8 @@
 import { renderizarNavbar } from '../../componentes/navbar/navbar.js'
+import { renderizarCapitulos } from '../../componentes/capitulos/renderizarCapitulos.js'
 
 renderizarNavbar()
+renderizarCapitulos()
 
 let contenidoTemporada = document.getElementById(`contenidoTemporada`)
 let listaDetalleDeTemp = document.getElementById('listaDetalleDeTemp')
