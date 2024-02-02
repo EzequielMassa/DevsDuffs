@@ -1,8 +1,7 @@
 import { crearUsuarioAdmin } from './almacenamiento/crearUsuarioAdmin.js'
-import { setearFavoritos } from './almacenamiento/setearFavoritos.js'
 import { renderizarFavoritos } from './componentes/favoritos/renderizarFavoritos.js'
 import { renderizarNavbar } from './componentes/navbar/navbar.js'
-import { setcapitulos } from './servicios/datos/setCapitulos.js'
+import { setcapitulos } from './almacenamiento/setCapitulos.js'
 
 document.addEventListener('DOMContentLoaded', () => {
 	crearUsuarioAdmin()
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 setcapitulos()
-setearFavoritos()
 
 let miBoton = document.getElementById('miBoton')
 let boton404 = document.getElementsByClassName('boton404')

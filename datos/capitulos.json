@@ -7,7 +7,7 @@
         "imgUrl": "./recursos/media/img/slideSuperior1.jpg",
         "id": 1,        
         "publicado": false,
-        "favorito": false   
+        "favorito": true   
     },
     {
         "temporada": 1,
@@ -17,7 +17,7 @@
         "imgUrl": "./recursos/media/img/slideSuperior2.jpg",
         "id": 2,        
         "publicado": false,
-        "favorito": false   
+        "favorito": true  
     },
     {
         "temporada": 1,
@@ -27,7 +27,7 @@
         "imgUrl": "./recursos/media/img/slideSuperior3.jpg",
         "id": 3,
         "publicado": false,
-        "favorito": false   
+        "favorito": true   
     },
     {
         "temporada": 1,

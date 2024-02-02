@@ -1,9 +1,9 @@
 import { renderizarNavbar } from '../../../componentes/navbar/navbar.js'
 import { mostrarInputError } from '../../../utilidades/mostrarInputError.js'
 import { limpiarInputError } from '../../../utilidades/limpiarInputError.js'
-import capitulos from '../../../datos/capitulos.json' assert { type: 'json' }
 import { Capitulo } from '../../../paginas/admin/edicion/clases.js'
-import { obtenerFavoritos } from '../../../almacenamiento/obtenerFavoritos.js'
+import { getCapitulos } from '../../../almacenamiento/getCapitulos.js'
+
 
 renderizarNavbar()
 const cuerpoTabla = document.querySelector('#tablaCapitulosBody')
@@ -64,11 +64,13 @@ const capituloUpdate = (event) => {
 }
 
 const cargarTabla = () => {
+	const capitulos = getCapitulos();
+	console.log(capitulos)
 	tablaCapitulosBody.innerHTML = ''
 
 	capitulos.map((item) => {
 		const fila = document.createElement('tr')
-
+		console.log(item.favorito);
 		const celdas = `<th>${item.id}</th>
       <td>${item.temporada}</td>
       <td>${item.capitulo}</td>
@@ -86,7 +88,7 @@ const cargarTabla = () => {
       🗑
       </button>
       <button class="btn btn-warning" onclick="agregarFavorito(${item.id})">
-      ★
+      ${item.favorito == true ? `<i class="bi bi-star-fill"></i>`:`<i class="bi bi-star"></i>`}
       </button>
       </div>
       </td>
@@ -98,23 +100,21 @@ const cargarTabla = () => {
 }
 
 window.agregarFavorito = (idFavorito) => {
-	const favoritos = obtenerFavoritos()
-	console.log(favoritos)
-	const existeFavorito = favoritos.some((fav) => fav.id == idFavorito)
+	const capitulos = getCapitulos()
+	const capitulo = capitulos.find((cap) => cap.id == idFavorito)
+	if (capitulo.favorito == true) {
+		capitulo.favorito = false;
+		const indexCapitulo = capitulos.findIndex((cap) => cap.id == idFavorito);
+		capitulos[indexCapitulo] = capitulo;
 
-	if (existeFavorito) {
-		const updateFavoritos = favoritos.filter((fav) => fav.id != idFavorito)
-		console.log(updateFavoritos)
-		localStorage.setItem('favoritos', JSON.stringify(updateFavoritos))
-		//Ya se encuentra en favoritos, guardar el array updateFavorito en localStorage.
+		localStorage.setItem("capitulos",JSON.stringify(capitulos));
 	} else {
-		const nuevoFavorito = capitulos.find(
-			(capitulo) => capitulo.id == idFavorito
-		)
-		console.log(nuevoFavorito)
-		favoritos.push(nuevoFavorito)
-		localStorage.setItem('favoritos', JSON.stringify(favoritos))
+		capitulo.favorito = true;
+		const indexCapitulo = capitulos.findIndex((cap) => cap.id == idFavorito);
+		capitulos[indexCapitulo] = capitulo;
+		localStorage.setItem("capitulos",JSON.stringify(capitulos));
 	}
+	cargarTabla();
 }
 
 const agregarCapitulo = (event) => {
