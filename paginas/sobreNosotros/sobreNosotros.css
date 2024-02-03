@@ -1,7 +1,3 @@
-body {
-	background-color: var(--color-fondo);
-}
-
 .container {
 	max-width: 1200px;
 	display: flex;
@@ -166,55 +162,7 @@ body {
 .btn--nosotros:hover {
 	background-color: var(--color-fondo);
 }
-
-/*footer*/
-.parrafo{
-	color: var(--fuente-color-primario);
-	font-family: var(--fuente-secundaria);
-	font-size: 1.3rem;
-	line-height: 2rem;
-}
-footer {
-	background-image: url(../../recursos/media/img/backgraundDonas.png);
-}
-.footerTitulo {
-	color: rgb(255, 208, 56);
-	font-family: var(--fuente-secundaria);
-}
-.footerRedes {
-	
-	font-family: var(--fuente-secundaria);
-	color: rgb(255, 208, 56);
+.buttonFooter{
 	background-color: rgb(5, 1, 2, 0.5);
+	font-weight: 200;
 }
-.footerLetra {
-	color: rgb(255, 208, 56);
-	text-decoration: none;
-	transition: transform 0.3s ease;
-}
-
-.buttonFooter {
-	background-color: rgb(5, 1, 2, 0.5);
-	color: rgb(255, 208, 56);
-}
-.letraButtonF{
-	font-family: var(--fuente-secundaria);
-	text-decoration: none;
-	font-weight: lighter;
-	color: rgb(255, 208, 56);
-}
-
-.footerLetra:hover {
-	transform: scale(1.2);
-}
-.buttonFooter:hover {
-	transform: scale(1.1);
-}
-.divButtonF{
-	width: 20%;
-}
-
-@media (max-width: 768px) {
-	.divButtonF {
-		width: 100%;
-	}}

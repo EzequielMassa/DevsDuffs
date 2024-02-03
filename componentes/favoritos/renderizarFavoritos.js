@@ -31,7 +31,7 @@ export const renderizarFavoritos = () => {
                           cap.descripcion
                          }
                        </p>
-                       <a href="#" class="btn botonCarousel d-flex align-items-center justify-content-center"><i class="bi bi-play-fill"></i>Reproducir Capitulo</a>
+                       <a href="../paginas/detalleDeCategoria/detalleDeCategoria.html" class="btn botonCarousel d-flex align-items-center justify-content-center"><i class="bi bi-play-fill"></i>Reproducir Capitulo</a>
                    </div>
                </div>
            </div>

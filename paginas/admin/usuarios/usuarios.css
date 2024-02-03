@@ -67,36 +67,3 @@ tr .usuarios-tabla-titulo {
 .usuarios-filtro-error-img {
 	max-width: 200px;
 }
-
-/*footer*/
-footer {
-	background-image: url(../../../recursos/media/img/backgraundDonas.png);
-}
-.footerTitulo {
-	color: rgb(255, 208, 56);
-}
-.footerRedes {
-	color: rgb(255, 208, 56);
-	background-color: rgb(5, 1, 2, 0.5);
-}
-.footerLetra {
-	color: rgb(255, 208, 56);
-	text-decoration: none;
-	transition: transform 0.3s ease;
-}
-
-.buttonFooter {
-	background-color: rgb(5, 1, 2, 0.5);
-	color: rgb(255, 208, 56);
-}
-#letraButtonF {
-	text-decoration: none;
-	color: rgb(255, 208, 56);
-}
-
-.footerLetra:hover {
-	transform: scale(1.2);
-}
-.buttonFooter:hover {
-	transform: scale(1.1);
-}

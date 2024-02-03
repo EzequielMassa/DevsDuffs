@@ -4,9 +4,9 @@
 
 .disenoLetrasCap {
 	font-family: var(--fuente-secundaria);
-	font-size: 1.10rem;
+	font-size: 1.1rem;
 	font-family: var(--fuente-secundaria);
-	font-size: 1.10rem;
+	font-size: 1.1rem;
 }
 
 .subtitulo {
@@ -38,7 +38,7 @@
 	background-color: var(--color-primario);
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 	color: black;
-	cursor: pointer
+	cursor: pointer;
 }
 
 .estiloBotonEnviar:hover {
@@ -50,7 +50,7 @@
 	border: none;
 	background-color: var(--color-secundario);
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-	cursor: crosshair
+	cursor: crosshair;
 }
 
 .estiloBotonCancelar:hover {
@@ -62,7 +62,7 @@
 	background-color: var(--color-primario);
 	width: 80px;
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-	cursor: crosshair
+	cursor: crosshair;
 }
 
 .disenoBoton:hover {
@@ -94,49 +94,8 @@ li {
 	line-height: 2rem;
 }
 
-footer {
-	background-image: url(../../recursos/media/img/backgraundDonas.png);
-}
-
-.footerTitulo {
-	color: rgb(255, 208, 56);
-	font-family: var(--fuente-secundaria);
-}
-
-.footerRedes {
-
-	font-family: var(--fuente-secundaria);
-	color: rgb(255, 208, 56);
-	background-color: rgb(5, 1, 2, 0.5);
-}
-
-.footerLetra {
-	color: rgb(255, 208, 56);
-	text-decoration: none;
-	transition: transform 0.3s ease;
-}
-
-.buttonFooter {
-	background-color: rgb(5, 1, 2, 0.5);
-	color: rgb(255, 208, 56);
-}
-
-.letraButtonF {
-	font-family: var(--fuente-secundaria);
-	text-decoration: none;
-	color: rgb(255, 208, 56);
-}
-
-.footerLetra:hover {
-	transform: scale(1.2);
-}
-
-.buttonFooter:hover {
-	transform: scale(1.1);
-}
-
-.divButtonF {
-	width: 20%;
+.cardComentarios {
+	max-width: 540px;
 }
 
 @media (max-width: 770px) {

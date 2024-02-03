@@ -62,7 +62,7 @@ body {
 	line-height: 2rem;
 }
 
-/* navbar */
+/* Navbar */
 .navbar-principal {
 	font-family: var(--fuente-secundaria);
 	background: rgb(254, 230, 34);
@@ -209,107 +209,7 @@ input[type='search']::-webkit-search-results-decoration {
 	display: none;
 }
 
-/*footer*/
-.parrafo {
-	color: var(--fuente-color-primario);
-	font-family: var(--fuente-secundaria);
-	font-size: 1.3rem;
-	line-height: 2rem;
-}
-
-footer {
-	background-image: url(../../recursos/media/img/backgraundDonas.png);
-}
-
-.footerTitulo {
-	color: rgb(255, 208, 56);
-	font-family: var(--fuente-secundaria);
-}
-
-.footerRedes {
-	font-family: var(--fuente-secundaria);
-	color: rgb(255, 208, 56);
-	background-color: rgb(5, 1, 2, 0.5);
-}
-
-.footerLetra {
-	color: rgb(255, 208, 56);
-	text-decoration: none;
-	transition: transform 0.3s ease;
-}
-
-.buttonFooter {
-	background-color: rgb(5, 1, 2, 0.5);
-	color: rgb(255, 208, 56);
-}
-
-.letraButtonF {
-	font-family: var(--fuente-secundaria);
-	text-decoration: none;
-	color: rgb(255, 208, 56);
-}
-
-.footerLetra:hover {
-	transform: scale(1.2);
-}
-
-.buttonFooter:hover {
-	transform: scale(1.1);
-}
-
-.divButtonF {
-	width: 20%;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-	.divButtonF {
-		width: 100%;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.titulo {
-		font-size: var(--fuente-tamanio-titulo-tablet);
-	}
-
-	.subtitulo {
-		font-size: var(--fuente-tamanio-subtitulo-tablet);
-	}
-
-	.parrafo {
-		font-size: var(--fuente-tamanio-parrafo-tablet);
-	}
-
-	.nav-link {
-		font-size: var(--fuente-tamanio-parrafo-tablet);
-	}
-
-	.navbar-principal-formulario {
-		width: 30%;
-	}
-
-	.busqueda-resultados-contenedor--show {
-		top: 120px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.titulo {
-		font-size: var(--fuente-tamanio-titulo-desktop);
-	}
-
-	.subtitulo {
-		font-size: var(--fuente-tamanio-subtitulo-desktop);
-	}
-
-	.parrafo {
-		font-size: var(--fuente-tamanio-parrafo-desktop);
-	}
-}
-
-/* Inicio CSS CAROUSEL */
-
+/* Carrousel */
 .img-media {
 	max-height: 992px;
 	width: 100%;
@@ -370,7 +270,7 @@ footer {
 	object-fit: cover;
 }
 
-/* Fin CSS CAROUSEL */
+/* Temporadas */
 
 #tituloTemporada {
 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
@@ -431,7 +331,169 @@ footer {
 	right: 20vw;
 }
 
+/* Footer */
+footer {
+	background-image: url(../../recursos/media/img/backgraundDonas.png);
+}
+
+.footerTitulo {
+	color: rgb(255, 208, 56);
+	font-family: var(--fuente-secundaria);
+}
+
+.footerRedes {
+	font-family: var(--fuente-secundaria);
+	color: rgb(255, 208, 56);
+	background-color: rgb(5, 1, 2, 0.5);
+}
+
+.footerLetra {
+	color: rgb(255, 208, 56);
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+.buttonFooter {
+	background-color: rgb(5, 1, 2, 0.5);
+	color: rgb(255, 208, 56);
+}
+
+.letraButtonF {
+	font-family: var(--fuente-secundaria);
+	text-decoration: none;
+	color: rgb(255, 208, 56);
+}
+
+.footerLetra:hover {
+	transform: scale(1.2);
+}
+
+.buttonFooter:hover {
+	transform: scale(1.1);
+}
+
+.divButtonF {
+	width: 20%;
+}
+
+.iconoRedes {
+	font-size: 2.5rem;
+}
+
+.iconoRedes2 {
+	font-size: 2rem;
+}
+
+.bi-instagram {
+	color: #e4405f;
+}
+.bi-twitter-x {
+	color: #fff;
+}
+.wrapper {
+	display: inline-flex;
+	list-style: none;
+	height: 120px;
+	width: 100%;
+	padding-top: 40px;
+	font-family: 'Poppins', sans-serif;
+	justify-content: center;
+}
+
+.wrapper .icon {
+	position: relative;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 50%;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+	position: absolute;
+	top: 0;
+	font-size: 14px;
+	background: #fff;
+	color: #fff;
+	padding: 5px 8px;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+	position: absolute;
+	content: '';
+	height: 8px;
+	width: 8px;
+	background: #fff;
+	bottom: -3px;
+	left: 50%;
+	transform: translate(-50%) rotate(45deg);
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+	top: -45px;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.wrapper .icon:hover a i,
+.wrapper .icon:hover .tooltip {
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+	background: #1877f2;
+	color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+	background: #000;
+	color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+	background: #e4405f;
+	color: #fff;
+}
+
+.wrapper .twitter:hover,
+.bi-twitter-x:hover {
+	color: #000;
+}
+
+.wrapper .facebook:hover,
+.wrapper .twitter:hover,
+.wrapper .instagram:hover {
+	background: #fff;
+}
+
 /* Responsive */
+
+@media (max-width: 768px) {
+	.divButtonF {
+		width: 100%;
+	}
+}
 
 @media screen and (min-width: 768px) {
 	.titulo {
@@ -446,16 +508,16 @@ footer {
 		font-size: var(--fuente-tamanio-parrafo-tablet);
 	}
 
-	.busqueda-resultados-contenedor--show {
-		top: 120px;
+	.nav-link {
+		font-size: var(--fuente-tamanio-parrafo-tablet);
 	}
 
 	.navbar-principal-formulario {
-		width: 40%;
+		width: 30%;
 	}
 
-	.parrafoCard {
-		min-height: 9em;
+	.busqueda-resultados-contenedor--show {
+		top: 120px;
 	}
 }
 

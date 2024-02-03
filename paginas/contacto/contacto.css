@@ -1,16 +1,4 @@
-/* body {
-    background-color: var(--color-fondo);
-    overflow: auto;
-} */
-
-/* .container-fluid {
-	background-color: #FFFF;
-	border: 4px solid rgb(117, 6, 24);
-	box-shadow: 10px 5px 5px black;
-} */
-
 #btn-Enviar {
-	/* border: 2px solid var(--color-primario); */
 	background-color: var(--color-primario);
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 	font-size: var(--fuente-tamanio-parrafo-desktop);
@@ -21,18 +9,14 @@
 }
 
 .subtitulo {
-	/* -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black; */
 	text-shadow: 2px 2px var(--fuente-color-secundario);
 }
 
 .parrafo {
 	color: var(--color-primario);
-	/* -webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black; */
 	text-shadow: 1px 1px black;
 }
-/* formato de inputs*/
+
 .colorItems {
 	color: var(--color-primario);
 	text-shadow: 1px 1px black;
@@ -55,8 +39,7 @@
 	width: 100%;
 	border-color: rgb(247, 247, 6);
 }
-/* ------------*/
-/* formato del SweetAlert*/
+
 .swal2-title {
 	color: rgb(227, 62, 151);
 }
@@ -78,7 +61,6 @@
 
 #parte-col1 {
 	background-color: var(--color-fondo);
-	/* border: 4px solid rgb(134, 229, 142); */
 	border: 2px solid var(--color-primario);
 }
 
@@ -86,53 +68,6 @@
 	background-color: var(--color-secundario);
 	border: 2px solid var(--color-primario);
 }
-
-/*footer*/
-.parrafo{
-	color: var(--fuente-color-primario);
-	font-family: var(--fuente-secundaria);
-	font-size: 1.3rem;
-	line-height: 2rem;
-}
-footer {
-	background-image: url(../../recursos/media/img/backgraundDonas.png);
-}
-.footerTitulo {
-	color: rgb(255, 208, 56);
-	font-family: var(--fuente-secundaria);
-}
-.footerRedes {
-	
-	font-family: var(--fuente-secundaria);
-	color: rgb(255, 208, 56);
-	background-color: rgb(5, 1, 2, 0.5);
-}
-.footerLetra {
-	color: rgb(255, 208, 56);
-	text-decoration: none;
-	transition: transform 0.3s ease;
-}
-
-.buttonFooter {
-	background-color: rgb(5, 1, 2, 0.5);
-	color: rgb(255, 208, 56);
-}
-.letraButtonF{
-	font-family: var(--fuente-secundaria);
-	text-decoration: none;
-	color: rgb(255, 208, 56);
-}
-
-.footerLetra:hover {
-	transform: scale(1.2);
-}
-.buttonFooter:hover {
-	transform: scale(1.1);
-}
-.divButtonF{
-	width: 20%;
-}
-
 
 @media (max-width: 770px) {
 	#imagenMapa {
@@ -158,8 +93,4 @@ footer {
 		background-color: rgb(227, 62, 151);
 		border: none;
 	}
-	.divButtonF{
-		width: 100%;
-	}
-	
 }
