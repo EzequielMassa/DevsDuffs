@@ -94,6 +94,10 @@ li {
 	line-height: 2rem;
 }
 
+.cardComentarios {
+	max-width: 540px;
+}
+
 @media (max-width: 770px) {
 	.video {
 		width: 90%;
