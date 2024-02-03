@@ -1,171 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous" />
-		<link rel="icon" href="/recursos/media/iconos/favicon.png" />
-		<link rel="stylesheet" href="../../main.css" />
-		<link rel="stylesheet" href="./login.css" />
-		<script type="module" src="./login.js"></script>
-		<title>Login</title>
-	</head>
 
-	<body>
-		<header class="sticky-top my-0 py-0"></header>
-		<div class="list-group busqueda-resultados-contenedor"></div>
-		<main>
-			<div class="card11 px-4 shadow p-1 p-md-5  ">
-				<div>
-					<div class="titulo">Inicia sesión</div>
-					<form id="loginForm" class="needs-validation">
-						<div class="input-group mt-3">
-							<div class="input-group-text bg-light">
-								<img
-									src="https://cdn-icons-png.flaticon.com/512/17/17004.png"
-									alt="iconoUsuario"
-									class="login-form-input-img" />
-							</div>
-							<input
-								type="email"
-								class="form-control"
-								id="email"
-								placeholder="escribe tu email"
-								maxlength="40"
-								minlength="5"
-								required />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+	<link rel="icon" href="/recursos/media/iconos/favicon.png" />
+	<link rel="stylesheet" href="../../main.css" />
+	<link rel="stylesheet" href="./login.css" />
+	<script type="module" src="./login.js"></script>
+	<title>Iniciar sesión</title>
+</head>
+
+<body>
+	<header class="sticky-top my-0 py-0"></header>
+	<div class="list-group busqueda-resultados-contenedor"></div>
+	<main>
+		<div class="card11 px-4 shadow p-1 p-md-5  ">
+			<div>
+				<div class="titulo">Inicia sesión</div>
+				<form id="loginForm" class="needs-validation">
+					<div class="input-group mt-3">
+						<div class="input-group-text bg-light">
+							<img src="https://cdn-icons-png.flaticon.com/512/17/17004.png" alt="iconoUsuario"
+								class="login-form-input-img" />
 						</div>
-						<div class="input-group mt-2">
-							<div class="input-group-text">
-								<img
-									src="https://w7.pngwing.com/pngs/778/12/png-transparent-computer-icons-skype-icon-design-change-password-logo-internet-share-icon.png"
-									alt="iconoContraseña"
-									class="login-form-input-img" />
-							</div>
-							<input
-								type="password"
-								class="form-control"
-								id="password"
-								minlength="5"
-								maxlength="14"
-								placeholder="escribe tu contraseña"
-								required />
-							<div class="invalid-feedback w-100">
-								<span
-									class="d-block text-center fw-bold text-bg-warning text-dark rounded-1 py-1 px-5"
-									>Credenciales incorrectas</span
-								>
-							</div>
+						<input type="email" class="form-control" id="email" placeholder="escribe tu email" maxlength="40"
+							minlength="5" required />
+					</div>
+					<div class="input-group mt-2">
+						<div class="input-group-text">
+							<img
+								src="https://w7.pngwing.com/pngs/778/12/png-transparent-computer-icons-skype-icon-design-change-password-logo-internet-share-icon.png"
+								alt="iconoContraseña" class="login-form-input-img" />
 						</div>
-						<button
-							type="submit"
-							class="btn btn-dark mt-4 fw-semibold shadow-sm">
-							Iniciar sesión
-						</button>
-					</form>
+						<input type="password" class="form-control" id="password" minlength="5" maxlength="14"
+							placeholder="escribe tu contraseña" required />
+						<div class="invalid-feedback w-100">
+							<span class="d-block text-center fw-bold text-bg-warning text-dark rounded-1 py-1 px-5">Credenciales
+								incorrectas</span>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-dark mt-4 fw-semibold shadow-sm">
+						Iniciar sesión
+					</button>
+				</form>
+			</div>
+			<div class="d-flex justify-content-around my-4 gap-4">
+				<div class="d-flex align-items-center gap-1">
+					<input class="form-check-input bg-dark" type="checkbox" id="recuerdameInput" />
+					<label for="recuerdameInput" class="pt-1 text-dark">Recuerdame</label>
 				</div>
-				<div class="d-flex justify-content-around my-4 gap-4">
-					<div class="d-flex align-items-center gap-1">
-						<input
-							class="form-check-input bg-dark"
-							type="checkbox"
-							id="recuerdameInput" />
-						<label for="recuerdameInput" class="pt-1 text-dark"
-							>Recuerdame</label
-						>
-					</div>
-					<div class="pt-1">
-						<a
-							href="../error404/error404.html"
-							class="text-decoration-none text-dark fw-semibold fst-italic"
-							id="forgot-password-link">
-							<i>¿Olvidaste tu contraseña?</i>
-						</a>
-					</div>
-				</div>
-				<div class="d-flex gap-1 justify-content-center mt-2">
-					<div>
-						<a><p class="text-black">¿No posees cuenta?</p></a>
-					</div>
-					<a
-						href="../registro/registro.html"
-						class="text-decoration-none text-dark fw-bold text__shadow">
-						Registrate
+				<div class="pt-1">
+					<a href="../error404/error404.html" class="text-decoration-none text-dark fw-semibold fst-italic"
+						id="forgot-password-link">
+						<i>¿Olvidaste tu contraseña?</i>
 					</a>
 				</div>
+			</div>
+			<div class="d-flex gap-1 justify-content-center mt-2">
+				<div>
+					<a>
+						<p class="text-black">¿No posees cuenta?</p>
+					</a>
+				</div>
+				<a href="../registro/registro.html" class="text-decoration-none text-dark fw-bold text__shadow">
+					Registrate
+				</a>
+			</div>
 
-				<div class="d-flex justify-content-center w-100">
-					<div class=" gap-2 justify-content-center m-3 shadow-sm ">
-						<button class="buttonGoogle  btn custom-btn">
-							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48" class="login-form-social-img">
-								<path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"></path><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"></path><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"></path><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"></path>
-								</svg>
-							<a class="text-decoration-none text-black" href="../error404/error404.html">Continua con Google</a>	
-						</button>
-					</div>
+			<div class="d-flex justify-content-center w-100">
+				<div class=" gap-2 justify-content-center m-3 shadow-sm ">
+					<button class="buttonGoogle  btn custom-btn">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+							class="login-form-social-img">
+							<path fill="#FFC107"
+								d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z">
+							</path>
+							<path fill="#FF3D00"
+								d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z">
+							</path>
+							<path fill="#4CAF50"
+								d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z">
+							</path>
+							<path fill="#1976D2"
+								d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z">
+							</path>
+						</svg>
+						<a class="text-decoration-none text-black" href="../error404/error404.html">Continua con Google</a>
+					</button>
 				</div>
 			</div>
-		</main>
-	
-		<footer class="text-light mt-3 container-fluid ">
-			<div class="row ">
-				<section class="mb-4 w-100">
-					<div class="w-100 text-center  ">
-						<div class="row text-center">
-							<div class=" text-center d-flex col-md-4  mt-2  divGeneralRedes">
-								<ul
-									class="d-flex flex-column justify-content-center rounded-3 footerRedes align-items-center mt-4 w-100">
-									<h4 class="parrafo text-center footerTitulo ">Nuestras redes:</h4>
-									
-									<ul class="wrapper">
-										<li class="icon facebook">
-											<span class="tooltip">Facebook</span>
-											<a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook iconoRedes"></i></a>
-										</li>
-										<li class="icon twitter">
-											<span class="tooltip">Twitter</span>
-											<a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter-x iconoRedes2"></i></a>
-										</li>
-										<li class="icon instagram">
-											<span class="tooltip">Instagram</span>
-											<a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram iconoRedes2"></i></a>
-										</li>
-									</ul>
-									
-							</div>
-							<div class="text-center mt-5 col-12 col-md-4">
-								<img src="../../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190"
-									alt="logo dev duff" />
-							</div>
-	
-							<div class="d-flex flex-column justify-content-end col-12 col-md-4 divButtonF ">
-								<a href="../sobreNosotros/sobreNosotros.html" class="parrafo letraButtonF">
-									<button type="button" class="parrafo btn btn-info mb-4 buttonFooter w-100">Acerca de Nosotros</button></a>
-								<a href="../contacto/contacto.html" class="letraButtonF">
-									<button type="button" class="parrafo btn btn-info buttonFooter w-100">Contacto</button></a>
-							</div>
-	
-							<div class=" mt-3 justify-content-center footerRedes col-12 w-100">
-								<h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los
-									derechos reservados.</h6>
-							</div>
+		</div>
+	</main>
+
+	<footer class="text-light mt-3 container-fluid ">
+		<div class="row ">
+			<section class="mb-4 w-100">
+				<div class="w-100 text-center  ">
+					<div class="row text-center">
+						<div class=" text-center d-flex col-md-4  mt-2  divGeneralRedes">
+							<ul class="d-flex flex-column justify-content-center rounded-3 footerRedes align-items-center mt-4 w-100">
+								<h4 class="parrafo text-center footerTitulo ">Nuestras redes:</h4>
+
+								<ul class="wrapper">
+									<li class="icon facebook">
+										<span class="tooltip">Facebook</span>
+										<a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook iconoRedes"></i></a>
+									</li>
+									<li class="icon twitter">
+										<span class="tooltip">Twitter</span>
+										<a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter-x iconoRedes2"></i></a>
+									</li>
+									<li class="icon instagram">
+										<span class="tooltip">Instagram</span>
+										<a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram iconoRedes2"></i></a>
+									</li>
+								</ul>
+
+						</div>
+						<div class="text-center mt-5 col-12 col-md-4">
+							<img src="../../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190" alt="logo dev duff" />
+						</div>
+
+						<div class="d-flex flex-column justify-content-end col-12 col-md-4 divButtonF ">
+							<a href="../sobreNosotros/sobreNosotros.html" class="parrafo letraButtonF">
+								<button type="button" class="parrafo btn btn-info mb-4 buttonFooter w-100">Acerca de
+									Nosotros</button></a>
+							<a href="../contacto/contacto.html" class="letraButtonF">
+								<button type="button" class="parrafo btn btn-info buttonFooter w-100">Contacto</button></a>
+						</div>
+
+						<div class=" mt-3 justify-content-center footerRedes col-12 w-100">
+							<h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los
+								derechos reservados.</h6>
 						</div>
 					</div>
-				</section>
-			</div>
-		</footer>
-		
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"></script>
-	</body>
+				</div>
+			</section>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>

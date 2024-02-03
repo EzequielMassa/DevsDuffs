@@ -19,9 +19,8 @@ main {
 
 .login-form-social-img {
 	height: 1.6rem;
-
 }
-.buttonGoogle{
+.buttonGoogle {
 	border: none;
 }
 .buttonGoogle:hover {
@@ -41,10 +40,9 @@ main {
 
 .card11 {
 	border-radius: 5%;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.9);
 
 	width: 50%;
-	
 }
 
 .pLogin {
@@ -52,8 +50,6 @@ main {
 	margin-top: -30px;
 	color: black;
 }
-
-
 
 .form-control.is-invalid {
 	background: none;
