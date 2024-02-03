@@ -6,10 +6,9 @@ import { renderizarNavbar } from './componentes/navbar/navbar.js'
 document.addEventListener('DOMContentLoaded', () => {
 	crearUsuarioAdmin()
 	renderizarNavbar()
+	setcapitulos()
 	renderizarFavoritos()
 })
-
-setcapitulos()
 
 let botones404 = document.querySelectorAll('.botones404')
 
