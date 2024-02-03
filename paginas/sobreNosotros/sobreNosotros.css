@@ -153,13 +153,16 @@
 	filter: drop-shadow(5px -4px 10px #000);
 }
 
-.btnInfopersonal {
+.btn {
 	background-color: var(--color-primario);
 	text-align: center;
 	font-weight: 600;
 }
 
-.btnInfopersonal:hover {
+.btn--nosotros:hover {
 	background-color: var(--color-fondo);
 }
-
+.buttonFooter{
+	background-color: rgb(5, 1, 2, 0.5);
+	font-weight: 200;
+}
