@@ -41,7 +41,7 @@ formContacto.addEventListener('submit', (e) => {
 		)
 		formContacto.reset()
 		Swal.fire({
-			position: 'top-end',
+			position: 'top-center',
 			iconHtml:
 				'<img src="../../recursos/media/img/dona-animada.gif" width="50" height="50">',
 			title: 'Formulario enviado con exito.',
@@ -77,4 +77,3 @@ const validarCampos = (nombre, email, telefono, edad, opinion) => {
 		esOpinionValida
 	)
 }
-//holaaaa

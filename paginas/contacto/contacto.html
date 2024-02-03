@@ -1,127 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
-			rel="stylesheet" />
-    <link rel="stylesheet" href="../../main.css" />
-    <link rel="stylesheet" href="../contacto/contacto.css">
-    <link rel="shortcut icon" href="../../recursos/media/iconos/favicon.png" type="image/x-icon" />
-    <script type="module" src="../../main.js"></script>
-			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-     <script type="text/javascript">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="../../main.css" />
+	<link rel="stylesheet" href="../contacto/contacto.css">
+	<link rel="shortcut icon" href="../../recursos/media/iconos/favicon.png" type="image/x-icon" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
 		emailjs.init('a0nK2KBffZoMri_Vy')
-	  </script>
+	</script>
+	<script type="module" src="../contacto/contacto.js"></script>
+	<title>Contacto</title>
 </head>
+
 <body>
-  			<header class="sticky-top my-0 py-0"></header>
-		<div class="list-group busqueda-resultados-contenedor"></div>
+	<header class="sticky-top my-0 py-0"></header>
+	<div class="list-group busqueda-resultados-contenedor"></div>
 
-    <!-- aqui termina el nav -->
+	<main>
+		<div class="container-fluid">
+			<div class="row d-flex justify-content-center" id="containerGeneral">
+				<section class="container col rounded" id="parte-col1">
+					<h1 class="subtitulo mt-4 text-center mt-5 mb-4">Contáctanos:</h1>
+					<form id="formContacto" class="d-flex flex-column needs-validation" action="#" method="post" novalidate>
+						<div>
+							<label class="parrafo colorItems mb-lg-2 mt-4" for="nombreContacto">Nombre:</label>
+							<div>
+								<input type="text" class="nombreContacto estiloInput" id="nombreContacto" name="nombre" required>
+								<div class="invalid-feedback mt-2">
+									<span class="alertForm text-dark "> El nombre ingresado no es válido. Recuerda que debe contener 10
+										caracteres o menos.</span>
+								</div>
+							</div>
+							<div>
+								<label class="parrafo text-center colorItems mt-4" for="emailContacto">Email:</label>
+								<input type="email" id="emailContacto" class="estiloInput" name="email" required>
+								<div class="invalid-feedback mt-2">
+									<span class="alertForm text-dark">El email no es válido. Por favor, asegúrate de introducir un email
+										válido en el formato correcto.</span>
+								</div>
+							</div>
+							<div>
+								<label class="parrafo text-center colorItems mt-4" for="telContacto">Telefono:</label>
+								<input type="tel" id="telContacto" class="estiloInput" name="telefono" required>
+								<div class="invalid-feedback mt-2">
+									<span class="alertForm  text-dark">El formato del número de teléfono no es válido. Por favor, ingresa
+										un número de teléfono con 10 dígitos. </span>
+								</div>
+							</div>
+							<div>
+								<label class="parrafo text-center colorItems mt-4" for="edadContacto">Edad:</label>
+								<input type="number" id="edadContacto" class="estiloInput" name="edad" required>
+								<div class="invalid-feedback mt-2">
+									<span class="alertForm text-dark">La edad ingresada no es válida. Recuerda que debes ser mayor de 6
+										años para continuar. Por favor, verificá.</span>
+								</div>
+							</div>
+							<h3 class="subtitulo text-center mt-5 mb-4">Califica nuestro servicio:</h3>
+							<div class="d-flex flex-column text-center mb-4">
+								<label class="parrafo mt-1 mb-3 colorItems1">
+									<input type="radio" name="opinion" value="Pesimo"> Pesimo
+								</label>
+								<label class="parrafo mt-2 mb-3 colorItems1">
+									<input type="radio" name="opinion" value="Regular"> Regular
+								</label>
+								<label class="parrafo mt-2 mb-3 colorItems1">
+									<input type="radio" name="opinion" value="Bueno"> Bueno
+								</label>
+								<label class="parrafo mt-2 mb-3 colorItems1">
+									<input type="radio" name="opinion" value="Muy Bueno"> Muy bueno
+								</label>
+								<label class="parrafo mt-2 mb-3 colorItems1">
+									<input type="radio" name="opinion" value="Excelente"> Excelente
+								</label>
 
-    <main>
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-center" id="containerGeneral">
-                <section class="container col rounded" id="parte-col1">
-                    <h1 class="subtitulo mt-4 text-center mt-5 mb-4">Contáctanos:</h1>
-                    <form id="formContacto" class="d-flex flex-column needs-validation" action="#" method="post" novalidate>
-                            <div>
-                            <label class="parrafo colorItems mb-lg-2 mt-4" for="nombre">Nombre:</label>
-                            <div>
-                            <input type="text" class="nombreContacto estiloInput" id="nombreContacto" name="nombre" required>
-                            <div class="invalid-feedback mt-2">
-                                <span class="alertForm text-dark "> El nombre ingresado no es válido. Recuerda que debe contener 10 caracteres o menos.</span>
-                            </div>
-                            </div>
-                        
-                       
+								<button class="btn" id="btn-Enviar" type="submit">Enviar</button>
+							</div>
+					</form>
+				</section>
 
-                    <div>
-                        <label class="parrafo text-center colorItems mt-4" for="email">Email:</label>
-                        <input type="email" id="emailContacto" class="estiloInput" name="email" required>
-                        <div class="invalid-feedback mt-2">
-                            <span class="alertForm text-dark">El email no es válido. Por favor, asegúrate de introducir un email válido en el formato correcto.</span>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="parrafo text-center colorItems mt-4" for="email">Telefono:</label>
-                        <input type="tel" id="telContacto" class="estiloInput" name="telefono" required>
-                        <div class="invalid-feedback mt-2">
-                            <span class="alertForm  text-dark">El formato del número de teléfono no es válido. Por favor, ingresa un número de teléfono con 10 dígitos. </span>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="parrafo text-center colorItems mt-4" for="nombre">Edad:</label>
-                        <input type="number" id="edadContacto" class="estiloInput" name="edad" required>
-                        <div class="invalid-feedback mt-2">
-                            <span class="alertForm text-dark">La edad ingresada no es válida. Recuerda que debes ser mayor de 6 años para continuar. Por favor, verificá.</span>
-                        </div>
-                    </div>
+				<aside class="col rounded" id="parte-col2">
+					<h1 class="subtitulo text-center mt-5 mb-5">Encuentranos🔍</h1>
+					<p class="parrafo mb-4 me-3 ms-3">Nos llena de alegría que estén aquí,
+						explorando y
+						utilizando nuestros servicios a través de este espacio de comunicación directa. En este rincón
+						virtual,
+						queremos construir puentes que nos conecten de manera más cercana con ustedes, nuestros valiosos
+						usuarios. Tu
+						opinión nos importa para poder seguir mejorando y actualizando nuestro servicio.
+					</p>
 
-                     
-                        <h3 class="subtitulo text-center mt-5 mb-4">Califica nuestro servicio:</h3>
-                        <div class="d-flex flex-column text-center mb-4">
-                            <label class="parrafo mt-1 mb-3 colorItems1">
-                                <input type="radio" name="opinion" value="Pesimo"> Pesimo
-                           </label>
-                            <label class="parrafo mt-2 mb-3 colorItems1">
-                                <input type="radio" name="opinion" value="Regular"> Regular
-                            </label>
-                            <label class="parrafo mt-2 mb-3 colorItems1">
-                                <input type="radio" name="opinion" value="Bueno"> Bueno
-                            </label>
-                            <label class="parrafo mt-2 mb-3 colorItems1">
-                                <input type="radio" name="opinion" value="Muy Bueno"> Muy bueno
-                            </label>
-                            <label class="parrafo mt-2 mb-3 colorItems1">
-                                <input type="radio" name="opinion" value="Excelente"> Excelente
-                            </label>
-                            
-                            <button class="btn" id="btn-Enviar" type="submit">Enviar</button>
-                        </div>
 
-                       <!--<div class="d-flex justify-content-center mb-5">
-                           
-                        </div>--> 
-                    </form>
-                </section>
+					<div class="d-flex justify-content-center align-items-center me-5 ms-5">
+						<a class="nav-link nav-alink" href="https://maps.app.goo.gl/BBTzPGhbwdMCMvmU9" target="_blank"
+							rel="noopener"><img class="border border-3 border-warning imagen" id="imagenMapa"
+								src="../../recursos/media/img/mapa.jpg" alt="Mapa de los simpson"></a>
+					</div>
+					<p class="parrafo text-center mt-5">*Estamos a tu disposición para los comentarios y/o opiniones que
+						nos envies*</p>
+				</aside>
+			</div>
+			</form>
+		</div>
+		</div>
 
-                <aside class="col rounded" id="parte-col2">
-                    <h1 class="subtitulo text-center mt-5 mb-5">Encuentranos🔍</h1>
-                    <p class="parrafo mb-4 me-3 ms-3">Nos llena de alegría que estén aquí,
-                        explorando y
-                        utilizando nuestros servicios a través de este espacio de comunicación directa. En este rincón
-                        virtual,
-                        queremos construir puentes que nos conecten de manera más cercana con ustedes, nuestros valiosos
-                        usuarios. Tu
-                        opinión nos importa para poder seguir mejorando y actualizando nuestro servicio.
-                    </p>
-
-                    
-                    <div class="d-flex justify-content-center align-items-center me-5 ms-5">
-                        <a class="nav-link nav-alink" href="https://maps.app.goo.gl/BBTzPGhbwdMCMvmU9" target="_blank"><img class="border border-3 border-warning imagen" id="imagenMapa" src="../../recursos/media/img/mapa.jpg" alt="Mapa de los simpson"></a>
-                    </div>
-                    <p class="parrafo text-center mt-5">*Estamos a tu disposición para los comentarios y/o opiniones que
-                        nos envies*</p>
-                </aside>
-
-            </div>
-              
-            </form>
-          </div>
-        </div>
-
-    </main>
+	</main>
 	<footer class="text-light mt-3 container-fluid ">
 		<div class="row ">
 			<section class="mb-4 w-100">
@@ -131,7 +124,6 @@
 							<div
 								class="d-flex flex-column justify-content-center rounded-3 footerRedes align-items-center mt-4 w-100">
 								<h4 class="parrafo text-center footerTitulo ">Nuestras redes:</h4>
-								
 								<ul class="wrapper">
 									<li class="icon facebook">
 										<span class="tooltip">Facebook</span>
@@ -149,31 +141,31 @@
 							</div>	
 						</div>
 						<div class="text-center mt-5 col-12 col-md-4">
-							<img src="../../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190"
-								alt="logo dev duff" />
+							<img src="../../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190" alt="logo dev duff" />
 						</div>
 
 						<div class="d-flex flex-column justify-content-end col-12 col-md-4 divButtonF ">
 							<a href="../sobreNosotros/sobreNosotros.html" class="parrafo letraButtonF">
-								<button type="button" class="parrafo btn btn-info mb-4 buttonFooter w-100">Acerca de Nosotros</button></a>
+								<button type="button" class="parrafo btn btn-info mb-4 buttonFooter w-100">Acerca de
+									Nosotros</button></a>
 							<a href="../contacto/contacto.html" class="letraButtonF">
 								<button type="button" class="parrafo btn btn-info buttonFooter w-100">Contacto</button></a>
 						</div>
 
 						<div class=" mt-3 justify-content-center footerRedes col-12 w-100">
-							<h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los derechos reservados.</h6>
+							<h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los derechos reservados.
+							</h6>
 						</div>
 					</div>
 				</div>
 			</section>
 		</div>
 	</footer>
-
-    <script type="module" src="../contacto/contacto.js"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://kit.fontawesome.com/000ea8895d.js" crossorigin="anonymous"></script>
-   
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://kit.fontawesome.com/000ea8895d.js" crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>
