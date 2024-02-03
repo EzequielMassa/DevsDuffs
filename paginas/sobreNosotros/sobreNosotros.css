@@ -1,7 +1,3 @@
-body {
-	background-color: var(--color-fondo);
-}
-
 .container {
 	max-width: 1200px;
 	display: flex;
@@ -157,13 +153,13 @@ body {
 	filter: drop-shadow(5px -4px 10px #000);
 }
 
-.btn {
+.btnInfopersonal {
 	background-color: var(--color-primario);
 	text-align: center;
 	font-weight: 600;
 }
 
-.btn--nosotros:hover {
+.btnInfopersonal:hover {
 	background-color: var(--color-fondo);
 }
 
