@@ -4,9 +4,9 @@
 
 .disenoLetrasCap {
 	font-family: var(--fuente-secundaria);
-	font-size: 1.10rem;
+	font-size: 1.1rem;
 	font-family: var(--fuente-secundaria);
-	font-size: 1.10rem;
+	font-size: 1.1rem;
 }
 
 .subtitulo {
@@ -38,7 +38,7 @@
 	background-color: var(--color-primario);
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 	color: black;
-	cursor: pointer
+	cursor: pointer;
 }
 
 .estiloBotonEnviar:hover {
@@ -50,7 +50,7 @@
 	border: none;
 	background-color: var(--color-secundario);
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-	cursor: crosshair
+	cursor: crosshair;
 }
 
 .estiloBotonCancelar:hover {
@@ -62,7 +62,7 @@
 	background-color: var(--color-primario);
 	width: 80px;
 	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-	cursor: crosshair
+	cursor: crosshair;
 }
 
 .disenoBoton:hover {
@@ -93,9 +93,6 @@ li {
 	font-size: 1.3rem;
 	line-height: 2rem;
 }
-
-  
-  
 
 @media (max-width: 770px) {
 	.video {
