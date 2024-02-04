@@ -156,8 +156,10 @@ style="fill:#000000;">
 		'.navbar-principal-boton-hamburguesa'
 	)
 	navbarDropdown.addEventListener('click', () => {
-		inputBusqueda.value = ''
-		resultadosContenedor.innerHTML = ''
+		if (inputBusqueda) {
+			inputBusqueda.value = ''
+			resultadosContenedor.innerHTML = ''
+		}
 	})
 }
 
