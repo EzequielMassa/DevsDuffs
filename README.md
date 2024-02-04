@@ -7,7 +7,7 @@
 * [Integrantes del equipo](#integrantes)
 
 ## Información del proyecto <a name="informacion"></a> 
-  #### Depoy: https://devsduff.netlify.app/
+  #### Deploy: https://devsduff.netlify.app/
   
   ### ¿Cómo se hace una copia de esté proyecto?
   - Copiar la siguiente URL: https://github.com/EzequielMassa/DevsDuffs.git
