@@ -19,7 +19,7 @@
   ### ¿Cómo se ve nuestro proyecto?
   ### Página principal:
   - Este sitio contiene un navbar fijo con el logo de Devs Duff; botones que redirigen a las siguientes páginas: Inicio, Temporadas, Sobre nosotros, Contacto, Registro y Iniciar sesión.
-  - La página principal contiene una imagen principal que hace referencia al capítulo seleccionado como "favorito", con las siguientes propiedades: nombre del episodio, descripción y botón de "reproducir" que redirecciona a la página de la temporada donde está ubicado el capitulo seleccionado.
+  - La página principal contiene una imagen principal que hace referencia al capítulo seleccionado como "favorito", con las siguientes propiedades: nombre del episodio, descripción y botón de "reproducir capítulo" que redirecciona a la página de la temporada donde está ubicado el capitulo seleccionado.
   - Debajo de la imagen destacada, se ubican las temporadas de la serie.
     
     <img src= "https://github.com/EzequielMassa/DevsDuffs/blob/dev/recursos/readme/paginaPrincipal.png"></img>
