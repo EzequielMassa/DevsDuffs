@@ -151,6 +151,14 @@ style="fill:#000000;">
 			cerrarSesion()
 		})
 	}
+
+	const navbarDropdown = document.querySelector(
+		'.navbar-principal-boton-hamburguesa'
+	)
+	navbarDropdown.addEventListener('click', () => {
+		inputBusqueda.value = ''
+		resultadosContenedor.innerHTML = ''
+	})
 }
 
 /**
