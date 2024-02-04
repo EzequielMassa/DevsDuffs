@@ -52,7 +52,6 @@ form {
 	}
 }
 @media screen and (min-width: 768px) {
-	
 	.titulo-container {
 		height: 15rem;
 	}
@@ -100,7 +99,6 @@ form {
 		border-radius: 50%;
 		top: -70px;
 		right: 40px;
-	
 	}
 
 	@keyframes move {
@@ -112,4 +110,3 @@ form {
 		}
 	}
 }
-
