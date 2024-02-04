@@ -27,7 +27,7 @@ export const renderizarNavbar = () => {
 							alt="imagen logo de devsduff"
 					/></a>
 					<button
-						class="navbar-toggler"
+						class="navbar-toggler navbar-principal-boton-hamburguesa"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent"
@@ -59,14 +59,14 @@ export const renderizarNavbar = () => {
 								? `	<form
 							class="d-flex mx-auto pe-2 navbar-principal-formulario my-2 mb-md-0">
 							<input
-								class="form-control me-2 focus-ring focus-ring-warning"
+								class="form-control me-2 focus-ring focus-ring-dark"
 								type="search"
 								placeholder="Buscar capitulos"
 								aria-label="Search"
 								id='inputBusqueda' />
-			
+								<label for='inputBusqueda'>
 								<i class="bi bi-search"></i>
-						
+								</label>
 						</form>`
 								: `<a href='/paginas/registro/registro.html' class='nav-link btn ms-0 ms-md-2 py-2 py-md-0 d-flex flex-column align-items-center flex-lg-row '>Registrate
 								<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0,0,256,256"
@@ -151,6 +151,14 @@ style="fill:#000000;">
 			cerrarSesion()
 		})
 	}
+
+	const navbarDropdown = document.querySelector(
+		'.navbar-principal-boton-hamburguesa'
+	)
+	navbarDropdown.addEventListener('click', () => {
+		inputBusqueda.value = ''
+		resultadosContenedor.innerHTML = ''
+	})
 }
 
 /**

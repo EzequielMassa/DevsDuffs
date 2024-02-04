@@ -68,6 +68,17 @@ body {
 	background: rgb(254, 230, 34);
 }
 
+.navbar-principal-boton-hamburguesa {
+	border: none;
+}
+
+.navbar-principal-boton-hamburguesa:focus,
+.navbar-principal-boton-hamburguesa:active {
+	border: none;
+	outline: none;
+	box-shadow: none;
+}
+
 .spikes {
 	position: relative;
 	background: var(--color-primario);
@@ -164,6 +175,10 @@ body {
 	font-weight: 900;
 }
 
+.navbar-principal-formulario label {
+	cursor: pointer;
+}
+
 .navbar-principal-usuario-imagen {
 	width: 2rem;
 	filter: drop-shadow(1px 1px 2px #fee622);
@@ -209,6 +224,10 @@ input[type='search']::-webkit-search-results-decoration {
 	display: none;
 }
 
+#navbarDropdown::after {
+	background-color: transparent;
+}
+
 /* Carrousel */
 .img-media {
 	max-height: 992px;
@@ -226,7 +245,6 @@ input[type='search']::-webkit-search-results-decoration {
 
 .custom-bg-color {
 	background-color: #ffffff;
-	/*Color de fondo CARDS*/
 }
 
 .card-index {

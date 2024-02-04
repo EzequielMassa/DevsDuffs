@@ -8,6 +8,10 @@
 	background-color: var(--fuente-color-primario);
 }
 
+.titulo {
+	text-shadow: 2px 2px 4px #141313;
+}
+
 .subtitulo {
 	text-shadow: 2px 2px var(--fuente-color-secundario);
 }
