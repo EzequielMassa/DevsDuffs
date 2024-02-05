@@ -60,7 +60,18 @@ const capituloUpdate = (event) => {
 		'#publicadoCapituloEditado'
 	).checked
 
+	
+
 	localStorage.setItem('capitulos', JSON.stringify(capitulos))
+
+	Swal.fire({
+		position: 'top-center',
+		iconHtml:
+			'<img src="../../../recursos/media/img/dona-animada.gif" width="50" height="50">',
+		title: 'Editado correctamente.',
+		showConfirmButton: false,
+		timer: 3500,
+	})
 
 	cargarTabla()
 	modalEditarCapitulo.hide()
@@ -124,6 +135,7 @@ window.agregarFavorito = (idFavorito) => {
 
 const agregarCapitulo = (event) => {
 	event.preventDefault()
+	const capitulos = getCapitulos()
 
 	let id = capitulos.at(-1).id + 1 //Se posiciona en el ultimo elemento del .json
 	let nombreInput = document.querySelector('#nombreCapitulo')
@@ -157,6 +169,8 @@ const agregarCapitulo = (event) => {
 				publicadoInput.checked
 			)
 		)
+		localStorage.setItem('capitulos', JSON.stringify(capitulos));
+
 		modalNuevoCapitulo.hide()
 		nombreInput.classList.remove('is-valid')
 		temporadaInput.classList.remove('is-valid')
@@ -172,7 +186,7 @@ const agregarCapitulo = (event) => {
 			timer: 1500,
 		})
 	}
-
+	
 	document.querySelector('#formNuevoCapitulo').reset()
 	cargarTabla()
 }

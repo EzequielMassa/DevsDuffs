@@ -144,19 +144,17 @@ p {
 .tostadora3 > img {
 	width: 70%;
 }
-#btn-Inicio {
-	background-color: var(--color-primario);
-	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
-	font-size: var(--fuente-tamanio-parrafo-desktop);
-}
 
-#btn-Inicio:hover {
-	background-color: var(--fuente-color-primario);
-}
 .texto {
 	letter-spacing: 0.4rem;
 	filter: drop-shadow(0 0 0.3rem var(--color-primario));
 	animation: errorAnimation 1s infinite;
+}
+
+@media (min-width: 770px) {
+	#btn-Inicio {
+		width: 25%;
+	}
 }
 
 @media (max-width: 770px) {
@@ -167,12 +165,7 @@ p {
 	#textoError {
 		text-align: center;
 	}
-	#btn-Inicio {
-		width: 50%;
-	}
-	#btn-Inicio:hover {
-		transform: scale(1);
-	}
+
 	.gifDesaparecen {
 		width: 0px;
 		height: 0px;

@@ -29,7 +29,7 @@ const cambiarMensajeSegunEstado = (estado) => {
 		return 'Tu estado actual es pendiente de aprobacion , tendras que esperar que los administradores aprueben tu cuenta para poder disfrutar de todas las funcionalidades de nuestro sitio.'
 	}
 	if (estado === 'aprobado') {
-		return 'Felicidades , tu cuenta fue aprobada y ya podes disfrutar de todas las funcionalidades de nuestro sitio!'
+		return 'Felicidades , tu cuenta fue aprobada y ya podes disfrutar de todas las funcionalidades de nuestro sitio! https://devsduff.netlify.app/paginas/login/login.html'
 	}
 	if (estado === 'suspendido') {
 		return 'Lamentamos informarte que tu cuenta fue suspendida y ya no podras disfrutar de todas las funcionalidades de nuestro sitio.'

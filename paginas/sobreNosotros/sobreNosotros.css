@@ -9,7 +9,6 @@
 	text-shadow: 7px 2px 4px #000;
 	margin-bottom: 20px;
 	margin-top: 20px;
-
 }
 
 .nombresIntegrantes {
@@ -98,15 +97,15 @@
 	filter: drop-shadow(5px -4px 10px #000);
 }
 
-.card-img-top5{
-    height: 285px;
-    width: 225px;
-    background-size: cover;
-    margin-left: 20px;
-    margin-bottom: -13px;
-    margin-top: -15px;
-    transition: 300ms;
-    filter: drop-shadow(5px -4px 10px #000);
+.card-img-top5 {
+	height: 285px;
+	width: 225px;
+	background-size: cover;
+	margin-left: 20px;
+	margin-bottom: -13px;
+	margin-top: -15px;
+	transition: 300ms;
+	filter: drop-shadow(5px -4px 10px #000);
 }
 
 .textoCardS {
@@ -115,7 +114,6 @@
 	font-size: 1.2rem;
 	line-height: 2rem;
 	text-align: center;
-
 }
 
 .descripcion {
@@ -134,7 +132,7 @@
 }
 
 .modal-content {
-	background-color: rgb(254, 230, 34, 0.9)
+	background-color: rgb(254, 230, 34, 0.9);
 }
 
 .modal-header {
@@ -162,7 +160,13 @@
 .btn--nosotros:hover {
 	background-color: var(--color-fondo);
 }
-.buttonFooter{
+.buttonFooter {
 	background-color: rgb(5, 1, 2, 0.5);
 	font-weight: 200;
+}
+
+.comic-button {
+	font-size: 0.8rem;
+	color: #000;
+	background-color: var(--color-primario);
 }

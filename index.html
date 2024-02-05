@@ -1,563 +1,747 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="./main.css" />
-	<link rel="shortcut icon" href="./recursos/media/iconos/favicon.png" type="image/x-icon" />
-	<script type="module" src="./main.js"></script>
-	<title>Inicio</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;0,900;1,400&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./main.css" />
+		<link
+			rel="shortcut icon"
+			href="./recursos/media/iconos/favicon.png"
+			type="image/x-icon" />
+		<script type="module" src="./main.js"></script>
+		<title>Inicio</title>
+	</head>
 
-<body>
-	<header class="sticky-top my-0 py-0"></header>
-	<div class="list-group busqueda-resultados-contenedor"></div>
+	<body>
+		<header class="sticky-top my-0 py-0"></header>
+		<div class="list-group busqueda-resultados-contenedor"></div>
 
-	<main class="bg-carousel bg-danger  header-index mb-5 pb-5 w-100">
-		<div class="container w-75">
-			<div class="row d-flex justify-content-center">
-				<div class="col-12 d-flex justify-content-center p-0 m-0">
-					<div class="d-flex flex-column align-content-center w-100 ps-2 pe-4 py-5">
-						<div class="row p-0 m-0">
-							<div id="flechaCarousel" class="carousel slide">
-								<div class="carousel-inner" id="carouselTarjetaContenedor">
+		<main class="bg-carousel bg-danger header-index mb-5 pb-5 w-100">
+			<div class="container w-100">
+				<div class="row d-flex justify-content-center">
+					<div class="col-12 d-flex justify-content-center p-0 m-0">
+						<div
+							class="d-flex flex-column align-content-center w-100 ps-2 pe-4 py-5">
+							<div class="row p-0 m-0">
+								<div id="flechaCarousel" class="carousel slide">
+									<div
+										class="carousel-inner"
+										id="carouselTarjetaContenedor"></div>
+									<button
+										class="carousel-control-prev"
+										type="button"
+										data-bs-target="#flechaCarousel"
+										data-bs-slide="prev">
+										<img
+											src="./recursos/media/img/flechaIzquierda.png"
+											alt="flechaIzquierda" />
+									</button>
+									<button
+										class="carousel-control-next"
+										type="button"
+										data-bs-target="#flechaCarousel"
+										data-bs-slide="next">
+										<img
+											src="./recursos/media/img/flechaDerecha.png"
+											alt="flechaDerecha" />
+									</button>
 								</div>
-								<button class="carousel-control-prev" type="button" data-bs-target="#flechaCarousel"
-									data-bs-slide="prev">
-									<img src="./recursos/media/img/flechaIzquierda.png" alt="flechaIzquierda">
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#flechaCarousel"
-									data-bs-slide="next">
-									<img src="./recursos/media/img/flechaDerecha.png" alt="flechaDerecha">
-								</button>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</main>
+
+		<div class="container mt-5 mb-5" id="temporadas">
+			<h2 class="mb-4" id="tituloTemporada">Temporadas</h2>
+			<div id="carouselExample" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row justify-content-evenly">
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-1.png"
+										class="card-img-top"
+										alt="temporada-1" />
+									<div class="card-body">
+										<a
+											href="./paginas/detalleDeCategoria/detalleDeCategoria.html"
+											aria-label="visually-hidden"
+											class="comic-button"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-2.png"
+										class="card-img-top"
+										alt="temporada-2" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-3.png"
+										class="card-img-top"
+										alt="temporada-3" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-4.png"
+										class="card-img-top"
+										alt="temporada-4" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-5.png"
+										class="card-img-top"
+										alt="temporada-5" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-6.png"
+										class="card-img-top"
+										alt="temporada-6" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="row justify-content-evenly">
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-7.png"
+										class="card-img-top"
+										alt="temporada-7" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-8.png"
+										class="card-img-top"
+										alt="temporada-8" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-9.png"
+										class="card-img-top"
+										alt="temporada-9" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-10.png"
+										class="card-img-top"
+										alt="temporada-10" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-11.png"
+										class="card-img-top"
+										alt="temporada-11" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-12.png"
+										class="card-img-top"
+										alt="temporada-12" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="row justify-content-evenly">
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-13.png"
+										class="card-img-top"
+										alt="temporada-13" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-14.png"
+										class="card-img-top"
+										alt="temporada-14" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-15.png"
+										class="card-img-top"
+										alt="temporada-15" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-16.png"
+										class="card-img-top"
+										alt="temporada-16" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-17.png"
+										class="card-img-top"
+										alt="temporada-17" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-18.png"
+										class="card-img-top"
+										alt="temporada-18" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="carrouselBotonesContenedor">
+					<button
+						class="carousel-control-prev btnAnterior"
+						type="button"
+						data-bs-target="#carouselExample"
+						data-bs-slide="prev">
+						<img
+							src="./recursos/media/img/flechaIzquierda.png"
+							alt="flechaIzquierda" />
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button
+						class="carousel-control-next btnSiguiente"
+						type="button"
+						data-bs-target="#carouselExample"
+						data-bs-slide="next">
+						<img
+							src="./recursos/media/img/flechaDerecha.png"
+							alt="flechaDerecha" />
+						<span class="visually-hidden">Siguiente</span>
+					</button>
 				</div>
 			</div>
 		</div>
-	</main>
 
-	<div class="container mt-5 mb-5" id="temporadas">
-		<h2 class="mb-4" id="tituloTemporada">Temporadas</h2>
-		<div id="carouselExample" class="carousel slide">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="row justify-content-evenly">
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-1.png" class="card-img-top"
-									alt="temporada-1">
-								<div class="card-body">
-									<a href="./paginas/detalleDeCategoria/detalleDeCategoria.html" 
-									aria-label="visually-hidden"
-									class="btn btn-primary colorBoton"><i
-											class="bi bi-play-fill"></i></a>
+		<div class="container mt-5 mb-5">
+			<div id="carouselExampleIndicators" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="row justify-content-evenly">
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-19.png"
+										class="card-img-top"
+										alt="temporada-19" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-20.png"
+										class="card-img-top"
+										alt="temporada-20" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-21.png"
+										class="card-img-top"
+										alt="temporada-21" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-22.png"
+										class="card-img-top"
+										alt="temporada-22" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-23.png"
+										class="card-img-top"
+										alt="temporada-23" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-24.png"
+										class="card-img-top"
+										alt="temporada-24" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-2.png" class="card-img-top"
-									alt="temporada-2">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
+					<div class="carousel-item">
+						<div class="row justify-content-evenly">
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-25.png"
+										class="card-img-top"
+										alt="temporada-25" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-26.png"
+										class="card-img-top"
+										alt="temporada-26" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-27.png"
+										class="card-img-top"
+										alt="temporada-27" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-28.png"
+										class="card-img-top"
+										alt="temporada-28" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-29.png"
+										class="card-img-top"
+										alt="temporada-29" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-30.png"
+										class="card-img-top"
+										alt="temporada-30" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-3.png" class="card-img-top"
-									alt="temporada-3">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
+					<div class="carousel-item">
+						<div class="row justify-content-evenly">
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-31.png"
+										class="card-img-top"
+										alt="temporada-31" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-4.png" class="card-img-top"
-									alt="temporada-4">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-32.png"
+										class="card-img-top"
+										alt="temporada-32" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-5.png" class="card-img-top"
-									alt="temporada-5">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-33.png"
+										class="card-img-top"
+										alt="temporada-33" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-6.png" class="card-img-top"
-									alt="temporada-6">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-34.png"
+										class="card-img-top"
+										alt="temporada-34" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-35.png"
+										class="card-img-top"
+										alt="temporada-35" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6 col-lg-2 col-md-4 mb-4">
+								<div class="card centrarCard">
+									<img
+										src="../../recursos/media/img/temporada-36.png"
+										class="card-img-top"
+										alt="temporada-36" />
+									<div class="card-body">
+										<a class="comic-button botones404"
+											><i class="bi bi-play-fill"></i
+										></a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="carousel-item">
-
-					<div class="row justify-content-evenly">
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-7.png" class="card-img-top"
-									alt="temporada-7">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-8.png" class="card-img-top"
-									alt="temporada-8">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-9.png" class="card-img-top"
-									alt="temporada-9">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-10.png" class="card-img-top"
-									alt="temporada-10">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-11.png" class="card-img-top"
-									alt="temporada-11">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-12.png" class="card-img-top"
-									alt="temporada-12">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
+				<div class="carrouselBotonesContenedor">
+					<button
+						class="carousel-control-prev btnAnterior"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<img
+							src="./recursos/media/img/flechaIzquierda.png"
+							alt="flechaIzquierda" />
+						<span class="visually-hidden">Anterior</span>
+					</button>
+					<button
+						class="carousel-control-next btnSiguiente"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<img
+							src="./recursos/media/img/flechaDerecha.png"
+							alt="flechaDerecha" />
+						<span class="visually-hidden">Siguiente</span>
+					</button>
 				</div>
-
-				<div class="carousel-item">
-
-					<div class="row justify-content-evenly">
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-13.png" class="card-img-top"
-									alt="temporada-13">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-14.png" class="card-img-top"
-									alt="temporada-14">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-15.png" class="card-img-top"
-									alt="temporada-15">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-16.png" class="card-img-top"
-									alt="temporada-16">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-17.png" class="card-img-top"
-									alt="temporada-17">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-18.png" class="card-img-top"
-									alt="temporada-18">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="carrouselBotonesContenedor">
-				<button class="carousel-control-prev btnAnterior" type="button" data-bs-target="#carouselExample"
-					data-bs-slide="prev">
-					<img src="./recursos/media/img/flechaIzquierda.png" alt="flechaIzquierda">
-					<span class="visually-hidden">Anterior</span>
-				</button>
-				<button class="carousel-control-next btnSiguiente" type="button" data-bs-target="#carouselExample"
-					data-bs-slide="next">
-					<img src="./recursos/media/img/flechaDerecha.png" alt="flechaDerecha">
-					<span class="visually-hidden">Siguiente</span>
-				</button>
-			</div>
-		</div>
-	</div>
-
-	<div class="container mt-5 mb-5">
-		<div id="carouselExampleIndicators" class="carousel slide">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="row justify-content-evenly">
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-19.png" class="card-img-top"
-									alt="temporada-19">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-20.png" class="card-img-top"
-									alt="temporada-20">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-21.png" class="card-img-top"
-									alt="temporada-21">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-22.png" class="card-img-top"
-									alt="temporada-22">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-23.png" class="card-img-top"
-									alt="temporada-23">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-24.png" class="card-img-top"
-									alt="temporada-24">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<div class="row justify-content-evenly">
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-25.png" class="card-img-top"
-									alt="temporada-25">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-26.png" class="card-img-top"
-									alt="temporada-26">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-27.png" class="card-img-top"
-									alt="temporada-27">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-28.png" class="card-img-top"
-									alt="temporada-28">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-29.png" class="card-img-top"
-									alt="temporada-29">
-								<div class="card-body">
-									<a class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-30.png" class="card-img-top"
-									alt="temporada-30">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="carousel-item">
-					<div class="row justify-content-evenly">
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-31.png" class="card-img-top"
-									alt="temporada-31">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-32.png" class="card-img-top"
-									alt="temporada-32">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-33.png" class="card-img-top"
-									alt="temporada-33">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-34.png" class="card-img-top"
-									alt="temporada-34">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-35.png" class="card-img-top"
-									alt="temporada-35">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-6 col-lg-2 col-md-4 mb-4">
-							<div class="card centrarCard">
-								<img src="../../recursos/media/img/temporada-36.png" class="card-img-top"
-									alt="temporada-36">
-								<div class="card-body">
-									<a  class="btn btn-primary colorBoton botones404"><i
-											class="bi bi-play-fill"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<div class="carrouselBotonesContenedor">
-				<button class="carousel-control-prev btnAnterior" type="button"
-					data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-					<img src="./recursos/media/img/flechaIzquierda.png" alt="flechaIzquierda">
-					<span class="visually-hidden">Anterior</span>
-				</button>
-				<button class="carousel-control-next btnSiguiente" type="button"
-					data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-					<img src="./recursos/media/img/flechaDerecha.png" alt="flechaDerecha">
-					<span class="visually-hidden">Siguiente</span>
-				</button>
 			</div>
 		</div>
-	</div>
 
-	<footer class="text-light mt-3 container-fluid ">
-		<div class="row ">
-			<section class="mb-4 w-100">
-				<div class="w-100 text-center  ">
-					<div class="row text-center">
-						<div class=" text-center d-flex col-md-4  mt-2  divGeneralRedes">
+		<footer class="text-light mt-3 container-fluid">
+			<div class="row">
+				<section class="mb-4 w-100">
+					<div class="w-100 text-center">
+						<div class="row text-center">
+							<div class="text-center d-flex col-md-4 mt-2 divGeneralRedes">
+								<div
+									class="d-flex flex-column justify-content-center rounded-3 footerRedes align-items-center mt-4 w-100">
+									<h4 class="parrafo text-center footerTitulo">
+										Nuestras redes:
+									</h4>
+
+									<ul class="wrapper">
+										<li class="icon facebook">
+											<span class="tooltip">Facebook</span>
+											<a
+												href="https://www.facebook.com/"
+												target="_blank"
+												rel="noopener"
+												aria-label="visually-hidden"
+												><i class="bi bi-facebook iconoRedes"></i
+											></a>
+										</li>
+										<li class="icon twitter">
+											<span class="tooltip">Twitter</span>
+											<a
+												href="https://www.twitter.com/"
+												target="_blank"
+												rel="noopener"
+												aria-labe="visually-hidden"
+												><i class="bi bi-twitter-x iconoRedes2"></i
+											></a>
+										</li>
+										<li class="icon instagram">
+											<span class="tooltip">Instagram</span>
+											<a
+												href="https://www.instagram.com/"
+												target="_blank"
+												rel="noopener"
+												aria-labe="visually-hidden"
+												><i class="bi bi-instagram iconoRedes2"></i
+											></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="text-center mt-5 col-12 col-md-4">
+								<img
+									src="../../../recursos/media/img/Devs-Duff-Logo.png"
+									width="190"
+									height="190"
+									alt="logo dev duff" />
+							</div>
+
 							<div
-								class="d-flex flex-column justify-content-center rounded-3 footerRedes align-items-center mt-4 w-100">
-								<h4 class="parrafo text-center footerTitulo ">Nuestras redes:</h4>
-								
-								<ul class="wrapper">
-									<li class="icon facebook">
-										<span class="tooltip">Facebook</span>
-										<a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="visually-hidden"><i class="bi bi-facebook iconoRedes"></i></a>
-									</li>
-									<li class="icon twitter">
-										<span class="tooltip">Twitter</span>
-										<a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-labe="visually-hidden"><i class="bi bi-twitter-x iconoRedes2"></i></a>
-									</li>
-									<li class="icon instagram">
-										<span class="tooltip">Instagram</span>
-										<a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-labe="visually-hidden"><i class="bi bi-instagram iconoRedes2"></i></a>
-									</li>
-								</ul>
-							</div>	
-						</div>
-						<div class="text-center mt-5 col-12 col-md-4">
-							<img src="../../../recursos/media/img/Devs-Duff-Logo.png" width="190" height="190"
-								alt="logo dev duff" />
-						</div>
+								class="d-flex flex-column justify-content-end col-12 col-md-4 divButtonF">
+								<a
+									href="./paginas/sobreNosotros/sobreNosotros.html"
+									class="parrafo letraButtonF">
+									<button
+										type="button"
+										class="parrafo btn btn-info mb-4 buttonFooter w-100">
+										Acerca de Nosotros
+									</button></a
+								>
+								<a href="./paginas/contacto/contacto.html" class="letraButtonF">
+									<button
+										type="button"
+										class="parrafo btn btn-info buttonFooter w-100">
+										Contacto
+									</button></a
+								>
+							</div>
 
-						<div class="d-flex flex-column justify-content-end col-12 col-md-4 divButtonF ">
-							<a href="./paginas/sobreNosotros/sobreNosotros.html" class="parrafo letraButtonF">
-								<button type="button" class="parrafo btn btn-info mb-4 buttonFooter w-100">Acerca de Nosotros</button></a>
-							<a href="./paginas/contacto/contacto.html" class="letraButtonF">
-								<button type="button" class="parrafo btn btn-info buttonFooter w-100">Contacto</button></a>
-						</div>
-
-						<div class=" mt-3 justify-content-center footerRedes col-12 w-100">
-							<h6 class="parrafo bi bi-c-circle text-center footerTitulo"> 2024-Devs Duff-Todos los
-								derechos reservados.</h6>
+							<div class="mt-3 justify-content-center footerRedes col-12 w-100">
+								<h6 class="parrafo bi bi-c-circle text-center footerTitulo">
+									2024-Devs Duff-Todos los derechos reservados.
+								</h6>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-	</script>
-</body>
+				</section>
+			</div>
+		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"></script>
+	</body>
 </html>

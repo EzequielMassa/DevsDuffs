@@ -229,6 +229,7 @@ input[type='search']::-webkit-search-results-decoration {
 }
 
 /* Carrousel */
+
 .img-media {
 	max-height: 992px;
 	width: 100%;
@@ -263,21 +264,6 @@ input[type='search']::-webkit-search-results-decoration {
 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
-.botonCarousel {
-	background-color: var(--color-primario);
-	font-family: var(--fuente-secundaria);
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-	transition: color 0.1s ease;
-}
-
-.botonCarousel:hover {
-	color: #ffffff;
-	background-color: var(--color-secundario);
-	font-family: var(--fuente-secundaria);
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-	transition: fill 0.1s ease;
-}
-
 .parrafoCard {
 	font-family: var(--fuente-secundaria);
 	min-height: 7.5em;
@@ -286,6 +272,41 @@ input[type='search']::-webkit-search-results-decoration {
 .contenedorImgCarousel {
 	width: 100%;
 	object-fit: cover;
+}
+
+.comic-button {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: var(--color-secundario);
+	border: 2px solid #000;
+	border-radius: 10px;
+	box-shadow: 5px 5px 0px #000;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.comic-button:hover {
+	background-color: #fff;
+	color: var(--color-secundario);
+	border: 2px solid var(--color-secundario);
+	box-shadow: 5px 5px 0px var(--color-secundario);
+}
+
+.comic-button:active {
+	background-color: #fcf414;
+	box-shadow: none;
+	transform: translateY(4px);
+}
+
+.comic-button--carrousel {
+	margin-top: 1rem;
+	font-size: 1rem;
+	padding: 0.2rem 0.5rem;
 }
 
 /* Temporadas */
@@ -536,6 +557,11 @@ footer {
 
 	.busqueda-resultados-contenedor--show {
 		top: 120px;
+	}
+
+	.comic-button--carrousel {
+		padding: 10px 20px;
+		font-size: 24px;
 	}
 }
 
