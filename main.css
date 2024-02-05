@@ -259,9 +259,10 @@ input[type='search']::-webkit-search-results-decoration {
 
 .tituloTarjetaSuperior {
 	font-family: var(--fuente-principal);
-	font-size: var(--fuente-tamanio-titulo);
+	font-size: 1.5rem;
 	color: var(--color-primario);
 	text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+	margin-bottom: 10px;
 }
 
 .parrafoCard {

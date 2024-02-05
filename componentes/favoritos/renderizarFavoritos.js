@@ -17,7 +17,7 @@ export const renderizarFavoritos = () => {
    
        <div class="row justify-content-center">
            <div class="col-12 col-lg-8 col-md-10 my-5">
-               <div class="card rounded-5 custom-bg-color card-index m-2 p-2">
+               <div class="card rounded-5 custom-bg-color card-index m-sm-3 p-sm-3">
                <div class="contenedorImgCarousel object-fit-cover">          
                <img src='${cap.imgUrl}'
                class="card-img-top rounded-top-5 img-media"
@@ -25,7 +25,7 @@ export const renderizarFavoritos = () => {
                </div>
                    <div class="card-body d-flex flex-column align-items-center justify-content-center">
                        <h5
-                           class="tituloTarjetaSuperior fw-bold text-center text-md-start mt-1 mt-md-3 ms-md-3">
+                           class="tituloTarjetaSuperior fw-bold text-center text-md-start mt-1 m-md-3">
                           '${cap.nombre}'
                        </h5>
                        <p class="parrafoCard card-text m-3 m-md-3 d-none d-md-block">
