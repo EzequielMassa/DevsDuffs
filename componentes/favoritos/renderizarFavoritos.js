@@ -15,7 +15,7 @@ export const renderizarFavoritos = () => {
    
        <div class="row justify-content-center">
            <div class="col-12 col-lg-8 col-md-10 my-5">
-               <div class="card rounded-5 custom-bg-color card-index">
+               <div class="card rounded-5 custom-bg-color card-index m-2 p-2">
                <div class="contenedorImgCarousel object-fit-cover">          
                <img src='${cap.imgUrl}'
                class="card-img-top rounded-top-5 img-media"
