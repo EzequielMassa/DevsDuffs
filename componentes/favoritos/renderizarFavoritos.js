@@ -1,17 +1,19 @@
-import { getCapitulos } from "../../almacenamiento/getCapitulos.js";
+import { getCapitulos } from '../../almacenamiento/getCapitulos.js'
 
 export const renderizarFavoritos = () => {
-  const capitulos = getCapitulos().filter((cap) => cap.favorito == true);
-  const carouselTarjetaContenedor = document.querySelector(`#carouselTarjetaContenedor`);
-  const primerFavorito = capitulos[0];
+	const capitulos = getCapitulos().filter((cap) => cap.favorito == true)
+	const carouselTarjetaContenedor = document.querySelector(
+		`#carouselTarjetaContenedor`
+	)
+	const primerFavorito = capitulos[0]
 
-  capitulos.forEach(cap => {
-    return carouselTarjetaContenedor.innerHTML += `
+	capitulos.forEach((cap) => {
+		return (carouselTarjetaContenedor.innerHTML += `
     ${
-       primerFavorito.id == cap.id
-         ? '  <div class="carousel-item active">'
-         : '<div class="carousel-item">'
-     }
+			primerFavorito.id == cap.id
+				? '  <div class="carousel-item active">'
+				: '<div class="carousel-item">'
+		}
    
        <div class="row justify-content-center">
            <div class="col-12 col-lg-8 col-md-10 my-5">
@@ -27,16 +29,14 @@ export const renderizarFavoritos = () => {
                           '${cap.nombre}'
                        </h5>
                        <p class="parrafoCard card-text m-3 m-md-3 d-none d-md-block">
-                         ${
-                          cap.descripcion
-                         }
+                         ${cap.descripcion}
                        </p>
-                       <a href="../paginas/detalleDeCategoria/detalleDeCategoria.html" class="btn botonCarousel d-flex align-items-center justify-content-center"><i class="bi bi-play-fill"></i>Reproducir Capitulo</a>
+                       <a href="../paginas/detalleDeCategoria/detalleDeCategoria.html" class="comic-button comic-button--carrousel d-flex align-items-center justify-content-center"><i class="bi bi-play-fill"></i>Reproducir Capitulo</a>
                    </div>
                </div>
            </div>
        </div>
    </div>
-    ` 
-  });
+    `)
+	})
 }
