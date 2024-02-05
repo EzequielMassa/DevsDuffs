@@ -8,9 +8,12 @@
 export const notificarUsuarioCambioEstado = (emailUsuario, nuevoEstado) => {
 	const serviceID = 'default_service'
 	const templateID = 'template_slo62zl'
-	const mensaje = nuevoEstado.includes('aprobado pendiente suspendido')
-		? cambiarMensajeSegunEstado(nuevoEstado)
-		: enviarMensajeContrasenia(nuevoEstado)
+	const mensaje =
+		nuevoEstado == 'aprobado' ||
+		nuevoEstado == 'pendiente' ||
+		nuevoEstado == 'suspendido'
+			? cambiarMensajeSegunEstado(nuevoEstado)
+			: enviarMensajeContrasenia(nuevoEstado)
 
 	emailjs
 		.send(serviceID, templateID, {
