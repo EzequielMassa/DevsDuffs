@@ -57,6 +57,16 @@ main {
 	border-radius: 0px;
 }
 
+.btn-success {
+	background-color: var(--color-primario);
+	color: black;
+}
+.btn-success:hover,
+.btn-success:active,
+.btn-success:visited {
+	background-color: var(--color-secundario) !important;
+}
+
 @media screen and (max-width: 600px) {
 	.card11 {
 		width: 90%;
