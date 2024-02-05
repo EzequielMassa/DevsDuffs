@@ -8,7 +8,9 @@
 export const notificarUsuarioCambioEstado = (emailUsuario, nuevoEstado) => {
 	const serviceID = 'default_service'
 	const templateID = 'template_slo62zl'
-	const mensaje = cambiarMensajeSegunEstado(nuevoEstado)
+	const mensaje = nuevoEstado.includes('aprobado pendiente suspendido')
+		? cambiarMensajeSegunEstado(nuevoEstado)
+		: enviarMensajeContrasenia(nuevoEstado)
 
 	emailjs
 		.send(serviceID, templateID, {
@@ -34,4 +36,8 @@ const cambiarMensajeSegunEstado = (estado) => {
 	if (estado === 'suspendido') {
 		return 'Lamentamos informarte que tu cuenta fue suspendida y ya no podras disfrutar de todas las funcionalidades de nuestro sitio.'
 	}
+}
+
+const enviarMensajeContrasenia = (infoCambioContrasenia) => {
+	return `Hola , tu contraseña es : ${infoCambioContrasenia} , te recomendamos anotarla en un lugar seguro!`
 }

@@ -10,6 +10,12 @@
 	<link rel="icon" href="/recursos/media/iconos/favicon.png" />
 	<link rel="stylesheet" href="../../main.css" />
 	<link rel="stylesheet" href="./login.css" />
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			emailjs.init('a0nK2KBffZoMri_Vy')
+		</script>
 	<script type="module" src="./login.js"></script>
 	<title>Iniciar sesión</title>
 </head>
@@ -54,8 +60,8 @@
 					<label for="recuerdameInput" class="pt-1 text-dark">Recuerdame</label>
 				</div>
 				<div class="pt-1 d-inline-block text-center ">
-					<a href="../error404/error404.html" class="text-decoration-none text-dark fw-semibold fst-italic"
-						id="forgot-password-link">
+					<a href="#" class="text-decoration-none text-dark fw-semibold fst-italic"
+						id="forgot-password-link" data-bs-toggle="modal" data-bs-target="#modalOlvidoContrasenia">
 						¿Olvidaste tu contraseña?
 					</a>
 				</div>
@@ -95,6 +101,35 @@
 			</div>
 		</div>
 	</main>
+
+<!-- Modal -->
+<div class="modal fade" id="modalOlvidoContrasenia" tabindex="-1" aria-labelledby="modalOlvidoContrasenialLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title fs-5" id="modalOlvidoContraseniaLabel">Recupera tu contraseña</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form id="modalOlvidoContraseniaForm">
+  <div class="mb-3">
+    <label for="inputEmailOlvidoContrasenia" class="form-label">Ingrese su Email</label>
+    <input type="email" class="form-control" id="inputEmailOlvidoContrasenia" aria-describedby="emailHelp">
+			<div class="invalid-feedback w-100">
+							<span class="d-block text-center fw-bold text-bg-warning text-dark rounded-1 py-1 px-5">El email ingresado no existe o es invalido.</span>
+						</div>
+    <div id="emailHelp" class="form-text">Se le enviara un email con los pasos a seguir</div>
+  </div>
+
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <button type="submit" form="modalOlvidoContraseniaForm" class="btn btn-success ">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
 	<footer class="text-light mt-3 container-fluid ">
 		<div class="row ">
 			<section class="mb-4 w-100">
