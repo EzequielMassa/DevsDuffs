@@ -98,6 +98,14 @@ li {
 	max-width: 540px;
 }
 
+
+.parrafo1 {
+	color: rgb(255, 208, 56);
+	font-family: var(--fuente-secundaria);
+	font-size: 1.3rem;
+}
+
+
 @media (max-width: 770px) {
 	.video {
 		width: 90%;
